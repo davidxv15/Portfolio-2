@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022", // Sets the ECMAScript version target (e.g., ES2022 adds modern features).
-    "lib": ["ES2023", "DOM", "DOM.Iterable"], // Specifies libraries to include for features like arrays, DOM, and iteration.
+    "lib": ["ES2022", "DOM", "DOM.Iterable"], // Specifies libraries to include for features like arrays, DOM, and iteration.
     "module": "ESNext", // Specifies module code generation (modern ES modules for tree-shaking and imports).
     "moduleResolution": "node", // Resolves modules like Node.js (default for modern apps).
     "strict": true, // Enables all strict type-checking options for safer code.
