@@ -1,33 +1,13 @@
 {
   "compilerOptions": {
-    // Specifies where TypeScript stores incremental build information.
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-
-    // Enables incremental compilation for faster subsequent builds.
-    "incremental": true,
-
-    // Sets the JavaScript target version. ES2022 supports modern features like top-level await.
-    "target": "ES2022",
-
-    // Includes standard ES libraries for the target version.
-    "lib": ["ES2023"],
-
-    // Uses CommonJS module system (used in Node.js).
-    "module": "CommonJS",
-
-    // Resolves modules in the Node.js style (like `require` or `import`).
-    "moduleResolution": "node",
-
-    // Enables strict type-checking options for better code safety.
-    "strict": true,
-
-    // Ensures compatibility with CommonJS and ES modules by enabling interop.
-    "esModuleInterop": true,
-
-    // Skips type checks for declaration files in `node_modules` (reduces build time).
-    "skipLibCheck": true
+    "target": "ES2022", // Sets the ECMAScript version target (e.g., ES2022 adds modern features).
+    "lib": ["ES2023", "DOM"], // Includes libraries for ES2023 and DOM manipulation.
+    "module": "CommonJS", // CommonJS module format (for Node.js environments).
+    "moduleResolution": "node", // Resolves modules like Node.js.
+    "strict": true, // Enables all strict type-checking options for safer code.
+    "skipLibCheck": true, // Skips checking type declaration files for performance optimization.
+    "jsx": "react-jsx", // Enables JSX syntax for React with TypeScript.
+    "incremental": true // Enables incremental compilation for faster builds.
   },
-
-  // Specifies which files or directories TypeScript should include.
-  "include": ["src"]
+  "include": ["src"] // Specifies which files to include in the compilation (everything in the `src` folder).
 }
