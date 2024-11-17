@@ -1,29 +1,14 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "incremental": true, 
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-
-    /* Fix import issue */
-    "allowSyntheticDefaultImports": true
+    "target": "ES2022", // Sets the ECMAScript version target (e.g., ES2022 adds modern features).
+    "lib": ["ES2023", "DOM", "DOM.Iterable"], // Specifies libraries to include for features like arrays, DOM, and iteration.
+    "module": "ESNext", // Specifies module code generation (modern ES modules for tree-shaking and imports).
+    "moduleResolution": "node", // Resolves modules like Node.js (default for modern apps).
+    "strict": true, // Enables all strict type-checking options for safer code.
+    "skipLibCheck": true, // Skips checking type declaration files for performance optimization.
+    "jsx": "react-jsx", // Enables JSX syntax for React with TypeScript.
+    "incremental": true, // Enables incremental compilation for faster builds.
+    "noEmit": true // Prevents emitting JavaScript files during compilation.
   },
-  "include": ["src"]
+  "include": ["src"] // Specifies which files to include in the compilation (everything in the `src` folder).
 }
