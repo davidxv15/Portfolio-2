@@ -1,25 +1,33 @@
 {
   "compilerOptions": {
+    // Specifies where TypeScript stores incremental build information.
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
+    // Enables incremental compilation for faster subsequent builds.
     "incremental": true,
-    "target": "ES2022", // Latest stable ECMAScript target
-    "lib": ["ES2023"], // Supports latest features
-    "module": "ESNext", // Enables ES modules
-    "skipLibCheck": true, // Skips type checks for library files
 
-    /* Bundler mode */
-    "moduleResolution": "node", // Resolves modules using Node.js strategy
-    "allowImportingTsExtensions": true, // Allows imports with .ts extensions
-    "isolatedModules": true, // Ensures one file at a time transpilation
-    "moduleDetection": "force", // Forces module detection
-    "noEmit": true, // Prevents emitting output files
+    // Sets the JavaScript target version. ES2022 supports modern features like top-level await.
+    "target": "ES2022",
 
-    /* Linting */
-    "strict": true, // Enables all strict type-checking options
-    "noUnusedLocals": true, // Reports unused local variables
-    "noUnusedParameters": true, // Reports unused parameters
-    "noFallthroughCasesInSwitch": true, // Prevents fallthrough in switch cases
-    "noUncheckedSideEffectImports": true // Ensures imports are checked
+    // Includes standard ES libraries for the target version.
+    "lib": ["ES2023"],
+
+    // Uses CommonJS module system (used in Node.js).
+    "module": "CommonJS",
+
+    // Resolves modules in the Node.js style (like `require` or `import`).
+    "moduleResolution": "node",
+
+    // Enables strict type-checking options for better code safety.
+    "strict": true,
+
+    // Ensures compatibility with CommonJS and ES modules by enabling interop.
+    "esModuleInterop": true,
+
+    // Skips type checks for declaration files in `node_modules` (reduces build time).
+    "skipLibCheck": true
   },
-  "include": ["vite.config.ts"] // Includes specific file(s) for type-checking
+
+  // Specifies which files or directories TypeScript should include.
+  "include": ["src"]
 }
