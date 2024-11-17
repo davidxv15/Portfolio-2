@@ -8,7 +8,9 @@
     "skipLibCheck": true, // Skips checking type declaration files for performance optimization.
     "jsx": "react-jsx", // Enables JSX syntax for React with TypeScript.
     "incremental": true, // Enables incremental compilation for faster builds.
-    "noEmit": true // Prevents emitting JavaScript files during compilation.
+    "noEmit": true, // Prevents emitting JavaScript files during compilation.
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+  "allowSyntheticDefaultImports": true // Allows default imports without requiring esModuleInterop
   },
   "include": ["src"] // Specifies which files to include in the compilation (everything in the `src` folder).
 }
