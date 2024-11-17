@@ -12,5 +12,6 @@
     "esModuleInterop": true, // Enables compatibility with CommonJS modules.
     "allowSyntheticDefaultImports": true // Allows default imports without requiring esModuleInterop.
   },
-  "include": ["src"] // Specifies which files to include in the compilation (everything in the `src` folder).
+  "include": ["src"], // Specifies which files to include in the compilation (everything in the `src` folder).
+  "exclude": ["node_modules"] // Excludes `node_modules` for better performance
 }
