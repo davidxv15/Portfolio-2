@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022", // Sets the ECMAScript version target (e.g., ES2022 adds modern features).
-    "lib": ["ES2023", "DOM"], // Includes libraries for ES2023 and DOM manipulation.
+    "lib": ["ES2022", "DOM"], // Includes libraries for ES2023 and DOM manipulation.
     "module": "CommonJS", // CommonJS module format (for Node.js environments).
     "moduleResolution": "node", // Resolves modules like Node.js.
     "strict": true, // Enables all strict type-checking options for safer code.
