@@ -5,8 +5,8 @@ import Navbar from './components/Navbar';
 const App: React.FC = () => {
   return (
     <div>
-      <HeroSection />
       <Navbar />
+      <HeroSection />
     </div>
   );
 };
