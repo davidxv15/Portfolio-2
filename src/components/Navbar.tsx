@@ -1,6 +1,5 @@
-import * as React from 'react';
+import * as React from "react";
 const { useState } = React;
-
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +38,7 @@ const Navbar: React.FC = () => {
               className="text-gray-400 hover:text-white focus:outline-none focus:text-white"
             >
               <svg
-                className="h-6 w-6"
+                className="h-5 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -69,16 +68,28 @@ const Navbar: React.FC = () => {
       {/* Mobile Navigation Links */}
       {isOpen && (
         <div className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#home" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          <a
+            href="#home"
+            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+          >
             Home
           </a>
-          <a href="#about" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          <a
+            href="#about"
+            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+          >
             About
           </a>
-          <a href="#projects" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          <a
+            href="#projects"
+            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+          >
             Projects
           </a>
-          <a href="#contact" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">
+          <a
+            href="#contact"
+            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+          >
             Contact
           </a>
         </div>
