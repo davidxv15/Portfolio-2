@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import * as React from 'react';
+const { useState } = React;
+
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
