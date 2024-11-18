@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-10">
           {/* Logo or Brand Name */}
           <div className="flex items-center">
-            <a href="#" className="text-gray-400  hover:text-gray-300 text-2xl font-bold">
+            <a href="#" className="text-gray-400 hover:text-gray-300 text-2xl font-bold">
               Portfolio
             </a>
           </div>
