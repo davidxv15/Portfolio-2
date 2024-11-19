@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { useState } from 'react';
+import * as React from "react";
+import { useState } from "react";
 
 interface ThemeToggleProps {
   themes: string[]; // Array of theme names
@@ -24,9 +24,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({ themes, onThemeChange }) => {
       >
         <div
           className={`absolute left-0 top-0 h-8 w-8 bg-gray-800 rounded-full shadow transform transition-transform duration-300 ease-in-out ${
-            themes.length > 1
-              ? `translate-x-${currentThemeIndex * 5}`
-              : ''
+            themes.length > 1 ? `translate-x-${currentThemeIndex * 5}` : ""
           }`}
         ></div>
       </button>
