@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 const App: React.FC = () => {
   return (
     <div>
-      <div><Navbar /></div>
+      <div className="sticky top-0 z-50"><Navbar /></div>
       <HeroSection />
       <AboutMe />
     </div>
