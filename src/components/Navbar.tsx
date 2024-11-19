@@ -70,25 +70,25 @@ const Navbar: React.FC = () => {
         <div className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             href="#home"
-            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+            className="text-gray-400 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
           >
             Home
           </a>
           <a
             href="#about"
-            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+            className="text-gray-400 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
           >
             About
           </a>
           <a
             href="#projects"
-            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+            className="text-gray-400 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+            className="text-gray-400 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
           >
             Contact
           </a>
