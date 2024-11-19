@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 const App: React.FC = () => {
   return (
     <div>
-      <Navbar />
+      <div><Navbar /></div>
       <HeroSection />
       <AboutMe />
     </div>
