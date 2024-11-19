@@ -2,6 +2,7 @@ import * as React from 'react';
 import AboutMe from './components/AboutMe';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
+import ThemeToggle from './components/ThemeToggle';
 
 const App: React.FC = () => {
   return (
