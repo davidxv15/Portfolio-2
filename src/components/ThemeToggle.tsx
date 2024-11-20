@@ -24,7 +24,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
     <div className="flex items-center">
       <button
         onClick={handleToggle}
-        className="relative w-20 h-6 bg-gray-800 rounded-full shadow-inner focus:outline-none"
+        className="relative w-20 h-6 bg-gray-800 rounded-full shadow-inner focus:outline-none hover:border-red-600"
         aria-label="Theme Toggle"
       >
         <div
