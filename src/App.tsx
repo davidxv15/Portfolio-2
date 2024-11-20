@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Navbar /></div>
         <div className="mr-auto">
       <ThemeToggle
-          themes={['dark', 'light', 'warm', 'retro']}
+          themes={['dark', 'light', 'invert', 'grayscale', 'retro', 'sepia']}
           onThemeChange={handleThemeChange}
         /></div>
       <HeroSection />
