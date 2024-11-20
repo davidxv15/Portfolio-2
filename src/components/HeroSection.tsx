@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
           Welcome to My Portfolio
         </h1>
         <p className="text-lg text-gray-600 mt-4">
-          I’m David, a Full Stack Develeoper.
+          I’m David, a Full Stack Developer.
         </p>
       </div>
       <div>
