@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-gradient-to-r from-gray-800 to-transparent text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-gray-400 flex items-center justify-between h-12">
+        <div className="text-gray-400 flex items-center justify-between h-14">
           David Velasquez
           <div className="flex items-center">
             <a href="#" className="text-gray-400 hover:text-gray-300 text-2xl font-bold">
