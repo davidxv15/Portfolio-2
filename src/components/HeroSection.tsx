@@ -5,10 +5,10 @@ const HeroSection: React.FC = () => {
     <section className="flex flex-col items-center justify-center h-screen bg-blue-400 text-center">
       <div className="mb-6">
         <h1 className="text-5xl font-bold text-gray-800">
-          Welcome to My Portfolio
+          Display Brand value immediately
         </h1>
         <p className="text-lg text-gray-600 mt-4">
-          I’m David, a Full Stack Developer.
+          Succinct, bold(?) introduction.
         </p>
       </div>
       <div>
