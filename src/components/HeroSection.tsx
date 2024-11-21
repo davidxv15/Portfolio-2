@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-64 h-64 object-cover object-[80%_8%] shadow-lg shadow-gray-600"
+          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600"
         />
       </div>
     </section>
