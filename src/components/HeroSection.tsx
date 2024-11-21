@@ -2,13 +2,13 @@ import * as React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-blue-200 text-center">
+    <section className="flex flex-col items-center justify-center h-screen w-screen bg-blue-200 text-center">
       <div className="mb-6">
         <h1 className="text-5xl font-bold text-gray-800">
-          Display Brand value immediately
+          David Velasquez
         </h1>
-        <p className="text-lg text-gray-600 mt-4">
-          Succinct, bold(?) introduction.
+        <p className="text-xl text-gray-600 mt-4">
+          Full Stack Software Developer
         </p>
       </div>
       <div>
