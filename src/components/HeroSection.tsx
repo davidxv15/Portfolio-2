@@ -7,11 +7,11 @@ const HeroSection: React.FC = () => {
         <h1 className="text-5xl font-bold text-blue-900">
           David Velasquez
         </h1>
-        <p className="text-xl text-gray-600 mt-4">
+        <p className="text-xl text-gray-600 mt-2">
           Full Stack Software Developer
         </p>
       </div>
-      <div>
+      <div className="mb-8">
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
