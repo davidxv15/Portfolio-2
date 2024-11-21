@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center h-screen w-screen bg-blue-200 text-center">
+    <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-blue-200 text-center">
       <div className="mb-6">
         <h1 className="text-5xl font-bold text-blue-900">
           David Velasquez
@@ -12,7 +12,6 @@ const HeroSection: React.FC = () => {
         </p>
       </div>
       <div>
-        {/* Add the photo */}
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
