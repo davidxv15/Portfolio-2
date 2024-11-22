@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        fira: ['Fira Sans Condensed', 'sans-serif'], // Add 'Fira Sans Condensed'
-        poppins: ['Poppins', 'sans-serif'],         // Add 'Poppins'
+        fira: ['Fira Sans Condensed', 'sans-serif'], 
+        poppins: ['Poppins', 'sans-serif'],
+        geist: ['Geist', 'sans-serif'],
+        league: ['League Spartan', 'sans-serif']    
       },
     },
   },
