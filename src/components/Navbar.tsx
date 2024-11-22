@@ -7,14 +7,16 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-gradient-to-r from-gray-800 to-transparent text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-gray-400 text-xl flex items-center justify-between h-14">
+        <div className="text-gray-400 text-xl font-outfit flex items-center justify-between h-14">
           David Velasquez
           <div className="flex items-center">
-            <a href="#" className="text-gray-400 hover:text-gray-300 text-2xl font-bold">
+            <a
+              href="#"
+              className="text-gray-400 hover:text-gray-300 text-2xl font-bold"
+            >
               Portfolio
             </a>
           </div>
-
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex space-x-4">
             <a href="#home" className="text-gray-400 hover:text-gray-300">
@@ -30,7 +32,6 @@ const Navbar: React.FC = () => {
               Contact
             </a>
           </div>
-
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
