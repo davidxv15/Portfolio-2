@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
         />
       </div>
       <div className="mt-4">
-        <button className="bg-blue-500 text-white px-6 py-2 rounded-full shadow hover:bg-blue-600 transition">
+        <button className="bg-blue-500 text-white px-6 py-2 rounded-full shadow hover:bg-blue-600 transition font-outfit">
           View My Work
         </button>
         <button className="bg-gray-200 text-blue-500 px-6 py-2 rounded-full shadow hover:bg-gray-300 transition ml-4">
