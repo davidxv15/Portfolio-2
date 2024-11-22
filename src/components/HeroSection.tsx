@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
           <img src="/github-icon.png" alt="GitHub" className="w-8 h-8 rounded-full" />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <img src="/linkedin-icon.png" alt="LinkedIn" className="w-8 h-8" />
+          <img src="/linkedin-icon.png" alt="LinkedIn" className="w-8 h-8 rounded-full" />
         </a>
       </div>
     </section>
