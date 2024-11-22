@@ -27,7 +27,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
       </span>
       <button
         onClick={handleToggle}
-        className="relative w-20 h-6 bg-gray-600 rounded-full shadow-inner focus:outline-none hover:border-red-600"
+        className="relative w-20 h-6 bg-gray-600 rounded-full shadow-inner focus:outline-none hover:border-white"
         aria-label="Theme Toggle"
       >
         <div
