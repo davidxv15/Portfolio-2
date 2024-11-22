@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         fira: ['Fira Sans Condensed', 'sans-serif'], 
         poppins: ['Poppins', 'sans-serif'],
-        outfit: ['Outfit', 'sans-serif'] 
+        outfit: ['Outfit', 'sans-serif'],
+        barlow: ['Barlow', 'sans-serif']
       },
       fontSize: {
         '5.5xl': '3.375rem',
