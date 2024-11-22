@@ -11,6 +11,11 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         outfit: ['Outfit', 'sans-serif'] 
       },
+      fontSize: {
+        '5.5xl': '3.375rem',
+        '4.5xl': '2.5rem',  
+        '3.5xl': '2rem'
+      }
     },
   },
   plugins: [
