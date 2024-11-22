@@ -22,6 +22,9 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
 
   return (
     <div className="flex items-center">
+      <span className="ml-4 text-sm font-medium text-gray-600">
+        {themes[currentThemeIndex]}
+      </span>
       <button
         onClick={handleToggle}
         className="relative w-20 h-6 bg-gray-600 rounded-full shadow-inner focus:outline-none hover:border-red-600"
@@ -32,9 +35,6 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
           className="absolute left-0 top-0 h-6 w-6 bg-gray-400 rounded-full shadow transform transition-transform duration-300 ease-in-out"
         ></div>
       </button>
-      <span className="ml-4 text-sm font-medium text-gray-600">
-        {themes[currentThemeIndex]}
-      </span>
     </div>
   );
 };
