@@ -19,9 +19,9 @@ const App: React.FC = () => {
     <div>
       <div className="sticky top-0 z-50 justify-between">
         <Navbar /></div>
-        <div className="mr-auto">
+        <div className="mr-auto font-outfit">
       <ThemeToggle
-          themes={['dark', 'sepia', 'invert', 'grayscale']}
+          themes={[' ', 'grayscale', 'invert', 'sepia']}
           onThemeChange={handleThemeChange}
         /></div>
       <HeroSection />
