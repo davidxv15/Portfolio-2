@@ -4,7 +4,7 @@ const HeroSection: React.FC = () => {
    return (
     <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-br from-blue-200 via-blue-100 to-blue-300 text-center">
       <div className="mb-6">
-        <h1 className="text-5xl font-league font-bold text-blue-900">David Velasquez</h1>
+        <h1 className="text-5xl font-outfit font-bold text-blue-900">David Velasquez</h1>
         <p className="text-xl font-league text-gray-600 mt-2">
           Full Stack Software Developer
         </p>
