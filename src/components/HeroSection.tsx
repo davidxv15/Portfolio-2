@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
       </div>
       <div className="flex space-x-4 mt-6">
         <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-          <img src="/github-icon.png" alt="GitHub" className="w-8 h-8" />
+          <img src="/github-icon.png" alt="GitHub" className="w-8 h-8 rounded-full" />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img src="/linkedin-icon.png" alt="LinkedIn" className="w-8 h-8" />
