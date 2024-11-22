@@ -9,8 +9,7 @@ export default {
       fontFamily: {
         fira: ['Fira Sans Condensed', 'sans-serif'], 
         poppins: ['Poppins', 'sans-serif'],
-        geist: ['Geist', 'sans-serif'],
-        league: ['League Spartan', 'sans-serif']    
+        outfit: ['Outfit', 'sans-serif'] 
       },
     },
   },
