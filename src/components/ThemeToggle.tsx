@@ -31,7 +31,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
         aria-label="Theme Toggle"
       >
         <div
-          style={{ transform: `translateX(${currentThemeIndex * 18}px)` }} // Dynamic position
+          style={{ transform: `translateX(${currentThemeIndex * 16}px)` }} // Dynamic position
           className="absolute left-0 top-0 h-6 w-6 bg-gray-300 rounded-full shadow transform transition-transform duration-300 ease-in-out"
         ></div>
       </button>
