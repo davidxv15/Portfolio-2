@@ -17,6 +17,9 @@ export default {
         '5.5xl': '3.375rem',
         '4.5xl': '2.5rem',  
         '3.5xl': '2rem'
+      },
+      width: {
+        '18': '4.5rem'
       }
     },
   },
