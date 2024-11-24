@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
         <a href="https://github.com/davidxv15" target="_blank" rel="noopener noreferrer">
           <img src="GitHubLogo.png" alt="GitHub" className="w-8 h-8 rounded-full" />
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/david-velasquez-az/" target="_blank" rel="noopener noreferrer">
           <img src="" alt="LinkedInLogo.png" className="w-8 h-8 rounded-full" />
         </a>
       </div>
