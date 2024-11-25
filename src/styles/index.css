@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .toggle-dot {
-  transform:translateY(1rem);
+  transform:translateY(10px);
 }
 
 
