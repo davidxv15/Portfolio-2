@@ -32,7 +32,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
       >
         <div
           style={{ transform: `translateX(${currentThemeIndex * 16}px)` }} // Dynamic position
-          className="toggle-dot absolute left-0 top-0 h-5 w-5 bg-gray-800 rounded-full shadow transform transition-transform duration-300 ease-in-out"
+          className="toggle-dot absolute left-0 top-0 h-5 w-5 bg-blue-800 rounded-full shadow transform transition-transform duration-900 ease-in-out"
         ></div>
       </button>
     </div>
