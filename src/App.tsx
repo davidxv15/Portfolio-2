@@ -19,7 +19,7 @@ const App: React.FC = () => {
     <div>
       <div className="sticky top-0 z-50 justify-between bg-opacity-0">
         <Navbar /></div>
-        <div className="mr-auto flex justify-end font-outfit bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300">
+        <div className="mr-auto flex justify-end font-outfit bg-blue-600">
       <ThemeToggle
           themes={[' ', 'grayscale', 'invert', 'sepia']}
           onThemeChange={handleThemeChange}

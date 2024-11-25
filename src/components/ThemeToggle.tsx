@@ -21,18 +21,18 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
   };
 
   return (
-    <div className="flex justify-end items-center bg-transparent">
+    <div className="flex justify-end items-center bg-transparent mb-1">
       <span className="ml-4 text-sm font-medium text-gray-300">
         {themes[currentThemeIndex]}
       </span>
       <button
         onClick={handleToggle}
-        className="relative w-18 h-6 bg-gray-600 mr-4 rounded-full shadow-inner focus:outline-none hover:border-white"
+        className="relative w-18 h-6 bg-gray-200 mr-4 rounded-full shadow-inner focus:outline-none hover:border-white"
         aria-label="Theme Toggle"
       >
         <div
           style={{ transform: `translateX(${currentThemeIndex * 16}px)` }} // Dynamic position
-          className="absolute left-0 top-0 h-6 w-6 bg-gray-300 rounded-full shadow transform transition-transform duration-300 ease-in-out"
+          className="absolute left-0 top-0 h-6 w-6 bg-gray-800 rounded-full shadow transform transition-transform duration-300 ease-in-out"
         ></div>
       </button>
     </div>
