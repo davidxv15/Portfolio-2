@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <a
               href="#"
-              className="text-gray-100 hover:text-gray-300 text-2xl font-bold"
+              className="text-gray-100 hover:text-gray-300 text-2xl justify-around"
             >
               Portfolio
             </a>
