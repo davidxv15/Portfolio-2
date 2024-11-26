@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
         <p className="text-xl font-outfit text-gray-600 mt-2">
           Full Stack Software Developer
         </p>
-        <p className="text-md font-league text-gray-700 mt-4">
+        <p className="text-md font-poppins text-gray-700 mt-4">
           Passionate about building clean, scalable applications and solving complex problems with elegant solutions.
         </p>
       </div>
