@@ -20,7 +20,7 @@ const HeroSection: React.FC = () => {
         />
       </div>
       <div className="mt-4">
-        <button className="bg-blue-500 text-white px-6 py-2 rounded-full shadow hover:bg-blue-600 transition font-outfit shadow-lg shadow-gray-600">
+        <button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner rounded-full shadow shadow-gray-200 shadow">
           View My Work
         </button>
         <button className="bg-gray-200 text-blue-500 px-6 py-2 rounded-full shadow hover:bg-gray-300 transition ml-4 shadow-md shadow-gray-600">
@@ -29,10 +29,10 @@ const HeroSection: React.FC = () => {
       </div>
       <div className="flex space-x-4 mt-6">
         <a href="https://github.com/davidxv15" target="_blank" rel="noopener noreferrer">
-          <img src="GitHubLogo.png" alt="GitHub" className="w-14 h-14 rounded-full" />
+          <img src="GitHubLogo.png" alt="GitHub" className="w-14 h-14 rounded-full shadow-md shadow-gray-600" />
         </a>
         <a href="https://www.linkedin.com/in/david-velasquez-az/" target="_blank" rel="noopener noreferrer">
-          <img src="LinkedInLogo.png" alt="LinkedIn logo" className="w-14 h-14 rounded-full object-fill" />
+          <img src="LinkedInLogo.png" alt="LinkedIn logo" className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600" />
         </a>
       </div>
     </section>
