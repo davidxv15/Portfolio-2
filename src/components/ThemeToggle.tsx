@@ -27,14 +27,14 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
       </span>
       <button
         onClick={handleToggle}
-        className="relative w-18 h-6 bg-gray-200 mr-4 rounded-full shadow-inner focus:outline-none hover:border-white shadow shadow-gray-600"
+        className="relative w-18 h-6 bg-gray-800 mr-4 rounded-full shadow-inner focus:outline-none hover:border-white shadow shadow-gray-100"
         aria-label="Theme Toggle"
       >
         <div
           style={{ transform: `translateX(${currentThemeIndex * 16}px)`,
         top: '.05rem',
        }} // Dynamic position
-          className="toggle-dot absolute left-0 top-0 h-5 w-5 bg-blue-400 rounded-full shadow transform transition-transform duration-900 ease-in-out"
+          className="toggle-dot absolute left-0 top-0 h-5 w-5 bg-blue-600 shadow-inner rounded-full shadow shadow-gray-100 transform transition-transform duration-900 ease-in-out"
         ></div>
       </button>
     </div>
