@@ -20,6 +20,9 @@ export default {
       },
       width: {
         '18': '4.5rem'
+      },
+      colors: {
+        
       }
     },
   },
