@@ -22,7 +22,13 @@ export default {
         '18': '4.5rem'
       },
       colors: {
-        
+        customThemes: {
+          default: '',
+          grayscale: 'Grayscale',
+          sepia: 'Sepia',
+          invert: 'Invert'
+        }
+
       }
     },
   },
