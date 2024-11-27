@@ -21,6 +21,11 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
     document.documentElement.className = `theme-${themes[nextIndex]}`;
   };
 
+   // Capitalize the current theme name for display
+   const capitalizedThemeName = themes[currentThemeIndex]
+   ? themes[currentThemeIndex].charAt(0).toUpperCase() + themes[currentThemeIndex].slice(1)
+   : '';
+
   return (
     <div className="flex justify-end items-center bg-transparent mb-1">
       <span className="ml-4 mr-1 text-sm font-medium text-gray-300">
