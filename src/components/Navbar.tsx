@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-200 bg-gray-900 hover:text-white focus:outline-none focus:text-white"
+              className="text-gray-200 bg-gray-900 rounded-xl shadow-inner focus:outline-none hover:border-gray-300 shadow shadow-gray-400"
             >
               <svg
                 className="h-5 w-6"
