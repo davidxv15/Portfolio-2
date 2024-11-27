@@ -23,10 +23,7 @@ export default {
       },
       colors: {
         customThemes: {
-          default: '',
-          grayscale: 'grayscale',
-          sepia: 'sepia',
-          invert: 'invert'
+          
         }
 
       }
