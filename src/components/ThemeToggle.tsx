@@ -12,7 +12,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
   onThemeChange,
   defaultThemeIndex = 0, // Default to the first theme
 }) => {
-  const [currentThemeIndex, setCurrentThemeIndex] = useState(0);
+  const [currentThemeIndex, setCurrentThemeIndex] = useState(defaultThemeIndex);
 
   const handleToggle = () => {
     const nextIndex = (currentThemeIndex + 1) % themes.length; // Cycles through themes
