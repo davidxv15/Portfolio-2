@@ -36,10 +36,10 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-200 bg-gray-900 rounded-xl shadow-inner focus:outline-none hover:border-gray-300 shadow shadow-gray-400"
+              className="text-gray-200 text-sm bg-gray-900 rounded-xl shadow-inner focus:outline-none hover:border-gray-300 shadow shadow-gray-400"
             >
               <svg
-                className="h-5 w-6"
+                className="h-4 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
