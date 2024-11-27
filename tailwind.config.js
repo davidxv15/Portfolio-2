@@ -24,9 +24,9 @@ export default {
       colors: {
         customThemes: {
           default: '',
-          grayscale: 'Grayscale',
-          sepia: 'Sepia',
-          invert: 'Invert'
+          grayscale: 'grayscale',
+          sepia: 'sepia',
+          invert: 'invert'
         }
 
       }
