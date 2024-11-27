@@ -24,7 +24,7 @@ export default {
       colors: {
         customThemes: {
           default: '',
-          grayscale: ' ',
+          rayscale: ' ',
           invert: ' ',
           sepia: ' ',
         },
