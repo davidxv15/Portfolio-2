@@ -77,19 +77,19 @@ const Navbar: React.FC = () => {
           </a>
           <a
             href="#about"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-gray-200"
+            className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-200"
           >
             About
           </a>
           <a
             href="#projects"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-gray-200"
+            className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-200"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-gray-200"
+            className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-200"
           >
             Contact
           </a>
