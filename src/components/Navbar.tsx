@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-b from-blue-800 via-blue-700 to-blue-600 text-white">
+    <nav className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-gray-100 text-xl font-outfit flex items-center justify-between h-14">
         Greeting
