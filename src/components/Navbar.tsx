@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-gray-100 text-xl font-outfit flex items-center justify-between h-14">
-        Greeting
+          Greeting
           <div className="flex items-center">
             <a
               href="#"
