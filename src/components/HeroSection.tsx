@@ -3,8 +3,9 @@ import * as React from "react";
 const HeroSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-blue-800 via-blue-200 to-blue-100 text-center md:mt-10 lg:mt-0">
-      <div className="mb-2">
-        <h1 className="text-5xl font-league font-bold text-black bg-blue-100 outline outline-none">
+      <div className="mb-4 bg-blue-100">
+        <h1 className="surname text-5xl font-league font-bold text-black bg-blue-100 
+         w-3/4 mx-auto outline outline-none">
           <span className="text-5.5xl">D</span>AVID{" "}
           <span className="text-5.5xl">V</span>ELASQUEZ
         </h1>

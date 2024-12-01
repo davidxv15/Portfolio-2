@@ -8,6 +8,9 @@
   transform:translateY(10px);
 }
 
+.surname {
+  transform: translateY();
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
