@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
-            href="#home"
+            href="#"
             className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-900"
           >
             Home
