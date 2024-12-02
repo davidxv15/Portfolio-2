@@ -19,16 +19,16 @@ const Navbar: React.FC = () => {
           </div>
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex space-x-4">
-            <a href="#" className="text-gray-100 hover:text-gray-300">
+            <a href="#" className="text-gray-100 hover:text-gray-400">
               Home
             </a>
-            <a href="#about" className="text-gray-100 hover:text-gray-300">
+            <a href="#about" className="text-gray-100 hover:text-gray-400">
               About
             </a>
-            <a href="#projects" className="text-gray-100 hover:text-gray-300">
+            <a href="#projects" className="text-gray-100 hover:text-gray-400">
               Projects
             </a>
-            <a href="#contact" className="text-gray-100 hover:text-gray-300">
+            <a href="#contact" className="text-gray-100 hover:text-gray-400">
               Contact
             </a>
           </div>
