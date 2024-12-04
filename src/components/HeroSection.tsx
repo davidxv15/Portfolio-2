@@ -4,8 +4,10 @@ const HeroSection: React.FC = () => {
   return (
     <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-blue-800 via-blue-200 to-blue-200 text-center md:mt-5 lg:mt-0">
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-200">
-        <h1 className="surname text-5xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline outline-none">
+        <h1
+          className="surname text-5xl font-league font-bold text-slate-900 bg-transparent 
+         w-3/4 mx-auto outline outline-none"
+        >
           <span className="text-5.5xl">D</span>AVID{" "}
           <span className="text-5.5xl">V</span>ELASQUEZ
         </h1>
