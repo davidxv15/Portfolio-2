@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
           <img
             src="LinkedInLogo.png"
             alt="LinkedIn logo"
-            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover resize"
+            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover"
           />
         </a>
       </div>
