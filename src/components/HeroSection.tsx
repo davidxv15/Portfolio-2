@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
           rel="noopener noreferrer"
         >
           <img
-            src="inLinked.png"
+            src="LinkedInLogo.png"
             alt="LinkedIn logo"
             className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-[50%_80%]"
           />
