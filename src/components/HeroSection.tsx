@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600"
+          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600 resize"
         />
       </div>
       <div className="mt-4">
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
           <img
             src="LinkedInLogo.png"
             alt="LinkedIn logo"
-            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover"
+            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover resize"
           />
         </a>
       </div>
