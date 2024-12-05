@@ -23,10 +23,10 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-28 lg:left-48 lg:-translate-y-28 transition-all duration-800 ease-in-out"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-24 lg:left-48 lg:-translate-y-28 transition-all duration-800 ease-in-out"
         />
       </div>
-      <div className="mt-4 md:ml-96 md:mb-24">
+      <div className="mt-4 md:ml-80 md:mb-24">
         <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner rounded-full shadow shadow-gray-200 shadow md:-translate-y-20 lg:-translate-y-32">
           View My Work
         </button>
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           Contact Me
         </button>
       </div>
-      <div className="flex space-x-4 mt-6">
+      <div className="flex space-x-4 mt-2 md:space-x-12">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
