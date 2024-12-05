@@ -11,10 +11,10 @@ const HeroSection: React.FC = () => {
           <span className="text-5.5xl md:text-7xl lg:text-7xl">D</span>AVID{" "}
           <span className="text-5.5xl md:text-7xl lg:text-7xl">V</span>ELASQUEZ
         </h1>
-        <h2 className="text-5xl font-outfit text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] lg:mr-32 lg:-translate-y-12 lg:w-90">
+        <h2 className="text-5xl font-poppins text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] md:text-center lg:mr-32 lg:-translate-y-12 lg:w-90">
         Software Developer
         </h2>
-        <p className="text-lg font-outfit text-slate-900 mt-2 md:text-right lg:text-left md:mr-24 md:ml-[50%] lg:mr-12 lg:ml-[50%] lg:-translate-y-12">
+        <p className="text-xl font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:mr-12 lg:ml-[50%] lg:-translate-y-12">
           Passionate about building clean, scalable applications and solving
           complex problems with elegant solutions.
         </p>
