@@ -12,9 +12,9 @@
   transform: translateY();
 }
 
-.section {
+/* .section {
   transform: translateY(-1.44rem)
-}
+} */
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
