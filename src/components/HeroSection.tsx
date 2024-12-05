@@ -2,7 +2,7 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-blue-900 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-0">
+    <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-500 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-0">
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl font-league font-bold text-slate-900 bg-transparent 
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
           <img
             src="LinkedInLogo.png"
             alt="LinkedIn logo"
-            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover"
+            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-blue-400"
           />
         </a>
       </div>
