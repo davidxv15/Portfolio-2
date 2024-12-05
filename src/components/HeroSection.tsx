@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         <p className="text-xl font-outfit text-slate-900 mt-2 md:text-right mr-16">
           Full Stack Software Developer
         </p>
-        <p className="text-md md:flex-row font-poppins text-slate-900 mt-2 md:text-right mr-16">
+        <p className="text-lg font-poppins text-slate-900 mt-2 md:text-right mr-16">
           Passionate about building clean, scalable applications and solving
           complex problems with elegant solutions.
         </p>
