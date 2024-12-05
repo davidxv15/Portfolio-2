@@ -2,7 +2,7 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-500 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-0">
+    <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-500 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-0">
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl font-league font-bold text-slate-900 bg-transparent 
@@ -19,11 +19,11 @@ const HeroSection: React.FC = () => {
           complex problems with elegant solutions.
         </p>
       </div>
-      <div className="mb-8 md:mb-14 md:w-2/3 lg:w-2/3">
+      <div className="mb-8 md:mb-16 md:w-2/3 lg:w-2/3">
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute bottom-14 left-12 lg:absolute bottom-72 left-48"
+          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute bottom-10 left-12 "
         />
       </div>
       <div className="mt-4">
