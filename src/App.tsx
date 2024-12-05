@@ -26,6 +26,7 @@ const App: React.FC = () => {
         /></div>
       <HeroSection />
       <AboutMe />
+      <Projects />
     </div>
   );
 };
