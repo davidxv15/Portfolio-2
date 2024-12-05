@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
           <span className="text-5.5xl">D</span>AVID{" "}
           <span className="text-5.5xl">V</span>ELASQUEZ
         </h1>
-        <p className="text-xl font-outfit text-slate-900 mt-2 md:text-right lg:text-right md:mr-32 lg:mr-32">
+        <p className="text-xl font-outfit text-slate-900 mt-2 md:text-right lg:text-right md:mr-32 md:ml-[50%] lg:mr-32">
           Full Stack Software Developer
         </p>
         <p className="text-lg font-outfit text-slate-900 mt-2 md:text-right lg:text-left md:mr-24 md:ml-[50%] lg:mr-12 lg:ml-[50%]">
@@ -19,11 +19,11 @@ const HeroSection: React.FC = () => {
           complex problems with elegant solutions.
         </p>
       </div>
-      <div className="mb-8 md:mb-4 md:w-2/3 lg:w-2/3">
+      <div className="mb-8 md:mb-14 md:w-2/3 lg:w-2/3">
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600 resize md:left-align"
+          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute bottom-14 left-12"
         />
       </div>
       <div className="mt-4">
