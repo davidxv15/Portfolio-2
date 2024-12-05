@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
           complex problems with elegant solutions.
         </p>
       </div>
-      <div className="mb-8">
+      <div className="mb-8 md:mb-4 md:w-2/3">
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
