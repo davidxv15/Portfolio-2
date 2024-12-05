@@ -6,15 +6,15 @@ const HeroSection: React.FC = () => {
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline outline-none sm:-translate-y-12 md:-translate-y-4 lg:-translate-y-16"
+         w-3/4 mx-auto outline outline-none sm:-translate-y-12 md:-translate-y-4 lg:-translate-y-14"
         >
           <span className="text-5.5xl md:text-7xl lg:text-7xl">D</span>AVID{" "}
           <span className="text-5.5xl md:text-7xl lg:text-7xl">V</span>ELASQUEZ
         </h1>
-        <h2 className="text-5xl font-poppins text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] md:text-center lg:mr-32 lg:-translate-y-12 lg:w-90">
+        <h2 className="text-5xl font-poppins text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-8 lg:-translate-y-8 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
         Software Developer
         </h2>
-        <p className="text-xl font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:mr-12 lg:ml-[50%] lg:-translate-y-12">
+        <p className="text-xl font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[50%] lg:-translate-y-0">
           Passionate about building clean, scalable applications and solving
           complex problems with elegant solutions.
         </p>
@@ -23,10 +23,10 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-24 lg:left-48 lg:-translate-y-28 transition-all duration-800 ease-in-out"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-24 lg:left-48 lg:-translate-y-24 transition-all duration-800 ease-in-out"
         />
       </div>
-      <div className="mt-4 md:ml-80 md:mb-24">
+      <div className="mt-4 md:ml-96 md:mb-24 lg:space-x-12">
         <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner rounded-full shadow shadow-gray-200 shadow md:-translate-y-20 lg:-translate-y-32">
           View My Work
         </button>
