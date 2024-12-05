@@ -5,17 +5,15 @@ const HeroSection: React.FC = () => {
     <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-4 md:-translate-y-5">
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
-          className="surname text-5xl lg:text-8xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline outline-none sm:-translate-y-12 md:-translate-y-8 lg:-translate-y-16"
+          className="surname text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
+         w-3/4 mx-auto outline outline-none sm:-translate-y-12 md:-translate-y-4 lg:-translate-y-16"
         >
-          <span className="text-5.5xl lg:text-8xl">D</span>AVID{" "}
-          <span className="text-5.5xl lg:text-8xl">V</span>ELASQUEZ
+          <span className="text-5.5xl md:text-7xl lg:text-7xl">D</span>AVID{" "}
+          <span className="text-5.5xl md:text-7xl lg:text-7xl">V</span>ELASQUEZ
         </h1>
-        <p className="text-4xl font-outfit text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] lg:mr-32 lg:-translate-y-12">
-          Full Stack 
-          <br />
-          Software Developer
-        </p>
+        <h2 className="text-5xl font-outfit text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] lg:mr-32 lg:-translate-y-12 lg:w-90">
+        Software Developer
+        </h2>
         <p className="text-lg font-outfit text-slate-900 mt-2 md:text-right lg:text-left md:mr-24 md:ml-[50%] lg:mr-12 lg:ml-[50%] lg:-translate-y-12">
           Passionate about building clean, scalable applications and solving
           complex problems with elegant solutions.
@@ -25,7 +23,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-60 md:left-28 lg:left-48 lg:-translate-y-32 transition-all duration-800 ease-in-out"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-28 lg:left-48 lg:-translate-y-28 transition-all duration-800 ease-in-out"
         />
       </div>
       <div className="mt-4 md:ml-96 md:mb-24">
