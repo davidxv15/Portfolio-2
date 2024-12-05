@@ -3,19 +3,19 @@ import * as React from "react";
 const Projects: React.FC = () => {
   const projectData = [
     {
-      title: "Project 1",
+      title: "Chat App",
       image: "/project1.png", // Replace with your actual image paths
       liveDemo: "#", // Replace with your live project URL
       github: "#", // Replace with your GitHub repository URL
     },
     {
-      title: "Project 2",
+      title: "Weather Getter",
       image: "/project2.png",
       liveDemo: "#",
       github: "#",
     },
     {
-      title: "Project 3",
+      title: "Nutrition Calendar",
       image: "/project3.png",
       liveDemo: "#",
       github: "#",
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-lg overflow-hidden transform transition duration-500 hover:scale-105"
+            className="bg-white shadow-md rounded-3xl overflow-hidden transform transition duration-500 hover:scale-105"
           >
             <img
               src={project.image}
