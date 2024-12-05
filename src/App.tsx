@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-
+import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
