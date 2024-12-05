@@ -8,7 +8,7 @@ const HeroSection: React.FC = () => {
           className="surname text-5xl font-league font-bold text-slate-900 bg-transparent 
          w-3/4 mx-auto outline outline-none"
         >
-          <span className="text-5.5xl">D</span>AVID{" "}
+          <span className="text-5.5xl lg:text-7xl">D</span>AVID{" "}
           <span className="text-5.5xl">V</span>ELASQUEZ
         </h1>
         <p className="text-xl font-outfit text-slate-900 mt-2 md:text-right lg:text-right md:mr-32 md:ml-[50%] lg:mr-32">
