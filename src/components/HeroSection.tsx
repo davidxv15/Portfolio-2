@@ -5,11 +5,11 @@ const HeroSection: React.FC = () => {
     <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-500 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-4 md:-translate-y-5">
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
-          className="surname text-5xl font-league font-bold text-slate-900 bg-transparent 
+          className="surname text-5xl lg:text-6xl font-league font-bold text-slate-900 bg-transparent 
          w-3/4 mx-auto outline outline-none"
         >
           <span className="text-5.5xl lg:text-7xl">D</span>AVID{" "}
-          <span className="text-5.5xl">V</span>ELASQUEZ
+          <span className="text-5.5xl lg:text-7xl">V</span>ELASQUEZ
         </h1>
         <p className="text-xl font-outfit text-slate-900 mt-2 md:text-right lg:text-right md:mr-32 md:ml-[50%] lg:mr-32">
           Full Stack Software Developer
