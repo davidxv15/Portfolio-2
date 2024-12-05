@@ -5,13 +5,13 @@ const HeroSection: React.FC = () => {
     <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-4 md:-translate-y-5">
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
-          className="surname text-5xl lg:text-6xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline outline-none sm:-translate-y-12 lg:-translate-y-24"
+          className="surname text-5xl lg:text-8xl font-league font-bold text-slate-900 bg-transparent 
+         w-3/4 mx-auto outline outline-none sm:-translate-y-12 md:-translate-y-8 lg:-translate-y-16"
         >
-          <span className="text-5.5xl lg:text-7xl">D</span>AVID{" "}
-          <span className="text-5.5xl lg:text-7xl">V</span>ELASQUEZ
+          <span className="text-5.5xl lg:text-8xl">D</span>AVID{" "}
+          <span className="text-5.5xl lg:text-8xl">V</span>ELASQUEZ
         </h1>
-        <p className="text-4xl font-outfit text-slate-900 mt-2 md:text-left lg:text-right md:mr-32 md:ml-[50%] lg:mr-32 lg:-translate-y-12">
+        <p className="text-4xl font-outfit text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] lg:mr-32 lg:-translate-y-12">
           Full Stack 
           <br />
           Software Developer
