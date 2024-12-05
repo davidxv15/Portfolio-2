@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         <p className="text-xl font-outfit text-slate-900 mt-2 md:text-right lg:text-right md:mr-32 lg:mr-32">
           Full Stack Software Developer
         </p>
-        <p className="text-lg font-outfit text-slate-900 mt-2 md:text-right lg:text-left md:mr-24 md:ml-80 lg:mr-12 lg:ml-[50%]">
+        <p className="text-lg font-outfit text-slate-900 mt-2 md:text-right lg:text-left md:mr-24 md:ml-[50%] lg:mr-12 lg:ml-[50%]">
           Passionate about building clean, scalable applications and solving
           complex problems with elegant solutions.
         </p>
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600 resize"
+          className="rounded-full w-72 h-72 object-cover object-[80%_6%] shadow-lg shadow-gray-600 resize md:left-align"
         />
       </div>
       <div className="mt-4">
