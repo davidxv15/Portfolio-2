@@ -23,11 +23,11 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute bottom-40 lg:left-40 lg:-translate-y-40"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-28 lg:left-40 lg:-translate-y-40 transition-all duration-700 ease-in-out"
         />
       </div>
       <div className="mt-4">
-        <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner rounded-full shadow shadow-gray-200 shadow">
+        <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner rounded-full shadow shadow-gray-200 shadow md:">
           View My Work
         </button>
         <button className="bg-gray-100 text-blue-900 px-6 py-2 rounded-full shadow hover:bg-gray-300 transition ml-4 shadow-md shadow-gray-600">
