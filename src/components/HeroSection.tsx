@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl lg:text-6xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline outline-none"
+         w-3/4 mx-auto outline outline-none lg:-translate-y-24"
         >
           <span className="text-5.5xl lg:text-7xl">D</span>AVID{" "}
           <span className="text-5.5xl lg:text-7xl">V</span>ELASQUEZ
