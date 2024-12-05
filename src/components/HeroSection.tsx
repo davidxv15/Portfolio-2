@@ -2,11 +2,11 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-500 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-4 md:-translate-y-5">
+    <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-4 md:-translate-y-5">
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl lg:text-6xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline outline-none lg:-translate-y-24"
+         w-3/4 mx-auto outline outline-none sm:-translate-y-12 lg:-translate-y-24"
         >
           <span className="text-5.5xl lg:text-7xl">D</span>AVID{" "}
           <span className="text-5.5xl lg:text-7xl">V</span>ELASQUEZ
@@ -23,14 +23,14 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-28 lg:left-48 lg:-translate-y-32 transition-all duration-900 ease-in-out"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-60 md:left-28 lg:left-48 lg:-translate-y-32 transition-all duration-800 ease-in-out"
         />
       </div>
       <div className="mt-4 md:ml-96 md:mb-24">
-        <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner rounded-full shadow shadow-gray-200 shadow">
+        <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner rounded-full shadow shadow-gray-200 shadow md:-translate-y-20 lg:-translate-y-32">
           View My Work
         </button>
-        <button className="bg-gray-100 text-blue-900 px-6 py-2 rounded-full shadow hover:bg-gray-300 transition ml-4 shadow-md shadow-gray-600">
+        <button className="bg-gray-100 text-blue-700 px-6 py-2 rounded-full shadow hover:bg-gray-300 transition ml-4 shadow-md shadow-gray-600 md:-translate-y-20 lg:-translate-y-32">
           Contact Me
         </button>
       </div>
@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
           <img
             src="GitHubLogo.png"
             alt="GitHub"
-            className="w-14 h-14 rounded-full shadow-md shadow-gray-600"
+            className="w-14 h-14 rounded-full shadow-md shadow-gray-600 md:-translate-y-32"
           />
         </a>
         <a
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
           <img
             src="LinkedInLogo.png"
             alt="LinkedIn logo"
-            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-blue-400"
+            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-red-500 text-red-500 md:-translate-y-32"
           />
         </a>
       </div>
