@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-t from-blue-100 to-blue-200 py-12 px-4">
+    <section className="bg-gradient-to-t from-blue-100 to-blue-200 py-12 px-4" id="projects">
       <h2 className="text-4xl font-league text-slate-900 text-center mb-8">
         Projects
       </h2>
