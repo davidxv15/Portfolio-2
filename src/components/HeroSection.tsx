@@ -2,8 +2,8 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-blue-400 via-blue-200 to-blue-200 text-center md:mt-5 lg:mt-0">
-      <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-200">
+    <section className="flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-blue-900 via-blue-100 to-blue-100 text-center md:mt-5 lg:mt-0">
+      <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl font-league font-bold text-slate-900 bg-transparent 
          w-3/4 mx-auto outline outline-none"
@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         <p className="text-xl font-outfit text-slate-900 mt-2 md:text-right md:mr-16 lg:mr-32">
           Full Stack Software Developer
         </p>
-        <p className="text-lg font-outfit text-slate-900 mt-2 md:text-right md:mr-16">
+        <p className="text-lg font-outfit text-slate-900 mt-2 md:text-right md:mr-16 lg:mr-12">
           Passionate about building clean, scalable applications and solving
           complex problems with elegant solutions.
         </p>
