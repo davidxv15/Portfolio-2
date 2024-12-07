@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700"
+                  className="bg-blue-900 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700"
                 >
                   Project Website
                 </a>

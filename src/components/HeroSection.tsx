@@ -43,6 +43,7 @@ const HeroSection: React.FC = () => {
           <img
             src="GitHubLogo.png"
             alt="GitHub"
+            id="GitHub"
             className="w-14 h-14 rounded-full shadow-md shadow-gray-600 md:-translate-y-32 hover:scale-125 transform transition duration-500"
           />
         </a>
