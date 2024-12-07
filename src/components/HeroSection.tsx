@@ -23,14 +23,14 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:bottom-52 md:left-24 lg:left-48 lg:-translate-y-24 transition-all duration-800 ease-in-out"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:top-40 md:left-24 lg:left-32 lg:-translate-y-24 transition-all duration-800 ease-in-out"
         />
       </div>
       <div className="mt-4 md:ml-96 md:mb-24 lg:space-x-12">
-        <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner shadow shadow-gray-200 shadow md:-translate-y-20 lg:-translate-y-32">
+        <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner shadow shadow-gray-200 shadow md:-translate-y-20 lg:-translate-y-32 hover:scale-125 transform transition duration-500">
           View My Work
         </button>
-        <button className="bg-gray-100 text-blue-700 px-6 py-2 rounded-full shadow hover:bg-gray-300 transition ml-4 shadow-md shadow-gray-600 md:-translate-y-20 lg:-translate-y-32">
+        <button className="bg-gray-100 text-blue-700 px-6 py-2 rounded-full shadow hover:bg-gray-300 transition ml-4 shadow-md shadow-gray-600 md:-translate-y-20 lg:-translate-y-32 hover:scale-105 transform transition duration-500">
           Contact Me
         </button>
       </div>
@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
           <img
             src="GitHubLogo.png"
             alt="GitHub"
-            className="w-14 h-14 rounded-full shadow-md shadow-gray-600 md:-translate-y-32"
+            className="w-14 h-14 rounded-full shadow-md shadow-gray-600 md:-translate-y-32 hover:scale-125 transform transition duration-500"
           />
         </a>
         <a
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
           <img
             src="LinkedInLogo.png"
             alt="LinkedIn logo"
-            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-red-500 text-red-500 md:-translate-y-32"
+            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-red-500 text-red-500 md:-translate-y-32 hover:scale-125 transform transition duration-500"
           />
         </a>
       </div>
