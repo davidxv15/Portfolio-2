@@ -55,7 +55,7 @@ const Projects: React.FC = () => {
                   rel="noopener noreferrer"
                   className="bg-blue-900 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 shadow-md shadow-gray-600"
                 >
-                  Project Website
+                  Visit {project.title}
                 </a>
                 <a
                   href={project.github}
