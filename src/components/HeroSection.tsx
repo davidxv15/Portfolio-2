@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:top-40 md:left-24 lg:left-32 lg:top-48 lg:-translate-y-24 transition-all duration-800 ease-in-out"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:top-48 md:left-24 lg:left-32 lg:top-48 lg:-translate-y-24 transition-all duration-800 ease-in-out"
         />
       </div>
       <div className="mt-4 md:ml-96 md:mb-24 lg:space-x-12">
