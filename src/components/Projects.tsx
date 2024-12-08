@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-900 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 shadow-md shadow-gray-600"
+                  className="bg-blue-900 text-white px-4 py-2 rounded-full hover:bg-blue-700 shadow-inner shadow shadow-gray-200 shadow"
                 >
                   Visit {project.title}
                 </a>
