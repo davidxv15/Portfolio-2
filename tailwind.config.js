@@ -29,7 +29,7 @@ export default {
           sepia: ' ',
         },
         animation: {
-          fade: 'fadeIn .5s ease-in-out',
+          fade: 'fadeIn 1s ease-in-out',
         },
   
         keyframes: {
