@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           Contact Me
         </button>
       </div>
-      <div className="flex space-x-4 mt-2 md:space-x-12">
+      <div className="flex space-x-2 md:space-x-16 md:translate-x-52 md:-translate-y-20">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
