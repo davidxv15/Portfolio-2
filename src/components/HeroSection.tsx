@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
           <span className="text-5.5xl md:text-7xl lg:text-7xl">V</span>ELASQUEZ
         </h1>
         <h2 className="text-5xl font-poppins text-slate-900 mt-2 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-8 lg:-translate-y-8 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
-        Software Developer
+          Software Developer
         </h2>
         <p className="text-xl font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[50%] lg:-translate-y-0">
           Passionate about building clean, scalable applications and solving
@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
           <img
             src="LinkedInLogo.png"
             alt="LinkedIn logo"
-            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-red-500 text-red-500 md:-translate-y-32 hover:scale-125 transform transition duration-500"
+            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-red-500 text-red-500 md:-translate-y-32 border-white border-2 hover:scale-125 transform transition duration-500"
           />
         </a>
       </div>
