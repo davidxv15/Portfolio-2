@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           Contact Me
         </button>
       </div>
-      <div className="flex space-x-4 mt-6 md:space-x-16 translate-x-2 md:translate-x-52 md:-translate-y-20 lg:-translate-y-24">
+      <div className="flex space-x-4 mt-6 md:space-x-16 lg:space-x-28 translate-x-2 md:translate-x-52 md:-translate-y-20 lg:-translate-y-24">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
           <img
             src="linkedEdit.PNG"
             alt="LinkedIn logo"
-            className="w-14 h-14 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-white text-red-500 md:-translate-y-32 border-white border-2 hover:scale-125 transform transition duration-500"
+            className="w-14 h-14 lg:w-20 lg:h-20 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-white text-red-500 md:-translate-y-32 border-white border-2 hover:scale-125 transform transition duration-500"
           />
         </a>
       </div>
