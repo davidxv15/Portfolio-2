@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => {
       <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline outline-none sm:-translate-y-12 md:-translate-y-4 lg:-translate-y-11"
+         w-3/4 mx-auto outline-none sm:-translate-y-12 md:-translate-y-4 lg:-translate-y-11"
         >
           <span className="text-5.5xl md:text-7xl lg:text-7xl">D</span>AVID{" "}
           <span className="text-5.5xl md:text-7xl lg:text-7xl">V</span>ELASQUEZ
@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
         <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow-inner shadow shadow-gray-200 shadow md:-translate-y-20 lg:-translate-y-32 hover:scale-125 transform transition duration-300">
           View My Work
         </button>
-        <button className="bg-gray-100 text-blue-700 px-6 py-2 rounded-full shadow hover:bg-gray-300 ml-4 shadow-md shadow-gray-600 md:-translate-y-20 lg:-translate-y-32 hover:scale-105 transform transition duration-200">
+        <button className="bg-gray-100 text-blue-700 hover:text-white px-6 py-2 rounded-full shadow hover:bg-gray-900 ml-4 shadow-md shadow-gray-600 md:-translate-y-20 lg:-translate-y-32 hover:scale-105 transform transition duration-200">
           Contact Me
         </button>
       </div>
