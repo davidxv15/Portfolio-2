@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
         <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-20 lg:-translate-y-32 hover:scale-125 hover:border-none transform transition duration-300">
           View My Work
         </button>
-        <button className="bg-blue-900 text-white hover:text-slate-100 px-6 py-2 rounded-full hover:bg-blue-600 hover:border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-20 lg:-translate-y-32 hover:scale-125 transform transition duration-300">
+        <button className="bg-blue-900 text-white hover:text-slate-900 px-6 py-2 rounded-full hover:bg-blue-300 border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-20 lg:-translate-y-32 hover:scale-115 transform transition duration-300">
           Contact Me
         </button>
       </div>
