@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
         <h2 className="text-5xl font-poppins text-slate-900 mt-1 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 lg:-translate-y-6 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
           Software Developer
         </h2>
-        <p className="text-xl font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[52%] lg:-translate-y-0">
+        <p className="text-xl font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:-translate-y-1">
           Passionate about building clean, scalable applications and solving
           complex problems with elegant solutions.
         </p>
@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:top-40 md:left-24 lg:left-28 lg:top-24 xl:left-48 xl:top-36 xl:-translate-y-3 transition-all duration-900 ease-in-out animate-fade"
         />
       </div>
-      <div className="mt-4 md:ml-96 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-10">
+      <div className="mt-4 md:ml-96 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-10 lg:translate-y-2">
         <button className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-20 lg:-translate-y-32 hover:scale-125 hover:border-none transform transition duration-300">
           View My Work
         </button>
