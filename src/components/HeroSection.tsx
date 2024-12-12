@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
           Contact Me
         </button>
       </div>
-      <div className="flex space-x-4 mt-6 md:space-x-16 lg:space-x-28 lg:translate-x-60 md:translate-x-60 md:-translate-y-20 lg:-translate-y-24">
+      <div className="flex space-x-4 mt-6 md:space-x-16 lg:space-x-28 lg:translate-x-60 md:translate-x-60 md:-translate-y-20 lg:-translate-y-16">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
             src="GitHubLogo.png"
             alt="GitHub"
             id="GitHub"
-            className="w-14 h-14 lg:w-20 lg:h-20 rounded-full shadow-md shadow-gray-600 md:-translate-y-32 hover:scale-125 transform transition duration-700"
+            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full shadow-md shadow-gray-600 md:-translate-y-32 hover:scale-125 transform transition duration-700"
           />
         </a>
         <a
@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
             src="linkedEdit.PNG"
             alt="LinkedIn logo"
             id="linkedin"
-            className="w-14 h-14 lg:w-20 lg:h-20 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-white text-red-500 md:-translate-y-32 md:translate-x-2 border-white border-2 hover:scale-125 transform transition duration-500"
+            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-white text-red-500 md:-translate-y-32 md:translate-x-2 border-white border-2 hover:scale-125 transform transition duration-500"
           />
         </a>
       </div>
