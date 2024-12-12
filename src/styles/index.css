@@ -12,7 +12,9 @@
   transform: translateY();
 }
 
-#
+#linkedin {
+  transform: translateX();
+}
 
 /* .section {
   transform: translateY(-1.44rem)
