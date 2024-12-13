@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
               Projects
             </a>
             <a href="#projects" className="text-gray-100 hover:text-gray-400">
-              Projects
+              Skills
             </a>
             <a href="#contact" className="text-gray-100 hover:text-gray-400">
               Contact
