@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
       github: "#",
     },
     {
-      title: "Project 4",
+      title: "TripCity",
       image: "/project4.png",
       liveDemo: "#",
       github: "#",
