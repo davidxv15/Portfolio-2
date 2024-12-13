@@ -4,7 +4,7 @@ const Projects: React.FC = () => {
   const projectData = [
     {
       title: "Chat App",
-      image: "ChatApp-chatbox.png", //  image paths
+      image: "/project1.png", //  image paths
       liveDemo: "#", // Replace with your live project URL
       github: "#", // Replace with your GitHub repository URL
     },
