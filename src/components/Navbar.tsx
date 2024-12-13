@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
             href="#projects"
             className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-900"
           >
-            Projects
+            Skills
           </a>
           <a
             href="#contact"
