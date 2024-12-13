@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
       id="projects"
     >
       <h2 className="text-5xl font-league text-slate-900 text-center mb-8 mt-4">
-        badges
+        Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-fit mx-auto">
         {projectData.map((project, index) => (
