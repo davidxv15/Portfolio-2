@@ -47,8 +47,8 @@ const Projects: React.FC = () => {
               alt={project.title}
               className="w-full h-56 object-cover"
             />
-            <div className="p-4">
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">
                 {project.title}
               </h3>
               <div className="flex justify-between">
