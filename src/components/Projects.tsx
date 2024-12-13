@@ -10,7 +10,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Weather Getter",
-      image: "/project2.png",
+      image: "/WeatherGetterPic.png",
       liveDemo: "#",
       github: "#",
     },
