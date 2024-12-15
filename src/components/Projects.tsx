@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-emerald-400 shadow-lg shadow-gray-600 rounded-xl overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-50 hover:place-content-center"
+            className="bg-slate-500 shadow-lg shadow-gray-600 rounded-xl overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-50 hover:place-content-center"
           >
             <img
               src={project.image}
