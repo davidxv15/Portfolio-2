@@ -5,8 +5,8 @@ const Projects: React.FC = () => {
     {
       title: "Chat App",
       image: "ChatApp-chatbox.png", //  image paths
-      liveDemo: "#", // Replace with your live project URL
-      github: "#", // Replace with your GitHub repository URL
+      liveDemo: "#", // live project URL
+      github: "#", // git repo
     },
     {
       title: "Weather Getter",
