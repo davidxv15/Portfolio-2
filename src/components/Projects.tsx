@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "TripCity",
-      image: "/project4.png",
+      image: "/#.png",
       liveDemo: "#",
       github: "#",
     },
