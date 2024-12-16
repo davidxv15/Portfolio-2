@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-56 object-cover  hover:scale-125 transform transition duration-500 hover:justify-items-center hover:z-50 hover:place-content-center"
+              className="w-full h-56 object-cover transform transition duration-500 hover:justify-items-center hover:z-50 hover:place-content-center"
             />
             <div className="p-6">
               <h3 className="text-2xl font-bold text-slate-800 mb-2">
