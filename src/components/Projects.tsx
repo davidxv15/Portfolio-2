@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
     {
       title: "TripCity",
       image: "/#.png",
-      liveDemo: "Temporarily Closed",
+      // liveDemo: "Temporarily Closed",
       github: "#",
     },
   ];
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
                   rel="noopener noreferrer"
                   className="bg-blue-900 text-white px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white  shadow shadow-md shadow-gray-600"
                 >
-                  Visit Site
+                  Visit
                 </a>
                 <a
                   href={project.github}
