@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-gradient-to-b from-slate-500 via-slate-500 to-slate-900 shadow-lg shadow-gray-600 rounded-xl border border-slate-800 border-1 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40 md:hover:scale-125 lg::hover:scale-125 xl:hover:scale-125"
+            className="bg-gradient-to-b from-slate-500 via-slate-500 to-slate-200 shadow-lg shadow-gray-600 rounded-xl border border-slate-800 border-1 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40 md:hover:scale-125 lg::hover:scale-125 xl:hover:scale-125"
           >
             <img
               src={project.image}
@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
               className="w-full h-60 object-cover transform transition duration-500 hover:justify-items-center hover:z-50 hover:place-content-center"
             />
             <div className="p-2 bg-transparent">
-              <h3 className="text-2xl font-bold text-slate-200 mb-2">
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">
                 {project.title}
               </h3>
               <div className="flex justify-between">
