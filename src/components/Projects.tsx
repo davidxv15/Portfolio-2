@@ -40,14 +40,14 @@ const Projects: React.FC = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-800 border-1 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40 hover:place-content-center"
+            className="bg-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-800 border-1 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40 hover:place-content-center bg-transparent"
           >
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-60 object-cover transform transition duration-500 hover:justify-items-center hover:z-50 hover:place-content-center"
             />
-            <div className="p-2">
+            <div className="p-2 bg-transparent">
               <h3 className="text-2xl font-bold text-slate-900 mb-2">
                 {project.title}
               </h3>
