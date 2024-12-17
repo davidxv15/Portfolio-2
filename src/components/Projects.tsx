@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-100 text-blue-700 px-4 py-2 rounded-full hover:bg-gray-300 shadow shadow-md shadow-gray-600"
+                  className="bg-gray-300 text-blue-700 px-4 py-2 rounded-full hover:bg-gray-300 shadow shadow-md shadow-gray-600"
                 >
                   GitHub Repository
                 </a>
