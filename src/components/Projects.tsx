@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
     {
       title: "TripCity",
       image: "/#.png",
-      // liveDemo: "Temporarily Closed",
+      liveDemo: "Temporarily Closed",
       github: "#",
     },
   ];
