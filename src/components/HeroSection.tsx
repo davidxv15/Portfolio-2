@@ -8,8 +8,8 @@ const HeroSection: React.FC = () => {
           className="surname text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
          w-3/4 mx-auto outline-none sm:-translate-y-12 md:-translate-y-4 lg:-translate-y-11"
         >
-          <span className="text-5.5xl md:text-7xl lg:text-7xl">D</span>AVID{" "}
-          <span className="text-5.5xl md:text-7xl lg:text-7xl">V</span>ELASQUEZ
+          <span className="text-5.5xl sm:-translate-y-40 md:text-7xl lg:text-7xl">D</span>AVID{" "}
+          <span className="text-5.5xl sm:-translate-y-40 md:text-7xl lg:text-7xl">V</span>ELASQUEZ
         </h1>
         <br />
         <h2 className="text-5xl font-poppins text-slate-900 mt-1 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-16 lg:-translate-y-6 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
