@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-b from-slate-400 to-slate-700 text-black px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white shadow shadow-inner shadow-slate-100"
+                  className="bg-gradient-to-b from-slate-100 to-slate-600 text-black px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white shadow shadow-inner shadow-slate-300"
                 >
                   Visit
                 </a>
@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gray-300 text-blue-700 px-4 py-2 rounded-full hover:bg-gray-300 shadow shadow-md shadow-gray-600"
+                  className="bg-gray-300 text-slate-900 px-4 py-2 rounded-full hover:bg-gray-300 shadow shadow-md shadow-gray-600"
                 >
                   GitHub Repository
                 </a>
