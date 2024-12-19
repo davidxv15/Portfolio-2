@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-b from-slate-100 to-slate-600 text-black px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white shadow shadow-inner shadow-slate-300"
+                  className="bg-gradient-to-b from-slate-400 to-slate-200 text-black px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white shadow shadow-inner shadow-slate-700"
                 >
                   Visit
                 </a>
