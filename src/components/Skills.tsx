@@ -3,7 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
-import { Navigation, EffectCoverflow } from "swiper";
+import SwiperCore, { Navigation, EffectCoverflow } from "swiper";
+
+SwiperCore.use([Navigation, EffectCoverflow]);
 
 const logos = [
   { name: "React", src: "/path-to-logo/react.png" },
@@ -15,7 +17,6 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section className="w-full h-72 bg-gradient-to-b from-blue-500 to-blue-300">
       <Swiper
-        modules={[Navigation, EffectCoverflow]}
         spaceBetween={30}
         slidesPerView="auto"
         centeredSlides={true}
