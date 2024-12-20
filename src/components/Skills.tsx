@@ -14,7 +14,7 @@ const logos = [
 
 const SkillsCarousel: React.FC = () => {
   return (
-    <section className="w-full h-72 bg-gradient-to-b from-blue-600 to-blue-300">
+    <section className="w-full h-72 bg-gradient-to-b from-blue-500 to-blue-300">
       <Swiper
         spaceBetween={30}
         slidesPerView="auto"
