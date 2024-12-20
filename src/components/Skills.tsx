@@ -5,8 +5,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import { Navigation, EffectCoverflow } from "swiper/modules";
 
-SwiperCore.use([Navigation, EffectCoverflow]);
-
 const logos = [
   { name: "React", src: "/path-to-logo/react.png" },
   { name: "TypeScript", src: "/path-to-logo/typescript.png" },
