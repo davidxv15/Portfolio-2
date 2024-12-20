@@ -7,7 +7,13 @@ import { Navigation, EffectCoverflow } from "swiper/modules";
 
 const logos = [
   { name: "React", src: "/path-to-logo/react.png" },
-  { name: "TypeScript", src: "/path-to-logo/typescript.png" },
+  { name: "ypeScript", src: "/path-to-logo/typescript.png" },
+  { name: "peScript", src: "/path-to-logo/typescript.png" },
+  { name: "eScript", src: "/path-to-logo/typescript.png" },
+  { name: "Script", src: "/path-to-logo/typescript.png" },
+  { name: "cript", src: "/path-to-logo/typescript.png" },
+  { name: "Typet", src: "/path-to-logo/typescript.png" },
+  { name: "Type", src: "/path-to-logo/typescript.png" },
   //  logos ...
 ];
 
