@@ -8,7 +8,7 @@ import { Navigation, EffectCoverflow } from "swiper/modules";
 const logos = [
   { name: "React", src: "/path-to-logo/react.png" },
   { name: "TypeScript", src: "/path-to-logo/typescript.png" },
-  // Add more logos here...
+  //  logos ...
 ];
 
 const SkillsCarousel: React.FC = () => {
