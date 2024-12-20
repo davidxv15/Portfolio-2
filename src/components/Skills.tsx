@@ -6,15 +6,19 @@ import "swiper/css/navigation";
 import { Navigation, EffectCoverflow } from "swiper/modules";
 
 const logos = [
-  { name: "React", src: "/path-to-logo/react.png" },
-  { name: "TypeScript", src: "/path-to-logo/typescript.png" },
-  { name: "Script", src: "/path-to-logo/typescript.png" },
+  { name: "React", src: "linkedin.jpg" },
+  { name: "TypeScript", src: "inLinked.png" },
+  { name: "Script", src: "linkedin.jpg" },
+  { name: "Script", src: "GitHubLogo.png" },
+  { name: "Script", src: "linkedin.jpg" },
+  { name: "Script", src: "GitHubLogo.png" },
+  { name: "TypeScript", src: "inLinked.png" },
   //  logos ...
 ];
 
 const SkillsCarousel: React.FC = () => {
   return (
-    <section className="w-full h-72 bg-gradient-to-b from-blue-500 to-blue-300">
+    <section className="w-32 h-32 bg-gradient-to-b from-blue-500 to-blue-300">
       <Swiper
         spaceBetween={30}
         slidesPerView="auto"
