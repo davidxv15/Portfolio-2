@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="bg-gradient-to-b from-sky-600 via-sky-700 to-blue-400 text-zinc-200 tracking-tight py-12 h-screen px-4 sm:px-8" id="about">
+    <section className="bg-gradient-to-b from-sky-600 via-sky-700 to-blue-300 text-zinc-200 tracking-tight py-12 h-screen px-4 sm:px-8" id="about">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-5xl font-league mb-4 mt-4">About Me</h2>
         <p className="text-lg sm:text-xl leading-relaxed mb-8">
