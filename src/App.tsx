@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import HeroSection from './components/HeroSection';
-import Skills from './components/SkillsCarousel'
+import SkillsCarousel from './components/SkillsCarousel';
 import Navbar from './components/Navbar';
 import ThemeToggle from './components/ThemeToggle';
 
