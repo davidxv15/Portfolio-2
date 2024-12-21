@@ -39,8 +39,8 @@ const SkillsCarousel: React.FC = () => {
 
   return (
     <section className="relative w-auto max-w-sm lg:max-w-4xl mx-auto py-8">
-      <h1>Skills</h1>
-      <div className="bg-gradient-to-r from-sky-600 via-blue-400 to-sky-600 rounded-3xl shadow-none p-1">
+      <h1 className="text-center p-8 md:p-2 md:pb-8 md:-mt-28">Skills</h1>
+      <div className="bg-gradient-to-r from-sky-600 via-sky-300 to-sky-600 rounded-3xl shadow-none p-1">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
