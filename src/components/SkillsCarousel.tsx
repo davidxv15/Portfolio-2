@@ -51,7 +51,7 @@ const SkillsCarousel: React.FC = () => {
                 alt={logo.name}
                 className="w-28 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto rounded-full"
                 style={{
-                  transition: "transform 0.3s ease-in-out",
+                  transition: "transform .5s ease-in-out",
                 }}
               />
               <h3 className="text-xl mt-2 mx-36 lg:mx-14 font-poppins text-gray-800">{logo.name}</h3>
