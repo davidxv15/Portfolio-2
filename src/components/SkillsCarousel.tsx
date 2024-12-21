@@ -38,7 +38,7 @@ const SkillsCarousel: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full max-w-5xl mx-auto py-8">
+    <section className="relative w-auto max-w-sm mx-auto py-8">
       <div className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 rounded-lg shadow-md p-4">
         <Slider {...settings}>
           {logos.map((logo, index) => (
@@ -49,7 +49,7 @@ const SkillsCarousel: React.FC = () => {
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto"
+                className="w-28 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto rounded-full"
                 style={{
                   transition: "transform 0.3s ease-in-out",
                 }}
