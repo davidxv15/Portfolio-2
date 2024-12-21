@@ -26,7 +26,7 @@ const App: React.FC = () => {
           onThemeChange={handleThemeChange}
         /></div>
       <HeroSection />
-      {/* <Skills /> */}
+      <SkillsCarousel />
       <AboutMe />
       <Projects />
     </div>
