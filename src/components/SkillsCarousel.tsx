@@ -8,7 +8,7 @@ const logos = [
   { name: "Django", src: "ReactLogo.png" },
   { name: "Express.js", src: "/path-to-logo/express.png" },
   { name: "Figma", src: "/path-to-logo/typescript.png" },
-  { name: "TailwindCSS", src: "/path-to-logo/tailwind.png" },
+  { name: "Git", src: "/path-to-logo/tailwind.png" },
   { name: "Node.js", src: "/path-to-logo/nodejs.png" },
   { name: "MongoDB", src: "/path-to-logo/mongodb.png" },
   { name: "React", src: "ReactLogo.png" },
