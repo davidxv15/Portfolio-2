@@ -22,7 +22,7 @@ const logos = [
   { name: "SQL", src: "ReactLogo.png" },
   { name: "Tailwind CSS", src: "ReactLogo.png" },
   { name: "TypeScript", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png" },
+  { name: "Vite", src: "ReactLogo.png" },
   { name: "React", src: "ReactLogo.png" },
 ];
 
