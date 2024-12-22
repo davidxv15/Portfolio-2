@@ -23,7 +23,7 @@ const logos = [
   { name: "Tailwind CSS", src: "ReactLogo.png" },
   { name: "TypeScript", src: "ReactLogo.png" },
   { name: "Vite", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png" },
+  { name: "WebSocket", src: "ReactLogo.png" },
 ];
 
 const SkillsCarousel: React.FC = () => {
