@@ -30,7 +30,7 @@ const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
     speed: 200,
-    autoplay: true,
+    // autoplay: true,
     slidesToShow: 5,
     slidesToScroll: 5,
     centerMode: true,
@@ -61,6 +61,7 @@ const SkillsCarousel: React.FC = () => {
               key={index}
               className="flex flex-col items-center justify-center transform transition-transform duration-500"
             >
+              <div>
               <img
                 src={logo.src}
                 alt={logo.name}
@@ -72,6 +73,7 @@ const SkillsCarousel: React.FC = () => {
               <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit text-gray-800">
                 {logo.name}
               </h3>
+              </div>
             </div>
           ))}
         </Slider>
