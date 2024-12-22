@@ -16,7 +16,7 @@ const logos = [
   { name: "Netlify", src: "ReactLogo.png" },
   { name: "Node.js", src: "ReactLogo.png" },
   { name: "Photoshop", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png" },
+  { name: "Postman", src: "ReactLogo.png" },
   { name: "React", src: "ReactLogo.png" },
 ];
 
