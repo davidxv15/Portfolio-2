@@ -18,6 +18,9 @@ const logos = [
   { name: "Photoshop", src: "ReactLogo.png" },
   { name: "Postman", src: "ReactLogo.png" },
   { name: "React", src: "ReactLogo.png" },
+  { name: "Socket.io", src: "ReactLogo.png" },
+  { name: "React", src: "ReactLogo.png" },
+  { name: "React", src: "ReactLogo.png" },
 ];
 
 const SkillsCarousel: React.FC = () => {
