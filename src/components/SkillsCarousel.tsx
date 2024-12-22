@@ -29,7 +29,7 @@ const logos = [
 const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
-    speed: 1000,
+    speed: 200,
     slidesToShow: 5,
     slidesToScroll: 2,
     centerMode: true,
