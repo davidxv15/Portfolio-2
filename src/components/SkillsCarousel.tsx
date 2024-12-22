@@ -68,7 +68,7 @@ const SkillsCarousel: React.FC = () => {
                   transition: "transform .5s ease-in-out",
                 }}
               />
-              <h3 className="text-xl mt-2 mx-36 lg:mx-14 font-outfit text-gray-800">
+              <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit text-gray-800">
                 {logo.name}
               </h3>
             </div>
