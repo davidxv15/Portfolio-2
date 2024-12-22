@@ -61,7 +61,7 @@ const SkillsCarousel: React.FC = () => {
               key={index}
               className="flex flex-col items-center justify-center transform transition-transform duration-500"
             >
-              <div>
+              <div className="shadow-xl shadow-sky-100 rounded-full">
               <img
                 src={logo.src}
                 alt={logo.name}
