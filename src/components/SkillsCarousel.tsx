@@ -29,9 +29,9 @@ const logos = [
 const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     centerMode: true,
     centerPadding: "0",
     responsive: [
@@ -68,7 +68,7 @@ const SkillsCarousel: React.FC = () => {
                   transition: "transform .5s ease-in-out",
                 }}
               />
-              <h3 className="text-xl mt-2 mx-36 lg:mx-14 font-poppins text-gray-800">
+              <h3 className="text-xl mt-2 mx-36 lg:mx-14 font-outfit text-gray-800">
                 {logo.name}
               </h3>
             </div>
