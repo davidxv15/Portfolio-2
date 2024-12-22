@@ -11,8 +11,8 @@ const logos = [
   { name: "Git", src: "/path-to-logo/tailwind.png" },
   { name: "GitHub", src: "/path-to-logo/nodejs.png" },
   { name: "HTML5", src: "/path-to-logo/mongodb.png" },
-  { name: "React", src: "ReactLogo.png" },
   { name: "JavaScript", src: "/path-to-logo/javascript.png" },
+  { name: "React", src: "ReactLogo.png" },
 ];
 
 const SkillsCarousel: React.FC = () => {
