@@ -15,7 +15,7 @@ const logos = [
   { name: "React", src: "ReactLogo.png" },
   { name: "MongoDB", src: "ReactLogo.png" },
   { name: "Netlify", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png" },
+  { name: "Node.js", src: "ReactLogo.png" },
 ];
 
 const SkillsCarousel: React.FC = () => {
