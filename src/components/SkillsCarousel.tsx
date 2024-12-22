@@ -10,7 +10,7 @@ const logos = [
   { name: "Figma", src: "/path-to-logo/typescript.png" },
   { name: "Git", src: "/path-to-logo/tailwind.png" },
   { name: "GitHub", src: "/path-to-logo/nodejs.png" },
-  { name: "MongoDB", src: "/path-to-logo/mongodb.png" },
+  { name: "HTML5", src: "/path-to-logo/mongodb.png" },
   { name: "React", src: "ReactLogo.png" },
   { name: "JavaScript", src: "/path-to-logo/javascript.png" },
 ];
