@@ -30,6 +30,7 @@ const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
     speed: 200,
+    autoplay: true,
     slidesToShow: 5,
     slidesToScroll: 2,
     centerMode: true,
