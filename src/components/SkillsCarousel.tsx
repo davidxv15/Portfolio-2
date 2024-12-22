@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const logos = [
   { name: "CSS", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png" },
+  { name: "Django", src: "ReactLogo.png" },
   { name: "Express.js", src: "/path-to-logo/express.png" },
   { name: "React", src: "ReactLogo.png" },
   { name: "TypeScript", src: "/path-to-logo/typescript.png" },
