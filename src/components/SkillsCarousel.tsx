@@ -4,12 +4,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const logos = [
+  { name: "CSS", src: "ReactLogo.png" },
+  { name: "React", src: "ReactLogo.png" },
   { name: "React", src: "ReactLogo.png" },
   { name: "TypeScript", src: "/path-to-logo/typescript.png" },
+  { name: "Express.js", src: "/path-to-logo/express.png" },
   { name: "TailwindCSS", src: "/path-to-logo/tailwind.png" },
   { name: "Node.js", src: "/path-to-logo/nodejs.png" },
   { name: "MongoDB", src: "/path-to-logo/mongodb.png" },
-  { name: "Express.js", src: "/path-to-logo/express.png" },
   { name: "JavaScript", src: "/path-to-logo/javascript.png" },
 ];
 
