@@ -61,7 +61,7 @@ const SkillsCarousel: React.FC = () => {
               key={index}
               className="flex flex-col items-center justify-center transform transition-transform duration-500"
             >
-              <div className="">
+              <div className="shadow-xl shadow-sky-100 rounded-full">
               <img
                 src={logo.src}
                 alt={logo.name}
@@ -70,7 +70,7 @@ const SkillsCarousel: React.FC = () => {
                   transition: "transform .5s ease-in-out",
                 }}
               />
-              <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit text-gray-800">
+              <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit rounded-full text-gray-800 shadow-lg shadow-sky-100">
                 {logo.name}
               </h3>
               </div>
