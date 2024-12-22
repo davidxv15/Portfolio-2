@@ -14,7 +14,7 @@ const logos = [
   { name: "JavaScript", src: "/path-to-logo/javascript.png" },
   { name: "React", src: "ReactLogo.png" },
   { name: "MongoDB", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png" },
+  { name: "Netlify", src: "ReactLogo.png" },
   { name: "React", src: "ReactLogo.png" },
 ];
 
