@@ -12,10 +12,12 @@ const logos = [
   { name: "GitHub", src: "/path-to-logo/nodejs.png" },
   { name: "HTML5", src: "/path-to-logo/mongodb.png" },
   { name: "JavaScript", src: "/path-to-logo/javascript.png" },
-  { name: "React", src: "ReactLogo.png" },
   { name: "MongoDB", src: "ReactLogo.png" },
   { name: "Netlify", src: "ReactLogo.png" },
   { name: "Node.js", src: "ReactLogo.png" },
+  { name: "Photoshop", src: "ReactLogo.png" },
+  { name: "React", src: "ReactLogo.png" },
+  { name: "React", src: "ReactLogo.png" },
 ];
 
 const SkillsCarousel: React.FC = () => {
