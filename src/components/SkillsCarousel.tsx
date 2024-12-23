@@ -74,7 +74,7 @@ const SkillsCarousel: React.FC = () => {
                     borderRadius: logo.border
                   }}
                 />
-                <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit text-gray-800">
+                <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit text-gray-100">
                   {logo.name}
                 </h3>
               </div>
