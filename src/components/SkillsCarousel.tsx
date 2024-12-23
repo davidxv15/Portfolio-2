@@ -7,7 +7,7 @@ const logos = [
   { name: "CSS", src: "CSS3Logo.png" },
   { name: "Django", src: "djangoLogo.png", rounded: true, border: "50%" },
   { name: "Express.js", src: "expressJSLogo.webp" },
-  { name: "Figma", src: "/path-to-logo/typescript.png" },
+  { name: "Figma", src: "figmaLogo.png", rounded: true, border: "50%" },
   { name: "Git", src: "/path-to-logo/tailwind.png" },
   { name: "GitHub", src: "/path-to-logo/nodejs.png" },
   { name: "HTML5", src: "/path-to-logo/mongodb.png" },
