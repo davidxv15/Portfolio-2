@@ -17,7 +17,7 @@ const logos = [
   { name: "Node.js", src: "ReactLogo.png" },
   { name: "Photoshop", src: "ReactLogo.png" },
   { name: "Postman", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png" },
+  { name: "React", src: "ReactLogo.png", rounded: true,  border: "50%" },
   { name: "Socket.io", src: "ReactLogo.png" },
   { name: "SQL", src: "ReactLogo.png" },
   { name: "Tailwind CSS", src: "ReactLogo.png" },
