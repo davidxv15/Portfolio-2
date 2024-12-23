@@ -9,7 +9,7 @@ const logos = [
   { name: "Express.js", src: "expressJSLogo.webp" },
   { name: "Figma", src: "figmaLogo.png", rounded: true, border: "50%" },
   { name: "Git", src: "gitLogo.png", rounded: true, border: "20%" },
-  { name: "GitHub", src: "/path-to-logo/nodejs.png" },
+  { name: "GitHub", src: "GitHubLogo.png", rounded: true, border: "50%"},
   { name: "HTML5", src: "/path-to-logo/mongodb.png" },
   { name: "JavaScript", src: "/path-to-logo/javascript.png" },
   { name: "MongoDB", src: "ReactLogo.png" },
