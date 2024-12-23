@@ -13,7 +13,7 @@ const logos = [
   { name: "HTML5", src: "html5Logo5.webp" },
   { name: "JavaScript", src: "javascriptLogo.png" },
   { name: "MongoDB", src: "mongoDBLogo.png", rounded: true, border: "50%" },
-  { name: "Netlify", src: "ReactLogo.png" },
+  { name: "Netlify", src: "netlifyLogo.png", rounded: true, border: "50%" },
   { name: "Node.js", src: "ReactLogo.png" },
   { name: "Photoshop", src: "ReactLogo.png" },
   { name: "Postman", src: "ReactLogo.png" },
