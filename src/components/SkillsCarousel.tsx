@@ -54,7 +54,7 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section className="relative w-auto max-w-sm lg:max-w-4xl mx-auto py-8">
       <h1 className="text-center p-8 md:p-2 md:pb-8 md:-mt-28">Skills</h1>
-      <div className="bg-gradient-to-r from-sky-600 via-sky-500 to-sky-600 rounded-3xl shadow-none p-1">
+      <div className="bg-gradient-to-r from-sky-600 via-sky-600 to-sky-600 rounded-3xl shadow-none p-1">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
@@ -64,7 +64,7 @@ const SkillsCarousel: React.FC = () => {
               }`}
               style={{ borderRadius: logo.border }}
             >
-              <div className="shadow-sky-100 rounded-full">
+              <div className="imgAndH3">
                 <img
                   src={logo.src}
                   alt={logo.name}
@@ -73,7 +73,7 @@ const SkillsCarousel: React.FC = () => {
                     transition: "transform .5s ease-in-out",
                   }}
                 />
-                <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit rounded-full text-gray-800 shadow-lg shadow-sky-100">
+                <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit text-gray-800">
                   {logo.name}
                 </h3>
               </div>
