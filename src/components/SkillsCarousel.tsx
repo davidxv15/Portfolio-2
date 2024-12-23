@@ -12,7 +12,7 @@ const logos = [
   { name: "GitHub", src: "GitHubLogo.png", rounded: true, border: "50%"},
   { name: "HTML5", src: "html5Logo5.webp" },
   { name: "JavaScript", src: "javascriptLogo.png" },
-  { name: "MongoDB", src: "ReactLogo.png" },
+  { name: "MongoDB", src: "mongoDBLogo.png", rounded: true, border: "50%" },
   { name: "Netlify", src: "ReactLogo.png" },
   { name: "Node.js", src: "ReactLogo.png" },
   { name: "Photoshop", src: "ReactLogo.png" },
@@ -54,7 +54,7 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section className="relative w-auto max-w-sm lg:max-w-4xl mx-auto py-8">
       <h1 className="text-center p-8 md:p-2 md:pb-8 md:-mt-28">Skills</h1>
-      <div className="bg-gradient-to-r from-sky-600 via-sky-300 to-sky-600 rounded-3xl shadow-none p-1">
+      <div className="bg-gradient-to-r from-sky-600 via-sky-700 to-sky-600 rounded-3xl shadow-none p-1">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
