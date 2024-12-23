@@ -20,7 +20,7 @@ const logos = [
   { name: "React", src: "ReactLogo.png", rounded: true,  border: "50%" },
   { name: "Socket.io", src: "ReactLogo.png" },
   { name: "SQL", src: "ReactLogo.png" },
-  { name: "Tailwind CSS", src: "ReactLogo.png" },
+  { name: "Tailwind CSS", src: "tailwindLogo.jpg", rounded: true, border: "20%" },
   { name: "TypeScript", src: "ReactLogo.png" },
   { name: "Vite", src: "viteLogo.jpg", rounded: true,  border: "10%" },
   { name: "WebSocket", src: "webSocketLogo.png", rounded: true,  border: "10%"},
