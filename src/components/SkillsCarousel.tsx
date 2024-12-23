@@ -11,7 +11,7 @@ const logos = [
   { name: "Git", src: "gitLogo.png", rounded: true, border: "20%" },
   { name: "GitHub", src: "GitHubLogo.png", rounded: true, border: "50%"},
   { name: "HTML5", src: "html5Logo5.webp" },
-  { name: "JavaScript", src: "/path-to-logo/javascript.png" },
+  { name: "JavaScript", src: "javascriptLogo.png" },
   { name: "MongoDB", src: "ReactLogo.png" },
   { name: "Netlify", src: "ReactLogo.png" },
   { name: "Node.js", src: "ReactLogo.png" },
