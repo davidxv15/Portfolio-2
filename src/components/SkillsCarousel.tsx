@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const logos = [
-  { name: "CSS", src: "ReactLogo.png" },
+  { name: "CSS", src: "CSS3Logo.png" },
   { name: "Django", src: "ReactLogo.png" },
   { name: "Express.js", src: "/path-to-logo/express.png" },
   { name: "Figma", src: "/path-to-logo/typescript.png" },
@@ -61,7 +61,7 @@ const SkillsCarousel: React.FC = () => {
               key={index}
               className="flex flex-col items-center justify-center transform transition-transform duration-500"
             >
-              <div className="shadow-xl shadow-sky-100 rounded-full">
+              <div className="shadow-sky-100 rounded-full">
                 <img
                   src={logo.src}
                   alt={logo.name}
