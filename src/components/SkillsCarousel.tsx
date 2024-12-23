@@ -21,7 +21,7 @@ const logos = [
   { name: "Socket.io", src: "ReactLogo.png" },
   { name: "SQL", src: "ReactLogo.png" },
   { name: "Tailwind CSS", src: "tailwindLogo.jpg", rounded: true, border: "20%" },
-  { name: "TypeScript", src: "ReactLogo.png" },
+  { name: "TypeScript", src: "typeScriptLogo.png" },
   { name: "Vite", src: "viteLogo.jpg", rounded: true,  border: "10%" },
   { name: "WebSocket", src: "webSocketLogo.png", rounded: true,  border: "10%"},
 ];
