@@ -23,7 +23,7 @@ const logos = [
   { name: "Tailwind CSS", src: "ReactLogo.png" },
   { name: "TypeScript", src: "ReactLogo.png" },
   { name: "Vite", src: "ReactLogo.png" },
-  { name: "WebSocket", src: "ReactLogo.png" },
+  { name: "WebSocket", src: "ReactLogo.png", border: "50%"},
 ];
 
 const SkillsCarousel: React.FC = () => {
@@ -62,6 +62,7 @@ const SkillsCarousel: React.FC = () => {
               className={`flex flex-col items-center justify-center transform transition-transform duration-500 ${
                 logo.rounded ? 'rounded-full' : ''
               }`}
+              style={{ borderRadius: logo.border }}
             >
               <div className="shadow-sky-100 rounded-full">
                 <img
