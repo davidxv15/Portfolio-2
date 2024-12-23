@@ -65,7 +65,7 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="w-28 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto rounded-full shadow-xl shadow-sky-100"
+                  className="w-28 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto"
                   style={{
                     transition: "transform .5s ease-in-out",
                   }}
