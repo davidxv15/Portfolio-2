@@ -22,7 +22,7 @@ const logos = [
   { name: "SQL", src: "ReactLogo.png" },
   { name: "Tailwind CSS", src: "ReactLogo.png" },
   { name: "TypeScript", src: "ReactLogo.png" },
-  { name: "Vite", src: "ReactLogo.png" },
+  { name: "Vite", src: "viteLogo.jpg", rounded: true,  border: "10%" },
   { name: "WebSocket", src: "webSocketLogo.png", rounded: true,  border: "10%"},
 ];
 
@@ -54,7 +54,7 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section className="relative w-auto max-w-sm lg:max-w-4xl mx-auto py-8">
       <h1 className="text-center p-8 md:p-2 md:pb-8 md:-mt-28">Skills</h1>
-      <div className="bg-gradient-to-r from-sky-600 via-sky-600 to-sky-600 rounded-3xl shadow-none p-1">
+      <div className="bg-gradient-to-r from-sky-600 via-sky-300 to-sky-600 rounded-3xl shadow-none p-1">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
