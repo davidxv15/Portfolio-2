@@ -16,7 +16,7 @@ const logos = [
   { name: "Netlify", src: "netlifyLogo.png", rounded: true, border: "50%" },
   { name: "Node.js", src: "nodeJSLogo.png", rounded: true, border: "50%" },
   { name: "Photoshop", src: "ReactLogo.png" },
-  { name: "Postman", src: "postmanLogo.png",
+  { name: "Postman", src: "postmanLogo1.png",
   rounded: true,
   border: "5%" },
   { name: "React", src: "ReactLogo.png", rounded: true, border: "50%" },
