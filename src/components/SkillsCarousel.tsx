@@ -19,7 +19,7 @@ const logos = [
   { name: "Postman", src: "postmanLogo.png" },
   { name: "React", src: "ReactLogo.png", rounded: true, border: "50%" },
   { name: "Socket.io", src: "socketIOLogo.png", rounded: true, border: "50%" },
-  { name: "SQL", src: "sqlLogo4.png" },
+  { name: "SQL", src: "sqlLogo.png" },
   {
     name: "Tailwind CSS",
     src: "tailwindLogo.jpg",
