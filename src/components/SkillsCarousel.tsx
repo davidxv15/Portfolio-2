@@ -9,7 +9,7 @@ const logos = [
   { name: "Express.js", src: "expressJSLogo.webp" },
   { name: "Figma", src: "figmaLogo.png", rounded: true, border: "50%" },
   { name: "Git", src: "gitLogo.png", rounded: true, border: "20%" },
-  { name: "GitHub", src: "GitHubLogo.png", rounded: true, border: "50%"},
+  { name: "GitHub", src: "GitHubLogo.png", rounded: true, border: "50%" },
   { name: "HTML5", src: "html5Logo5.webp" },
   { name: "JavaScript", src: "javascriptLogo.png" },
   { name: "MongoDB", src: "mongoDBLogo.png", rounded: true, border: "50%" },
@@ -17,13 +17,18 @@ const logos = [
   { name: "Node.js", src: "nodeJSLogo.png", rounded: true, border: "50%" },
   { name: "Photoshop", src: "ReactLogo.png" },
   { name: "Postman", src: "ReactLogo.png" },
-  { name: "React", src: "ReactLogo.png", rounded: true,  border: "50%" },
+  { name: "React", src: "ReactLogo.png", rounded: true, border: "50%" },
   { name: "Socket.io", src: "socketIOLogo.png", rounded: true, border: "50%" },
   { name: "SQL", src: "sqlLogo4.png" },
-  { name: "Tailwind CSS", src: "tailwindLogo.jpg", rounded: true, border: "20%" },
+  {
+    name: "Tailwind CSS",
+    src: "tailwindLogo.jpg",
+    rounded: true,
+    border: "20%",
+  },
   { name: "TypeScript", src: "typeScriptLogo.png" },
-  { name: "Vite", src: "viteLogo.jpg", rounded: true,  border: "10%" },
-  { name: "WebSocket", src: "webSocketLogo.png", rounded: true,  border: "10%"},
+  { name: "Vite", src: "viteLogo.jpg", rounded: true, border: "10%" },
+  { name: "WebSocket", src: "webSocketLogo.png", rounded: true, border: "10%" },
 ];
 
 const SkillsCarousel: React.FC = () => {
@@ -60,7 +65,7 @@ const SkillsCarousel: React.FC = () => {
             <div
               key={index}
               className={`flex flex-col items-center justify-center transform transition-transform duration-500 ${
-                logo.rounded ? 'rounded-full' : ''
+                logo.rounded ? "rounded-full" : ""
               }`}
               style={{ borderRadius: logo.border }}
             >
@@ -71,7 +76,7 @@ const SkillsCarousel: React.FC = () => {
                   className="w-28 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto"
                   style={{
                     transition: "transform .5s ease-in-out",
-                    borderRadius: logo.border
+                    borderRadius: logo.border,
                   }}
                 />
                 <h3 className="text-center mt-2 text-sm text-xl mt-2 mx-36 lg:mx-16 font-outfit text-gray-900">
