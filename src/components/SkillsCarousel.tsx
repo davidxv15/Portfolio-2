@@ -59,12 +59,18 @@ const SkillsCarousel: React.FC = () => {
   const CustomArrow = ({ className, style, onClick }: any) => (
     <div
       className={`${className} custom-arrow`}
-      style={{ ...style, color: "red" }}
+      style={{
+        ...style,
+        color: "red", // Text or icon color
+        fontSize: "24px", // Adjust size
+        zIndex: 10, // Ensure it's visible
+      }}
       onClick={onClick}
     >
       →
     </div>
   );
+  
   
 
   return (
