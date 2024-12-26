@@ -42,7 +42,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
     }}
     onClick={onClick}
   >
-    →
+    →next one
   </div>
 );
 
