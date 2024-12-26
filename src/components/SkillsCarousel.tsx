@@ -40,6 +40,7 @@ const SkillsCarousel: React.FC = () => {
     slidesToScroll: 5,
     centerMode: true,
     centerPadding: "0",
+    prevArrow: <CustomArrow />,
     responsive: [
       {
         breakpoint: 1024,
