@@ -36,7 +36,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
     className={`${className} custom-arrow`}
     style={{
       ...style,
-      color: "red", 
+      color: "blue", 
       fontSize: "20px",
       zIndex: 10,
     }}
