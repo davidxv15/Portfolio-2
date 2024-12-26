@@ -31,6 +31,21 @@ const logos = [
   { name: "WebSocket", src: "webSocketLogo.png", rounded: true, border: "10%" },
 ];
 
+const CustomArrow = ({ className, style, onClick }: any) => (
+  <div
+    className={`${className} custom-arrow`}
+    style={{
+      ...style,
+      color: "black", 
+      fontSize: "20px",
+      zIndex: 10,
+    }}
+    onClick={onClick}
+  >
+    →
+  </div>
+);
+
 const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
@@ -57,23 +72,6 @@ const SkillsCarousel: React.FC = () => {
       },
     ],
   };
-
-  const CustomArrow = ({ className, style, onClick }: any) => (
-    <div
-      className={`${className} custom-arrow`}
-      style={{
-        ...style,
-        color: "black", 
-        fontSize: "20px",
-        zIndex: 10,
-      }}
-      onClick={onClick}
-    >
-      →
-    </div>
-  );
-  
-  
 
   return (
     <section className="relative w-auto max-w-sm lg:max-w-4xl mx-auto py-8">
