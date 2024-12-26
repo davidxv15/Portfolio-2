@@ -56,6 +56,17 @@ const SkillsCarousel: React.FC = () => {
     ],
   };
 
+  const CustomArrow = ({ className, style, onClick }: any) => (
+    <div
+      className={`${className} custom-arrow`}
+      style={{ ...style, color: "red" }}
+      onClick={onClick}
+    >
+      →
+    </div>
+  );
+  
+
   return (
     <section className="relative w-auto max-w-sm lg:max-w-4xl mx-auto py-8">
       <h1 className="text-center p-8 md:p-2 md:pb-8 md:-mt-28">Skills</h1>
