@@ -41,6 +41,7 @@ const SkillsCarousel: React.FC = () => {
     centerMode: true,
     centerPadding: "0",
     prevArrow: <CustomArrow />,
+    nextArrow: <CustomArrow />,
     responsive: [
       {
         breakpoint: 1024,
