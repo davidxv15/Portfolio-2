@@ -47,7 +47,7 @@ const CustomArrow = ({ className, style, onClick, direction }: any) => (
       onMouseLeave={() => setIsHovered(false)} 
       onClick={onClick} 
     >
-          {direction === "next" ? "→" : "←"} {/* Conditional arrow */}
+          {direction === "next" ? "→" : "←"} 
     </div>
   );
 };
