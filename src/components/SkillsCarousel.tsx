@@ -43,11 +43,14 @@ const CustomArrow = ({ className, style, onClick, direction }: any) => (
       zIndex: 10,
       cursor: "pointer",
     }}
-    onClick={onClick}
-  >
-    →
-  </div>
-);
+    onMouseEnter={() => setIsHovered(true)} // Trigger on hover
+      onMouseLeave={() => setIsHovered(false)} // Reset on leave
+      onClick={onClick} // Optional click functionality
+    >
+      →
+    </div>
+  );
+};
 
 const SkillsCarousel: React.FC = () => {
   const settings = {
