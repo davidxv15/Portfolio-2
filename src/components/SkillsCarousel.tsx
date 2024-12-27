@@ -48,8 +48,8 @@ const CustomArrow = ({ className, style, onClick }: any) => (
 const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
-    speed: 200,
-    // autoplay: true,
+    speed: 100,
+    autoplay: true,
     slidesToShow: 5,
     slidesToScroll: 5,
     centerMode: true,
@@ -75,7 +75,7 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section className="relative w-auto max-w-sm lg:max-w-4xl mx-auto py-8">
       <h1 className="text-center p-8 md:p-2 md:pb-8 md:-mt-28">Skills</h1>
-      <div className="bg-gradient-to-r from-sky-600 from-10% via-sky-900 via-50% to-sky-600 to-90% rounded-3xl shadow-none p-1">
+      <div className="bg-gradient-to-r from-sky-600 from-10% via-sky-700 via-50% to-sky-600 to-90% rounded-3xl shadow-none p-1">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
