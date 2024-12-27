@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
       className="bg-gradient-to-t from-blue-300 to-sky-600 py-12 px-2"
       id="projects"
     >
-      <h2 className="text-5xl tracking-tight font-league text-slate-900 text-center mb-8 mt-4">
+      <h2 className="text-5xl tracking-tight font-league text-slate-200 text-center mb-8 mt-4">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto">
