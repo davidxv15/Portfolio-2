@@ -32,7 +32,7 @@ const logos = [
 ];
 
 const CustomArrow = ({ className, style, onClick, direction }: any) => (
-  const [isHovered, setIsHovered ] = React.useState(false);
+  const [isHovered, setIsHovered] = React.useState(false);
 
   <div
     className={`${className} custom-arrow`}
@@ -43,14 +43,15 @@ const CustomArrow = ({ className, style, onClick, direction }: any) => (
       zIndex: 10,
       cursor: "pointer",
     }}
-    onMouseEnter={() => setIsHovered(true)} // Trigger on hover
-      onMouseLeave={() => setIsHovered(false)} // Reset on leave
-      onClick={onClick} // Optional click functionality
+    onMouseEnter={() => setIsHovered(true)} 
+      onMouseLeave={() => setIsHovered(false)} 
+      onClick={onClick} 
     >
-      →
+          {direction === "next" ? "→" : "←"} {/* Conditional arrow */}
     </div>
   );
 };
+
 
 const SkillsCarousel: React.FC = () => {
   const settings = {
