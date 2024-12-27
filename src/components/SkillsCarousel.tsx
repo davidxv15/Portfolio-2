@@ -41,6 +41,7 @@ const CustomArrow = ({ className, style, onClick, direction }: any) => (
       color: isHovered ? "blue" : "red",
       fontSize: "20px",
       zIndex: 10,
+      cursor: "pointer",
     }}
     onClick={onClick}
   >
