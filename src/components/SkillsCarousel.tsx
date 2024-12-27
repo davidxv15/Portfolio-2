@@ -31,7 +31,7 @@ const logos = [
   { name: "WebSocket", src: "webSocketLogo.png", rounded: true, border: "10%" },
 ];
 
-const CustomArrow = ({ className, style, onClick }: any) => (
+const CustomArrow = ({ className, style, onClick, direction }: any) => (
   <div
     className={`${className} custom-arrow`}
     style={{
