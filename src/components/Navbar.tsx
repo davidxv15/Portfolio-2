@@ -18,14 +18,14 @@ const Navbar: React.FC = () => {
             <a href="#" className="text-gray-100 hover:text-gray-400">
               Home
             </a>
+            <a href="#projects" className="text-gray-100 hover:text-gray-400">
+              Skills
+            </a>
             <a href="#about" className="text-gray-100 hover:text-gray-400">
               About
             </a>
             <a href="#projects" className="text-gray-100 hover:text-gray-400">
               Projects
-            </a>
-            <a href="#projects" className="text-gray-100 hover:text-gray-400">
-              Skills
             </a>
             <a href="#contact" className="text-gray-100 hover:text-gray-400">
               Contact
