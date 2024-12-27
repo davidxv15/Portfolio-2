@@ -31,27 +31,19 @@ const logos = [
   { name: "WebSocket", src: "webSocketLogo.png", rounded: true, border: "10%" },
 ];
 
-const CustomArrow = ({ className, style, onClick, direction }: any) => (
-  const [isHovered, setIsHovered] = React.useState(false);
-
+const CustomArrow = ({ className, style, onClick }: any) => (
   <div
     className={`${className} custom-arrow`}
     style={{
       ...style,
-      color: isHovered ? "blue" : "red",
+      color: "blue",
       fontSize: "20px",
       zIndex: 10,
-      cursor: "pointer",
     }}
-    onMouseEnter={() => setIsHovered(true)} 
-      onMouseLeave={() => setIsHovered(false)} 
-      onClick={onClick} 
-    >
-          {direction === "next" ? "→" : "←"} 
-    </div>
-  );
-};
-
+    onClick={onClick}
+  >
+  </div>
+);
 
 const SkillsCarousel: React.FC = () => {
   const settings = {
