@@ -32,6 +32,7 @@ const logos = [
 ];
 
 const CustomArrow = ({ className, style, onClick, direction }: any) => (
+  const [isHovered, setIsHovered ] = React.useState(false);
   <div
     className={`${className} custom-arrow`}
     style={{
