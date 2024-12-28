@@ -54,7 +54,7 @@ const SkillsCarousel: React.FC = () => {
     slidesToScroll: 5,
     centerMode: true,
     centerPadding: "0",
-    // dots: true,
+    dots: true,
     prevArrow: <CustomArrow />,
     nextArrow: <CustomArrow />,
     responsive: [
