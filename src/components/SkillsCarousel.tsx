@@ -37,7 +37,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
     style={{
       ...style,
       color: "blue",
-      fontSize: "20px",
+      fontSize: "32px",
       zIndex: 10,
     }}
     onClick={onClick}
@@ -54,6 +54,7 @@ const SkillsCarousel: React.FC = () => {
     slidesToScroll: 5,
     centerMode: true,
     centerPadding: "0",
+    // dots: true,
     prevArrow: <CustomArrow />,
     nextArrow: <CustomArrow />,
     responsive: [
