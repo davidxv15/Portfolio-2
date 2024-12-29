@@ -43,6 +43,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       pauseOnHover: true,
       arrows: false,
       autoPlay: true,
+      autoPlaySpeed: 1,
     }}
     onClick={onClick}
   >
