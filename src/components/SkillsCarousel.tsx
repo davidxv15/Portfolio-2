@@ -41,6 +41,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       zIndex: 10,
       fade: true,
       pauseOnHover: true,
+      arrows: false,
     }}
     onClick={onClick}
   >
