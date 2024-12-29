@@ -39,7 +39,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       color: "blue",
       fontSize: "32px",
       zIndex: 10,
-      adaptiveHeight: 10,
+      adaptiveHeight: true,
       // fade: true,
       pauseOnHover: true,
       arrows: false,
