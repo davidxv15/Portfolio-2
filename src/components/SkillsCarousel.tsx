@@ -44,6 +44,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       arrows: false,
       autoPlay: true,
       autoPlaySpeed: 1,
+      cssEase: "linear",
     }}
     onClick={onClick}
   >
