@@ -40,7 +40,6 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       fontSize: "32px",
       zIndex: 10,
       // fade: true,
-      pauseOnHover: true,
       arrows: false,
       autoPlay: true,
       autoPlaySpeed: 800,
@@ -63,6 +62,7 @@ const SkillsCarousel: React.FC = () => {
     centerMode: true,
     centerPadding: "0",
     dots: true,
+    pauseOnHover: true,
     prevArrow: <CustomArrow />,
     nextArrow: <CustomArrow />,
     responsive: [
