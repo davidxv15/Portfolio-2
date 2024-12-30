@@ -59,7 +59,7 @@ const SkillsCarousel: React.FC = () => {
     slidesToShow: 5,
     slidesToScroll: 20,
     centerPadding: "0",
-    dots: true,
+    // dots: true,
     pauseOnHover: true,
     prevArrow: <CustomArrow />,
     nextArrow: <CustomArrow />,
