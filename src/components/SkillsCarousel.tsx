@@ -40,7 +40,6 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       fontSize: "32px",
       zIndex: 10,
       // fade: true,
-      cssEase: "linear",
     }}
     onClick={onClick}
     >
@@ -55,9 +54,10 @@ const SkillsCarousel: React.FC = () => {
     arrows: false,
     autoplay: true,
     autoPlaySpeed: 1200,
+    centerMode: true,
+    cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 5,
-    centerMode: true,
     centerPadding: "0",
     dots: true,
     pauseOnHover: true,
