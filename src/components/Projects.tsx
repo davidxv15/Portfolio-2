@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
 
   return (
     <section
-      className="bg-gradient-to-t from-blue-300 to-sky-600 py-12 px-2"
+      className="bg-gradient-to-t from-blue-400 to-sky-400 py-12 px-2"
       id="projects"
     >
       <h2 className="text-5xl tracking-tight font-league text-slate-200 text-center mb-8 mt-4">
