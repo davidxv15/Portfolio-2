@@ -54,7 +54,7 @@ const SkillsCarousel: React.FC = () => {
     autoplay: true,
     autoPlaySpeed: 0,
     speed: 22000,
-    // centerMode: true,
+    centerMode: true,
     cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 20,
