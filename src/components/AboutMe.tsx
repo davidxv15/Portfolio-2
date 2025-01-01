@@ -3,7 +3,7 @@ import * as React from "react";
 const AboutMe: React.FC = () => {
   return (
     <section
-      className="bg-gradient-to-t from-slate-900 from-5% via-slate-900 via-95% to-slate-400 to-99% text-zinc-300 tracking-tight py-12 h-screen px-4 sm:px-8"
+      className="bg-gradient-to-t from-slate-900 from-5% via-slate-900 via-95% to-slate-400 to-99% text-zinc-200 tracking-tight py-12 h-screen px-4 sm:px-8"
       id="about"
     >
       <div className="max-w-4xl mx-auto text-center">
