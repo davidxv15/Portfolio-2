@@ -3,9 +3,10 @@ import * as React from "react";
 const AboutMe: React.FC = () => {
   return (
     <section
-      className="bg-gradient-to-t from-slate-900 via-slate-800 to-slate-900 text-zinc-300 tracking-tight py-12 h-screen px-4 sm:px-8"
+      className="bg-gradient-to-t from-slate-900 from-5% via-slate-900 via-80% to-slate-400 to-99% text-zinc-300 tracking-tight py-12 h-screen px-4 sm:px-8"
       id="about"
     >
+      {/* bg-gradient-to-t from-slate-400 from-10% via-slate-100 via-50% to-sky-600 to-98% */}
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-5xl font-poppins mb-4 mt-4">About Me</h2>
         <p className="text-lg sm:text-xl leading-relaxed mb-8">
