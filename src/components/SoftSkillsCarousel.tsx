@@ -20,7 +20,7 @@ const SoftSkillsCarousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentAngle((prev) => prev - 30); // Rotate 30 degrees every 3 seconds
-    }, 3000);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
