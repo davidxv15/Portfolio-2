@@ -11,6 +11,7 @@ const softSkills = [
   { name: "Communication", description: "Sharing ideas clearly." },
   { name: "Problem-Solving", description: "Finding creative solutions." },
   { name: "Communication", description: "Sharing ideas clearly." },
+  { name: "Problem-Solving", description: "Finding creative solutions." },
 ];
 
 const SoftSkillsCarousel: React.FC = () => {
