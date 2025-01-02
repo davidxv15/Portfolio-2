@@ -46,7 +46,7 @@ const SoftSkillsCarousel: React.FC = () => {
           {softSkills.map((skill, index) => (
             <div
               key={index}
-              className="absolute w-30 h-20 bg-gradient-to-r from-sky-500 to-sky-300 shadow-lg text-white text-center p-4 rounded-lg"
+              className="absolute w-30 h-20 bg-gradient-to-r from-red-500 to-sky-300 shadow-lg text-white text-center p-4 rounded-lg"
               style={{
                 transform: `rotateY(${index * 72}deg) translateZ(300px)`,
                 backfaceVisibility: "hidden",
