@@ -18,15 +18,13 @@ const SoftSkillsCarousel: React.FC = () => {
   const [currentAngle, setCurrentAngle] = useState(0);
 
   useEffect(() => {
+    const angleStep = 360 / softSkills.length; // Ensure even spacing
     const interval = setInterval(() => {
-      setCurrentAngle((prev) => prev - 18); //rotate 30 degrees every 2 seconds
-    }, 2000);
+      setCurrentAngle((prev) => prev - angleStep); // Rotate by the calculated step
+    }, 2000); // Adjust the interval time as needed
     return () => clearInterval(interval);
-  }, []);
-
-  const angleStep = 360 / softSkills.length; // Ensure even spacing
-setCurrentAngle((prev) => prev - angleStep);
-
+  }, [softSkills.length]);
+  
 
   return (
     <section className="relative w-60% h-96 overflow-hidden bg-gradient-to-b from-sky-600 to-gray-600">
