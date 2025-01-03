@@ -24,6 +24,10 @@ const SoftSkillsCarousel: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const angleStep = 360 / softSkills.length; // Ensure even spacing
+setCurrentAngle((prev) => prev - angleStep);
+
+
   return (
     <section className="relative w-60% h-96 overflow-hidden bg-gradient-to-b from-sky-600 to-gray-600">
       <h2 className="text-center text-3xl text-white font-poppins mb-8">
