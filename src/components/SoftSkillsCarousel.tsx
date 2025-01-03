@@ -32,7 +32,7 @@ const SoftSkillsCarousel: React.FC = () => {
       <div
         className="relative w-full h-72 perspective"
         style={{
-          perspective: "1200px",
+          perspective: "800px",
         }}
       >
         <div
