@@ -55,7 +55,7 @@ const SoftSkillsCarousel: React.FC = () => {
               }}
             >
               <h3 className="text-xl text-blue-100 font-bold">{skill.name}</h3>
-              <p className="mt-2 text-sm">{skill.description}</p>
+              <p className="mt-1 text-sm">{skill.description}</p>
             </div>
           ))}
         </div>
