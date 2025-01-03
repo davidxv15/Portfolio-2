@@ -54,7 +54,7 @@ const SoftSkillsCarousel: React.FC = () => {
                 backfaceVisibility: "hidden",
               }}
             >
-              <h3 className="text-xl font-bold">{skill.name}</h3>
+              <h3 className="text-xl text-blue-800 font-bold">{skill.name}</h3>
               <p className="mt-2 text-sm">{skill.description}</p>
             </div>
           ))}
