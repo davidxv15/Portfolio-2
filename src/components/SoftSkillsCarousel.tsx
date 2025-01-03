@@ -27,7 +27,7 @@ const SoftSkillsCarousel: React.FC = () => {
   
 
   return (
-    <section className="relative mx-auto w-36 h-60 bg-gradient-to-b from-sky-600 to-gray-600">
+    <section className="relative mx-auto w-6 h-60 bg-gradient-to-b from-sky-600 to-gray-600">
       <h2 className="text-center text-3xl text-white font-poppins mb-8">
         Soft Skills
       </h2>
