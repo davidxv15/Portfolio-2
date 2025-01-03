@@ -2,16 +2,16 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 
 const softSkills = [
-  { name: "Leadership", description: "Motivating teams to achieve goals." },
-  { name: "Collaboration", description: "Working together to deliver results." },
-  { name: "Problem-Solving", description: "Finding creative solutions." },
-  { name: "Adaptability", description: "Thriving in changing environments." },
-  { name: "Communication", description: "Sharing ideas clearly." },
-  { name: "Problem-Solving", description: "Finding creative solutions." },
-  { name: "Communication", description: "Sharing ideas clearly." },
-  { name: "Problem-Solving", description: "Finding creative solutions." },
-  { name: "Communication", description: "Sharing ideas clearly." },
-  { name: "Problem-Solving", description: "Finding creative solutions." },
+  { name: "1 Leadership", description: "Motivating teams to achieve goals." },
+  { name: "2 Collaboration", description: "Working together to deliver results." },
+  { name: "3 Problem-Solving", description: "Finding creative solutions." },
+  { name: "4 Adaptability", description: "Thriving in changing environments." },
+  { name: "5 Communication", description: "Sharing ideas clearly." },
+  { name: "6 Problem-Solving", description: "Finding creative solutions." },
+  { name: "7 Communication", description: "Sharing ideas clearly." },
+  { name: "8 Problem-Solving", description: "Finding creative solutions." },
+  { name: "9 Communication", description: "Sharing ideas clearly." },
+  { name: "10 Problem-Solving", description: "Finding creative solutions." },
 ];
 
 const SoftSkillsCarousel: React.FC = () => {
