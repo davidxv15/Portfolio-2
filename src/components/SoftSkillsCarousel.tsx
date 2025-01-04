@@ -44,7 +44,7 @@ const SoftSkillsCarousel: React.FC = () => {
           className="carousel-3d mx-auto"
           style={{
             transformStyle: "preserve-3d",
-            transform: `rotateY(${currentAngle}deg)`,
+            transform: "rotateY(180deg)",
             transition: "transform 1s ease-in-out",
             transformOrigin: "center",
           }}
