@@ -37,6 +37,7 @@ const SoftSkillsCarousel: React.FC = () => {
         className="relative w-full h-full perspective"
         style={{
           perspective: "5000px",
+          overflow: "hidden",
         }}
       >
         <div
