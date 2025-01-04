@@ -3,7 +3,10 @@ import { useState, useEffect } from "react";
 
 const softSkills = [
   { name: "1 Leadership", description: "Motivating teams to achieve goals." },
-  { name: "2 Collaboration", description: "Working together to deliver results." },
+  {
+    name: "2 Collaboration",
+    description: "Working together to deliver results.",
+  },
   { name: "3 Problem-Solving", description: "Finding creative solutions." },
   { name: "4 Adaptability", description: "Thriving in changing environments." },
   { name: "5 Communication", description: "Sharing ideas clearly." },
@@ -24,7 +27,6 @@ const SoftSkillsCarousel: React.FC = () => {
     }, 300); // Adjust the interval time as needed
     return () => clearInterval(interval);
   }, [softSkills.length]);
-  
 
   return (
     <section className="relative mx-auto w-72 h-60 bg-gradient-to-b from-sky-600 to-gray-600">
@@ -50,7 +52,9 @@ const SoftSkillsCarousel: React.FC = () => {
               key={index}
               className="absolute w-44 h-32 bg-gradient-to-r from-red-500 to-sky-300 shadow-lg text-white text-center p-4 rounded-lg"
               style={{
-                transform: `rotateY(${index * (360 / softSkills.length)}deg) translateZ(300px)`,
+                transform: `rotateY(${
+                  index * (360 / softSkills.length)
+                }deg) translateZ(300px)`,
                 backfaceVisibility: "hidden",
               }}
             >
