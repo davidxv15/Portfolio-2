@@ -57,7 +57,7 @@ const SoftSkillsCarousel: React.FC = () => {
                 transform: `rotateY(${
                   index * (360 / softSkills.length)
                 }deg) translateZ(300px)`,
-                backfaceVisibility: "hidden",
+                // backfaceVisibility: "hidden",
               }}
             >
               <h3 className="text-xl text-blue-100 font-bold">{skill.name}</h3>
