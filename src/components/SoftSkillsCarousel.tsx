@@ -24,7 +24,7 @@ const SoftSkillsCarousel: React.FC = () => {
     const angleStep = 360 / softSkills.length; //even spacing based on # of skill cards
     const interval = setInterval(() => {
       setCurrentAngle((prev) => prev - angleStep); // Rotate by the calculated step
-    }, 2800); // Adjust the interval time as needed
+    }, 800); //interval time
     return () => clearInterval(interval);
   }, [softSkills.length]);
 
@@ -57,7 +57,7 @@ const SoftSkillsCarousel: React.FC = () => {
                 transform: `rotateY(${
                   index * (360 / softSkills.length)
                 }deg) translateZ(400px)`,
-                // backfaceVisibility: "hidden",
+                backfaceVisibility: "visible",
               }}
             >
               <h3 className="text-xl text-blue-100 font-bold">{skill.name}</h3>
