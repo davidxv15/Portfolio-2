@@ -46,6 +46,7 @@ const SoftSkillsCarousel: React.FC = () => {
             transformStyle: "preserve-3d",
             transform: `rotateY(${currentAngle}deg)`,
             transition: "transform 1s ease-in-out",
+            transformOrigin: "center",
           }}
         >
           {softSkills.map((skill, index) => (
