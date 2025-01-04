@@ -21,7 +21,7 @@ const SoftSkillsCarousel: React.FC = () => {
   const [currentAngle, setCurrentAngle] = useState(0);
 
   useEffect(() => {
-    const angleStep = 360 / softSkills.length; //even spacing based on # of skill cards
+    const angleStep = 180 / softSkills.length; //even spacing based on # of skill cards
     const interval = setInterval(() => {
       setCurrentAngle((prev) => prev - angleStep); // Rotate by the calculated step
     }, 800); //interval time
