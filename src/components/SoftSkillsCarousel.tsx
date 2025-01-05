@@ -29,47 +29,44 @@ const SoftSkillsCarousel: React.FC = () => {
   }, [softSkills.length]);
 
   return (
-    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-    <section className="relative mx-auto w-80 h-80 bg-gradient-to-b from-sky-600 to-gray-600">
-      <h2 className="text-center text-3xl text-white font-poppins mb-8">
-        Soft Skills
-      </h2>
-      <div
-        className="relative w-full h-full perspective"
-        style={{
-          perspective: "1000px",
-          // overflow: "hidden",
-        }}
-      >
+    <section className="relative mx-auto w-full h-screen bg-gradient-to-b from-sky-600 to-gray-600">
+  <h2 className="absolute top-8 left-1/2 transform -translate-x-1/2 text-3xl text-white font-poppins mb-8 z-10">
+    Soft Skills
+  </h2>
+  <div
+    className="relative w-full h-full"
+    style={{
+      perspective: "1200px", // Creates the 3D effect
+      pointerEvents: "none", // Ensures no interference
+    }}
+  >
+    <div
+      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 carousel-3d"
+      style={{
+        transformStyle: "preserve-3d",
+        transform: `rotateY(${currentAngle}deg)`,
+        transition: "transform 1s ease-in-out",
+      }}
+    >
+      {softSkills.map((skill, index) => (
         <div
-          className="carousel-3d mx-auto"
+          key={index}
+          className="absolute w-44 h-32 bg-gradient-to-r from-red-500 to-sky-300 shadow-lg text-white text-center p-4 rounded-lg"
           style={{
-            transformStyle: "preserve-3d",
-            transform: `rotateY(${currentAngle}deg)`,
-            transition: "transform 3s ease-in-out",
-            transformOrigin: "center",
+            transform: `rotateY(${
+              index * (360 / softSkills.length)
+            }deg) translateZ(400px)`,
+            backfaceVisibility: "visible",
           }}
         >
-          {softSkills.map((skill, index) => (
-            <div
-              key={index}
-              className="absolute w-44 h-32 bg-gradient-to-r from-red-500 to-sky-300 shadow-lg text-white text-center p-4 rounded-lg"
-              style={{
-                transform: `rotateY(${
-                  index * (360 / softSkills.length)
-                }deg) translateZ(350px)`,
-                backfaceVisibility: "visible",
-              }}
-            >
-              <h3 className="text-xl text-blue-100 font-bold">{skill.name}</h3>
-              <p className="mt-1 text-sm">{skill.description}</p>
-            </div>
-          ))}
+          <h3 className="text-xl text-blue-100 font-bold">{skill.name}</h3>
+          <p className="mt-1 text-sm">{skill.description}</p>
         </div>
-      </div>
-    </section>
+      ))}
     </div>
+  </div>
+</section>
+
   );
 };
-
 export default SoftSkillsCarousel;
