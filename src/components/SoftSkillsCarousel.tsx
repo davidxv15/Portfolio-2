@@ -56,7 +56,7 @@ const SoftSkillsCarousel: React.FC = () => {
               style={{
                 transform: `rotateY(${
                   index * (360 / softSkills.length)
-                }deg) translateZ(300px)`,
+                }deg) translateZ(250px)`,
                 backfaceVisibility: "visible",
               }}
             >
