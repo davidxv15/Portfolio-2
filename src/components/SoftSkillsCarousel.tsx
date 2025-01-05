@@ -36,7 +36,7 @@ const SoftSkillsCarousel: React.FC = () => {
       <div
         className="relative w-full h-full perspective"
         style={{
-          perspective: "500px",
+          perspective: "1000px",
           // overflow: "hidden",
         }}
       >
@@ -45,7 +45,7 @@ const SoftSkillsCarousel: React.FC = () => {
           style={{
             transformStyle: "preserve-3d",
             transform: `rotateY(${currentAngle}deg)`,
-            transition: "transform 1s ease-in-out",
+            transition: "transform 3s ease-in-out",
             transformOrigin: "center",
           }}
         >
@@ -56,7 +56,7 @@ const SoftSkillsCarousel: React.FC = () => {
               style={{
                 transform: `rotateY(${
                   index * (360 / softSkills.length)
-                }deg) translateZ(250px)`,
+                }deg) translateZ(350px)`,
                 backfaceVisibility: "visible",
               }}
             >
