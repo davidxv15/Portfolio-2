@@ -7,7 +7,7 @@ const AboutMe: React.FC = () => {
       id="about"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="scroll-mt-2 text-5xl font-poppins mb-4 mt-16">About Me</h2>
+        <h2 className="scroll-mt-2 text-5xl font-poppins mb-4">About Me</h2>
         <p className="text-lg sm:text-xl leading-relaxed mb-8">
           Hello,👋🏼 I'm David Velasquez, a versatile professional with a diverse
           background. As a Full Stack Web Developer, I specialize in creating
