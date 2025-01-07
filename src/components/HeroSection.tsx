@@ -22,7 +22,8 @@ const HeroSection: React.FC = () => {
           Software Developer
         </h2>
         <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:-translate-y-1">
-        Elevating team environments by leading with enthusiasm, integrity, and dedication. Driving success through actions that inspire.
+        Elevating team environments by leading with enthusiasm, integrity, and dedication. Driving success through actions that inspire
+        {/* and motivate */}.
         </p>
       </div>
       <div className="mb-8 md:mb-16 md:w-2/3">
