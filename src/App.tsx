@@ -28,7 +28,7 @@ const App: React.FC = () => {
         /></div>
       <HeroSection />
       <SkillsCarousel />
-      <SoftSkillsCarousel />
+      {/* <SoftSkillsCarousel /> */}
       <Projects />
       <AboutMe />
     </div>
