@@ -21,7 +21,7 @@ const logos = [
   { name: "Socket.io", src: "socketIOLogo.png", rounded: true, border: "50%" },
   { name: "SQL", src: "sqlLogo.png" },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     src: "tailwindLogo.jpg",
     rounded: true,
     border: "20%",
