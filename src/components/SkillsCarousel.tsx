@@ -101,7 +101,7 @@ const SkillsCarousel: React.FC = () => {
                     border: "2px solid black",
                     backgroundColor: "navy",
                     transition: "transform .5s ease-in-out",
-                    // borderRadius: logo.border,
+                    borderRadius: "10%",
                     padding: "10px"
                   }}
                 />
