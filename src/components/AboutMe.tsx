@@ -21,7 +21,7 @@ const AboutMe: React.FC = () => {
           interests has helped me identify new opportunities for technology to
           make a positive impact.
 
-          Software Developer with hands on problem solving, creativity, collaboration experience on a variety of technical teams. I bring previous experience building responsive web applications with X TECHNOLOGY, often delivering high-quality solutions under tight deadlines. I bring a laser sharp eye for creating clean, maintainable code and enjoy driving projects from conception to deployment.
+          Software Developer with hands on problem solving, creativity, collaboration experience on a variety of technical teams. I bring previous experience building responsive web applications with React and TypeScript, often delivering high-quality solutions under tight deadlines. I bring a laser sharp eye for creating clean, maintainable code and enjoy driving projects from conception to deployment.
         </p>
         <p className="text-md sm:text-lg leading-relaxed">
           Outside of coding, I love music and model building. I’m always eager
