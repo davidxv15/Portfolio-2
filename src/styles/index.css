@@ -16,6 +16,10 @@
   transform: translateX();
 }
 
+.smallCard {
+  background-image: radial-gradient(circle, #ffffff, #f1f1fb, #e2e3f6, #d0d6f3, #bdcaef, #a8bcf2, #91aef4, #78a1f6, #5b8dfd, #4077ff, #2b5fff, #2642ff);
+}
+
 /* .section {
   transform: translateY(-1.44rem)
 } */
