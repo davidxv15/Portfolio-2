@@ -102,6 +102,7 @@ const SkillsCarousel: React.FC = () => {
                     backgroundColor: "navy",
                     transition: "transform .5s ease-in-out",
                     // borderRadius: logo.border,
+                    padding: "10px"
                   }}
                 />
                 <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-8 font-outfit text-sky-600">
