@@ -105,7 +105,7 @@ const SkillsCarousel: React.FC = () => {
                     padding: "20px 20px"
                   }}
                 />
-                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-8 font-outfit text-sky-600">
+                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-8 font-outfit text-sky-900">
                   {logo.name}
                 </h3>
               </div>
