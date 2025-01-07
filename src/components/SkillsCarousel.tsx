@@ -96,13 +96,13 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="w-28 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto"
+                  className="w-40 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto"
                   style={{
                     border: "2px solid black",
                     backgroundColor: "navy",
                     transition: "transform .5s ease-in-out",
                     borderRadius: "10%",
-                    padding: "10px"
+                    padding: "20px 20px"
                   }}
                 />
                 <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-8 font-outfit text-sky-600">
