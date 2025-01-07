@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="scroll-mt-4 text-5xl font-poppins mb-4 mt-12">About Me</h2>
         <p className="text-lg sm:text-xl leading-relaxed mb-8">
-          Hello,👋🏼 I'm David Velasquez, a versatile professional with a diverse
+          {/* Hello,👋🏼 I'm David Velasquez, a versatile professional with a diverse
           background. As a Full Stack Web Developer, I specialize in creating
           engaging and effective user experiences with a strong emphasis on
           authentic design and brand recognition. I am also passionate about
@@ -19,7 +19,7 @@ const AboutMe: React.FC = () => {
           recording music. I am also a former EMT and chef, and I continue to
           contribute to my community as a volunteer. This broad range of
           interests has helped me identify new opportunities for technology to
-          make a positive impact.
+          make a positive impact. */}
 
           Software Developer with hands on problem solving, creativity, collaboration experience on a variety of technical teams. I bring previous experience building responsive web applications with React and TypeScript, often delivering high-quality solutions under tight deadlines. I bring a laser sharp eye for creating clean, maintainable code and enjoy driving projects from conception to deployment.
         </p>
