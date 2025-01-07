@@ -96,7 +96,7 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="w-28 h-28 sm:w-24 sm:h-24 lg:w-32 lg:h-24 mx-auto"
+                  className="w-28 h-28 sm:w-24 sm:h-24 lg:w-40 lg:h-32 mx-auto"
                   style={{
                     border: "2px solid black",
                     backgroundColor: "navy",
