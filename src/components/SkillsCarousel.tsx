@@ -98,7 +98,8 @@ const SkillsCarousel: React.FC = () => {
                   alt={logo.name}
                   className="w-28 h-28 sm:w-24 sm:h-24 lg:w-24 lg:h-24 mx-auto"
                   style={{
-                    border: "1px solid black",
+                    border: "2px solid black",
+                    backgroundColor: "navy",
                     transition: "transform .5s ease-in-out",
                     borderRadius: logo.border,
                   }}
