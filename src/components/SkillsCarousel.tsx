@@ -82,7 +82,7 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section className="relative w-auto max-w-sm h-[40vh] lg:max-w-4xl mx-auto py-8">
       <h1 className="scroll-mt-20 text-center p-8 md:p-2 md:pb-8 md:-mt-28 font-poppins" id="skills">Skills</h1>
-      <div className="bg-gradient-to-r from-sky-600 from-20% via-sky-100 via-50% to-sky-600 to-80% rounded-3xl shadow-none p-1">
+      <div className="bg-gradient-to-r from-sky-600 from-20% via-sky-900 via-50% to-sky-600 to-80% rounded-3xl shadow-none p-1">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
@@ -102,7 +102,7 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-40 lg:h-32 mx-auto"
+                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 mx-auto"
                   style={{
                     // border: "1px solid black",
                     // // backgroundColor: "navy",
