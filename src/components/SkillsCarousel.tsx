@@ -90,7 +90,9 @@ const SkillsCarousel: React.FC = () => {
               className={`flex flex-col items-center justify-center m-1 transform transition-transform duration-500 ${
                 logo.rounded ? "rounded-full" : ""
               }`}
-              style={{ borderRadius: logo.border }}
+              style={{ borderRadius: logo.border, 
+                // fade or full
+              width: "60rem" }}
             >
               <div className="imgAndH3 smallCard" style={{ 
                 border: "1px solid black",
