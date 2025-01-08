@@ -94,7 +94,7 @@ const SkillsCarousel: React.FC = () => {
             >
               <div className="imgAndH3 smallCard" style={{ 
                 border: "1px solid black",
-                backgroundColor: "grey",
+                backgroundColor: "#4e342e",
                 transition: "transform .5s ease-in-out",
                 borderRadius: "4%",
                 padding: ".5rem .4rem",
@@ -113,7 +113,7 @@ const SkillsCarousel: React.FC = () => {
                     // padding: "1rem 2.47rem"
                   }}
                 />
-                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-8 font-outfit text-sky-900">
+                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-8 font-outfit text-sky-300">
                   {logo.name}
                 </h3>
               </div>
