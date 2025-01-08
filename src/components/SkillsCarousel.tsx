@@ -97,7 +97,7 @@ const SkillsCarousel: React.FC = () => {
                 backgroundColor: "navy",
                 transition: "transform .5s ease-in-out",
                 borderRadius: "4%",
-                padding: "1rem 1.3rem"
+                padding: "1rem 1.4rem"
               }}>
                 <img
                   src={logo.src}
