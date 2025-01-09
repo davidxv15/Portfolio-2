@@ -104,7 +104,7 @@ const SkillsCarousel: React.FC = () => {
                 className="imgAndH3 smallCard"
                 style={{
                   border: "2px solid #64748b",
-                  backgroundColor: "black",
+                  backgroundColor: "#0f172a",
                   transition: "transform .5s ease-in-out",
                   borderRadius: ".75rem",
                   padding: ".5rem .4rem",
