@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.components {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .toggle-dot {
   transform: translateY(10px);
 }
