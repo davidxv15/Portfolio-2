@@ -106,7 +106,7 @@ const SkillsCarousel: React.FC = () => {
                   border: "2px solid #64748b",
                   backgroundColor: "black",
                   transition: "transform .5s ease-in-out",
-                  borderRadius: "4%",
+                  borderRadius: ".75rem",
                   padding: ".5rem .4rem",
                   width: "11rem",
                   height: "8.6rem",
