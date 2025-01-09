@@ -42,8 +42,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       fade: true,
     }}
     onClick={onClick}
-    >
-  </div>
+  ></div>
 );
 
 const SkillsCarousel: React.FC = () => {
@@ -81,7 +80,12 @@ const SkillsCarousel: React.FC = () => {
 
   return (
     <section className="relative w-auto max-w-sm h-[40vh] lg:max-w-4xl mx-auto py-8">
-      <h1 className="scroll-mt-20 text-center p-8 md:p-2 md:pb-8 md:-mt-28 font-poppins" id="skills">Skills</h1>
+      <h1
+        className="scroll-mt-20 text-center p-8 md:p-2 md:pb-8 md:-mt-28 font-poppins"
+        id="skills"
+      >
+        Skills
+      </h1>
       <div className="bg-gradient-to-r from-sky-600 from-20% via-sky-900 via-50% to-sky-600 to-80% rounded-3xl shadow-none p-1">
         <Slider {...settings}>
           {logos.map((logo, index) => (
@@ -90,30 +94,37 @@ const SkillsCarousel: React.FC = () => {
               className={`flex flex-col items-center justify-center m-1 transform transition-transform duration-500 ${
                 logo.rounded ? "rounded-full" : ""
               }`}
-              style={{ borderRadius: logo.border, 
+              style={{
+                borderRadius: logo.border,
                 // fade or full
-              width: "60rem" }}
+                width: "60rem",
+              }}
             >
-              <div className="imgAndH3 smallCard" style={{ 
-                border: "1px solid black",
-                backgroundColor: "#4e342e",
-                transition: "transform .5s ease-in-out",
-                borderRadius: "4%",
-                padding: ".5rem .4rem",
-                width: "11rem",
-                height: "8.6rem",
-              }}>
+              <div
+                className="imgAndH3 smallCard"
+                style={{
+                  border: "1px solid black",
+                  backgroundColor: "black",
+                  transition: "transform .5s ease-in-out",
+                  borderRadius: "4%",
+                  padding: ".5rem .4rem",
+                  width: "11rem",
+                  height: "8.6rem",
+                }}
+              >
                 <img
                   src={logo.src}
                   alt={logo.name}
                   className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 mx-auto"
-                  style={{
-                    // border: "1px solid black",
-                    // // backgroundColor: "navy",
-                    // transition: "transform .5s ease-in-out",
-                    // borderRadius: "4%",
-                    // padding: "1rem 2.47rem"
-                  }}
+                  style={
+                    {
+                      // border: "1px solid black",
+                      // // backgroundColor: "navy",
+                      // transition: "transform .5s ease-in-out",
+                      // borderRadius: "4%",
+                      // padding: "1rem 2.47rem"
+                    }
+                  }
                 />
                 <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-8 font-outfit text-sky-300">
                   {logo.name}
