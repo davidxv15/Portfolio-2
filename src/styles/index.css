@@ -18,7 +18,8 @@
 
 .smallCard {
   background-color: white;
-  
+  border-radius: 4%;
+
   /* background-image: radial-gradient(circle, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fdfdff, #fafaff, #f7f8ff, #eff3ff, #e5efff, #daebff, #cde8ff); */
 }
 
