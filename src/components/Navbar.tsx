@@ -75,10 +75,10 @@ const Navbar: React.FC = () => {
             Home
           </a>
           <a
-            href="#about"
+            href="#projects"
             className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-900"
           >
-            About
+            Skills
           </a>
           <a
             href="#projects"
@@ -87,10 +87,10 @@ const Navbar: React.FC = () => {
             Projects
           </a>
           <a
-            href="#projects"
+            href="#about"
             className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-900"
           >
-            Skills
+            About
           </a>
           <a
             href="#contact"
