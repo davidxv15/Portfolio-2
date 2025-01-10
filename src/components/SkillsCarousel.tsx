@@ -101,7 +101,7 @@ const SkillsCarousel: React.FC = () => {
               }}
             >
               <div
-                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-200 to-slate-200 via-slate-500"
+                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-500 to-slate-200 via-slate-200"
                 style={{
                   border: "2px solid #64748b",
                   // backgroundColor: "#0f172a",
@@ -126,7 +126,7 @@ const SkillsCarousel: React.FC = () => {
                     }
                   }
                 />
-                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-0 font-outfit text-slate-900 font-medium tracking-wide">
+                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-0 font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
                   {logo.name}
                 </h3>
               </div>
