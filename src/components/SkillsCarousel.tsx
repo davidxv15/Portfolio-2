@@ -109,7 +109,7 @@ const SkillsCarousel: React.FC = () => {
                   borderRadius: ".75rem",
                   padding: ".5rem .4rem",
                   width: "11rem",
-                  height: "8.6rem",
+                  height: "10rem",
                 }}
               >
                 <img
