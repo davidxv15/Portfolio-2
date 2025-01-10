@@ -101,7 +101,7 @@ const SkillsCarousel: React.FC = () => {
               }}
             >
               <div
-                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600"
+                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow"
                 style={{
                   border: "2px solid #64748b",
                   // backgroundColor: "#0f172a",
@@ -115,7 +115,7 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 mx-auto"
+                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-2 mx-auto"
                   style={
                     {
                       // border: "1px solid black",
@@ -126,7 +126,7 @@ const SkillsCarousel: React.FC = () => {
                     }
                   }
                 />
-                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-0 lg:mt-4 font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
+                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
                   {logo.name}
                 </h3>
               </div>
