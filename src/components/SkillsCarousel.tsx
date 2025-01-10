@@ -79,7 +79,7 @@ const SkillsCarousel: React.FC = () => {
   };
 
   return (
-    <section className="relative w-auto max-w-sm h-[40vh] lg:max-w-4xl mx-auto py-8 bg-sky-600">
+    <section className="relative w-auto h-[40vh] lg:max-w-4xl mx-auto py-8 bg-sky-600">
       <h1
         className="scroll-mt-20 text-center p-8 md:p-2 md:pb-8 md:-mt-28 font-poppins bg-gradient-to-t from-sky-600 via-sky-500"
         id="skills"
@@ -115,14 +115,14 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
+                  className="smallCard w-32 h-32 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
                   style={
                     {
                       border: "1.5px solid #64748b",
                       // // backgroundColor: "navy",
                       // transition: "transform .5s ease-in-out",
                       // borderRadius: "4%",
-                      // padding: "1rem 2.47rem"
+                      // padding: "1rem"
                     }
                   }
                 />
