@@ -126,7 +126,7 @@ const SkillsCarousel: React.FC = () => {
                     }
                   }
                 />
-                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-0 font-outfit text-sky-300 font-medium tracking-wide">
+                <h3 className="text-center mt-2 text-2xl mx-36 lg:mx-0 font-outfit text-slate-900 font-medium tracking-wide">
                   {logo.name}
                 </h3>
               </div>
