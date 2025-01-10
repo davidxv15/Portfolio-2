@@ -115,10 +115,10 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-2 mx-auto"
+                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-2 mx-auto border-black"
                   style={
                     {
-                      // border: "1px solid black",
+                      border: ".5px solid #64748b",
                       // // backgroundColor: "navy",
                       // transition: "transform .5s ease-in-out",
                       // borderRadius: "4%",
