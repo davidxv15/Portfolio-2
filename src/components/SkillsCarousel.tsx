@@ -115,7 +115,7 @@ const SkillsCarousel: React.FC = () => {
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-2 mx-auto border-black"
+                  className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
                   style={
                     {
                       border: ".5px solid #64748b",
@@ -126,7 +126,7 @@ const SkillsCarousel: React.FC = () => {
                     }
                   }
                 />
-                <h3 className="text-center mt-3 text-2xl mx-36 lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
+                <h3 className="text-center mt-4 text-2xl mx-36 lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
                   {logo.name}
                 </h3>
               </div>
