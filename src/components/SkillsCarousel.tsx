@@ -86,7 +86,7 @@ const SkillsCarousel: React.FC = () => {
       >
         Skills
       </h1>
-      <div className=" rounded-3xl shadow-none p-0">
+      <div className=" rounded-3xl shadow-none p-0 w-screen">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
@@ -118,7 +118,7 @@ const SkillsCarousel: React.FC = () => {
                   className="smallCard w-28 h-28 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
                   style={
                     {
-                      border: ".5px solid #64748b",
+                      border: "1.5px solid #64748b",
                       // // backgroundColor: "navy",
                       // transition: "transform .5s ease-in-out",
                       // borderRadius: "4%",
