@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
             </a>
           </div>
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="sticky md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-200 text-xl bg-gray-900 rounded-xl shadow-inner focus:outline-none hover:border-gray-300 shadow shadow-gray-400 animate-fade"
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Links */}
       {isOpen && (
-        <div className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="sticky md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
             href="#"
             className="text-gray-200 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-gray-900"
