@@ -54,17 +54,5 @@ export default {
   plugins: [
     require('@tailwindcss/forms'), // Optional: adds better styling for forms
     require('@tailwindcss/typography'), // Optional: improves typography support
-    plugin(function({ addUtilities }) {
-      const newUtilities = {
-        '.bg-gradient-radial': {
-          background: 'radial-gradient(circle, var(--tw-gradient-stops))',
-        },
-        '.bg-gradient-conic': {
-          background:
-            'conic-gradient(from 0deg, var(--tw-gradient-stops))',
-        },
-      };
-      addUtilities(newUtilities);
-    }),
   ],
 };
