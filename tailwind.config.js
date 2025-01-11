@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {},
       fontFamily: {
         fira: ['Fira Sans Condensed', 'sans-serif'], 
         poppins: ['Poppins', 'sans-serif'],
