@@ -86,7 +86,7 @@ const SkillsCarousel: React.FC = () => {
       >
         Skills
       </h1>
-      <div className=" rounded-3xl shadow-none w-screen pl-2">
+      <div className=" rounded-3xl shadow-none w-screen pl-6">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
