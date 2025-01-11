@@ -86,7 +86,7 @@ const SkillsCarousel: React.FC = () => {
       >
         Skills
       </h1>
-      <div className=" rounded-3xl shadow-none p-0 w-screen">
+      <div className=" rounded-3xl shadow-none w-screen">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
@@ -97,11 +97,11 @@ const SkillsCarousel: React.FC = () => {
               style={{
                 borderRadius: logo.border,
                 // fade or full
-                width: "60rem",
+                width: "fade",
               }}
             >
               <div
-                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700 md:px-.5rem md:py-.4rem"
+                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700 md:px-.5rem md:py-.4rem px-4rem"
                 style={{
                   border: "2px solid #64748b",
                   // backgroundColor: "#0f172a",
