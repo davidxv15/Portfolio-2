@@ -116,15 +116,13 @@ const SkillsCarousel: React.FC = () => {
                   src={logo.src}
                   alt={logo.name}
                   className="smallCard w-32 h-32 sm:w-28 sm:h-24 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
-                  style={
-                    {
-                      border: "1.5px solid #64748b",
-                      // // backgroundColor: "navy",
-                      // transition: "transform .5s ease-in-out",
-                      // borderRadius: "4%",
-                      // padding: "1rem"
-                    }
-                  }
+                  style={{
+                    border: "1.5px solid #64748b",
+                    // // backgroundColor: "navy",
+                    // transition: "transform .5s ease-in-out",
+                    // borderRadius: "4%",
+                    // padding: "1rem"
+                  }}
                 />
                 <h3 className="text-center mt-4 text-2xl lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
                   {logo.name}
