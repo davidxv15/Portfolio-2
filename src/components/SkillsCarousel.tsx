@@ -75,6 +75,12 @@ const SkillsCarousel: React.FC = () => {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   };
 
