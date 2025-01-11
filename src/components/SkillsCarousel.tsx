@@ -53,12 +53,12 @@ const SkillsCarousel: React.FC = () => {
     // autoplay: true,
     autoPlaySpeed: 0,
     speed: 20000,
-    centerMode: true,
+    // centerMode: true,
     cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 20,
     centerPadding: "0",
-    dots: true,
+    // dots: true,
     pauseOnHover: true,
     prevArrow: <CustomArrow />,
     nextArrow: <CustomArrow />,
@@ -86,7 +86,7 @@ const SkillsCarousel: React.FC = () => {
       >
         Skills
       </h1>
-      <div className=" rounded-3xl shadow-none w-screen">
+      <div className=" rounded-3xl shadow-none w-screen pl-2">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
@@ -96,7 +96,7 @@ const SkillsCarousel: React.FC = () => {
               }`}
               style={{
                 borderRadius: logo.border,
-                transform: "translateX(-2rem)",
+                transform: "translateX(1rem)",
                 // fade or full
                 width: "fade",
               }}
