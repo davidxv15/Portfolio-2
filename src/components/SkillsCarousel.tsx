@@ -81,7 +81,7 @@ const SkillsCarousel: React.FC = () => {
   return (
     <section className="relative w-auto h-[40vh] lg:max-w-4xl mx-auto py-8 bg-sky-600">
       <h1
-        className="scroll-mt-20 text-center p-8 md:p-2 md:pb-8 md:-mt-28 font-poppins bg-gradient-to-t from-sky-600 via-sky-500"
+        className="scroll-mt-20 text-center w-screen md:p-2 md:pb-8 md:-mt-28 font-poppins bg-gradient-to-t from-sky-600 via-sky-600"
         id="skills"
       >
         Skills
@@ -96,6 +96,7 @@ const SkillsCarousel: React.FC = () => {
               }`}
               style={{
                 borderRadius: logo.border,
+                transform: "translateX(-2rem)",
                 // fade or full
                 width: "fade",
               }}
