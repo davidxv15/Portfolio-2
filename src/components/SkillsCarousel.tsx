@@ -36,10 +36,10 @@ const CustomArrow = ({ className, style, onClick }: any) => (
     className={`${className} custom-arrow`}
     style={{
       ...style,
-      color: "blue",
+      color: "red",
       fontSize: "32px",
       zIndex: 10,
-      fade: true,
+      // fade: true,
     }}
     onClick={onClick}
   ></div>
@@ -48,14 +48,15 @@ const CustomArrow = ({ className, style, onClick }: any) => (
 const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
+    draggable: true,
     adaptiveHeight: true,
     arrows: false,
-    // autoplay: true,
-    autoPlaySpeed: 0,
+    autoplay: true,
+    autoPlaySpeed: 20000,
     speed: 20000,
-    // centerMode: true,
+    centerMode: true,
     cssEase: "linear",
-    slidesToShow: 5,
+    slidesToShow: 5.5,
     slidesToScroll: 20,
     centerPadding: "0",
     // dots: true,
@@ -72,7 +73,7 @@ const SkillsCarousel: React.FC = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
       {
