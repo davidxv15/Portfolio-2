@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const logos = [
   { name: "CSS", src: "CSS3Logo.png" },
-  { name: "Django", src: "djangoLogo.png", rounded: true, border: "50%" },
+  { name: "Django", src: "djangoLogo1.png", rounded: true, border: "50%" },
   { name: "Express.js", src: "expressJSLogo.webp" },
   { name: "Figma", src: "figmaLogo.png", rounded: true, border: "50%" },
   { name: "Git", src: "gitLogo.png", rounded: true, border: "20%" },
