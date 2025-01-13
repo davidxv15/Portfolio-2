@@ -70,31 +70,31 @@ const Navbar: React.FC = () => {
         <div className="sticky md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-t from-slate-600 via-slate-800 to-slate-800 opacity-95">
           <a
             href="#"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-bold hover:bg-gray-100 hover:text-gray-900"
+            className="text-gray-200 block px-3 py-2 rounded-md text-xl font-bold hover:bg-gray-100 hover:text-gray-900"
           >
             Home
           </a>
           <a
             href="#projects"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-bold hover:bg-gray-100 hover:text-gray-900"
+            className="text-gray-200 block px-3 py-2 rounded-md text-xl font-bold hover:bg-gray-100 hover:text-gray-900"
           >
             Skills
           </a>
           <a
             href="#projects"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-bold hover:bg-gray-100 hover:text-gray-900"
+            className="text-gray-200 block px-3 py-2 rounded-md text-xl font-bold hover:bg-gray-100 hover:text-gray-900"
           >
             Projects
           </a>
           <a
             href="#about"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-bold hover:bg-gray-100 hover:text-gray-900"
+            className="text-gray-200 block px-3 py-2 rounded-md text-xl font-bold hover:bg-gray-100 hover:text-gray-900"
           >
             About
           </a>
           <a
             href="#contact"
-            className="text-gray-200 block px-3 py-2 rounded-md text-base font-bold hover:bg-gray-100 hover:text-gray-900"
+            className="text-gray-200 block px-3 py-2 rounded-md text-xl font-bold hover:bg-gray-100 hover:text-gray-900"
           >
             Contact
           </a>
