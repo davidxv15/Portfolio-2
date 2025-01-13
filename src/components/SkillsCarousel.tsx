@@ -58,6 +58,7 @@ const SkillsCarousel: React.FC = () => {
     cursor: "pointer",
     draggable: true,
     infinite: true,
+    rewind: false,
     slidesToShow: 5,
     slidesToScroll: 20,
     // swipeToSlide: true,
