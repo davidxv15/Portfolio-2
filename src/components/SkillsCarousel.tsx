@@ -48,7 +48,6 @@ const CustomArrow = ({ className, style, onClick }: any) => (
 const SkillsCarousel: React.FC = () => {
   const settings = {
     infinite: true,
-    draggable: true,
     adaptiveHeight: true,
     arrows: false,
     autoplay: true,
@@ -56,8 +55,10 @@ const SkillsCarousel: React.FC = () => {
     speed: 20000,
     centerMode: true,
     cssEase: "linear",
+    draggable: true,
     slidesToShow: 5.5,
     slidesToScroll: 20,
+    swipeToSlide: true,
     centerPadding: "0",
     // dots: true,
     pauseOnHover: true,
