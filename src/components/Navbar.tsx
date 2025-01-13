@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Links */}
       {isOpen && (
-        <div className="sticky md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-t from-slate-700 via-slate-800 to-slate-900 opacity-95">
+        <div className="sticky md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-t from-slate-600 via-slate-800 to-slate-800 opacity-95">
           <a
             href="#"
             className="text-gray-200 block px-3 py-2 rounded-md text-base font-bold hover:bg-gray-100 hover:text-gray-900"
