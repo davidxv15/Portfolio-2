@@ -57,7 +57,7 @@ const SkillsCarousel: React.FC = () => {
     centerPadding: "0",
     cssEase: "linear",
     draggable: true,
-    slidesToShow: 5.5,
+    slidesToShow: 5,
     slidesToScroll: 1,
     swipeToSlide: true,
     // dots: true,
