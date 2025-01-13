@@ -112,15 +112,15 @@ const SkillsCarousel: React.FC = () => {
               }}
             >
               <div
-                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700  sm:w-32 sm:h-44 md:w-24 md:h-32 lg:w-44 lg:h-44"
+                className="imgAndH3 smallCard ml-24 bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700  sm:w-24 sm:h-44 md:w-20 md:h-32 lg:w-48 lg:h-44"
                 style={{
                   border: "2px solid #64748b",
                   // backgroundColor: "#0f172a",
                   transition: "transform .5s ease-in-out",
                   borderRadius: ".75rem",
                   padding: "1rem .8rem",
-                  width: "16rem",
-                  height: "14rem",
+                  // width: "16rem",
+                  // height: "14rem",
                 }}
               >
                 <img
