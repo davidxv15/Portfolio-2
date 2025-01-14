@@ -101,7 +101,7 @@ const SkillsCarousel: React.FC = () => {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center m-1 transform transition-transform duration-1500 ${
+              className={`flex flex-col items-center justify-center m-1 transform transition-transform duration-300 ${
                 logo.rounded ? "rounded-full" : ""
               }`}
               style={{
