@@ -70,7 +70,7 @@ const SkillsCarousel: React.FC = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 5,
         },
       },
       {
@@ -101,7 +101,7 @@ const SkillsCarousel: React.FC = () => {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center m-1 transform transition-transform duration-2000 ${
+              className={`flex flex-col items-center justify-center m-1 transform transition-transform duration-200 ${
                 logo.rounded ? "rounded-full" : ""
               }`}
               style={{
