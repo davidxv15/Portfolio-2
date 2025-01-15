@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 import HeroSection from './components/HeroSection';
 import SkillsCarousel from './components/SkillsCarousel';
 import SoftSkillsCarousel from './components/SoftSkillsCarousel';
