@@ -38,7 +38,7 @@ const CustomArrow = ({ className, style, onClick }: any) => (
       ...style,
       color: "red",
       fontSize: "32px",
-      zIndex: 10,
+      // zIndex: 40,
       // fade: true,
     }}
     onClick={onClick}
@@ -89,24 +89,25 @@ const SkillsCarousel: React.FC = () => {
   };
 
   return (
-    <section className="relative w-auto h-[40vh] mx-auto py-8 bg-sky-600">
+    <section className="relative w-auto h-[40vh] mx-auto py-8 bg-sky-600 z-0">
       <h1
-        className="scroll-mt-20 text-center w-screen md:p-2 md:pb-8 md:-mt-28 font-poppins bg-gradient-to-t from-sky-600 via-sky-600"
+        className="scroll-mt-20 text-center w-screen md:p-2 md:pb-8 md:-mt-28 font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0"
         id="skills"
       >
         Skills
       </h1>
-      <div className=" rounded-3xl shadow-none w-screen">
+      <div className=" rounded-3xl shadow-none w-screen z-10">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center m-1 transform transition-transform duration-200 ${
+              className={`flex flex-col items-center justify-center m-1 z-10 transform transition-transform duration-200 ${
                 logo.rounded ? "rounded-full" : ""
               }`}
               style={{
                 borderRadius: logo.border,
                 transform: "translateX(1rem)",
+                zIndex: "0",
                 // fade or full
                 // width: "fade",
               }}
