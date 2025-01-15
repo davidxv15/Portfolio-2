@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:top-40 md:left-24 lg:left-28 lg:top-24 xl:left-48 xl:top-36 xl:-translate-y-12 transition-all duration-900 ease-in-out animate-fade"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:absolute md:top-40 md:left-24 lg:left-32 lg:top-28 xl:left-48 xl:top-36 xl:-translate-y-12 transition-all duration-900 ease-in-out animate-fade"
         />
       </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-32 lg:translate-y-8 xl:translate-y-20">
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
           Contact Me
         </button>
       </div>
-      <div className="flex space-x-4 mt-6 space-x-24 md:space-x-32 lg:space-x-36 lg:translate-x-60 md:translate-x-48 md:-translate-y-16 lg:-translate-y-16 xl:translate-y-1">
+      <div className="flex space-x-4 mt-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-20 lg:translate-x-64 xl:translate-y-1">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
