@@ -6,8 +6,7 @@ const Contact: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Get in Touch</h2>
         <p className="text-white text-lg mb-8">
-          I'd love to hear from you! Whether it's about opportunities, collaborations, or feedback,
-          feel free to reach out.
+          How can I multiply your productivity?
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
           {/* LinkedIn */}
