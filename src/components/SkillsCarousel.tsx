@@ -49,21 +49,21 @@ const SkillsCarousel: React.FC = () => {
   const settings = {
     adaptiveHeight: true,
     arrows: false,
-    // autoplay: true,
-    autoPlaySpeed: 800,
-    // speed: 2000,
+    autoplay: true,
+    autoPlaySpeed: 200,
+    speed: 200,
     centerMode: true,
     centerPadding: "1rem",
     cssEase: "linear",
     cursor: "pointer",
     draggable: true,
     infinite: true,
-    rewind: false,
+    // rewind: false,
     slidesToShow: 5,
     slidesToScroll: 20,
     // swipeToSlide: true,
     // dots: true,
-    pauseOnHover: true,
+    // pauseOnHover: true,
     prevArrow: <CustomArrow />,
     nextArrow: <CustomArrow />,
     responsive: [
@@ -101,7 +101,7 @@ const SkillsCarousel: React.FC = () => {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center m-1 z-10 transform transition-transform duration-200 ${
+              className={`flex flex-col items-center justify-center m-1 z-10 transform transition-transform duration-1500 ${
                 logo.rounded ? "rounded-full" : ""
               }`}
               style={{
