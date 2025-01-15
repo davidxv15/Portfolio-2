@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
             className="flex items-center bg-white text-sky-700 px-4 py-2 rounded-full shadow-lg hover:bg-sky-500 hover:text-white transition duration-300"
           >
             <img
-              src="inLinked.png"
+              src="linkedEdit.PNG"
               alt="LinkedIn"
               className="w-6 h-6 mr-2"
             />
