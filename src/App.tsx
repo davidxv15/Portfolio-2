@@ -32,6 +32,7 @@ const App: React.FC = () => {
       {/* <SoftSkillsCarousel /> */}
       <Projects />
       <AboutMe />
+      <Contact />
     </div>
   );
 };
