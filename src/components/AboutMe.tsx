@@ -7,7 +7,9 @@ const AboutMe: React.FC = () => {
       id="about"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="scroll-mt-4 text-5xl font-poppins mb-4 mt-12">About Me</h2>
+        <h2 className="scroll-mt-4 text-5xl font-poppins mb-4 mt-12">
+          About Me
+        </h2>
         <p className="text-lg sm:text-xl leading-relaxed mb-8">
           {/* Hello,👋🏼 I'm David Velasquez, a versatile professional with a diverse
           background. As a Full Stack Web Developer, I specialize in creating
@@ -20,12 +22,16 @@ const AboutMe: React.FC = () => {
           contribute to my community as a volunteer. This broad range of
           interests has helped me identify new opportunities for technology to
           make a positive impact. */}
-
-          Software Developer with hands on problem solving, creativity, collaboration experience on a variety of technical teams. I bring previous experience building responsive web applications with React and TypeScript, often delivering high-quality solutions under tight deadlines. I bring a laser sharp eye for creating clean, maintainable code and enjoy driving projects from conception to deployment.
+          Software Developer with hands on problem solving, creativity,
+          collaboration experience on a variety of technical teams. I bring
+          previous experience building responsive web applications with React
+          and TypeScript, often delivering high-quality solutions under tight
+          deadlines. I bring a laser sharp eye for creating clean, maintainable
+          code and enjoy driving projects from conception to deployment.
         </p>
-        <p className="text-md sm:text-lg leading-relaxed">
-          Outside of coding, music and model building enjoyable sources of inspiration and data structure. I’m always eager
-          to learn and take on new challenges.
+        <p className="text-md sm:text-xl leading-relaxed">
+          Outside of coding, I love music and model building. I’m always eager to learn and take on
+          new challenges.
         </p>
       </div>
     </section>
