@@ -10,7 +10,7 @@ interface ThemeToggleProps {
 const ThemeToggle: React.FC<ThemeToggleProps> = ({
   themes,
   onThemeChange,
-  defaultThemeIndex = 0, // Default to the first theme
+  defaultThemeIndex = 0, // default to the first theme
 }) => {
   const [currentThemeIndex, setCurrentThemeIndex] = useState(defaultThemeIndex);
 

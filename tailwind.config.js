@@ -41,6 +41,8 @@ export default {
           fade: 'fadeIn 1s ease-in-out',
           'spin-slow': 'spin 3s linear infinite',
           'pulse-fast': 'pulse 0.5s linear infinite',
+          'slide-in-left': 'slideInLeft 0.5s ease-out',
+          'slide-in-right': 'slideInRight 0.5s ease-out',
         },
   
         keyframes: {
