@@ -43,6 +43,8 @@ export default {
           'pulse-fast': 'pulse 0.5s linear infinite',
           'slide-in-left': 'slideInLeft 0.5s ease-out',
           'slide-in-right': 'slideInRight 0.5s ease-out',
+          'bounce-in': 'bounceIn 0.6s ease-in-out',
+
         },
   
         keyframes: {
