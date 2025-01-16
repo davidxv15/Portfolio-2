@@ -13,7 +13,7 @@ const softSkills = [
   { name: "Adaptability", description: "Embracing change" },
 ];
 
-const SoftSkillsCarousel: React.FC = () => (
+const IconCarousel: React.FC = () => (
   <section className="w-full h-[50vh] bg-gradient-to-b from-gray-800 to-slate-600">
     <h2 className="text-center text-white text-3xl mb-6">Soft Skills</h2>
     <Swiper
@@ -43,4 +43,4 @@ const SoftSkillsCarousel: React.FC = () => (
   </section>
 );
 
-export default SoftSkillsCarousel;
+export default IconCarousel;
