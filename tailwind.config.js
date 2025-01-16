@@ -33,7 +33,7 @@ export default {
       colors: {
         customThemes: {
           default: '',
-          rayscale: ' ',
+          grayscale: ' ',
           invert: ' ',
           sepia: ' ',
         },
