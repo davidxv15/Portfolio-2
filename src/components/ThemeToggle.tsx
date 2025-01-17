@@ -20,6 +20,12 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
     onThemeChange(themes[nextIndex]); // Notify parent of theme change
   };
 
+  const handleThemeChange = (newTheme: string) => {
+    document.documentElement.className = ""; // Reset any existing theme classes
+    document.documentElement.classList.add(newTheme); // Apply the new theme class
+  };
+  
+
   return (
     <div className="flex justify-end items-center bg-transparent mb-1">
       <span className="ml-4 mr-1 font-medium text-slate-400">

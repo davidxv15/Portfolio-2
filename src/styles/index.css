@@ -23,10 +23,10 @@
   /* background-image: radial-gradient(circle, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fdfdff, #fafaff, #f7f8ff, #eff3ff, #e5efff, #daebff, #cde8ff); */
 }
 
-.invert img.no-invert {
+.invert .no-invert {
   filter: none !important;
-  mix-blend-mode: normal;
 }
+
 
 /* .section {
   transform: translateY(-1.44rem)
