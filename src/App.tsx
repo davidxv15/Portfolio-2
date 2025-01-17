@@ -5,7 +5,7 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import HeroSection from './components/HeroSection';
 import SkillsCarousel from './components/SkillsCarousel';
-import SoftSkillsCarousel from './components/SoftSkillsCarousel';
+// import SoftSkillsCarousel from './components/SoftSkillsCarousel';
 import Navbar from './components/Navbar';
 import ThemeToggle from './components/ThemeToggle';
 
