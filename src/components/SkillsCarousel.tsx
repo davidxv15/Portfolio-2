@@ -57,7 +57,7 @@ const SkillsCarousel: React.FC = () => {
     cssEase: "linear",
     cursor: "pointer",
     // draggable: true,
-    // infinite: true,
+    infinite: true,
     // rewind: false,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -71,18 +71,24 @@ const SkillsCarousel: React.FC = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
         },
       },
     ],
