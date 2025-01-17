@@ -50,7 +50,7 @@ const SkillsCarousel: React.FC = () => {
     adaptiveHeight: true,
     arrows: false,
     autoplay: true,
-    autoPlaySpeed: 1000,
+    autoPlaySpeed: 200,
     speed: 1000,
     centerMode: true,
     centerPadding: "1rem",
