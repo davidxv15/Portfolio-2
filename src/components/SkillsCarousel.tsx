@@ -60,7 +60,7 @@ const SkillsCarousel: React.FC = () => {
     // infinite: true,
     // rewind: false,
     slidesToShow: 5,
-    slidesToScroll: 10,
+    slidesToScroll: 20,
     // swipeToSlide: true,
     // dots: true,
     // pauseOnHover: true,
