@@ -119,13 +119,13 @@ const SkillsCarousel: React.FC = () => {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center m-1 z-10 transform transition-transform duration-1500 ${
+              className={`flex flex-col items-center justify-center m-1 z-10 transform transition-transform duration-500 ${
                 logo.rounded ? "rounded-full" : ""
               }`}
               style={{
                 borderRadius: logo.border,
                 transform: "translateX(1rem)",
-                zIndex: "0",
+                zIndex: "1",
                 // fade or full
                 // width: "fade",
               }}
