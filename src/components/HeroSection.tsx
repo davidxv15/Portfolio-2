@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
         <h2 className="text-5xl font-poppins text-slate-900 mt-1 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-16 lg:-translate-y-6 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
           Software Developer
         </h2>
-        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:-translate-y-1 typing-effect">
+        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:-translate-y-1 animate-fade">
         Elevating team environments by leading with enthusiasm, integrity, and dedication. Driving success through actions that inspire
         {/* and motivate */}.
         </p>
