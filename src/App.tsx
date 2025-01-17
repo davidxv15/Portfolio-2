@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <Navbar /></div>
         <div className="mr-auto flex justify-end font-outfit bg-blue-100 animate-fade">
       <ThemeToggle
-          themes={['', 'invert', 'grayscale', 'sepia']}
+          themes={['', 'grayscale', 'sepia', 'invert']}
   onThemeChange={(theme) => handleThemeChange(theme)}
         /></div>
       <HeroSection />
