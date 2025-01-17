@@ -73,6 +73,7 @@ const SkillsCarousel: React.FC = () => {
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
+          cssEase: "linear",
         },
       },
       {
@@ -81,6 +82,7 @@ const SkillsCarousel: React.FC = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
+          cssEase: "linear",
         },
       },
       {
@@ -89,6 +91,7 @@ const SkillsCarousel: React.FC = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
+          cssEase: "linear",
         },
       },
     ],
