@@ -25,6 +25,7 @@
 
 .invert img.no-invert {
   filter: none !important;
+  mix-blend-mode: normal;
 }
 
 /* .section {
