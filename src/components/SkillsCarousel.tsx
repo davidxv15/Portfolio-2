@@ -168,7 +168,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
           ))}
         </Slider>
       </div>
-      <IconCarousel />
+      <IconCarousel reverse={true} />
     </section>
   );
 };
