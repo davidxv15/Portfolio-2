@@ -30,10 +30,10 @@ const Projects: React.FC = () => {
 
   return (
     <section
-      className="bg-gradient-to-t from-slate-400 from-10% via-slate-100 via-50% to-sky-600 to-98% py-12 px-2"
+      className="bg-gradient-to-t from-slate-400 from-10% via-slate-100 via-50% to-sky-600 to-98% py-40 px-2"
       id="projects"
     >
-      <h2 className="scroll-mt-40 text-5xl tracking-tight font-poppins text-slate-200 text-center mb-8 mt-4">
+      <h2 className="scroll-mt-6 text-5xl tracking-tight font-poppins text-slate-200 text-center mb-8 mt-4">
         Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto">
