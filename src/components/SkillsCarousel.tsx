@@ -62,6 +62,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
     // draggable: true,
     infinite: true,
     // rewind: false,
+    rtl: reverse,
     slidesToShow: 5,
     slidesToScroll: 1,
     swipeToSlide: true,
