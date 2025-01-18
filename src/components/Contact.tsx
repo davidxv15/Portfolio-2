@@ -2,9 +2,9 @@ import * as React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <section className="bg-gradient-to-b from-slate-900 to-sky-800 h-screen py-20" id="contact">
+    <section className="bg-gradient-to-b from-slate-900 to-sky-800 h-screen py-12" id="contact">
       <div className="max-w-4xl mx-auto text-center px-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Get in Touch</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 font-poppins mb-6 mt-12">Get in Touch</h2>
         <p className="text-white text-lg mb-8">
           How can I multiply your productivity?
         </p>
