@@ -50,10 +50,10 @@ const logos = [
 const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) => {
   const settings = {
     adaptiveHeight: true,
+    speed: 300,
     arrows: false,
     autoplay: true,
-    autoPlaySpeed: 200,
-    speed: 1000,
+    autoPlaySpeed: 5,
     centerMode: true,
     centerPadding: "1rem",
     cssEase: "linear",
