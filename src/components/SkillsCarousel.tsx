@@ -33,21 +33,21 @@ const logos = [
   { name: "WebSocket", src: "webSocketLogo.png", rounded: true, border: "10%" },
 ];
 
-const CustomArrow = ({ className, style, onClick }: any) => (
-  <div
-    className={`${className} custom-arrow`}
-    style={{
-      ...style,
-      color: "red",
-      fontSize: "32px",
-      // zIndex: 40,
-      // fade: true,
-    }}
-    onClick={onClick}
-  ></div>
-);
+// const CustomArrow = ({ className, style, onClick }: any) => (
+//   <div
+//     className={`${className} custom-arrow`}
+//     style={{
+//       ...style,
+//       color: "red",
+//       fontSize: "32px",
+//       // zIndex: 40,
+//       // fade: true,
+//     }}
+//     onClick={onClick}
+//   ></div>
+// );
 
-const SkillsCarousel: React.FC = () => {
+const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) => {
   const settings = {
     adaptiveHeight: true,
     arrows: false,
@@ -66,8 +66,8 @@ const SkillsCarousel: React.FC = () => {
     swipeToSlide: true,
     dots: false,
     pauseOnHover: false,
-    prevArrow: <CustomArrow />,
-    nextArrow: <CustomArrow />,
+    // prevArrow: <CustomArrow />,
+    // nextArrow: <CustomArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -116,6 +116,7 @@ const SkillsCarousel: React.FC = () => {
       >
         Skills
       </h1>
+      <div></div>
       <div className=" rounded-3xl shadow-none w-screen z-10">
         <Slider {...settings}>
           {logos.map((logo, index) => (
