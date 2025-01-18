@@ -58,6 +58,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
     centerPadding: "1rem",
     cssEase: "linear",
     cursor: "pointer",
+    swipe: false,
     // draggable: true,
     infinite: true,
     // rewind: false,
