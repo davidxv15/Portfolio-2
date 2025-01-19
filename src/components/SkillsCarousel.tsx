@@ -103,9 +103,9 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
           slidesToScroll: 1,
           infinite: true,
           cssEase: "linear",
-          autoplay: true,
-          autoPlaySpeed: 100,
-          speed: 1000,
+          // autoplay: true,
+          // autoPlaySpeed: 100,
+          // speed: 1000,
         },
       },
     ],
@@ -120,7 +120,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
         Skills
       </h1>
       <div></div>
-      <div className=" rounded-3xl shadow-none w-screen z-10">
+      <div className=" rounded-3xl shadow-none w-screen z-10 mb-8">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div

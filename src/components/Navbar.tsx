@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         <div className="text-gray-100 text-xl font-outfit flex items-center justify-between h-14">
           <div className="flex items-center">
             <a href="#" className="text-gray-100 hover:text-gray-300 text-2xl">
-              Portfolio
+              David Velasquez
             </a>
           </div>
           {/* Desktop Navigation Links */}
