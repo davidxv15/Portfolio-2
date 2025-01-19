@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
             <img
               src="GitHubLogo.png"
               alt="GitHub"
-              className="w-6 h-6 mr-2"
+              className="w-6 h-6 mr-2 rounded-full"
             />
             GitHub
           </a>
