@@ -80,8 +80,8 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
           infinite: true,
           cssEase: "linear",
           autoplay: true,
-          autoPlaySpeed: 1000,
-          speed: 1000,
+          // autoPlaySpeed: 1000,
+          // speed: 1000,
         },
       },
       {
@@ -92,8 +92,8 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
           infinite: true,
           cssEase: "linear",
           autoplay: true,
-          autoPlaySpeed: 0,
-          speed: 6000,
+          // autoPlaySpeed: 0,
+          // speed: 6000,
         },
       },
       {
