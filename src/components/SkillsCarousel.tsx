@@ -73,6 +73,12 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
     // nextArrow: <CustomArrow />,
     responsive: [
       {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 5,
