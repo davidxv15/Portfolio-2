@@ -112,9 +112,9 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
   };
 
   return (
-    <section className="relative w-auto h-screen mx-auto py-4 h-screen bg-sky-600 z-0 pt-40">
+    <section className="relative w-auto h-screen mx-auto py-4 h-screen bg-sky-600 z-0 pt-20">
       <h1
-        className="scroll-mt-20 text-center w-screen md:p-2 md:pb-8 md:-mt-28 font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0"
+        className="scroll-mt-20 text-center w-screen md:p-2 md:pb-2  font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0"
         id="skills"
       >
         Skills
