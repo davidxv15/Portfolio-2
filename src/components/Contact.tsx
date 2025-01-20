@@ -2,9 +2,14 @@ import * as React from "react";
 
 const Contact: React.FC = () => {
   return (
-    <section className="bg-gradient-to-b from-slate-900 to-sky-800 h-screen py-12" id="contact">
+    <section
+      className="bg-gradient-to-b from-slate-900 to-sky-800 h-screen py-12"
+      id="contact"
+    >
       <div className="max-w-4xl mx-auto text-center px-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 mb-6 mt-14">Get in Touch</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 mb-6 mt-14">
+          Get in Touch
+        </h2>
         <p className="text-white text-lg mb-8">
           How can I multiply your productivity?
         </p>
@@ -16,11 +21,7 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             className="flex items-center bg-white text-sky-700 px-4 py-2 rounded-full shadow-lg hover:bg-sky-500 hover:text-white transition duration-300"
           >
-            <img
-              src="linkedEdit.PNG"
-              alt="LinkedIn"
-              className="w-6 h-6 mr-2"
-            />
+            <img src="linkedEdit.PNG" alt="LinkedIn" className="w-6 h-6 mr-2" />
             LinkedIn
           </a>
           {/* GitHub */}
