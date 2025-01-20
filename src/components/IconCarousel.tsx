@@ -33,7 +33,7 @@ interface IconCarouselProps {
 const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
   const settings = {
     infinite: true,
-    speed: 6000, // Continuous motion speed
+    speed: 2000, // Continuous motion speed
     autoplay: true,
     autoplaySpeed: 0, // No pauses
     cssEase: "linear", // Seamless motion
