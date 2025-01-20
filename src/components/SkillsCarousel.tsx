@@ -130,7 +130,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
               }`}
               style={{
                 borderRadius: logo.border,
-                transform: "translateX(1rem)",
+                // transform: "translateX(1rem)",
                 zIndex: "1",
                 // fade or full
                 // width: "fade",
