@@ -45,6 +45,12 @@ const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
     rtl: reverse, // Reverse direction when true
     responsive: [
       {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 5,
