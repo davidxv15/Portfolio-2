@@ -7,20 +7,20 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const logos = [
-  { name: "Problem Solving", src: "expressJSLogo.webp" },
+  { name: "Problem Solving", src: ".webp" },
   { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
   { name: "Collaboration", src: "Collaborative.webp", rounded: true, border: "50%" },
   { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
   { name: "Creativity", src: "Creativity.webp" },
   { name: "Leadership", src: "Leadership.webp" },
   { name: "Prepared", src: "Prepared.webp" },
-  { name: "Resilience", src: "javascriptLogo.png" },
-  { name: "Accountability", src: "mongoDBLogo.png", rounded: true, border: "50%" },
-  { name: "Discipline", src: "netlifyLogo.png", rounded: true, border: "50%" },
-  { name: "Consistency", src: "netlifyLogo.png", rounded: true, border: "50%" },
+  { name: "Resilience", src: ".png" },
+  { name: "Accountability", src: ".png", rounded: true, border: "50%" },
+  { name: "Discipline", src: ".png", rounded: true, border: "50%" },
+  { name: "Consistency", src: ".png", rounded: true, border: "50%" },
   { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
-  { name: "Imaginative", src: "netlifyLogo.png", rounded: true, border: "50%" },
-  { name: "Integrity", src: "GitHubLogo.png", rounded: true, border: "50%" },
+  { name: "Imaginative", src: ".png", rounded: true, border: "50%" },
+  { name: "Integrity", src: ".png", rounded: true, border: "50%" },
 ];
 
 // const CustomArrow = ({ className, style, onClick }: any) => (
