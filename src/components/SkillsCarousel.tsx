@@ -13,7 +13,7 @@ const logos = [
   { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
   { name: "Creativity", src: "Creativity.webp" },
   { name: "Leadership", src: "Leadership.webp" },
-  { name: "Preparedness", src: "Prepared.webp" },
+  { name: "Preparedness", src: "Preparedness.webp" },
   { name: "Resiliency", src: "Resiliency.webp" },
   { name: "Accountability", src: "Accountability.webp", rounded: true, border: "50%" },
   { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
