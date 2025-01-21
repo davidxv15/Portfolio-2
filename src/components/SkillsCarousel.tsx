@@ -7,7 +7,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const logos = [
-  { name: "Problem Solving", src: "ProblemSolving.webp", marginTop: "1px" },
+  { name: "Problem-Solving", src: "ProblemSolving.webp", marginTop: "1px" },
   { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
   { name: "Collaboration", src: "Collaborative.webp", rounded: true, border: "50%" },
   { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
