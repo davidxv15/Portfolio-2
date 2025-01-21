@@ -12,7 +12,7 @@ const logos = [
   { name: "Collaboration", src: "djangoLogo1.png", rounded: true, border: "50%" },
   { name: "Communication", src: "gitLogo.png", rounded: true, border: "20%" },
   { name: "Creativity", src: "html5Logo5.webp" },
-  { name: "Leadership", src: "CSS3Logo.png" },
+  { name: "Leadership", src: "Leadership.webp" },
   { name: "Resilience", src: "javascriptLogo.png" },
   { name: "Accountability", src: "mongoDBLogo.png", rounded: true, border: "50%" },
   { name: "Discipline", src: "netlifyLogo.png", rounded: true, border: "50%" },
