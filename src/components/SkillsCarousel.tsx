@@ -155,7 +155,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
                     // padding: "1rem"
                   }}
                 />
-                <h3 className="text-center mt-5 text-2xl lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
+                <h3 className="text-center mt-5 text-2xl lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-tight">
                   {logo.name}
                 </h3>
               </div>
