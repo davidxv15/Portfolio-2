@@ -12,11 +12,12 @@ const logos = [
   { name: "Problem-Solving", src: "expressJSLogo.webp" },
   { name: "Adaptability", src: "figmaLogo.png", rounded: true, border: "50%" },
   { name: "Communication", src: "gitLogo.png", rounded: true, border: "20%" },
-  { name: "GitHub", src: "GitHubLogo.png", rounded: true, border: "50%" },
-  { name: "HTML5", src: "html5Logo5.webp" },
-  { name: "JavaScript", src: "javascriptLogo.png" },
-  { name: "MongoDB", src: "mongoDBLogo.png", rounded: true, border: "50%" },
-  { name: "Netlify", src: "netlifyLogo.png", rounded: true, border: "50%" },
+  { name: "Integrity", src: "GitHubLogo.png", rounded: true, border: "50%" },
+  { name: "Creativity", src: "html5Logo5.webp" },
+  { name: "Resilience", src: "javascriptLogo.png" },
+  { name: "Accountability", src: "mongoDBLogo.png", rounded: true, border: "50%" },
+  { name: "Discipline", src: "netlifyLogo.png", rounded: true, border: "50%" },
+  { name: "Consistency", src: "netlifyLogo.png", rounded: true, border: "50%" },
 ];
 
 // const CustomArrow = ({ className, style, onClick }: any) => (
