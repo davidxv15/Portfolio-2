@@ -19,7 +19,7 @@ const logos = [
   { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
   { name: "Consistency", src: "Target.webp", rounded: true, border: "50%" },
   { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
-  { name: "Imaginative", src: ".png", rounded: true, border: "50%" },
+  { name: "Imaginative", src: "Nebula.webp", rounded: true, border: "50%" },
   { name: "Integrity", src: "Integrity.webp", rounded: true, border: "50%" },
 ];
 
