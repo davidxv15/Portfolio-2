@@ -132,7 +132,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
               }}
             >
               <div
-                className="imgAndH3 smallCard bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700 m-1 sm:w-24 sm:h-44 md:h-44 md:w-40 lg:w-48 lg:h-44"
+                className="imgAndH3 smallCard bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700 m-1 sm:w-24 sm:h-44 md:h-44 md:w-40 lg:w-48 lg:h-48"
                 style={{
                   border: "2px solid #64748b",
                   // backgroundColor: "#0f172a",
