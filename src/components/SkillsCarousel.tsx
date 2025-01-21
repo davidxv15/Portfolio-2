@@ -17,21 +17,6 @@ const logos = [
   { name: "JavaScript", src: "javascriptLogo.png" },
   { name: "MongoDB", src: "mongoDBLogo.png", rounded: true, border: "50%" },
   { name: "Netlify", src: "netlifyLogo.png", rounded: true, border: "50%" },
-  { name: "Node.js", src: "nodeJSLogo.png", rounded: true, border: "50%" },
-  { name: "Photoshop", src: "psLogo.jpg", rounded: true, border: "50%" },
-  { name: "Postman", src: "postmanLogo.png", rounded: true, border: "50%" },
-  { name: "React", src: "ReactLogo.png", rounded: true, border: "50%" },
-  { name: "Socket.io", src: "socketIOLogo.png", rounded: true, border: "50%" },
-  { name: "SQL", src: "sqlLogo.png" },
-  {
-    name: "Tailwind",
-    src: "tailwindLogo.jpg",
-    rounded: true,
-    border: "20%",
-  },
-  { name: "TypeScript", src: "typeScriptLogo.png" },
-  { name: "Vite", src: "viteLogo.jpg", rounded: true, border: "10%" },
-  { name: "WebSocket", src: "webSocketLogo.png", rounded: true, border: "10%" },
 ];
 
 // const CustomArrow = ({ className, style, onClick }: any) => (
