@@ -13,6 +13,7 @@ const logos = [
   { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
   { name: "Creativity", src: "Creativity.webp" },
   { name: "Leadership", src: "Leadership.webp" },
+  { name: "Prepared", src: "Prepared.webp" },
   { name: "Resilience", src: "javascriptLogo.png" },
   { name: "Accountability", src: "mongoDBLogo.png", rounded: true, border: "50%" },
   { name: "Discipline", src: "netlifyLogo.png", rounded: true, border: "50%" },
