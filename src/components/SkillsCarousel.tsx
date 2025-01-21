@@ -71,7 +71,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
         breakpoint: 1024,
         settings: {
           slidesToShow: 5,
-          // slidesToScroll: 1,
+          slidesToScroll: 0,
           // infinite: true,
           // cssEase: "linear",
           // autoplay: true,
