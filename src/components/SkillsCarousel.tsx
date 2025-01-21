@@ -7,18 +7,18 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const logos = [
-  { name: "Problem Solving", src: "ProblemSolving.webp", marginTop: "2px" },
-  // { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
-  // { name: "Collaboration", src: "Collaborative.webp", rounded: true, border: "50%" },
-  // { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
-  // { name: "Creativity", src: "Creativity.webp" },
-  // { name: "Leadership", src: "Leadership.webp" },
-  // { name: "Preparedness", src: "Prepared.webp" },
-  // { name: "Resiliency", src: "Resiliency.webp" },
-  // { name: "Accountability", src: "Accountability.webp", rounded: true, border: "50%" },
-  // { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
-  // { name: "Consistency", src: "Target.webp", rounded: true, border: "50%" },
-  // { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
+  { name: "Problem Solving", src: "ProblemSolving.webp", marginTop: "1px" },
+  { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
+  { name: "Collaboration", src: "Collaborative.webp", rounded: true, border: "50%" },
+  { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
+  { name: "Creativity", src: "Creativity.webp" },
+  { name: "Leadership", src: "Leadership.webp" },
+  { name: "Preparedness", src: "Prepared.webp" },
+  { name: "Resiliency", src: "Resiliency.webp" },
+  { name: "Accountability", src: "Accountability.webp", rounded: true, border: "50%" },
+  { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
+  { name: "Consistency", src: "Target.webp", rounded: true, border: "50%" },
+  { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
   { name: "Imaginative", src: ".png", rounded: true, border: "50%" },
   { name: "Integrity", src: "Integrity.webp", rounded: true, border: "50%" },
 ];
@@ -155,7 +155,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) =>
                     // padding: "1rem"
                   }}
                 />
-                <h3 className="text-center mt-2 text-2xl lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
+                <h3 className="text-center mt-4 text-2xl lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
                   {logo.name}
                 </h3>
               </div>
