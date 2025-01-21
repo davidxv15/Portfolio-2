@@ -9,7 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 const logos = [
   { name: "Problem-Solving", src: "expressJSLogo.webp" },
   { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
-  { name: "Collaboration", src: "Collaboration.webp", rounded: true, border: "50%" },
+  { name: "Collaboration", src: "", rounded: true, border: "50%" },
   { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
   { name: "Creativity", src: "html5Logo5.webp" },
   { name: "Leadership", src: "Leadership.webp" },
@@ -17,7 +17,7 @@ const logos = [
   { name: "Accountability", src: "mongoDBLogo.png", rounded: true, border: "50%" },
   { name: "Discipline", src: "netlifyLogo.png", rounded: true, border: "50%" },
   { name: "Consistency", src: "netlifyLogo.png", rounded: true, border: "50%" },
-  { name: "Supportive", src: "netlifyLogo.png", rounded: true, border: "50%" },
+  { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
   { name: "Imaginative", src: "netlifyLogo.png", rounded: true, border: "50%" },
   { name: "Integrity", src: "GitHubLogo.png", rounded: true, border: "50%" },
 ];
