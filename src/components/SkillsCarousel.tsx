@@ -7,17 +7,19 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const logos = [
-  { name: "Leadership", src: "CSS3Logo.png" },
-  { name: "Collaboration", src: "djangoLogo1.png", rounded: true, border: "50%" },
   { name: "Problem-Solving", src: "expressJSLogo.webp" },
-  { name: "Adaptability", src: "figmaLogo.png", rounded: true, border: "50%" },
+  { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
+  { name: "Collaboration", src: "djangoLogo1.png", rounded: true, border: "50%" },
   { name: "Communication", src: "gitLogo.png", rounded: true, border: "20%" },
-  { name: "Integrity", src: "GitHubLogo.png", rounded: true, border: "50%" },
   { name: "Creativity", src: "html5Logo5.webp" },
+  { name: "Leadership", src: "CSS3Logo.png" },
   { name: "Resilience", src: "javascriptLogo.png" },
   { name: "Accountability", src: "mongoDBLogo.png", rounded: true, border: "50%" },
   { name: "Discipline", src: "netlifyLogo.png", rounded: true, border: "50%" },
   { name: "Consistency", src: "netlifyLogo.png", rounded: true, border: "50%" },
+  { name: "Supportive", src: "netlifyLogo.png", rounded: true, border: "50%" },
+  { name: "Imaginative", src: "netlifyLogo.png", rounded: true, border: "50%" },
+  { name: "Integrity", src: "GitHubLogo.png", rounded: true, border: "50%" },
 ];
 
 // const CustomArrow = ({ className, style, onClick }: any) => (
