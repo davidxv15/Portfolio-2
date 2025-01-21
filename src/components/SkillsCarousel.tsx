@@ -20,7 +20,7 @@ const logos = [
   { name: "Consistency", src: ".png", rounded: true, border: "50%" },
   { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
   { name: "Imaginative", src: ".png", rounded: true, border: "50%" },
-  { name: "Integrity", src: ".png", rounded: true, border: "50%" },
+  { name: "Integrity", src: "Integrity.webp", rounded: true, border: "50%" },
 ];
 
 // const CustomArrow = ({ className, style, onClick }: any) => (
