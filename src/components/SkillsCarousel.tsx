@@ -7,11 +7,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const logos = [
-  { name: "CSS", src: "CSS3Logo.png" },
-  { name: "Django", src: "djangoLogo1.png", rounded: true, border: "50%" },
-  { name: "Express.js", src: "expressJSLogo.webp" },
-  { name: "Figma", src: "figmaLogo.png", rounded: true, border: "50%" },
-  { name: "Git", src: "gitLogo.png", rounded: true, border: "20%" },
+  { name: "Leadership", src: "CSS3Logo.png" },
+  { name: "Collaboration", src: "djangoLogo1.png", rounded: true, border: "50%" },
+  { name: "Problem-Solving", src: "expressJSLogo.webp" },
+  { name: "Adaptability", src: "figmaLogo.png", rounded: true, border: "50%" },
+  { name: "Communication", src: "gitLogo.png", rounded: true, border: "20%" },
   { name: "GitHub", src: "GitHubLogo.png", rounded: true, border: "50%" },
   { name: "HTML5", src: "html5Logo5.webp" },
   { name: "JavaScript", src: "javascriptLogo.png" },
