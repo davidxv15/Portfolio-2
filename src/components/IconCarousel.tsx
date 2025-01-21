@@ -47,7 +47,7 @@ const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 5,
         },
       },
       {
