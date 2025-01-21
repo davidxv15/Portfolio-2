@@ -15,7 +15,7 @@ const logos = [
   { name: "Leadership", src: "Leadership.webp" },
   { name: "Preparedness", src: "Prepared.webp" },
   { name: "Resiliency", src: "Resiliency.webp" },
-  { name: "Accountability", src: ".png", rounded: true, border: "50%" },
+  { name: "Accountability", src: "Accountability.webp", rounded: true, border: "50%" },
   { name: "Discipline", src: ".png", rounded: true, border: "50%" },
   { name: "Consistency", src: ".png", rounded: true, border: "50%" },
   { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
