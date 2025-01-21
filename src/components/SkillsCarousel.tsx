@@ -7,20 +7,20 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const logos = [
-  { name: "Problem-Solving", src: "ProblemSolving.webp", marginTop: "1px" },
+  { name: "Accountability", src: "Accountability.webp", rounded: true, border: "50%" },
   { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
   { name: "Collaboration", src: "Collaborative.webp", rounded: true, border: "50%" },
   { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
-  { name: "Creativity", src: "Creativity.webp" },
-  { name: "Leadership", src: "Leadership.webp" },
-  { name: "Preparedness", src: "Preparedness.webp" },
-  { name: "Resiliency", src: "Resiliency.webp" },
-  { name: "Accountability", src: "Accountability.webp", rounded: true, border: "50%" },
-  { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
   { name: "Consistency", src: "Target.webp", rounded: true, border: "50%" },
-  { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
+  { name: "Creativity", src: "Creativity.webp" },
+  { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
   { name: "Imaginative", src: "Nebula.webp", rounded: true, border: "50%" },
   { name: "Integrity", src: "Integrity.webp", rounded: true, border: "50%" },
+  { name: "Leadership", src: "Leadership.webp" },
+  { name: "Preparedness", src: "Preparedness.webp" },
+  { name: "Problem-Solving", src: "ProblemSolving.webp", marginTop: "1px" },
+  { name: "Resiliency", src: "Resiliency.webp" },
+  { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
 ];
 
 // const CustomArrow = ({ className, style, onClick }: any) => (
