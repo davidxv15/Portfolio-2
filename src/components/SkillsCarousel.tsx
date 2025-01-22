@@ -7,10 +7,30 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const logos = [
-  { name: "Accountability", src: "Accountability.webp", rounded: true, border: "50%" },
-  { name: "Adaptability", src: "adaptability.webp", rounded: true, border: "50%" },
-  { name: "Collaboration", src: "Collaborative.webp", rounded: true, border: "50%" },
-  { name: "Communication", src: "Communication.webp", rounded: true, border: "20%" },
+  {
+    name: "Accountability",
+    src: "Accountability.webp",
+    rounded: true,
+    border: "50%",
+  },
+  {
+    name: "Adaptability",
+    src: "adaptability.webp",
+    rounded: true,
+    border: "50%",
+  },
+  {
+    name: "Collaboration",
+    src: "Collaborative.webp",
+    rounded: true,
+    border: "50%",
+  },
+  {
+    name: "Communication",
+    src: "Communication.webp",
+    rounded: true,
+    border: "20%",
+  },
   { name: "Consistency", src: "Target.webp", rounded: true, border: "50%" },
   { name: "Creativity", src: "Creativity.webp" },
   { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
@@ -37,7 +57,9 @@ const logos = [
 //   ></div>
 // );
 
-const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({ reverse = false }) => {
+const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({
+  reverse = false,
+}) => {
   const settings = {
     infinite: true,
     speed: 2000,
