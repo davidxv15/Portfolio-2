@@ -10,7 +10,7 @@ const AboutMe: React.FC = () => {
         <h2 className="scroll-mt-4 text-5xl font-poppins mb-12 mt-12">
           About Me
         </h2>
-        <p className="text-lg sm:text-xl leading-relaxed mb-8">
+        <p className="text-lg sm:text-xl leading-relaxed mb-8 tracking-wide font-light font-poppins text-slate-400">
         <span className="font-bold">Software Developer</span> with hands-on problem-solving, creativity, and collaboration experience across diverse technical teams. I bring a strong sense of initiative, consistently transforming vision into action to deliver innovative solutions to complex challenges. My experience includes building responsive web applications with React and TypeScript, where I excel at delivering high-quality results under tight deadlines. With a laser-sharp eye for clean, maintainable code, I enjoy driving projects from conception to deployment, ensuring every detail aligns with the larger picture.
 
 Beyond technical expertise, I excel at building personal connections and fostering professional relationships, creating an environment where collaboration and shared success thrive. Currently, I am charting a path into AI development, integrating machine learning models and exploring the fusion of AI and software engineering to build transformative, intelligent systems.
