@@ -11,17 +11,9 @@ const AboutMe: React.FC = () => {
           About Me
         </h2>
         <p className="text-lg sm:text-xl leading-relaxed mb-8">
-          {/* Hello,👋🏼 I'm David Velasquez, a versatile professional with a diverse
-          background. As a Full Stack Web Developer, I specialize in creating
-          engaging and effective user experiences with a strong emphasis on
-          authentic design and brand recognition. I am also passionate about
-          promoting differently-abled accessibility in my work. In addition to
-          my technical skills, I have a rich array of interests and experiences.
-          As a musician, I am a multi-instrumentalist who enjoys singing and
-          recording music. I am also a former EMT and chef, and I continue to
-          contribute to my community as a volunteer. This broad range of
-          interests has helped me identify new opportunities for technology to
-          make a positive impact. */}
+          {/* Software Developer with hands-on problem-solving, creativity, and collaboration experience across diverse technical teams. I bring a strong sense of initiative, consistently transforming vision into action to deliver innovative solutions to complex challenges. My experience includes building responsive web applications with React and TypeScript, where I excel at delivering high-quality results under tight deadlines. With a laser-sharp eye for clean, maintainable code, I enjoy driving projects from conception to deployment, ensuring every detail aligns with the larger picture.
+
+Beyond technical expertise, I excel at building personal connections and fostering professional relationships, creating an environment where collaboration and shared success thrive. Currently, I am charting a path into AI development, integrating machine learning models and exploring the fusion of AI and software engineering to build transformative, intelligent systems. Driven by the belief that bold ideas deserve decisive action, I thrive on creating impactful solutions that inspire progress. */}
           Software Developer with hands on problem solving, creativity,
           collaboration experience on a variety of technical teams. I bring
           previous experience building responsive web applications with React
