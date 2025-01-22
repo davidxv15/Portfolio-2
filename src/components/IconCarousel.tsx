@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const logos = [
+  { name: "Bootstrap", src: "Bootstrap.jpg" },
   { name: "CSS", src: "CSS3Logo.png" },
   { name: "Django", src: "djangoLogo1.png", rounded: true, border: "50%" },
   { name: "Express.js", src: "expressJSLogo.webp" },
@@ -72,7 +73,7 @@ const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
   };
 
   return (
-    <div className="relative group w-screen"><div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-2 bg-gray-700 text-white text-sm px-4 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+    <div className="relative group w-screen"><div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 -translate-y-2 bg-gray-700 text-white text-sm px-4 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
     <h3 className="text-lg font-bold underline mb-1 text-center">Development Stack</h3>
     <ul className="list-none text-left">
       {logos.map((logo, index) => (
@@ -109,7 +110,7 @@ const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
                   border: "1.5px solid #64748b",
                 }}
               />
-              <h3 className="text-center mt-4 text-2xl lg:mx-0 lg:font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
+              <h3 className="text-center mt-7 text-2xl lg:mx-0 lg:font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
                 {logo.name}
               </h3>
             </div>
