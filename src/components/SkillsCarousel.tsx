@@ -131,13 +131,13 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({
   return (
     <section className="relative w-auto h-screen mx-auto py-4 h-screen bg-sky-600 z-0 pt-22">
       <h1
-        className="scroll-mt-24 text-center w-screen md:p-1 md:pb-1  font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0 mt-8 mb-12"
+        className="scroll-mt-24 text-center w-screen md:p-1 md:pb-1  font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0 mt-7 mb-6"
         id="skills"
       >
         Skills
       </h1>
       <div></div>
-      <div className=" rounded-3xl shadow-none w-screen z-10 mb-8">
+      <div className=" rounded-3xl shadow-none w-screen z-10 pt-1 mb-8">
         <Slider {...settings}>
           {logos.map((logo, index) => (
             <div
