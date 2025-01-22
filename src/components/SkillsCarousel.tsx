@@ -60,7 +60,8 @@ const logos = [
 //   ></div>
 // );
 
-const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({
+const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
+  tooltipText,
   reverse = false,
 }) => {
   const settings = {
@@ -75,8 +76,8 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({
     pauseOnHover: false,
     swipe: false,
     // adaptiveHeight: true,
-    // centerMode: true,
-    // centerPadding: "1rem",
+    centerMode: true,
+    centerPadding: "1rem",
     // cursor: "pointer",
     // draggable: true,
     // rewind: false,
@@ -120,7 +121,7 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({
         breakpoint: 640,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 0,
           infinite: true,
           cssEase: "linear",
           // autoplay: true,
