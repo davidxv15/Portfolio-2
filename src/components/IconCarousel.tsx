@@ -72,8 +72,8 @@ const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
   };
 
   return (
-    <div className="relative group w-screen"><div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-10 bg-gray-700 text-white text-sm px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
-    <h3 className="text-lg font-bold underline mb-2 text-center">Development Stack</h3>
+    <div className="relative group w-screen"><div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 -translate-y-2 bg-gray-700 text-white text-sm px-4 py-1 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+    <h3 className="text-lg font-bold underline mb-1 text-center">Development Stack</h3>
     <ul className="list-none text-left">
       {logos.map((logo, index) => (
         <li key={index}>{logo.name}</li>
