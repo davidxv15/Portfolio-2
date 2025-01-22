@@ -135,9 +135,8 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
   return (
     <section className="relative w-auto h-screen mx-auto py-4 h-screen bg-sky-600 z-0 pt-22">
       <h1
-        className="scroll-mt-24 text-center w-screen md:p-1 md:pb-1  font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0 mt-7 mb-4"
         id="skills"
-        title="Hello"
+        className="scroll-mt-24 sm:scroll-mt-40  text-center w-screen md:p-1 md:pb-1  font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0 mt-7 mb-4"
       >
         Skills
       </h1>
@@ -181,9 +180,9 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
                 <img
                   src={logo.src}
                   alt={logo.name}
-                  className="smallCard w-32 h-32 sm:w-28 sm:h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
+                  className="smallCard w-32 h-32 sm:w-24 sm:h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
                   style={{
-                    border: "1.5px solid #64748b",
+                    border: "1.5px solid maroon",
                     // border: "1.5px solid #64748b",
                     
                     // // backgroundColor: "navy",
