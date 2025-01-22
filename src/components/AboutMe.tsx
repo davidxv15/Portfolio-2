@@ -7,7 +7,7 @@ const AboutMe: React.FC = () => {
       id="about"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="scroll-mt-4 text-5xl font-poppins mb-4 mt-12">
+        <h2 className="scroll-mt-4 text-5xl font-poppins mb-12 mt-12">
           About Me
         </h2>
         <p className="text-lg sm:text-xl leading-relaxed mb-8">
