@@ -30,7 +30,7 @@ const AboutMe: React.FC = () => {
           code and enjoy driving projects from conception to deployment.
         </p>
         <p className="text-md sm:text-xl leading-relaxed">
-          Outside of coding, I love music and model building. I’m always eager to learn and take on
+          Outside of coding, I love music, model building, and exploring. I’m always eager to learn and take on
           new challenges.
         </p>
       </div>

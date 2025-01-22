@@ -41,6 +41,7 @@ const logos = [
   { name: "Preparedness", src: "Preparedness.webp" },
   { name: "Problem-Solving", src: "ProblemSolving.webp", marginTop: "1px" },
   { name: "Resiliency", src: "Resiliency.webp" },
+  { name: "Research", src: "Res.webp" },
   { name: "Strategic", src: "Strategy.webp" },
   { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
 ];
