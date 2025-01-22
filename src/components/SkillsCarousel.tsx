@@ -36,11 +36,12 @@ const logos = [
   { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
   { name: "Imaginative", src: "Nebula.webp", rounded: true, border: "50%" },
   { name: "Integrity", src: "Integrity.webp", rounded: true, border: "50%" },
-  { name: "Intention", src: ".webp", rounded: true, border: "50%" },
+  { name: "Intention", src: "Intention.webp" },
   { name: "Leadership", src: "Leadership.webp" },
   { name: "Preparedness", src: "Preparedness.webp" },
   { name: "Problem-Solving", src: "ProblemSolving.webp", marginTop: "1px" },
   { name: "Resiliency", src: "Resiliency.webp" },
+  { name: "Strategic", src: "Strategy.webp" },
   { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
 ];
 
