@@ -36,6 +36,7 @@ const logos = [
   { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
   { name: "Imaginative", src: "Nebula.webp", rounded: true, border: "50%" },
   { name: "Integrity", src: "Integrity.webp", rounded: true, border: "50%" },
+  { name: "Intention", src: ".webp", rounded: true, border: "50%" },
   { name: "Leadership", src: "Leadership.webp" },
   { name: "Preparedness", src: "Preparedness.webp" },
   { name: "Problem-Solving", src: "ProblemSolving.webp", marginTop: "1px" },
@@ -171,6 +172,8 @@ const SkillsCarousel: React.FC<{ reverse?: boolean }> = ({
                   className="smallCard w-32 h-32 sm:w-28 sm:h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
                   style={{
                     border: "1.5px solid #64748b",
+                    // border: "1.5px solid #64748b",
+                    
                     // // backgroundColor: "navy",
                     // transition: "transform .5s ease-in-out",
                     // borderRadius: "4%",
