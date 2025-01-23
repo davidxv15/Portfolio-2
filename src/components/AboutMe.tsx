@@ -17,8 +17,7 @@ const AboutMe: React.FC = () => {
 {/* Driven by the belief that bold ideas deserve decisive action, I thrive on creating impactful solutions that inspire our future. */}
         </p></p>
         <p className="text-lg leading-relaxed font-poppins text-slate-400">
-          Outside of coding, I love music, model building, and exploring. I’m
-          always eager to learn and take on new challenges.
+        Outside of coding, I enjoy creating music, model building, and discovering new ideas that fuel my curiosity.
         </p>
       </div>
     </section>
