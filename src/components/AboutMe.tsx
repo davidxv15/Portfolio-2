@@ -11,9 +11,9 @@ const AboutMe: React.FC = () => {
           About Me
         </h2>
         <p className="text-xl leading-relaxed mb-8 indent-4 text-justify font-poppins text-slate-400">
-        <span className="font-bold">Software Developer</span> with hands-on problem-solving, creativity, and collaboration experience across diverse technical teams. I bring a strong sense of initiative, consistently transforming vision into action to deliver innovative solutions to complex challenges. My experience includes building responsive web applications with <span className="font-bold">React</span> and <span className="font-bold">TypeScript</span>, where I excel at delivering high-quality results under tight deadlines. I enjoy driving projects from conception to deployment, ensuring every detail aligns with the larger picture. 
+        <span className="font-bold">Software Developer</span> with experience in problem-solving, creativity, and collaboration across diverse technical teams. I excel in building responsive web applications using React and TypeScript, consistently delivering high-quality solutions under tight deadlines. I take pride in driving projects from concept to deployment, ensuring precision and alignment with the bigger picture. 
         <br /><p className="indent-4">
-        Beyond technical expertise, I excel at building personal connections and fostering professional relationships, creating an environment where collaboration and shared success thrive. Currently, I am charting a path into <span className="font-bold">AI development</span>, integrating machine learning models and exploring the fusion of AI and software engineering to build transformative, intelligent systems.
+        Beyond technical skills, I bring a positive attitude and a talent for creating meaningful connections between clients and brands, building relationships that inspire trust and mutual success. Currently, I am charting a path into <span className="font-bold">AI development</span>, integrating machine learning models and exploring the fusion of AI and software engineering to build transformative, intelligent systems.
 {/* Driven by the belief that bold ideas deserve decisive action, I thrive on creating impactful solutions that inspire our future. */}
         </p></p>
         <p className="text-xl leading-relaxed font-poppins text-slate-400">
