@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
           <a href="mailto:davidxvaz@gmail.com?subject=Let's Connect&body=Hi David, I’d love to get in touch with you!">Contact Me</a>
         </button>
       </div>
-      <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-52 lg:translate-x-64 xl:-translate-y-32 animate-fade">
+      <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-52 lg:translate-x-64 xl:-translate-y-32 animate-fade z-10">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
