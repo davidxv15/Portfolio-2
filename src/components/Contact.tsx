@@ -3,7 +3,7 @@ import * as React from "react";
 const Contact: React.FC = () => {
   return (
     <section
-      className="bg-gradient-to-b from-slate-900 to-sky-800 h-screen py-40"
+      className="bg-gradient-to-b from-slate-900 to-sky-800 h-screen"
       id="contact"
     >
       <div className="max-w-4xl mx-auto text-center px-4 -translate-y-16">

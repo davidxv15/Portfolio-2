@@ -28,7 +28,7 @@ const App: React.FC = () => {
   onThemeChange={(theme) => handleThemeChange(theme)}
         /></div>
       <HeroSection />
-      <SkillsCarousel tooltipText="Soft Skills" />
+      <SkillsCarousel tooltipText="Skills" />
       {/* <SoftSkillsCarousel /> */}
       <Projects />
       <AboutMe />
