@@ -3,7 +3,7 @@ import * as React from "react";
 const HeroSection: React.FC = () => {
   return (
     <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center">
-      <div className="mb-2 bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
+      <div className=" bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
          w-3/4 mx-auto outline-none sm:-translate-y-1 md:-translate-y-4 lg:translate-y-20 mt-16"
@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-24 lg:top-10 lg:left-20 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-16 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert"
         />
       </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-32 lg:-translate-y-36 xl:-translate-y-28">
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
           <a href="mailto:davidxvaz@gmail.com?subject=Let's Connect&body=Hi David, I’d love to get in touch with you!">Contact Me</a>
         </button>
       </div>
-      <div className="flex space-x-4 mt-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-52 lg:translate-x-64 xl:-translate-y-32 animate-fade">
+      <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-52 lg:translate-x-64 xl:-translate-y-32 animate-fade">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
