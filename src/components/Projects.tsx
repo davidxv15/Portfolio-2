@@ -34,8 +34,9 @@ const Projects: React.FC = () => {
       id="projects"
     >
       <h2 className="-scroll-mt-20 text-5xl tracking-tight font-poppins text-slate-200 text-center mb-10 mt-5">
-        Projects
+        PROJECTS
       </h2>
+      <hr className="w-32 mx-auto -translate-y-8"></hr>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto">
         {projectData.map((project, index) => (
           <div
