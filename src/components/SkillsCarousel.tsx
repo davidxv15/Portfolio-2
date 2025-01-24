@@ -19,6 +19,7 @@ const logos = [
     rounded: true,
     border: "50%",
   },
+  { name: "Coachability", src: ".webp", rounded: true, border: "50%" },
   {
     name: "Collaboration",
     src: "Collaborative.webp",
