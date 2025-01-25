@@ -19,7 +19,7 @@ const logos = [
     rounded: true,
     border: "50%",
   },
-  { name: "Coachability", src: ".webp", alt: "icon of compass", rounded: true, border: "50%" },
+  { name: "Coachability", src: "Coachability.webp", alt: "icon of whistle", rounded: true, border: "50%" },
   {
     name: "Collaboration",
     src: "Collaborative.webp",
