@@ -38,7 +38,7 @@ const logos = [
   { name: "Creativity", src: "Creativity.webp", alt: "icon of brain & light bulb",  },
   { name: "Discipline", src: "Discipline.webp", alt: "icon of stopwatch & chart", rounded: true, border: "50%" },
   { name: "Imaginative", src: "Nebula.webp", alt: "icon of spiral nebula", rounded: true, border: "50%" },
-  { name: "Integrity", src: "Integrity.webp", rounded: true, border: "50%" },
+  { name: "Integrity", src: "Integrity.webp", alt: "icon of infinity symbol in a heart", rounded: true, border: "50%" },
   { name: "Intention", src: "Intention.webp" },
   { name: "Leadership", src: "Leadership.webp" },
   { name: "Preparedness", src: "Preparedness.webp" },
