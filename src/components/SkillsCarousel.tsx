@@ -46,7 +46,7 @@ const logos = [
   { name: "Research", src: "Research.webp", alt: "icon of magnifying glass on data", },
   { name: "Resiliency", src: "Resiliency.webp", alt: "icon of Bonsai tree", },
   { name: "Strategic", src: "Strategy.webp", alt: "icon of clipboard plan", },
-  { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
+  { name: "Supportive", src: "Supportive.webp", alt: "icon of 4 hands converged", rounded: true, border: "50%" },
 ];
 
 // const CustomArrow = ({ className, style, onClick }: any) => (
