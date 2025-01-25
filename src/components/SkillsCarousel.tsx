@@ -15,7 +15,7 @@ const logos = [
   },
   {
     name: "Adaptability",
-    src: "adaptability.webp",
+    src: "adaptability.webp", alt: "icon of morphing shapes",
     rounded: true,
     border: "50%",
   },
