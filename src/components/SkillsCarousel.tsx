@@ -45,7 +45,7 @@ const logos = [
   { name: "Problem-Solving", src: "ProblemSolving.webp", alt: "icon of gear in a head", marginTop: "1px" },
   { name: "Research", src: "Research.webp", alt: "icon of magnifying glass on data", },
   { name: "Resiliency", src: "Resiliency.webp", alt: "icon of Bonsai tree", },
-  { name: "Strategic", src: "Strategy.webp" },
+  { name: "Strategic", src: "Strategy.webp", alt: "icon of clipboard plan", },
   { name: "Supportive", src: "Supportive.webp", rounded: true, border: "50%" },
 ];
 
