@@ -22,8 +22,9 @@ const HeroSection: React.FC = () => {
           Software Developer
         </h2>
         <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-36 animate-fade">
-        Elevating team environments by leading with enthusiasm, integrity, and dedication. Driving success through actions that inspire
-        {/* and motivate */}.
+          Elevating team environments by leading with enthusiasm, integrity, and
+          dedication. Driving success through actions that inspire
+          {/* and motivate */}.
         </p>
       </div>
       <div className="mb-8 md:mb-16 md:w-2/3">
@@ -38,7 +39,9 @@ const HeroSection: React.FC = () => {
           View My Work
         </button>
         <button className="bg-blue-900 text-white text-xl hover:text-slate-900 px-7 py-3 rounded-full hover:bg-blue-300 border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-20 lg:-translate-y-32 transform transition duration-100 animate-fade">
-          <a href="mailto:davidxvaz@gmail.com?subject=Let's Connect&body=Hi David, I’d love to get in touch with you!">Contact Me</a>
+          <a href="mailto:davidxvaz@gmail.com?subject=Let's Connect&body=Hi David, I’d love to get in touch with you!">
+            Contact Me
+          </a>
         </button>
       </div>
       <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-52 lg:translate-x-64 xl:-translate-y-32 animate-fade z-10">
