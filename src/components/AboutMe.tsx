@@ -8,7 +8,7 @@ const AboutMe: React.FC = () => {
     >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="scroll-mt-4 text-5xl font-poppins mb-12 mt-12">
-          About Me
+          ABOUT ME
         </h2>
         <hr className="w-32 mx-auto -translate-y-9"></hr>
         <p className="text-xl leading-relaxed mb-8 indent-4 text-justify font-poppins text-slate-400">
