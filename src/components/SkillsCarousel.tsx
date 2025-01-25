@@ -34,7 +34,7 @@ const logos = [
     rounded: true,
     border: "20%",
   },
-  { name: "Consistency", src: "Target.webp", rounded: true, border: "50%" },
+  { name: "Consistency", src: "Target.webp", alt:"icon of archery target", rounded: true, border: "50%" },
   { name: "Creativity", src: "Creativity.webp" },
   { name: "Discipline", src: "Discipline.webp", rounded: true, border: "50%" },
   { name: "Imaginative", src: "Nebula.webp", rounded: true, border: "50%" },
