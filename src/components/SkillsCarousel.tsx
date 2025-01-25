@@ -9,7 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 const logos = [
   {
     name: "Accountability",
-    src: "Accountability.webp",
+    src: "Accountability.webp", alt: "icon of checklist",
     rounded: true,
     border: "50%",
   },
