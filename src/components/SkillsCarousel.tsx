@@ -30,6 +30,7 @@ const logos = [
   {
     name: "Communication",
     src: "Communication.webp",
+    alt: "icon of conversation",
     rounded: true,
     border: "20%",
   },
