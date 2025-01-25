@@ -41,7 +41,7 @@ const logos = [
   { name: "Integrity", src: "Integrity.webp", alt: "icon of justice scale", rounded: true, border: "50%" },
   { name: "Intention", src: "Intention.webp", alt: "icon of infinity symbol in a heart", },
   { name: "Leadership", src: "Leadership.webp", alt: "icon of leader guiding another", },
-  { name: "Preparedness", src: "Preparedness.webp" },
+  { name: "Preparedness", src: "Preparedness.webp", alt: "icon of checkmark", },
   { name: "Problem-Solving", src: "ProblemSolving.webp", marginTop: "1px" },
   { name: "Research", src: "Research.webp" },
   { name: "Resiliency", src: "Resiliency.webp" },
