@@ -141,9 +141,9 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
         className="scroll-mt-24 text-center text-5xl w-screen md:p-1 md:pb-1 font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0 mt-24 mb-10 tracking-tight translate-y-3"
         id="skills"
       >
-        PROJECTS
+        SKILLS
       </h1>
-      <hr className="w-32 mx-auto -translate-y-12"></hr>
+      <hr className="w-32 mx-auto -translate-y-6"></hr>
       {/* tooltip */}
       <div className="relative group w-screen">
         <div className="absolute top-4 left-1/2 transform -translate-x-1/2 -translate-y-10 bg-gray-800 text-white text-lg px-4 py-2 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
