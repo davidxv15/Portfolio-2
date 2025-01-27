@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => {
         Beyond technical skills, I bring a positive attitude and a talent for creating meaningful connections between clients and brands, building relationships that inspire trust and mutual success. Currently, I am charting a path into <span className="font-bold">AI development</span>, integrating machine learning models and exploring the fusion of AI and software engineering to build transformative, intelligent systems.
 {/* Driven by the belief that bold ideas deserve decisive action, I thrive on creating impactful solutions that inspire our future. */}
         </p></p>
-        <p className="text-xl leading-relaxed font-poppins text-slate-400">
+        <p className="text-xl leading-relaxed font-poppins text-slate-400 translate-y-1">
         Outside of coding, I enjoy creating music, model building, and constantly discovering new ideas that challenge my perspectives and fuel my curiosity.
         </p>
       </div>
