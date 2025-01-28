@@ -41,11 +41,11 @@ export default {
       dropShadow: {
         'custom-lg': '4px 4px 10px rgba(0, 0, 0, 0.7)', // Custom large shadow
         'blue-glow': '0 0 8px rgba(59, 130, 246, 0.8)', // Soft blue glow
+        'gold-glow': '0 0 12px rgba(255, 215, 0, 0.8)',
         'purple-glow': '0 0 8px rgba(128, 90, 213, 0.7)',
+        'neon-green': '0 0 10px rgba(34, 197, 94, 0.9)',
         'black-outline': '4px 4px 0px rgba(0, 0, 0, 1)',
         'red-outline': '2px 2px 6px rgba(220, 38, 38, 0.7)', 
-        'gold-glow': '0 0 12px rgba(255, 215, 0, 0.8)',
-        'neon-green': '0 0 10px rgba(34, 197, 94, 0.9)',
       },
       animation: {
         fade: 'fadeIn 1s ease-in-out',
