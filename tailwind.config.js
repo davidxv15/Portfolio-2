@@ -45,8 +45,7 @@ export default {
         'black-outline': '4px 4px 0px rgba(0, 0, 0, 1)',
         'red-outline': '2px 2px 6px rgba(220, 38, 38, 0.7)', 
         'gold-glow': '0 0 12px rgba(255, 215, 0, 0.8)',
-
-
+        'neon-green': '0 0 10px rgba(34, 197, 94, 0.9)',
       },
       animation: {
         fade: 'fadeIn 1s ease-in-out',
