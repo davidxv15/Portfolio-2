@@ -38,6 +38,7 @@ export default {
           sepia: '#704214', // Warm sepia tone
         },
       },
+      dropShadow: {},
       animation: {
         fade: 'fadeIn 1s ease-in-out',
         'spin-slow': 'spin 3s linear infinite',
