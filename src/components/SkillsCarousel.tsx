@@ -138,10 +138,10 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
   return (
     <section className="relative w-auto h-screen mx-auto py-4 h-screen bg-sky-600 z-0">
       <h1
-        className="scroll-mt-24 text-center text-5xl w-screen md:p-1 md:pb-1 font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0 mt-24 mb-10 tracking-tight translate-y-3"
+        className="scroll-mt-24 text-center text-5xl w-screen md:p-1 md:pb-1 font-poppins bg-gradient-to-t from-sky-600 via-sky-600 z-0 mt-24 mb-10 tracking-wider translate-y-3 "
         id="skills"
       >
-        PROJECTS
+        SKILLS
       </h1>
       <hr className="w-32 mx-auto -translate-y-6"></hr>
 
