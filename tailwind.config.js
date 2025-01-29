@@ -55,7 +55,7 @@ export default {
         slideInRight: "slideInRight 0.5s ease-out",
         bounceIn: "bounceIn 0.6s ease-in-out",
         zoomOut: "zoomOut 0.4s ease-in",
-        "rotate-y": "rotateY 1s linear",
+        rotateY: "rotateY 1s linear",
       },
       keyframes: {
         fadeIn: {
