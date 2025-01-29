@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
       title: "Chat App",
       image: "ChatApp-chatbox.png", //  image paths
       liveDemo: "https://capable-selkie-5113d6.netlify.app/", // live project URL
-      github: "#", // git repo
+      github: "https://github.com/davidxv15/Chat-App", // git repo
     },
     {
       title: "Weather Getter",
