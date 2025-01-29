@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
       
     >
       <div className="max-w-4xl mx-auto text-center px-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 mb-6">
+        <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 mb-6 animate-fade">
           Get in Touch.
         </h2>
         <p className="text-white text-lg mb-8"
