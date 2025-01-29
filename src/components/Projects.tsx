@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
             dragElastic={0.2} // bounce back fx
             whileTap={{ scale: 1.05 }} // zoom onClick
-            dragTransition={{ bounceStiffness: 1000, bounceDamping: 5 }}
+            dragTransition={{ bounceStiffness: 1000, bounceDamping: 20 }}
           >
             <img
               src={project.image}
