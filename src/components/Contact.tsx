@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
         </h2>
         <p className="text-white text-lg mb-8"
         id="contact">
-          How can I multiply your productivity?
+          {/* How can I multiply your productivity? */}
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
           {/* LinkedIn */}
