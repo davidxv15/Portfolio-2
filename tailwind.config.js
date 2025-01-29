@@ -52,7 +52,7 @@ export default {
         spinSlow: "spin 3s linear infinite",
         pulseFast: "pulse 0.5s linear infinite",
         slideInLeft: "slideInLeft 0.5s ease-out",
-        "slide-in-right": "slideInRight 0.5s ease-out",
+        slideInRight: "slideInRight 0.5s ease-out",
         "bounce-in": "bounceIn 0.6s ease-in-out",
         "zoom-out": "zoomOut 0.4s ease-in",
         "rotate-y": "rotateY 1s linear",
