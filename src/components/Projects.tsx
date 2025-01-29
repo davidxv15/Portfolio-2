@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
         PROJECTS
       </h2>
       <hr className="w-32 mx-auto -translate-y-8"></hr>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto translate-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto translate-y-2">
         {projectData.map((project, index) => (
           <div
             key={index}
