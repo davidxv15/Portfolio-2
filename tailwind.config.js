@@ -51,7 +51,7 @@ export default {
         fade: "fadeIn 1s ease-in-out",
         spinSlow: "spin 3s linear infinite",
         pulseFast: "pulse 0.5s linear infinite",
-        "slide-in-left": "slideInLeft 0.5s ease-out",
+        slideInLeft: "slideInLeft 0.5s ease-out",
         "slide-in-right": "slideInRight 0.5s ease-out",
         "bounce-in": "bounceIn 0.6s ease-in-out",
         "zoom-out": "zoomOut 0.4s ease-in",
