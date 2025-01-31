@@ -68,7 +68,7 @@ const HeroSection: React.FC = () => {
             src="linkedEdit.PNG"
             alt="LinkedIn logo"
             id="linkedin"
-            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-white text-red-500 md:-translate-y-32 md:translate-x-2 border border-white border-2 hover:scale-125 transform transition duration-500"
+            className="w-16 h-16 lg:w-20 lg:h-20 rounded-full object-cover shadow-md shadow-gray-600 object-cover bg-white text-red-500 md:-translate-y-32 md:translate-x-2 lg:translate-x-7 border border-white border-2 hover:scale-125 transform transition duration-500"
           />
         </a>
       </div>
