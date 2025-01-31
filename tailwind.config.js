@@ -45,7 +45,7 @@ export default {
         glow: "0 0 10px rgba(255, 255, 255, 0.8)",
       },
       dropShadow: {
-        "custom-shadow": "4px 4px 10px rgba(0, 0, 0, 0.7)",
+        "custom-shadow1": "4px 4px 10px rgba(0, 0, 0, 0.7)",
         sm: "0 1px 2px rgba(0, 0, 0, 0.05)",
         md: "0 4px 6px rgba(0, 0, 0, 0.1)",
         lg: "0 10px 15px rgba(0, 0, 0, 0.2)",
