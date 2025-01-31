@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
         id="contact">
           {/* How can I multiply your productivity? */}
         </p>
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8 animate-hauntingPulse">
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/david-velasquez-az/"
