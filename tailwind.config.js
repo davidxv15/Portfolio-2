@@ -45,8 +45,11 @@ export default {
         glow: "0 0 10px rgba(255, 255, 255, 0.8)",
       },
       dropShadow: {
-        "custom-lg": "4px 4px 10px rgba(0, 0, 0, 0.7)", // Custom large shadow
-        "blue-glow": "0 0 8px rgba(59, 130, 246, 0.8)", // Soft blue glow
+        "custom-lg": "4px 4px 10px rgba(0, 0, 0, 0.7)",
+        sm: "0 1px 2px rgba(0, 0, 0, 0.05)",
+        md: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        lg: "0 10px 15px rgba(0, 0, 0, 0.2)",
+        "blue-glow": "0 0 8px rgba(59, 130, 246, 0.8)",
         "gold-glow": "0 0 12px rgba(255, 215, 0, 0.8)",
         "purple-glow": "0 0 8px rgba(128, 90, 213, 0.7)",
         "neon-green": "0 0 10px rgba(34, 197, 94, 0.9)",
