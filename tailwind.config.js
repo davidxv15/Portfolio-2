@@ -40,7 +40,7 @@ export default {
       },
       textShadow: {
         subtle: "1px 1px 3px rgba(0, 0, 0, 0.3)",
-        // subtle: "1px 1px 3px rgba(0, 0, 0, 0.3)",
+        subtle: "2px 2px 6px rgba(0, 0, 0, 0.6)",
       },
       dropShadow: {
         "custom-lg": "4px 4px 10px rgba(0, 0, 0, 0.7)", // Custom large shadow
