@@ -40,7 +40,7 @@ export default {
       },
       textShadow: {
         subtle: "1px 1px 3px rgba(0, 0, 0, 0.3)",
-        slick: "1px 1px 3px rgba(0, 0, 0, 0.6)",
+        slick: "1.5px 1.5px 4px rgba(0, 0, 0, 0.5)",
         strong: "2px 2px 6px rgba(0, 0, 0, 0.6)",
         glow: "0 0 10px rgba(255, 255, 255, 0.8)",
       },
