@@ -111,6 +111,7 @@ export default {
   },
   darkMode: "class", // Enable dark mode with the `class` strategy
   plugins: [
+    require("tailwindcss-textshadow"),
     require("@tailwindcss/forms"), // Improved forms styling
     require("@tailwindcss/typography"), // Enhanced typography utilities
     // require('@tailwindcss/aspect-ratio'), // Utility for maintaining aspect ratios
