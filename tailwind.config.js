@@ -110,7 +110,7 @@ export default {
       },
     },
   },
-  darkMode: "class", // Enable dark mode with the `class` strategy
+  darkMode: "class", // Enable dark mode with `class` strategy
   plugins: [
     require("tailwindcss-textshadow"),
     require("@tailwindcss/forms"), // Improved forms styling
