@@ -38,6 +38,10 @@ export default {
           sepia: "#704214", // Warm sepia tone
         },
       },
+      textShadow: {
+        subtle: "1px 1px 3px rgba(0, 0, 0, 0.3)",
+        // subtle: "1px 1px 3px rgba(0, 0, 0, 0.3)",
+      },
       dropShadow: {
         "custom-lg": "4px 4px 10px rgba(0, 0, 0, 0.7)", // Custom large shadow
         "blue-glow": "0 0 8px rgba(59, 130, 246, 0.8)", // Soft blue glow
