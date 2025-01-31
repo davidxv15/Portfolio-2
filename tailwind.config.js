@@ -86,8 +86,8 @@ export default {
           "100%": { transform: "rotateY(360deg)" },
         },
         hauntingPulse: {
-          "0%, 100%": { opacity: 0.8, transform: "scale(1)" },
-          "50%": { opacity: 0.6, transform: "scale(1.02)" },
+          "0%, 100%": { opacity: 0.9, transform: "scale(1)" },
+          "50%": { opacity: 1.0, transform: "scale(1.02)" },
         },
       },
       boxShadow: {
