@@ -41,6 +41,7 @@ export default {
       textShadow: {
         subtle: "1px 1px 3px rgba(0, 0, 0, 0.3)",
         strong: "2px 2px 6px rgba(0, 0, 0, 0.6)",
+        glow: "0 0 10px rgba(255, 255, 255, 0.8)",
       },
       dropShadow: {
         "custom-lg": "4px 4px 10px rgba(0, 0, 0, 0.7)", // Custom large shadow
