@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
       title: "Nutrition Calendar",
       image: "NutritionCalPic.png",
       liveDemo: "#",
-      github: "#",
+      github: "https://github.com/davidxv15/Nutrition-Calendar2.0",
     },
     {
       title: "TripCity",
