@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
           </a>
           {/* Email */}
           <a
-            href="mailto:davidxvaz@gmail.com?subject=Let's Connect&body=Hi David, "
+            href="mailto:davidvelasquezdev@gmail.com?subject=Let's Connect&body=Hi David, "
             className="flex items-center bg-white text-sky-700 px-4 py-2 rounded-full shadow-lg hover:bg-sky-500 hover:text-white transition duration-300"
           >
             <svg
