@@ -5,9 +5,10 @@ const Projects: React.FC = () => {
   const projectData = [
     {
       title: "Chat App",
-      image: "ChatApp-chatbox.png", //  image paths
-      liveDemo: "https://capable-selkie-5113d6.netlify.app/", // live project URL
-      github: "https://github.com/davidxv15/Chat-App", // git repo
+      image: "ChatApp-chatbox.png", 
+      image2: "ChatApp-chatbox.png", 
+      liveDemo: "https://capable-selkie-5113d6.netlify.app/", 
+      github: "https://github.com/davidxv15/Chat-App",
     },
     {
       title: "Weather Getter",
