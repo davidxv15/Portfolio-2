@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
       title: "Weather Getter",
       image: "/WeatherGetterPic.png",
       liveDemo: "#",
-      github: "#",
+      github: "https://github.com/davidxv15/Weather-app-frontend",
     },
     {
       title: "Nutrition Calendar",
