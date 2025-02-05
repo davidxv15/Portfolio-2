@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
       title: "Memory Match",
       image: "/#.png",
       liveDemo: "Temporarily Closed",
-      github: "#",
+      github: "https://github.com/davidxv15/code-galaxy",
     },
   ];
 
