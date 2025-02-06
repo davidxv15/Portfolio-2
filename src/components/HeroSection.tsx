@@ -2,7 +2,7 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center">
+    <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center pt-24 md:pt-28 lg:pt-32">
       <div className=" bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
           className="surname text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
