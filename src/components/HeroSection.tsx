@@ -2,13 +2,13 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="section  -translate-y-[5%] sm:-translate-y-[3%] md:translate-y-8 flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center ">
+    <section className="section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center ">
       <div className=" bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
-          className="surname relative top-[4.rem] md:top-[6rem] lg:top-[6rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
-         w-3/4 mx-auto outline-none sm:-translate-y- md:-translate-y-4 lg:translate-y-20 mt-32 sm:mt-20 scroll-mt-16"
+          className="surname relative top-[-4rem] md:top-[6rem] lg:top-[4rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
+         w-3/4 mx-auto outline-none sm:-translate-y-1 md:-translate-y-4 lg:translate-y-20 mt-32 sm:mt-28 scroll-mt-16"
         >
-          <span className="text-5.5xl sm:-translate-y-40 md:-translate-y-40 lg:-translate-y-2 md:text-7xl lg:text-7xl">
+          <span className="text-5.5xl sm:-translate-y-40 md:text-7xl lg:text-7xl">
             D
           </span>
           AVID{" "}
@@ -18,10 +18,10 @@ const HeroSection: React.FC = () => {
           ELASQUEZ
         </h1>
         <br />
-        <h2 className="text-5xl font-poppins text-slate-900 mt-1 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 md:translate-y-16 lg:translate-y-28 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
+        <h2 className="text-5xl top-[-4rem] md:top-[-2rem] lg:top-[-4rem] font-poppins text-slate-900 mt-1 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 lg:translate-y-2 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
           Software Developer
         </h2>
-        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left md:translate-y-16  lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-36 animate-fade">
+        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-32 animate-fade">
           Elevating team environments by leading with enthusiasm, integrity, and
           dedication. Driving success through actions that inspire
           {/* and motivate */}.
@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-16 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-50 no-invert"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-16 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert"
         />
       </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-32 lg:-translate-y-36 xl:-translate-y-28">
