@@ -200,7 +200,7 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
                       // padding: "1rem"
                     }}
                   />
-                  <h3 className="text-center mt-6 text-2xl lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-tight">
+                  <h3 className="text-center mt-6 text-2xl lg:mx-0 lg: font-outfit bg-transparent text-slate-900 font-medium tracking-tight truncate">
                     {logo.name}
                   </h3>
                 </div>
