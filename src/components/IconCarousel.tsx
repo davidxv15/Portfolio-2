@@ -111,7 +111,7 @@ const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
                   border: "1.5px solid #64748b",
                 }}
               />
-              <h3 className="text-center mt-6 text-2xl lg:mx-0 lg:font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
+              <h3 className="text-center mt-6 text-2xl lg:mx-0 lg:font-outfit bg-transparent text-slate-900 font-medium tracking-wide truncate">
                 {logo.name}
               </h3>
             </div>
