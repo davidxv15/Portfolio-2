@@ -68,6 +68,7 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
   reverse = false,
 }) => {
   const settings = {
+    backgroundColor: "grey",
     infinite: true,
     speed: 2000,
     autoplay: true,
