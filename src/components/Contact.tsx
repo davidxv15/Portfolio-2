@@ -6,7 +6,7 @@ interface ContactProps {
   theme: string; // Define the type for the theme prop
 }
 
-const Contact: React.FC = () => {
+const Contact: React.FC<ContactProps> = ({ theme }) => {
   return (
     <section
       className="bg-gradient-to-b from-slate-900 to-sky-900 h-screen xs:py-80"
