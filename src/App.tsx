@@ -32,7 +32,7 @@ const App: React.FC = () => {
       {/* <SoftSkillsCarousel /> */}
       <Projects />
       <AboutMe />
-      <Contact />
+      <Contact theme={theme} />
     </div>
   );
 };
