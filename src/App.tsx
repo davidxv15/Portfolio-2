@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   return (
     <div>
-      <div className="sticky top-0 z-50 justify-between bg-opacity-0 animate-fade">
+      <div className="sticky top-0 z-50 justify-between bg-opacity-0">
         <Navbar /></div>
         <div className="mr-auto flex justify-end font-outfit bg-blue-100 animate-fade">
       <ThemeToggle
