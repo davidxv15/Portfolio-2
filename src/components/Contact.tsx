@@ -55,6 +55,8 @@ const Contact: React.FC = () => {
             Email
           </a>
         </div>
+        {/* Conditionally show the game ONLY in the "default" theme */}
+        {theme === "default" && <MoonLauncher />}
       </div>
     </section>
   );
