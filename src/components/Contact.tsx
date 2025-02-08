@@ -2,6 +2,10 @@ import * as React from "react";
 import { useState } from "react";
 import MoonLauncher from "./MoonLauncher";
 
+interface ContactProps {
+  theme: string; // Define the type for the theme prop
+}
+
 const Contact: React.FC = () => {
   return (
     <section
