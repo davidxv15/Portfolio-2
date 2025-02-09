@@ -15,6 +15,16 @@ const MoonLauncher: React.FC = () => {
       }, 30);
 
       return () => clearInterval(interval);
+    }
+  }, [isFlying, velocity]);
+
+  const launchRocket = () => {
+    if (!isFlying) {
+      setIsFlying(true);
+      setVelocity(2); // Initial launch speed
+    }
+  };
+
 
 const MoonLauncher: React.FC = () => {
   return (
