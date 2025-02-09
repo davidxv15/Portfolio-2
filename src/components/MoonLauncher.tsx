@@ -25,12 +25,26 @@ const MoonLauncher: React.FC = () => {
     }
   };
 
-
-const MoonLauncher: React.FC = () => {
   return (
-    <div className="max-w-3xl mx-auto mt-10 p-4 bg-gray-900 text-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold text-center">Moon Escape</h2>
-      <canvas id="moonCanvas" className="w-full h-64 bg-black"></canvas>
+    <div ref={gameRef} className="relative w-full h-64 bg-black rounded-lg flex flex-col items-center justify-center mt-8">
+      <div className="text-white mb-2">Click the button to launch the rocket!</div>
+      <div
+        className="absolute w-10 h-16 bg-gray-400 rounded-lg"
+        style={{
+          bottom: `${position}%`,
+          left: "50%",
+          transform: "translateX(-50%)",
+          transition: "bottom 0.05s linear",
+        }}
+      >
+        🚀
+      </div>
+      <button
+        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+        onClick={launchRocket}
+      >
+        Launch Rocket
+      </button>
     </div>
   );
 };

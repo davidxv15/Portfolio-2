@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           {/* and motivate */}.
         </p>
       </div>
-      <div className="mb-8 md:mb-16 md:w-2/3">
+      <div className="mb-8 md:mb-16 md:w-2/3 lg:mr-12">
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
