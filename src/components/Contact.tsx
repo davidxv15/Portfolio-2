@@ -36,7 +36,7 @@ const Contact: React.FC<ContactProps> = ({ theme }) => {
             href="https://github.com/davidxv15"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center bg-white text-sky-700 px-4 py-2 rounded-full shadow-lg hover:bg-sky-500 hover:text-white transition duration-300"
+            className="flex items-center bg-white text-black px-4 py-2 rounded-full shadow-lg hover:bg-sky-500 hover:text-white transition duration-300"
           >
             <img
               src="GitHubLogo.png"
