@@ -7,6 +7,14 @@ const MoonLauncher: React.FC = () => {
   const [isFlying, setIsFlying] = useState(false);
   const gameRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    if (isFlying) {
+      const interval = setInterval(() => {
+        setVelocity((v) => Math.max(v - 0.1, 0)); // Simulate gravity
+        setPosition((p) => Math.min(p + velocity, 100)); // Move rocket up
+      }, 30);
+
+
 
 const MoonLauncher: React.FC = () => {
   return (
