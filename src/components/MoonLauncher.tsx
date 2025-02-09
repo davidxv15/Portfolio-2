@@ -14,7 +14,7 @@ const MoonLauncher: React.FC = () => {
         setPosition((p) => Math.min(p + velocity, 100)); // Move rocket up
       }, 30);
 
-
+      return () => clearInterval(interval);
 
 const MoonLauncher: React.FC = () => {
   return (
