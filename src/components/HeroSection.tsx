@@ -17,8 +17,8 @@ const HeroSection: React.FC = () => {
           </span>
           ELASQUEZ
         </h1>
-        <br />
-        <h2 className="text-5xl top-[-3rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-11 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 lg:translate-y-28 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
+        {/* <br /> */}
+        <h2 className="text-5xl top-[-3rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-11 mb- md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 lg:translate-y-28 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
           Software Developer
         </h2>
         <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-32 animate-fade">
