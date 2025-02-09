@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React, { useEffect } from "react";
 
 const MoonLauncher: React.FC = () => {
   return (
