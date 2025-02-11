@@ -9,6 +9,7 @@ import SkillsCarousel from './components/SkillsCarousel';
 import Navbar from './components/Navbar';
 import ThemeToggle from './components/ThemeToggle';
 import MoonLauncher from "./components/MoonLauncher"
+import EscapeFromEarth from './components/MoonLauncher';
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState('default');
@@ -37,7 +38,7 @@ const App: React.FC = () => {
       {/* 🛸 Conditionally Render the Game When 'default' Theme is Active */}
       {theme === "last" && (
         <div className="mt-12 flex justify-center scale-75 md:scale-80 lg:scale-100">
-          <MoonLauncher />
+          <EscapeFromEarth />
         </div>
       )}
 
