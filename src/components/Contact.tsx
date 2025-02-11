@@ -62,7 +62,9 @@ const Contact: React.FC<ContactProps> = ({ theme }) => {
           </a>
         </div>
         {/* Conditionally show the game ONLY in the "default" theme */}
-        {theme === "default" && <MoonLauncher />}
+        {theme === "default" && (
+        <div className="flex">
+        <MoonLauncher /></div>)}
       </div>
     </section>
   );
