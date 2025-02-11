@@ -1,52 +1,60 @@
 import * as React from "react";
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
-const MoonLauncher: React.FC = () => {
-  const [position, setPosition] = useState(50); // Rocket position (percentage from left)
+const GRAVITY = 0.2;
+const THRUST = -0.6;
+const FUEL_CONSUMPTION = 0.01;
+
+const EscapeFromEarth: React.FC = () => {
+  const [position, setPosition] = useState(500);
   const [velocity, setVelocity] = useState(0);
-  const [isFlying, setIsFlying] = useState(false);
-  const gameRef = useRef<HTMLDivElement>(null);
+  const [fuel, setFuel] = useState(100);
+  const [gameOver, setGameOver] = useState(false);
+  const rocketRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (isFlying) {
-      const interval = setInterval(() => {
-        setVelocity((v) => Math.max(v - 0.1, 0)); // Simulate gravity
-        setPosition((p) => Math.min(p + velocity, 100)); // Move rocket up
-      }, 30);
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.code === "Space" || e.code === "ArrowUp") {
+        if (fuel > 0) {
+          setVelocity((prev) => prev + THRUST);
+          setFuel((prev) => Math.max(0, prev - FUEL_CONSUMPTION));
+        }
+      }
+    };
 
-      return () => clearInterval(interval);
-    }
-  }, [isFlying, velocity]);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [fuel]);
 
-  const launchRocket = () => {
-    if (!isFlying) {
-      setIsFlying(true);
-      setVelocity(2); // Initial launch speed
-    }
-  };
+  useEffect(() => {
+    const gameLoop = setInterval(() => {
+      setVelocity((prev) => prev + GRAVITY);
+      setPosition((prev) => {
+        const newPos = prev + velocity;
+        if (newPos > 500) {
+          setGameOver(true);
+          clearInterval(gameLoop);
+          return 500;
+        }
+        return newPos;
+      });
+    }, 16);
+    return () => clearInterval(gameLoop);
+  }, [velocity]);
 
   return (
-    <div ref={gameRef} className="relative w-full h-64 bg-black rounded-lg flex flex-col items-center justify-center mt-8">
-      <div className="text-white mb-2">Click the button to launch the rocket!</div>
-      <div
-        className="absolute w-10 h-16 bg-gray-400 rounded-lg"
-        style={{
-          bottom: `${position}%`,
-          left: "50%",
-          transform: "translateX(-50%)",
-          transition: "bottom 0.05s linear",
-        }}
-      >
-        🚀
-      </div>
-      <button
-        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
-        onClick={launchRocket}
-      >
-        Launch Rocket
-      </button>
+    <div className="relative w-full h-screen bg-black flex items-center justify-center overflow-hidden">
+      <motion.div
+        ref={rocketRef}
+        animate={{ y: position }}
+        transition={{ ease: "linear", duration: 0.1 }}
+        className="absolute bottom-0 w-16 h-24 bg-red-500 rounded-lg"
+      ></motion.div>
+      {gameOver && <h2 className="text-white text-xl absolute top-10">Game Over!</h2>}
+      <div className="absolute top-5 left-5 text-white">Fuel: {fuel.toFixed(1)}%</div>
     </div>
   );
 };
 
-export default MoonLauncher;
+export default EscapeFromEarth;
