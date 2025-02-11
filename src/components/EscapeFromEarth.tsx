@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const GRAVITY = 0.2;
-const THRUST = -0.6;
-const FUEL_CONSUMPTION = 0.5;
-const GROUND_LEVEL = 500; // Adjust this to change where the ground is
+const THRUST = -5;
+const FUEL_CONSUMPTION = 1;
+const GROUND_LEVEL = 500; // Adjust this if needed
 
 const EscapeFromEarth: React.FC = () => {
   const [position, setPosition] = useState(GROUND_LEVEL);
@@ -13,27 +13,37 @@ const EscapeFromEarth: React.FC = () => {
   const [fuel, setFuel] = useState(100);
   const [gameOver, setGameOver] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
+  const [thrusterActive, setThrusterActive] = useState(false);
   const rocketRef = useRef<HTMLDivElement>(null);
 
-  // Handle keyboard input
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (gameOver) return; // Don't allow input after game over
+      if (gameOver) return; // Prevent input after game over
 
       if (e.code === "Space" || e.code === "ArrowUp") {
         if (fuel > 0) {
           setVelocity((prev) => prev + THRUST);
           setFuel((prev) => Math.max(0, prev - FUEL_CONSUMPTION));
           setGameStarted(true);
+          setThrusterActive(true);
         }
       }
     };
 
+    const handleKeyUp = (e: KeyboardEvent) => {
+      if (e.code === "Space" || e.code === "ArrowUp") {
+        setThrusterActive(false);
+      }
+    };
+
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
+    };
   }, [fuel, gameOver]);
 
-  // Game physics loop
   useEffect(() => {
     if (gameOver || !gameStarted) return;
 
@@ -43,6 +53,7 @@ const EscapeFromEarth: React.FC = () => {
         const newPos = prev + velocity;
         if (newPos >= GROUND_LEVEL) {
           setGameOver(true);
+          setThrusterActive(false);
           return GROUND_LEVEL;
         }
         return newPos;
@@ -52,7 +63,6 @@ const EscapeFromEarth: React.FC = () => {
     return () => clearInterval(gameLoop);
   }, [velocity, gameOver, gameStarted]);
 
-  // Reset game function
   const restartGame = () => {
     setPosition(GROUND_LEVEL);
     setVelocity(0);
@@ -67,8 +77,12 @@ const EscapeFromEarth: React.FC = () => {
         ref={rocketRef}
         animate={{ y: position }}
         transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute bottom-0 w-16 h-24 bg-red-500 rounded-lg"
-      ></motion.div>
+        className="absolute bottom-0 w-16 h-24 bg-red-500 rounded-lg flex items-center justify-center"
+      >
+        {thrusterActive && (
+          <div className="absolute bottom-[-10px] w-6 h-8 bg-orange-500 rounded-md animate-pulse"></div>
+        )}
+      </motion.div>
 
       {gameOver && (
         <div className="absolute top-10 flex flex-col items-center">
