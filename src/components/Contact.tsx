@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import MoonLauncher from "./MoonLauncher";
+import MoonLauncher from "./EscapeFromEarth";
 
 interface ContactProps {
   theme: string; // Define the type for the theme prop
@@ -8,16 +8,12 @@ interface ContactProps {
 
 const Contact: React.FC<ContactProps> = ({ theme }) => {
   return (
-    <section
-      className="bg-gradient-to-b from-slate-900 to-sky-900 h-screen xs:py-80"
-      
-    >
+    <section className="bg-gradient-to-b from-slate-900 to-sky-900 h-screen xs:py-80">
       <div className="max-w-4xl mx-auto text-center px-4">
         <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 mb-6 animate-fade">
           Get in Touch
         </h2>
-        <p className="text-white text-lg mb-8"
-        id="contact">
+        <p className="text-white text-lg mb-8" id="contact">
           {/* How can I multiply your productivity? */}
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8 animate-hauntingPulse">

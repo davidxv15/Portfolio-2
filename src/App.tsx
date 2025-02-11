@@ -1,33 +1,35 @@
-import * as React from 'react';
-import { useState } from 'react';
-import Projects from './components/Projects';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import HeroSection from './components/HeroSection';
-import SkillsCarousel from './components/SkillsCarousel';
+import * as React from "react";
+import { useState } from "react";
+import Projects from "./components/Projects";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import HeroSection from "./components/HeroSection";
+import SkillsCarousel from "./components/SkillsCarousel";
 // import SoftSkillsCarousel from './components/SoftSkillsCarousel';
-import Navbar from './components/Navbar';
-import ThemeToggle from './components/ThemeToggle';
-import EscapeFromEarth from './components/MoonLauncher';
+import Navbar from "./components/Navbar";
+import ThemeToggle from "./components/ThemeToggle";
+import EscapeFromEarth from "./components/EscapeFromEarth";
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState('default');
+  const [theme, setTheme] = useState("default");
 
   const handleThemeChange = (newTheme: string) => {
     setTheme(newTheme);
-    document.documentElement.className = '';
+    document.documentElement.className = "";
     document.documentElement.classList.add(newTheme);
   };
 
   return (
     <div>
       <div className="sticky top-0 z-50 justify-between bg-opacity-0">
-        <Navbar /></div>
-        <div className="mr-auto flex justify-end font-outfit bg-blue-100 animate-fade">
-      <ThemeToggle
-          themes={['default', 'grayscale', 'sepia', 'last']}
-  onThemeChange={(theme) => handleThemeChange(theme)}
-        /></div>
+        <Navbar />
+      </div>
+      <div className="mr-auto flex justify-end font-outfit bg-blue-100 animate-fade">
+        <ThemeToggle
+          themes={["default", "grayscale", "sepia", "last"]}
+          onThemeChange={(theme) => handleThemeChange(theme)}
+        />
+      </div>
       <HeroSection />
       <SkillsCarousel tooltipText="Skills" />
       {/* <SoftSkillsCarousel /> */}
@@ -40,7 +42,6 @@ const App: React.FC = () => {
           <EscapeFromEarth />
         </div>
       )}
-
     </div>
   );
 };
