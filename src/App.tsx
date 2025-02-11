@@ -8,6 +8,7 @@ import SkillsCarousel from './components/SkillsCarousel';
 // import SoftSkillsCarousel from './components/SoftSkillsCarousel';
 import Navbar from './components/Navbar';
 import ThemeToggle from './components/ThemeToggle';
+import MoonLauncher from "./components/MoonLauncher"
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState('default');
