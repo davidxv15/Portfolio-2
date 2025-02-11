@@ -36,7 +36,7 @@ const App: React.FC = () => {
       <Contact theme={theme} />
       {/* 🛸 Conditionally Render the Game When 'default' Theme is Active */}
       {theme === "last" && (
-        <div className="mt-12 flex justify-center scale-75 md:scale-90 lg:scale-100">
+        <div className="mt-12 flex justify-center scale-75 md:scale-80 lg:scale-100">
           <MoonLauncher />
         </div>
       )}
