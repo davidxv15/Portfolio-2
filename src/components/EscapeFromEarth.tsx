@@ -10,7 +10,7 @@ const GROUND_LEVEL = 500; // Landing pad
 const CEILING = 50; // Rocket boundary
 
 const EscapeFromEarth: React.FC = () => {
-  const [position, setPosition] = useState(GROUND_LEVEL);
+  const [position, setPosition] = useState(INITIAL_POSITION);
   const [velocity, setVelocity] = useState(0);
   const [fuel, setFuel] = useState(100);
   const [gameOver, setGameOver] = useState(false);
