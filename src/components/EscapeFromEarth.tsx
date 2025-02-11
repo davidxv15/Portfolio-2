@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 const GRAVITY = 0.2;
 const THRUST = -5;
 const FUEL_CONSUMPTION = 1;
-const GROUND_LEVEL = 500; // Adjust this if needed
+const GROUND_LEVEL = 500;
+const CEILING = 50; // Rocket won't go above this
 
 const EscapeFromEarth: React.FC = () => {
   const [position, setPosition] = useState(GROUND_LEVEL);
@@ -18,7 +19,7 @@ const EscapeFromEarth: React.FC = () => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (gameOver) return; // Prevent input after game over
+      if (gameOver) return;
 
       if (e.code === "Space" || e.code === "ArrowUp") {
         if (fuel > 0) {
@@ -50,15 +51,24 @@ const EscapeFromEarth: React.FC = () => {
     const gameLoop = setInterval(() => {
       setVelocity((prev) => prev + GRAVITY);
       setPosition((prev) => {
-        const newPos = prev + velocity;
+        let newPos = prev + velocity;
+
+        // **🚀 Prevent going past the top ceiling**
+        if (newPos < CEILING) {
+          newPos = CEILING;
+          setVelocity(0);
+        }
+
+        // **🛑 Prevent falling through the ground**
         if (newPos >= GROUND_LEVEL) {
           setGameOver(true);
           setThrusterActive(false);
           return GROUND_LEVEL;
         }
+
         return newPos;
       });
-    }, 16); // Approx. 60 FPS
+    }, 16); // ~60 FPS
 
     return () => clearInterval(gameLoop);
   }, [velocity, gameOver, gameStarted]);
@@ -73,17 +83,26 @@ const EscapeFromEarth: React.FC = () => {
 
   return (
     <div className="relative w-full h-screen bg-black flex flex-col items-center justify-center overflow-hidden">
+      {/* 🌎 Earth (ground) */}
+      <div className="absolute bottom-0 w-full h-20 bg-green-600"></div>
+
+      {/* 🚀 Rocket */}
       <motion.div
         ref={rocketRef}
         animate={{ y: position }}
         transition={{ ease: "linear", duration: 0.1 }}
         className="absolute bottom-0 w-16 h-24 bg-red-500 rounded-lg flex items-center justify-center"
       >
+        {/* 🔥 Thruster effect */}
         {thrusterActive && (
           <div className="absolute bottom-[-10px] w-6 h-8 bg-orange-500 rounded-md animate-pulse"></div>
         )}
       </motion.div>
 
+      {/* 🏆 Ceiling (upper limit for gameplay) */}
+      <div className="absolute top-[50px] w-full h-1 bg-white opacity-40"></div>
+
+      {/* 🛑 Game Over Message */}
       {gameOver && (
         <div className="absolute top-10 flex flex-col items-center">
           <h2 className="text-white text-xl">🚀 Game Over!</h2>
@@ -95,6 +114,8 @@ const EscapeFromEarth: React.FC = () => {
           </button>
         </div>
       )}
+
+      {/* 🔥 Fuel Indicator */}
       <div className="absolute top-5 left-5 text-white text-lg">🔥 Fuel: {fuel.toFixed(1)}%</div>
     </div>
   );
