@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 const GRAVITY = 0.2;
 const THRUST = -5;
 const FUEL_CONSUMPTION = 1;
-const GROUND_LEVEL = 500;
-const CEILING = 50; // Rocket won't go above this
+const INITIAL_POSITION = 400; // Start higher in the viewport
+const GROUND_LEVEL = 500; // Landing pad
+const CEILING = 50; // Rocket boundary
 
 const EscapeFromEarth: React.FC = () => {
   const [position, setPosition] = useState(GROUND_LEVEL);
