@@ -39,7 +39,7 @@ const App: React.FC = () => {
       {/* 🛸 Conditionally Render the Game When 'default' Theme is Active */}
       {theme === "last" && (
         <div className="mt-12 flex justify-center scale-75 md:scale-80 lg:scale-90">
-          <EscapeFromEarth />
+          {/* <EscapeFromEarth /> */}
           <div className="w-full flex justify-center scale-75 md:scale-80 lg:scale-90">
       <Remote />
     </div>
