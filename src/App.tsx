@@ -40,7 +40,9 @@ const App: React.FC = () => {
       {theme === "last" && (
         <div className="mt-12 flex justify-center scale-75 md:scale-80 lg:scale-90">
           <EscapeFromEarth />
-          <Remote />
+          <div className="w-full flex justify-center scale-75 md:scale-80 lg:scale-90">
+      <Remote />
+    </div>
         </div>
       )}
     </div>
