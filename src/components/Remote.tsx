@@ -1,31 +1,43 @@
 import * as React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-// 🚗 Car Physics
-const ACCELERATION = 0.3;
-const TURN_SPEED = 2.5;
-const MAX_SPEED = 8;
-const BRAKE_FORCE = 0.5;
-const FRICTION = 0.1;
+// 🎮 Game Mechanics Constants
+const ACCELERATION = 0.2; // Speed increase per frame
+const FRICTION = 0.05; // Gradual slow-down
+const TURN_SPEED = 6; // How fast the car turns
+const MAX_SPEED = 5; // Maximum forward speed
+const REVERSE_SPEED = -2; // Maximum reverse speed
+const BOUNDARIES = { left: 20, right: window.innerWidth - 100 }; // Keeps car on screen
 
 const Remote: React.FC = () => {
-  const [position, setPosition] = useState({ x: 200, y: 400 });
-  const [velocity, setVelocity] = useState({ x: 0, y: 0 });
-  const [rotation, setRotation] = useState(0);
-  const [isMoving, setIsMoving] = useState(false);
-  const carRef = useRef<HTMLDivElement>(null);
+  // 🚗 Car State
+  const [x, setX] = useState(100); // Horizontal position
+  const [y, setY] = useState(500); // Vertical position
+  const [rotation, setRotation] = useState(0); // Angle of the car
+  const [velocity, setVelocity] = useState(0); // Speed
 
+  // ⌨️ Handle Key Presses
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.code === "Space") {
-        setIsMoving(true);
+        // 🚀 Accelerate forward
+        setVelocity((prev) => Math.min(prev + ACCELERATION, MAX_SPEED));
+      } else if (e.code === "ArrowLeft") {
+        // 🔄 Turn left
+        setRotation((prev) => prev - TURN_SPEED);
+      } else if (e.code === "ArrowRight") {
+        // 🔄 Turn right
+        setRotation((prev) => prev + TURN_SPEED);
+      } else if (e.code === "ArrowDown") {
+        // 🚗 Reverse
+        setVelocity((prev) => Math.max(prev - ACCELERATION, REVERSE_SPEED));
       }
     };
 
     const handleKeyUp = (e: KeyboardEvent) => {
-      if (e.code === "Space") {
-        setIsMoving(false);
+      if (e.code === "Space" || e.code === "ArrowDown") {
+        setVelocity((prev) => Math.max(prev - FRICTION, 0)); // Slow down gradually
       }
     };
 
@@ -37,73 +49,49 @@ const Remote: React.FC = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleSteering = (e: KeyboardEvent) => {
-      if (e.code === "ArrowLeft") {
-        setRotation((prev) => prev - TURN_SPEED);
-      }
-      if (e.code === "ArrowRight") {
-        setRotation((prev) => prev + TURN_SPEED);
-      }
-      if (e.code === "ArrowDown") {
-        setVelocity((prev) => ({
-          x: prev.x * (1 - BRAKE_FORCE),
-          y: prev.y * (1 - BRAKE_FORCE),
-        }));
-      }
-    };
-
-    window.addEventListener("keydown", handleSteering);
-    return () => window.removeEventListener("keydown", handleSteering);
-  }, []);
-
+  // 🏁 Update Car Position
   useEffect(() => {
     const gameLoop = setInterval(() => {
-      setVelocity((prev) => {
-        let speed = Math.sqrt(prev.x ** 2 + prev.y ** 2);
-        let angleRad = (rotation * Math.PI) / 180;
+      setX((prevX) => {
+        // Calculate next position based on angle and velocity
+        let nextX = prevX + Math.cos((rotation * Math.PI) / 180) * velocity;
 
-        if (isMoving && speed < MAX_SPEED) {
-          return {
-            x: prev.x + ACCELERATION * Math.cos(angleRad),
-            y: prev.y + ACCELERATION * Math.sin(angleRad),
-          };
-        }
-
-        return {
-          x: prev.x * (1 - FRICTION),
-          y: prev.y * (1 - FRICTION),
-        };
+        // 🚧 Keep car inside screen boundaries
+        return Math.min(Math.max(nextX, BOUNDARIES.left), BOUNDARIES.right);
       });
 
-      setPosition((prev) => ({
-        x: Math.min(Math.max(prev.x + velocity.x, 0), window.innerWidth - 50),
-        y: Math.min(Math.max(prev.y + velocity.y, 0), window.innerHeight - 50),
-      }));
-    }, 16);
+      setY((prevY) => {
+        let nextY = prevY + Math.sin((rotation * Math.PI) / 180) * velocity;
+        return nextY; // Allow movement in any direction
+      });
+
+      // 🏎️ Slowly decrease speed if no acceleration
+      setVelocity((prevVel) => Math.max(prevVel - FRICTION, 0));
+    }, 16); // ~60 FPS
 
     return () => clearInterval(gameLoop);
-  }, [isMoving, velocity, rotation]);
+  }, [rotation, velocity]);
 
   return (
-    <div className="relative w-full h-screen bg-gray-900 flex items-center justify-center overflow-hidden">
-      {/* 🚗 The Car */}
+    <div className="relative w-full h-[50vh] flex flex-col items-center justify-center bg-gray-900 text-white">
+      {/* 🏎️ Car */}
       <motion.div
-        ref={carRef}
-        animate={{ x: position.x, y: position.y, rotate: rotation }}
+        animate={{ x, y, rotate: rotation }}
         transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute w-16 h-24 bg-blue-500 rounded-md flex items-center justify-center"
+        className="absolute w-24 h-12 bg-red-600 rounded-md flex items-center justify-center"
       >
-        {/* 🛞 Wheels */}
-        <div className="absolute bottom-0 w-10 h-2 bg-black left-1 rounded"></div>
-        <div className="absolute bottom-0 w-10 h-2 bg-black right-1 rounded"></div>
+        {/* 🚗 Wheels */}
+        <div className="w-4 h-4 bg-black rounded-full absolute -left-3 top-2"></div>
+        <div className="w-4 h-4 bg-black rounded-full absolute -left-3 bottom-2"></div>
+        <div className="w-4 h-4 bg-black rounded-full absolute -right-3 top-2"></div>
+        <div className="w-4 h-4 bg-black rounded-full absolute -right-3 bottom-2"></div>
       </motion.div>
 
-      {/* 🎮 Controls Guide */}
-      <div className="absolute top-5 left-5 text-white text-lg">
-        <p>Spacebar - Accelerate</p>
-        <p>◀ Steer ▶</p>
-        <p>🔻 Brake</p>
+      {/* 🎮 Controls */}
+      <div className="absolute bottom-4 flex flex-col items-center text-lg">
+        <p>Press <span className="text-yellow-400">Space</span> to accelerate</p>
+        <p><span className="text-green-400">◀ Steer ▶</span> with Arrow Keys</p>
+        <p className="text-blue-300">▼ Reverse</p>
       </div>
     </div>
   );
