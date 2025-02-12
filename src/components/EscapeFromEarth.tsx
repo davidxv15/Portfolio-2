@@ -141,7 +141,7 @@ const EscapeFromEarth: React.FC = () => {
 
       {/* 🏁 Landing Pad */}
       <div
-        className="absolute bottom-20 h-3 bg-yellow-500"
+        className="absolute bottom-20 h-3 bg-zinc-500"
         style={{ left: `${LANDING_PAD_X}px`, width: `${LANDING_PAD_WIDTH}px` }}
       ></div>
 
@@ -150,7 +150,7 @@ const EscapeFromEarth: React.FC = () => {
         ref={rocketRef}
         animate={{ x: position.x, y: position.y, rotate: rotation }}
         transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute w-16 h-24 bg-red-500 rounded-lg flex items-center justify-center"
+        className="absolute w-16 h-24 bg-slate-500 rounded-lg flex items-center justify-center"
       >
         {/*  Thruster Effect */}
         {velocity.y < 0 && (
