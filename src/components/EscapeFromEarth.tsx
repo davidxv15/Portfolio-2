@@ -107,7 +107,7 @@ const EscapeFromEarth: React.FC = () => {
 
       {/* Landing Pad */}
       <div className="absolute bottom-0 left-[50px] w-[100px] h-5 bg-gray-700">
-        <span className="text-white text-xs block text-center">🛬 Pad</span>
+        <span className="text-white text-xs block text-center">Landing</span>
       </div>
 
       {/* Rocket */}
