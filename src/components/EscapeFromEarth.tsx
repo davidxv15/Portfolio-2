@@ -7,7 +7,7 @@ const GRAVITY = 0.15; // Downward force
 const THRUST = -1.5; // Upward force
 const SIDE_THRUST = 1.2; // Left/Right force
 const FUEL_CONSUMPTION = 0.5; // Fuel usage per thrust
-const INITIAL_POSITION = { x: 250, y: 200 }; // Starting position
+const INITIAL_POSITION = { x: 200, y: 200 }; // Starting position
 const GROUND_LEVEL = 500; // Where the rocket must land
 const CEILING = 100; // Top boundary
 
