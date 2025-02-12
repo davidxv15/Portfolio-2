@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const GRAVITY = 0.2;
 const THRUST = -5;
-const FUEL_CONSUMPTION = 1;
+const FUEL_CONSUMPTION = 3.3;
 const INITIAL_POSITION = 100; // Start higher in the viewport
 const GROUND_LEVEL = 500; // Landing pad
 const CEILING = 50; // Rocket boundary
