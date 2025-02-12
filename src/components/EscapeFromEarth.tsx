@@ -145,20 +145,20 @@ const EscapeFromEarth: React.FC = () => {
         style={{ left: `${LANDING_PAD_X}px`, width: `${LANDING_PAD_WIDTH}px` }}
       ></div>
 
-      {/* 🚀 Rocket */}
+      {/*  Rocket */}
       <motion.div
         ref={rocketRef}
         animate={{ x: position.x, y: position.y, rotate: rotation }}
         transition={{ ease: "linear", duration: 0.1 }}
         className="absolute w-16 h-24 bg-red-500 rounded-lg flex items-center justify-center"
       >
-        {/* 🔥 Thruster Effect */}
+        {/*  Thruster Effect */}
         {velocity.y < 0 && (
           <div className="absolute bottom-[-12px] w-6 h-8 bg-orange-500 rounded-md animate-pulse"></div>
         )}
       </motion.div>
 
-      {/* 🏆 Score & Game Over */}
+      {/*  Score & Game Over */}
       <div className="absolute top-5 left-5 text-white text-lg">🔥 Fuel: {fuel.toFixed(1)}%</div>
       <div className="absolute top-5 right-5 text-white text-lg">🏆 Score: {score}</div>
 
