@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const GRAVITY = 0.15;
-const THRUST = -3.5;
+const THRUST = -1.5;
 const SIDE_THRUST = 1.2;
 const FUEL_CONSUMPTION = 0.5;
 const INITIAL_POSITION = 200; // Start above the ground
