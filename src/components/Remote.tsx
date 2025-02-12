@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 // 🎮 Game Mechanics Constants
-const ACCELERATION = 0.2; // Speed increase per frame
+const ACCELERATION = 0.4; // Speed increase per frame
 const FRICTION = 0.05; // Gradual slow-down
 const TURN_SPEED = 6; // How fast the car turns
 const MAX_SPEED = 5; // Maximum forward speed
