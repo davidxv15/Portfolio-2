@@ -101,7 +101,7 @@ const Remote: React.FC = () => {
 
       {/* 🎮 Controls Guide */}
       <div className="absolute top-5 left-5 text-white text-lg">
-        <p>🚗 Use Spacebar to Move</p>
+        <p>Spacebar - Accelerate</p>
         <p>⬅️➡️ Steer</p>
         <p>🔻 Brake</p>
       </div>
