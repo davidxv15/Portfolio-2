@@ -11,7 +11,7 @@ const GROUND_LEVEL = 500;
 const CEILING = 50;
 const LANDING_PAD_X = 50;
 const LANDING_PAD_WIDTH = 100;
-const SAFE_LANDING_SPEED = 2;
+const SAFE_LANDING_SPEED = 5;
 
 const EscapeFromEarth: React.FC = () => {
   const [position, setPosition] = useState(INITIAL_POSITION);
