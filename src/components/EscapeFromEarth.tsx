@@ -115,7 +115,7 @@ const EscapeFromEarth: React.FC = () => {
         ref={rocketRef}
         animate={{ x, y: position - 250 }}
         transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute bottom-0 w-16 h-24 bg-red-500 rounded-lg flex items-center justify-center"
+        className="absolute bottom-0 w-16 h-24 bg-slate-500 rounded-lg flex items-center justify-center"
       >
         {thrusterActive && (
           <div className="absolute bottom-[-10px] w-6 h-8 bg-orange-500 rounded-md animate-pulse"></div>
