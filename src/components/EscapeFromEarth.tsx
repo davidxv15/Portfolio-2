@@ -13,7 +13,7 @@ const CEILING = 100; // Top boundary
 
 // 🚀 Landing Pad Mechanics
 const LANDING_PAD_X = 200; // Landing pad start position
-const LANDING_PAD_WIDTH = 100; // Width of landing area
+const LANDING_PAD_WIDTH = 150; // Width of landing area
 const SAFE_LANDING_SPEED = 5; // Max speed allowed for safe landing
 const SAFE_HORIZONTAL_SPEED = 1.5; // Max horizontal drift for safe landing
 
