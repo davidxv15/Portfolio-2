@@ -3,8 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 // 🔧 Game Constants (Physics & Gameplay)
-const GRAVITY = 0.15; // Downward force
-const THRUST = -1.5; // Upward force
+const GRAVITY = 0.10; // Downward force
+const THRUST = -1.7; // Upward force
 const SIDE_THRUST = 1.2; // Left/Right force
 const FUEL_CONSUMPTION = 0.5; // Fuel usage per thrust
 const INITIAL_POSITION = { x: 200, y: 200 }; // Starting position
