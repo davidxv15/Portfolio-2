@@ -103,7 +103,7 @@ const EscapeFromEarth: React.FC = () => {
   return (
     <div className="relative w-full h-screen bg-gradient-to-b from-black to-gray-900 flex flex-col items-center justify-center overflow-hidden">
       {/* Earth (ground) */}
-      <div className="absolute bottom-0 w-full h-20 bg-green-600"></div>
+      <div className="absolute bottom-0 w-full h-20 bg-green-800"></div>
 
       {/* Landing Pad */}
       <div className="absolute bottom-0 left-[150px] w-[100px] h-5 bg-gray-700">
