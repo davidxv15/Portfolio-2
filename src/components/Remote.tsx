@@ -11,7 +11,7 @@ const REVERSE_SPEED = -2; // Maximum reverse speed
 const BOUNDARIES = { left: 20, right: window.innerWidth - 100 }; // Keeps car on screen
 
 const Remote: React.FC = () => {
-  // 🚗 Car State
+  //  Car State
   const [x, setX] = useState(100); // Horizontal position
   const [y, setY] = useState(500); // Vertical position
   const [rotation, setRotation] = useState(0); // Angle of the car
@@ -21,16 +21,16 @@ const Remote: React.FC = () => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.code === "Space") {
-        // 🚀 Accelerate forward
+        // Accelerate forward
         setVelocity((prev) => Math.min(prev + ACCELERATION, MAX_SPEED));
       } else if (e.code === "ArrowLeft") {
-        // 🔄 Turn left
+        //  Turn left
         setRotation((prev) => prev - TURN_SPEED);
       } else if (e.code === "ArrowRight") {
-        // 🔄 Turn right
+        //  Turn right
         setRotation((prev) => prev + TURN_SPEED);
       } else if (e.code === "ArrowDown") {
-        // 🚗 Reverse
+        //  Reverse
         setVelocity((prev) => Math.max(prev - ACCELERATION, REVERSE_SPEED));
       }
     };
@@ -49,7 +49,7 @@ const Remote: React.FC = () => {
     };
   }, []);
 
-  // 🏁 Update Car Position
+  //  Update Car Position
   useEffect(() => {
     const gameLoop = setInterval(() => {
       setX((prevX) => {
@@ -80,14 +80,14 @@ const Remote: React.FC = () => {
         transition={{ ease: "linear", duration: 0.1 }}
         className="absolute w-24 h-12 bg-red-600 rounded-md flex items-center justify-center"
       >
-        {/* 🚗 Wheels */}
+        {/*  Wheels */}
         <div className="w-4 h-4 bg-black rounded-full absolute -left-3 top-2"></div>
         <div className="w-4 h-4 bg-black rounded-full absolute -left-3 bottom-2"></div>
         <div className="w-4 h-4 bg-black rounded-full absolute -right-3 top-2"></div>
         <div className="w-4 h-4 bg-black rounded-full absolute -right-3 bottom-2"></div>
       </motion.div>
 
-      {/* 🎮 Controls */}
+      {/*  Controls */}
       <div className="absolute bottom-4 flex flex-col items-center text-lg">
         <p>Press <span className="text-yellow-400">Space</span> to accelerate</p>
         <p><span className="text-green-400">◀ Steer ▶</span> with Arrow Keys</p>
