@@ -33,6 +33,7 @@ export default {
       colors: {
         customThemes: {
           default: "#f8f9fa", // Light theme
+          default: "#f8f9fa", // Light theme
           grayscale: "#6c757d", // Neutral tone
           invert: "#212529", // Dark mode
           sepia: "#704214", // Warm sepia tone
