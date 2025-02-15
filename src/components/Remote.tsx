@@ -26,7 +26,7 @@ const Remote: React.FC = () => {
       } else if (e.code === "KeyA") {
         //  Turn left
         setRotation((prev) => prev - TURN_SPEED);
-      } else if (e.code === "ArrowRight") {
+      } else if (e.code === "KeyD") {
         //  Turn right
         setRotation((prev) => prev + TURN_SPEED);
       } else if (e.code === "ArrowDown") {
