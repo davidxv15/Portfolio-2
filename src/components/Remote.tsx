@@ -89,8 +89,12 @@ const Remote: React.FC = () => {
 
       {/*  Controls */}
       <div className="absolute bottom-4 flex flex-col items-center text-lg">
-        <p>Press <span className="text-yellow-400">Space</span> to accelerate</p>
-        <p><span className="text-green-400">◀ Steer ▶</span> with Arrow Keys</p>
+        <p>
+          Press <span className="text-yellow-400">Space</span> to accelerate
+        </p>
+        <p>
+          <span className="text-green-400">◀ Steer ▶</span> with Arrow Keys
+        </p>
         <p className="text-blue-300">▼ Reverse</p>
       </div>
     </div>
