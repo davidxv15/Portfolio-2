@@ -26,7 +26,7 @@ const App: React.FC = () => {
       </div>
       <div className="mr-auto flex justify-end font-outfit bg-blue-100 animate-fade">
         <ThemeToggle
-          themes={["default", "grayscale", "sepia", "🔒"]}
+          themes={["default", "grayscale", "sepia", "locked"]}
           onThemeChange={(theme) => handleThemeChange(theme)}
         />
       </div>
