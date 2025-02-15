@@ -29,7 +29,7 @@ const Remote: React.FC = () => {
       } else if (e.code === "KeyD") {
         //  Turn right
         setRotation((prev) => prev + TURN_SPEED);
-      } else if (e.code === "ArrowDown") {
+      } else if (e.code === "KeyS") {
         //  Reverse
         setVelocity((prev) => Math.max(prev - ACCELERATION, REVERSE_SPEED));
       }
