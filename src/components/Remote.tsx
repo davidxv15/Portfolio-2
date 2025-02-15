@@ -23,7 +23,7 @@ const Remote: React.FC = () => {
       if (e.code === "KeyW") {
         // Accelerate forward
         setVelocity((prev) => Math.min(prev + ACCELERATION, MAX_SPEED));
-      } else if (e.code === "ArrowLeft") {
+      } else if (e.code === "KeyA") {
         //  Turn left
         setRotation((prev) => prev - TURN_SPEED);
       } else if (e.code === "ArrowRight") {
