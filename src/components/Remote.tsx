@@ -20,7 +20,7 @@ const Remote: React.FC = () => {
   // ⌨️ Handle Key Presses
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.code === "ArrowUp") {
+      if (e.code === "KeyW") {
         // Accelerate forward
         setVelocity((prev) => Math.min(prev + ACCELERATION, MAX_SPEED));
       } else if (e.code === "ArrowLeft") {
