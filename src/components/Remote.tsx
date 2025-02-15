@@ -7,7 +7,7 @@ const ACCELERATION = 0.9; // Speed increase per frame
 const FRICTION = 0.05; // Gradual slow-down
 const TURN_SPEED = 8; // How fast the car turns
 const MAX_SPEED = 7; // Maximum forward speed
-const REVERSE_SPEED = -7; // Maximum reverse speed
+const REVERSE_SPEED = 7; // Maximum reverse speed
 const BOUNDARIES = { left: 20, right: window.innerWidth - 100 }; // Keeps car on screen
 
 const Remote: React.FC = () => {
