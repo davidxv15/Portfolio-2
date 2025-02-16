@@ -87,8 +87,8 @@ const TrailShootin: React.FC = () => {
       ))}
 
       {/* Obstacles */}
-      <div className="absolute left-40 top-40 w-20 h-20 bg-green-700 rounded-md"></div>
-      <div className="absolute right-60 bottom-60 w-24 h-24 bg-brown-700 rounded-md"></div>
+      <div className="absolute left-40 top-40 w-20 h-20 bg-green-800 rounded-md"></div>
+      <div className="absolute right-60 bottom-60 w-24 h-24 bg-brown-500 rounded-md"></div>
     </div>
   );
 };
