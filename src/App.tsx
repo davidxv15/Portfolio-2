@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
 import EscapeFromEarth from "./components/EscapeFromEarth";
 import Remote from "./components/Remote";
+import TrailShootin from "./components/TrailShootin";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("default");
