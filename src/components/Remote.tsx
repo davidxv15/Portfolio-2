@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 // 🎮 Game Mechanics Constants
 const ACCELERATION = 0.9; // Speed increase per frame
-const FRICTION = 0.05; // Gradual slow-down
+const FRICTION = 0.08; // Gradual slow-down
 const TURN_SPEED = 8; // How fast the car turns
 const MAX_SPEED = 7; // Maximum forward speed
 const REVERSE_SPEED = 7; // Maximum reverse speed
