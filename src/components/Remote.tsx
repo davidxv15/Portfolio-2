@@ -93,7 +93,7 @@ const Remote: React.FC = () => {
           Press <span className="text-yellow-400">Key W</span> to accelerate
         </p>
         <p>
-          <span className="text-green-400">◀ Steer ▶</span> with Arrow Keys
+          <span className="text-green-400">◀ Steer ▶</span> with Key A & Key D
         </p>
         <p className="text-blue-300">▼ Reverse</p>
       </div>
