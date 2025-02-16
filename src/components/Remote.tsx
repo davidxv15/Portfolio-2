@@ -82,7 +82,7 @@ const Remote: React.FC = () => {
       >
         {/*  Wheels */}
         <div className="w-6 h-6 bg-black rounded-full absolute -left-3 top-2"></div>
-        <div className="w-4 h-4 bg-black rounded-full absolute -left-3 bottom-2"></div>
+        <div className="w-6 h-6 bg-black rounded-full absolute -left-3 bottom-2"></div>
         <div className="w-5 h-5 bg-black rounded-full absolute right-2 -top-2"></div>
         <div className="w-4 h-4 bg-black rounded-full absolute -right-3 bottom-2"></div>
       </motion.div>
