@@ -74,7 +74,7 @@ const Remote: React.FC = () => {
 
   return (
     <div className="relative w-full h-[50vh] flex flex-col items-center justify-center bg-gray-900 text-slate-100">
-      {/* 🏎️ Car */}
+      {/*  Car */}
       <motion.div
         animate={{ x, y, rotate: rotation }}
         transition={{ ease: "linear", duration: 0.1 }}
