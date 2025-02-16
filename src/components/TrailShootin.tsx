@@ -82,7 +82,7 @@ const TrailShootin: React.FC = () => {
           key={index}
           animate={{ x: b.x, y: b.y }}
           transition={{ ease: "linear", duration: 0.1 }}
-          className="absolute w-4 h-4 bg-yellow-500 rounded-full"
+          className="absolute w-2 h-2 bg-zinc-500 rounded-full"
         />
       ))}
 
