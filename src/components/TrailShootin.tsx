@@ -2,23 +2,24 @@ import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-// 🎯 GAME SETTINGS (Tweak These for Balance!)
+// 🎯 GAME SETTINGS
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SPEED = 3;
-const BULLET_SPEED = 10;
-const BULLET_LIFETIME = 50;
+const BULLET_SPEED = 8; // Slow down a bit for better visibility
+const BULLET_LIFETIME = 60;
 const ANIMAL_SPEED = 1;
 const NUM_ANIMALS = 5;
-const SAFE_SPAWN_DISTANCE = 100; // Prevents animals from spawning too close
+const SAFE_SPAWN_DISTANCE = 100;
 const PLAYER_SIZE = 50;
 const ANIMAL_SIZE = 40;
-const BULLET_SIZE = 10;
+const BULLET_SIZE = 8;
 
 interface Bullet {
   x: number;
   y: number;
-  angle: number;
+  velocityX: number;
+  velocityY: number;
   lifetime: number;
 }
 
@@ -47,7 +48,7 @@ const TrailShootin: React.FC = () => {
 
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
-  // 🎮 **Handles Movement**
+  // 🎮 **Handles Player Movement**
   const updatePlayerPosition = () => {
     setPlayer((prev) => {
       let newX = prev.x;
@@ -79,7 +80,7 @@ const TrailShootin: React.FC = () => {
       updatePlayerPosition();
       requestAnimationFrame(gameLoop);
     };
-    gameLoop(); // Start loop
+    gameLoop();
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
@@ -87,38 +88,38 @@ const TrailShootin: React.FC = () => {
     };
   }, []);
 
+  // 🔫 **Handles Shooting (Fixed)**
   const handleShoot = (e: React.MouseEvent) => {
     const gameRect = e.currentTarget.getBoundingClientRect(); // Get game container position
     const mouseX = e.clientX - gameRect.left; // Convert to game space
     const mouseY = e.clientY - gameRect.top;
-  
-    const angle = Math.atan2(mouseY - player.y, mouseX - player.x); // NOW CORRECT!
-  
+
+    const angle = Math.atan2(mouseY - (player.y + PLAYER_SIZE / 2), mouseX - (player.x + PLAYER_SIZE / 2));
+    const velocityX = Math.cos(angle) * BULLET_SPEED;
+    const velocityY = Math.sin(angle) * BULLET_SPEED;
+
     setBullets((prev) => [
       ...prev,
-      { x: player.x + PLAYER_SIZE / 2, y: player.y + PLAYER_SIZE / 2, angle, lifetime: BULLET_LIFETIME },
+      { x: player.x + PLAYER_SIZE / 2, y: player.y + PLAYER_SIZE / 2, velocityX, velocityY, lifetime: BULLET_LIFETIME },
     ]);
   };
-  
 
   // 💨 **Moves Bullets**
   useEffect(() => {
-    const gameLoop = () => {
+    const bulletLoop = setInterval(() => {
       setBullets((prev) =>
         prev
           .map((b) => ({
             ...b,
-            x: b.x + Math.cos(b.angle) * BULLET_SPEED,
-            y: b.y + Math.sin(b.angle) * BULLET_SPEED,
+            x: b.x + b.velocityX,
+            y: b.y + b.velocityY,
             lifetime: b.lifetime - 1,
           }))
           .filter((b) => b.lifetime > 0)
       );
-      requestAnimationFrame(gameLoop);
-    };
-    gameLoop(); // Start bullet loop
+    }, 16); // ~60 FPS
 
-    return () => {};
+    return () => clearInterval(bulletLoop);
   }, []);
 
   // 🦌 **Moves Animals Randomly**
@@ -135,26 +136,13 @@ const TrailShootin: React.FC = () => {
     return () => clearInterval(moveAnimals);
   }, []);
 
-  // 🎯 **Handles Bullet-Animal Collision**
-  useEffect(() => {
-    setAnimals((prevAnimals) =>
-      prevAnimals.map((animal) => {
-        if (!animal.alive) return animal;
-
-        return bullets.some((b) => Math.hypot(b.x - animal.x, b.y - animal.y) < 20)
-          ? { ...animal, alive: false }
-          : animal;
-      })
-    );
-  }, [bullets]);
-
   return (
     <div
       className="relative w-[800px] h-[600px] bg-gray-900 border-4 border-gray-700"
       style={{ position: "relative", overflow: "hidden" }}
       onClick={handleShoot}
     >
-      {/* 🎮 **Player (Now Properly Positioned!)** */}
+      {/* 🎮 **Player** */}
       <motion.div
         animate={{ x: player.x, y: player.y }}
         transition={{ ease: "linear", duration: 0.1 }}
@@ -163,17 +151,17 @@ const TrailShootin: React.FC = () => {
         🧑‍🌾
       </motion.div>
 
-      {/* 🔫 **Bullets** */}
+      {/* 🔫 **Bullets (Now Work Correctly!)** */}
       {bullets.map((b, index) => (
         <motion.div
           key={index}
           animate={{ x: b.x, y: b.y }}
-          transition={{ ease: "linear", duration: 0.1 }}
-          className="absolute w-[10px] h-[10px] bg-yellow-500 rounded-full"
+          transition={{ ease: "linear", duration: 0.05 }}
+          className="absolute w-[8px] h-[8px] bg-yellow-500 rounded-full"
         />
       ))}
 
-      {/* 🦌 **Animals (Now Stay Inside Boundaries!)** */}
+      {/* 🦌 **Animals** */}
       {animals.map((animal, index) =>
         animal.alive ? (
           <motion.div
@@ -187,11 +175,7 @@ const TrailShootin: React.FC = () => {
         ) : null
       )}
 
-      {/* 🌲 **Obstacles Properly Placed** */}
-      <div className="absolute left-[200px] top-[150px] w-[50px] h-[50px] bg-green-700 rounded-md"></div>
-      <div className="absolute right-[250px] bottom-[200px] w-[50px] h-[50px] bg-brown-700 rounded-md"></div>
-
-      {/* 📜 **Game Instructions (For Better UX!)** */}
+      {/* 📜 **Game Instructions** */}
       <div className="absolute top-4 left-4 text-white">
         <p>🔫 Click to Shoot</p>
         <p>🎮 WASD to Move</p>
