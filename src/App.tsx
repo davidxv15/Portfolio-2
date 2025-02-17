@@ -10,6 +10,7 @@ import ThemeToggle from "./components/ThemeToggle";
 import EscapeFromEarth from "./components/EscapeFromEarth";
 import Remote from "./components/Remote";
 import TrailShootin from "./components/TrailShootin";
+import ZBlaster from "./components/ZBlaster";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("default");
@@ -44,7 +45,7 @@ const App: React.FC = () => {
           <div className="w-full flex justify-center scale-75 md:scale-80 lg:scale-90">
       {/* <Remote /> */}
       <TrailShootin />
-      {/* <ZBlaster /> */}
+      <ZBlaster />
     </div>
         </div>
       )}
