@@ -88,21 +88,29 @@ const TrailShootin: React.FC = () => {
     };
   }, []);
 
-  // 🔫 **Handles Shooting (Fixed)**
   const handleShoot = (e: React.MouseEvent) => {
-    const gameRect = e.currentTarget.getBoundingClientRect(); // Get game container position
+    const gameRect = e.currentTarget.getBoundingClientRect(); // Get game container bounds
     const mouseX = e.clientX - gameRect.left; // Convert to game space
     const mouseY = e.clientY - gameRect.top;
-
-    const angle = Math.atan2(mouseY - (player.y + PLAYER_SIZE / 2), mouseX - (player.x + PLAYER_SIZE / 2));
+  
+    // ✅ Bullet spawns at player's center
+    const playerCenterX = player.x + PLAYER_SIZE / 2;
+    const playerCenterY = player.y + PLAYER_SIZE / 2;
+  
+    // ✅ Correct angle calculation
+    const angle = Math.atan2(mouseY - playerCenterY, mouseX - playerCenterX);
+  
+    // ✅ Proper velocity calculation
     const velocityX = Math.cos(angle) * BULLET_SPEED;
     const velocityY = Math.sin(angle) * BULLET_SPEED;
-
+  
+    // ✅ Bullets now spawn directly at player's position
     setBullets((prev) => [
       ...prev,
-      { x: player.x + PLAYER_SIZE / 2, y: player.y + PLAYER_SIZE / 2, velocityX, velocityY, lifetime: BULLET_LIFETIME },
+      { x: playerCenterX, y: playerCenterY, velocityX, velocityY, lifetime: BULLET_LIFETIME },
     ]);
   };
+  
 
   // 💨 **Moves Bullets**
   useEffect(() => {
