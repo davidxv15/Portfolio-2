@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const PLAYER_SPEED = 10;
 const BULLET_SPEED = 20;
-const BULLET_LIFETIME = 8000; // 3 second
+const BULLET_LIFETIME = 10000; // 3 second
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 
