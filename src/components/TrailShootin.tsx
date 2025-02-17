@@ -112,7 +112,6 @@ const TrailShootin: React.FC = () => {
   };
   
 
-  // 💨 **Moves Bullets**
   useEffect(() => {
     const bulletLoop = setInterval(() => {
       setBullets((prev) =>
@@ -123,12 +122,13 @@ const TrailShootin: React.FC = () => {
             y: b.y + b.velocityY,
             lifetime: b.lifetime - 1,
           }))
-          .filter((b) => b.lifetime > 0)
+          .filter((b) => b.lifetime > 0) // Remove bullets when lifetime expires
       );
     }, 16); // ~60 FPS
-
+  
     return () => clearInterval(bulletLoop);
   }, []);
+  
 
   // 🦌 **Moves Animals Randomly**
   useEffect(() => {
