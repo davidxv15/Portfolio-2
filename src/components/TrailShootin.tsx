@@ -87,11 +87,19 @@ const TrailShootin: React.FC = () => {
     };
   }, []);
 
-  // 🔫 **Handles Shooting**
   const handleShoot = (e: React.MouseEvent) => {
-    const angle = Math.atan2(e.clientY - player.y, e.clientX - player.x);
-    setBullets((prev) => [...prev, { x: player.x, y: player.y, angle, lifetime: BULLET_LIFETIME }]);
+    const gameRect = e.currentTarget.getBoundingClientRect(); // Get game container position
+    const mouseX = e.clientX - gameRect.left; // Convert to game space
+    const mouseY = e.clientY - gameRect.top;
+  
+    const angle = Math.atan2(mouseY - player.y, mouseX - player.x); // NOW CORRECT!
+  
+    setBullets((prev) => [
+      ...prev,
+      { x: player.x + PLAYER_SIZE / 2, y: player.y + PLAYER_SIZE / 2, angle, lifetime: BULLET_LIFETIME },
+    ]);
   };
+  
 
   // 💨 **Moves Bullets**
   useEffect(() => {
