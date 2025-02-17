@@ -2,11 +2,11 @@ import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-const PLAYER_SPEED = 3;
-const BULLET_SPEED = 10;
-const BULLET_LIFETIME = 50; // Frames before bullets disappear
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
+const PLAYER_SPEED = 3;
+const BULLET_SPEED = 10;
+const BULLET_LIFETIME = 50;
 const ANIMAL_SPEED = 1;
 const NUM_ANIMALS = 5;
 
@@ -24,7 +24,7 @@ interface Animal {
 }
 
 const TrailShootin: React.FC = () => {
-  const [player, setPlayer] = useState({ x: SCREEN_WIDTH / 2, y: SCREEN_HEIGHT / 2 });
+  const [player, setPlayer] = useState({ x: 50, y: 50 }); // **Start closer to top-left**
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [animals, setAnimals] = useState<Animal[]>(
     Array.from({ length: NUM_ANIMALS }, () => ({
@@ -42,9 +42,9 @@ const TrailShootin: React.FC = () => {
       let newY = prev.y;
 
       if (keysPressed.current["w"]) newY = Math.max(0, prev.y - PLAYER_SPEED);
-      if (keysPressed.current["s"]) newY = Math.min(SCREEN_HEIGHT, prev.y + PLAYER_SPEED);
+      if (keysPressed.current["s"]) newY = Math.min(SCREEN_HEIGHT - 50, prev.y + PLAYER_SPEED);
       if (keysPressed.current["a"]) newX = Math.max(0, prev.x - PLAYER_SPEED);
-      if (keysPressed.current["d"]) newX = Math.min(SCREEN_WIDTH, prev.x + PLAYER_SPEED);
+      if (keysPressed.current["d"]) newX = Math.min(SCREEN_WIDTH - 50, prev.x + PLAYER_SPEED);
 
       return { x: newX, y: newY };
     });
@@ -107,8 +107,8 @@ const TrailShootin: React.FC = () => {
       setAnimals((prev) =>
         prev.map((a) => ({
           ...a,
-          x: a.alive ? a.x + (Math.random() - 0.5) * ANIMAL_SPEED * 10 : a.x,
-          y: a.alive ? a.y + (Math.random() - 0.5) * ANIMAL_SPEED * 10 : a.y,
+          x: a.alive ? Math.min(SCREEN_WIDTH - 20, Math.max(0, a.x + (Math.random() - 0.5) * ANIMAL_SPEED * 10)) : a.x,
+          y: a.alive ? Math.min(SCREEN_HEIGHT - 20, Math.max(0, a.y + (Math.random() - 0.5) * ANIMAL_SPEED * 10)) : a.y,
         }))
       );
     }, 1000);
@@ -133,7 +133,7 @@ const TrailShootin: React.FC = () => {
       className="relative w-[800px] h-[600px] bg-gray-900 border-4 border-gray-700 flex items-center justify-center"
       onClick={handleShoot}
     >
-      {/* **Player** */}
+      {/* **Player (now starts top-left)** */}
       <motion.div
         animate={{ x: player.x, y: player.y }}
         transition={{ ease: "linear", duration: 0.1 }}
@@ -152,7 +152,7 @@ const TrailShootin: React.FC = () => {
         />
       ))}
 
-      {/* **Animals** */}
+      {/* **Animals (now stay inside boundaries)** */}
       {animals.map((animal, index) =>
         animal.alive ? (
           <motion.div
@@ -167,8 +167,8 @@ const TrailShootin: React.FC = () => {
       )}
 
       {/* **Obstacles** */}
-      <div className="absolute left-40 top-40 w-20 h-20 bg-green-700 rounded-md"></div>
-      <div className="absolute right-60 bottom-60 w-24 h-24 bg-brown-700 rounded-md"></div>
+      <div className="absolute left-100 top-100 w-20 h-20 bg-green-700 rounded-md"></div>
+      <div className="absolute right-200 bottom-200 w-24 h-24 bg-brown-700 rounded-md"></div>
     </div>
   );
 };
