@@ -9,6 +9,7 @@ const BULLET_SPEED = 10;
 const BULLET_LIFETIME = 50;
 const ANIMAL_SPEED = 1;
 const NUM_ANIMALS = 5;
+const SAFE_SPAWN_DISTANCE = 100; // Prevents animals from spawning too close
 
 interface Bullet {
   x: number;
@@ -23,16 +24,23 @@ interface Animal {
   alive: boolean;
 }
 
+// **Helper Function: Ensures animals spawn away from player**
+const getSafeSpawnPosition = () => {
+  let x, y;
+  do {
+    x = Math.random() * (SCREEN_WIDTH - 50);
+    y = Math.random() * (SCREEN_HEIGHT - 50);
+  } while (Math.hypot(x - 50, y - 50) < SAFE_SPAWN_DISTANCE); // Ensures distance from player
+  return { x, y };
+};
+
 const TrailShootin: React.FC = () => {
-  const [player, setPlayer] = useState({ x: 50, y: 50 }); // **Start closer to top-left**
+  const [player, setPlayer] = useState({ x: 50, y: 50 });
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [animals, setAnimals] = useState<Animal[]>(
-    Array.from({ length: NUM_ANIMALS }, () => ({
-      x: Math.random() * SCREEN_WIDTH,
-      y: Math.random() * SCREEN_HEIGHT,
-      alive: true,
-    }))
+    Array.from({ length: NUM_ANIMALS }, () => ({ ...getSafeSpawnPosition(), alive: true }))
   );
+
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
   // **Handles movement**
@@ -133,7 +141,7 @@ const TrailShootin: React.FC = () => {
       className="relative w-[800px] h-[600px] bg-gray-900 border-4 border-gray-700 flex items-center justify-center"
       onClick={handleShoot}
     >
-      {/* **Player (now starts top-left)** */}
+      {/* **Player (starts top-left, away from obstacles)** */}
       <motion.div
         animate={{ x: player.x, y: player.y }}
         transition={{ ease: "linear", duration: 0.1 }}
@@ -152,7 +160,7 @@ const TrailShootin: React.FC = () => {
         />
       ))}
 
-      {/* **Animals (now stay inside boundaries)** */}
+      {/* **Animals (now stay inside boundaries & away from player)** */}
       {animals.map((animal, index) =>
         animal.alive ? (
           <motion.div
@@ -166,9 +174,15 @@ const TrailShootin: React.FC = () => {
         ) : null
       )}
 
-      {/* **Obstacles** */}
-      <div className="absolute left-100 top-100 w-20 h-20 bg-green-700 rounded-md"></div>
-      <div className="absolute right-200 bottom-200 w-24 h-24 bg-brown-700 rounded-md"></div>
+      {/* **Obstacles now correctly placed** */}
+      <div className="absolute left-[200px] top-[150px] w-20 h-20 bg-green-700 rounded-md"></div>
+      <div className="absolute right-[250px] bottom-[200px] w-24 h-24 bg-brown-700 rounded-md"></div>
+
+      {/* **Game Instructions (better UX)** */}
+      <div className="absolute top-4 left-4 text-white">
+        <p>🔫 Click to Shoot</p>
+        <p>WASD to Move</p>
+      </div>
     </div>
   );
 };
