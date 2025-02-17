@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-const PLAYER_SPEED = 3;
+const PLAYER_SPEED = 10;
 const BULLET_SPEED = 20;
 const BULLET_LIFETIME = 3000; // 3 second
 const SCREEN_WIDTH = 800;
