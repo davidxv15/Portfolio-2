@@ -68,10 +68,15 @@ const ZBlaster: React.FC = () => {
 
         return { x: newX, y: newY };
       });
+      requestAnimationFrame(gameLoop);
     };
     
     const animationFrame = requestAnimationFrame(gameLoop);
-    return () => cancelAnimationFrame(animationFrame);
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
+    };
   }, []);
 
   const handleShoot = () => {
