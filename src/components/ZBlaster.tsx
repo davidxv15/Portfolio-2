@@ -79,14 +79,15 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x + PLAYER_SIZE / 1 - 1; // Adjust this for left/right positioning
-    const bulletY = player.y - PLAYER_SIZE / 1 - 1; // Adjust this for up/down positioning
+    const bulletX = player.x + PLAYER_SIZE / 2 - 10; // Adjust leftward
+    const bulletY = player.y - PLAYER_SIZE; // Move directly above the ship
   
     setBullets((prev) => [
       ...prev,
       { x: bulletX, y: bulletY, velocityX: 0, velocityY: -BULLET_SPEED, lifetime: BULLET_LIFETIME },
     ]);
   };
+  
   
   
 
