@@ -79,17 +79,14 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x + PLAYER_SIZE / 2 - 10; // Adjust leftward
-    const bulletY = player.y - PLAYER_SIZE; // Move directly above the ship
-  
+    const bulletX = player.x + PLAYER_SIZE / 2 - 2; // Centered relative to player
+    const bulletY = player.y - PLAYER_SIZE / 2 - 10; // Position at triangle tip
+
     setBullets((prev) => [
       ...prev,
       { x: bulletX, y: bulletY, velocityX: 0, velocityY: -BULLET_SPEED, lifetime: BULLET_LIFETIME },
     ]);
   };
-  
-  
-  
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
@@ -121,8 +118,8 @@ const ZBlaster: React.FC = () => {
 
   return (
     <div className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 flex items-center justify-center overflow-hidden" onClick={handleShoot}>
-      <motion.div animate={{ x: player.x, y: player.y }} transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500 top-0 left-0" />
+      <motion.div animate={{ x: player.x - PLAYER_SIZE / 2, y: player.y - PLAYER_SIZE / 2 }} transition={{ ease: "linear", duration: 0.1 }}
+        className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500" />
 
       {bullets.map((b, index) => (
         <motion.div key={index} animate={{ x: b.x, y: b.y }} transition={{ ease: "linear", duration: 0.05 }}
