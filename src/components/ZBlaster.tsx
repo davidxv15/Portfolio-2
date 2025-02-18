@@ -68,19 +68,15 @@ const ZBlaster: React.FC = () => {
 
         return { x: newX, y: newY };
       });
-      requestAnimationFrame(gameLoop);
     };
-    gameLoop();
     
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
-    };
+    const animationFrame = requestAnimationFrame(gameLoop);
+    return () => cancelAnimationFrame(animationFrame);
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x;
-    const bulletY = player.y - PLAYER_SIZE / 2; // Ensure it starts exactly at the tip
+    const bulletX = player.x + PLAYER_SIZE / 2;
+    const bulletY = player.y - PLAYER_SIZE / 2;
 
     setBullets((prev) => [
       ...prev,
@@ -117,8 +113,8 @@ const ZBlaster: React.FC = () => {
   }, [bullets]);
 
   return (
-    <div className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 flex items-center justify-center overflow-hidden">
-      <motion.div animate={{ x: player.x, y: player.y }} transition={{ ease: "linear", duration: 0.1 }}
+    <div className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 flex items-center justify-center overflow-hidden" onClick={handleShoot}>
+      <motion.div animate={{ x: player.x - PLAYER_SIZE / 2, y: player.y - PLAYER_SIZE / 2 }} transition={{ ease: "linear", duration: 0.1 }}
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500" />
 
       {bullets.map((b, index) => (
