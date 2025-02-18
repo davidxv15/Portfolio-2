@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 8;
-const BULLET_LIFETIME = 80;
+const BULLET_SPEED = 10;
+const BULLET_LIFETIME = 100;
 const PLAYER_SPEED = 4;
 const NUM_TARGETS = 5;
 const TARGET_RADIUS = 15;
@@ -114,13 +114,13 @@ const ZBlaster: React.FC = () => {
   }, [bullets]);
 
   return (
-    <div className="relative w-full h-[600px] bg-black border-4 border-gray-700 flex items-center justify-center" onClick={handleShoot}>
+    <div className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 flex items-center justify-center overflow-hidden" onClick={handleShoot}>
       <motion.div animate={{ x: player.x, y: player.y }} transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500" />
+        className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500 top-0 left-0" />
 
       {bullets.map((b, index) => (
         <motion.div key={index} animate={{ x: b.x, y: b.y }} transition={{ ease: "linear", duration: 0.05 }}
-          className="absolute w-[10px] h-[10px] bg-yellow-500 rounded-full" />
+          className="absolute w-[4px] h-[15px] bg-cyan-400" />
       ))}
 
       {targets.map((target, index) =>
