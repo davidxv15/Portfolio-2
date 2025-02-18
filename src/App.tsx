@@ -44,7 +44,7 @@ const App: React.FC = () => {
           {/* <EscapeFromEarth /> */}
           <div className="w-full flex justify-center scale-75 md:scale-80 lg:scale-90">
       {/* <Remote /> */}
-      <TrailShootin />
+      {/* <TrailShootin /> */}
       <ZBlaster />
     </div>
         </div>
