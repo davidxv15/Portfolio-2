@@ -80,7 +80,7 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x + PLAYER_SIZE / 2;
+    const bulletX = player.x + PLAYER_SIZE / 2 - 3; // Adjust left to align with tip
     const bulletY = player.y - PLAYER_SIZE / 2;
 
     setBullets((prev) => [
