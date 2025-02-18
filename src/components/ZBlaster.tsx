@@ -79,14 +79,15 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x + PLAYER_SIZE / .5; // Center bullet at tip
-    const bulletY = player.y - PLAYER_SIZE / 1 - 5; // Adjust to ensure it starts at the tip
+    const bulletX = player.x + PLAYER_SIZE / 2 - 2; // Adjust this for left/right positioning
+    const bulletY = player.y - PLAYER_SIZE / 2 - 5; // Adjust this for up/down positioning
   
     setBullets((prev) => [
       ...prev,
       { x: bulletX, y: bulletY, velocityX: 0, velocityY: -BULLET_SPEED, lifetime: BULLET_LIFETIME },
     ]);
   };
+  
   
 
   useEffect(() => {
