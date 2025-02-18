@@ -79,8 +79,8 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x + PLAYER_SIZE / 4 - 6; // Adjust this for left/right positioning
-    const bulletY = player.y - PLAYER_SIZE / 4 - 10; // Adjust this for up/down positioning
+    const bulletX = player.x + PLAYER_SIZE / -4 - 6; // Adjust this for left/right positioning
+    const bulletY = player.y - PLAYER_SIZE / -4 - 10; // Adjust this for up/down positioning
   
     setBullets((prev) => [
       ...prev,
