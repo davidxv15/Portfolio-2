@@ -9,6 +9,8 @@ const BULLET_SPEED = 8;
 const BULLET_LIFETIME = 80;
 const PLAYER_SPEED = 4;
 const NUM_TARGETS = 5;
+const TARGET_RADIUS = 15;
+const BULLET_RADIUS = 5;
 
 interface Bullet {
   x: number;
@@ -31,6 +33,10 @@ const getRandomTarget = (): Target => ({
   stationary: Math.random() > 0.5,
   alive: true,
 });
+
+const checkCollision = (bullet: Bullet, target: Target) => {
+  return Math.hypot(bullet.x - target.x, bullet.y - target.y) < TARGET_RADIUS + BULLET_RADIUS;
+};
 
 const ZBlaster: React.FC = () => {
   const [player, setPlayer] = useState({ x: SCREEN_WIDTH / 2, y: SCREEN_HEIGHT / 2 });
@@ -100,7 +106,7 @@ const ZBlaster: React.FC = () => {
     setTargets((prevTargets) =>
       prevTargets.map((target) => {
         if (!target.alive) return target;
-        return bullets.some((b) => Math.hypot(b.x - target.x, b.y - target.y) < 20)
+        return bullets.some((b) => checkCollision(b, target))
           ? { ...target, alive: false }
           : target;
       })
@@ -114,7 +120,7 @@ const ZBlaster: React.FC = () => {
 
       {bullets.map((b, index) => (
         <motion.div key={index} animate={{ x: b.x, y: b.y }} transition={{ ease: "linear", duration: 0.05 }}
-          className="absolute w-[5px] h-[10px] bg-yellow-500" />
+          className="absolute w-[10px] h-[10px] bg-yellow-500 rounded-full" />
       ))}
 
       {targets.map((target, index) =>
