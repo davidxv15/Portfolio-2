@@ -28,8 +28,8 @@ interface Target {
 }
 
 const getRandomTarget = (): Target => ({
-  x: Math.random() * SCREEN_WIDTH,
-  y: Math.random() * SCREEN_HEIGHT,
+  x: Math.random() * (SCREEN_WIDTH - TARGET_RADIUS * 2) + TARGET_RADIUS,
+  y: Math.random() * (SCREEN_HEIGHT - TARGET_RADIUS * 2) + TARGET_RADIUS,
   stationary: Math.random() > 0.5,
   alive: true,
 });
@@ -69,12 +69,10 @@ const ZBlaster: React.FC = () => {
         let newX = prev.x;
         let newY = prev.y;
 
-        if (keysPressed.current["w"]) newY = Math.max(0, prev.y - PLAYER_SPEED);
-        if (keysPressed.current["s"])
-          newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE, prev.y + PLAYER_SPEED);
-        if (keysPressed.current["a"]) newX = Math.max(0, prev.x - PLAYER_SPEED);
-        if (keysPressed.current["d"])
-          newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE, prev.x + PLAYER_SPEED);
+        if (keysPressed.current["w"]) newY = Math.max(PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
+        if (keysPressed.current["s"]) newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE / 2, prev.y + PLAYER_SPEED);
+        if (keysPressed.current["a"]) newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
+        if (keysPressed.current["d"]) newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE / 2, prev.x + PLAYER_SPEED);
 
         return { x: newX, y: newY };
       });
@@ -90,8 +88,8 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x + PLAYER_SIZE / 2 - 4; // Adjust left to align with tip
-    const bulletY = player.y - PLAYER_SIZE / 2;
+    const bulletX = player.x;
+    const bulletY = player.y - PLAYER_SIZE / 2; // Align with tip
 
     setBullets((prev) => [
       ...prev,
