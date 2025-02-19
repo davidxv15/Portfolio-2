@@ -69,9 +69,9 @@ const ZBlaster: React.FC = () => {
         let newX = prev.x;
         let newY = prev.y;
 
-        if (keysPressed.current["w"]) newY = Math.max(PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
+        if (keysPressed.current["w"]) newY = Math.max(0 + PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
         if (keysPressed.current["s"]) newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE / 2, prev.y + PLAYER_SPEED);
-        if (keysPressed.current["a"]) newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
+        if (keysPressed.current["a"]) newX = Math.max(0 + PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
         if (keysPressed.current["d"]) newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE / 2, prev.x + PLAYER_SPEED);
 
         return { x: newX, y: newY };
@@ -88,8 +88,8 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x - 3; // raise= left to align 
-    const bulletY = player.y - PLAYER_SIZE / 2 + 6; // raise= slightly down
+    const bulletX = player.x - 3; // Slightly left for precision
+    const bulletY = player.y - PLAYER_SIZE / 2 + 6; // Adjusted down for perfect alignment
 
     setBullets((prev) => [
       ...prev,
