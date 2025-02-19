@@ -88,8 +88,8 @@ const ZBlaster: React.FC = () => {
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x - 4; // Slightly left to align precisely
-    const bulletY = player.y - PLAYER_SIZE / 2 + 6; // Adjusted slightly down
+    const bulletX = player.x - 5; // raise= left to align 
+    const bulletY = player.y - PLAYER_SIZE / 2 + 8; // raise= slightly down
 
     setBullets((prev) => [
       ...prev,
