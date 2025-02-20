@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 10;
+const BULLET_SPEED = 20;
 const BULLET_LIFETIME = 100;
 const PLAYER_SPEED = 4;
-const NUM_TARGETS = 5;
+const NUM_TARGETS = 8;
 const TARGET_RADIUS = 15;
 const BULLET_RADIUS = 5;
 
