@@ -42,7 +42,7 @@ const checkCollision = (bullet: Bullet, target: Target) => {
 const ZBlaster: React.FC = () => {
   const [player, setPlayer] = useState({
     x: SCREEN_WIDTH / 2,
-    y: SCREEN_HEIGHT - 50,
+    y: SCREEN_HEIGHT - PLAYER_SIZE,
   });
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(
@@ -86,7 +86,7 @@ const ZBlaster: React.FC = () => {
 
   const handleShoot = () => {
     const bulletX = player.x;
-    const bulletY = player.y - PLAYER_SIZE / 2 + 10; // Precise alignment with ship tip
+    const bulletY = player.y - PLAYER_SIZE / 2 + 15; // Adjusted laser origin to ship tip
 
     setBullets((prev) => [
       ...prev,
