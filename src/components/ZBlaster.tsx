@@ -152,7 +152,7 @@ const ZBlaster: React.FC = () => {
           key={index}
           animate={{ x: b.x, y: b.y }}
           transition={{ ease: "linear", duration: 0.05 }}
-          className="absolute w-[4px] h-[15px] bg-cyan-400"
+          className="absolute w-[4px] h-[15px] bg-cyan-300"
         />
       ))}
 
