@@ -23,14 +23,12 @@ interface Bullet {
 interface Target {
   x: number;
   y: number;
-  stationary: boolean;
   alive: boolean;
 }
 
 const getRandomTarget = (): Target => ({
   x: Math.random() * (SCREEN_WIDTH - TARGET_RADIUS * 2) + TARGET_RADIUS,
   y: Math.random() * (SCREEN_HEIGHT - TARGET_RADIUS * 2) + TARGET_RADIUS,
-  stationary: Math.random() > 0.5,
   alive: true,
 });
 
@@ -44,7 +42,7 @@ const checkCollision = (bullet: Bullet, target: Target) => {
 const ZBlaster: React.FC = () => {
   const [player, setPlayer] = useState({
     x: SCREEN_WIDTH / 2,
-    y: SCREEN_HEIGHT / 2,
+    y: SCREEN_HEIGHT - 60,
   });
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(
@@ -67,14 +65,11 @@ const ZBlaster: React.FC = () => {
     const gameLoop = () => {
       setPlayer((prev) => {
         let newX = prev.x;
-        let newY = prev.y;
 
-        if (keysPressed.current["w"]) newY = Math.max(0, prev.y - PLAYER_SPEED);
-        if (keysPressed.current["s"]) newY = Math.min(SCREEN_HEIGHT, prev.y + PLAYER_SPEED);
         if (keysPressed.current["a"]) newX = Math.max(0, prev.x - PLAYER_SPEED);
         if (keysPressed.current["d"]) newX = Math.min(SCREEN_WIDTH, prev.x + PLAYER_SPEED);
 
-        return { x: newX, y: newY };
+        return { x: newX, y: prev.y };
       });
       requestAnimationFrame(gameLoop);
     };
@@ -89,7 +84,7 @@ const ZBlaster: React.FC = () => {
 
   const handleShoot = () => {
     const bulletX = player.x;
-const bulletY = player.y - PLAYER_SIZE / 2 - 10;
+    const bulletY = player.y - PLAYER_SIZE / 2; // Adjusted for precise laser origin
 
     setBullets((prev) => [
       ...prev,
@@ -150,7 +145,7 @@ const bulletY = player.y - PLAYER_SIZE / 2 - 10;
           key={index}
           animate={{ x: b.x, y: b.y }}
           transition={{ ease: "linear", duration: 0.05 }}
-          className="absolute w-[4px] h-[15px] bg-cyan-300"
+          className="absolute w-[4px] h-[15px] bg-cyan-400"
         />
       ))}
 
