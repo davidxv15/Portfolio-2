@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 20;
+const BULLET_SPEED = 15;
 const BULLET_LIFETIME = 100;
 const PLAYER_SPEED = 4;
 const NUM_TARGETS = 8;
@@ -42,7 +42,7 @@ const checkCollision = (bullet: Bullet, target: Target) => {
 const ZBlaster: React.FC = () => {
   const [player, setPlayer] = useState({
     x: SCREEN_WIDTH / 2,
-    y: SCREEN_HEIGHT - 60,
+    y: SCREEN_HEIGHT - 50,
   });
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(
@@ -65,14 +65,11 @@ const ZBlaster: React.FC = () => {
     const gameLoop = () => {
       setPlayer((prev) => {
         let newX = prev.x;
-        let newY = prev.y;
 
-        if (keysPressed.current["w"]) newY = Math.max(0, prev.y - PLAYER_SPEED);
-        if (keysPressed.current["s"]) newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE, prev.y + PLAYER_SPEED);
         if (keysPressed.current["a"]) newX = Math.max(0, prev.x - PLAYER_SPEED);
         if (keysPressed.current["d"]) newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE, prev.x + PLAYER_SPEED);
 
-        return { x: newX, y: newY };
+        return { x: newX, y: prev.y };
       });
       requestAnimationFrame(gameLoop);
     };
@@ -87,7 +84,7 @@ const ZBlaster: React.FC = () => {
 
   const handleShoot = () => {
     const bulletX = player.x;
-    const bulletY = player.y - PLAYER_SIZE / 2 - 5; // Adjusted for precise laser origin
+    const bulletY = player.y - PLAYER_SIZE / 2 - 5; // Precise alignment with ship tip
 
     setBullets((prev) => [
       ...prev,
