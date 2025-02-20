@@ -65,18 +65,20 @@ const ZBlaster: React.FC = () => {
     const gameLoop = () => {
       setPlayer((prev) => {
         let newX = prev.x;
+        let newY = prev.y;
 
+        if (keysPressed.current["w"]) newY = Math.max(0, prev.y - PLAYER_SPEED);
+        if (keysPressed.current["s"]) newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE, prev.y + PLAYER_SPEED);
         if (keysPressed.current["a"]) newX = Math.max(0, prev.x - PLAYER_SPEED);
         if (keysPressed.current["d"]) newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE, prev.x + PLAYER_SPEED);
 
-        return { x: newX, y: prev.y };
+        return { x: newX, y: newY };
       });
       requestAnimationFrame(gameLoop);
     };
 
-    const animationFrame = requestAnimationFrame(gameLoop);
+    requestAnimationFrame(gameLoop);
     return () => {
-      cancelAnimationFrame(animationFrame);
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
     };
@@ -84,7 +86,7 @@ const ZBlaster: React.FC = () => {
 
   const handleShoot = () => {
     const bulletX = player.x;
-    const bulletY = player.y - PLAYER_SIZE / 2 - 5; // Precise alignment with ship tip
+    const bulletY = player.y - PLAYER_SIZE / 2 + 10; // Precise alignment with ship tip
 
     setBullets((prev) => [
       ...prev,
