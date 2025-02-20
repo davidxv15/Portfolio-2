@@ -89,7 +89,9 @@ const ZBlaster: React.FC = () => {
 
   const handleShoot = () => {
     const bulletX = player.x;
-    const bulletY = player.y + PLAYER_SIZE / 2 - 5; // Lower the laser origin closer to the player
+    // const bulletY = player.y + PLAYER_SIZE / 2 - 5; 
+    const bulletY = player.y - PLAYER_SIZE / 2 + 20;
+
 
     setBullets((prev) => [
       ...prev,
