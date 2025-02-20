@@ -89,7 +89,7 @@ const ZBlaster: React.FC = () => {
 
   const handleShoot = () => {
     const bulletX = player.x - 2;
-    const bulletY = player.y - PLAYER_SIZE / 2 + 10;
+    const bulletY = player.y  + PLAYER_SIZE / 4;
 
     setBullets((prev) => [
       ...prev,
