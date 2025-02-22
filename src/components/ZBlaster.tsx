@@ -70,7 +70,8 @@ const ZBlaster: React.FC = () => {
         if (keysPressed.current["w"]) 
   newY = Math.max(PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
 if (keysPressed.current["s"]) 
-  newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE / 2, prev.y + PLAYER_SPEED);
+newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE * 0.75, prev.y + PLAYER_SPEED);
+
 if (keysPressed.current["a"]) 
   newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
 if (keysPressed.current["d"]) 
