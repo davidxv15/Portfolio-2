@@ -74,7 +74,8 @@ if (keysPressed.current["s"])
 if (keysPressed.current["a"]) 
   newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
 if (keysPressed.current["d"]) 
-  newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE / 2, prev.x + PLAYER_SPEED);
+newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
+
 
 
         return { x: newX, y: newY };
