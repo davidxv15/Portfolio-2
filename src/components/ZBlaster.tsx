@@ -93,7 +93,7 @@ newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
 
   const handleShoot = () => {
     const bulletX = player.x;
-    const bulletY = player.y - PLAYER_SIZE / 2 + 35; 
+const bulletY = player.y - PLAYER_SIZE / 2 + 30; 
 
     setBullets((prev) => [
       ...prev,
