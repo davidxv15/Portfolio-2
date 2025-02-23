@@ -44,6 +44,12 @@ const ZBlaster: React.FC = () => {
     x: SCREEN_WIDTH / 2,
     y: SCREEN_HEIGHT - PLAYER_SIZE,
   });
+
+  const playerRef = useRef(player); // 🔥 Store latest position
+  useEffect(() => {
+    playerRef.current = player; // Always up-to-date
+  }, [player]);
+
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(
     Array.from({ length: NUM_TARGETS }, getRandomTarget)
@@ -68,16 +74,13 @@ const ZBlaster: React.FC = () => {
         let newY = prev.y;
 
         if (keysPressed.current["w"]) 
-  newY = Math.max(PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
-if (keysPressed.current["s"]) 
-newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE * 0.75, prev.y + PLAYER_SPEED);
-
-if (keysPressed.current["a"]) 
-  newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
-if (keysPressed.current["d"]) 
-newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
-
-
+          newY = Math.max(PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
+        if (keysPressed.current["s"]) 
+          newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE * 0.75, prev.y + PLAYER_SPEED);
+        if (keysPressed.current["a"]) 
+          newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
+        if (keysPressed.current["d"]) 
+          newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
 
         return { x: newX, y: newY };
       });
@@ -92,18 +95,19 @@ newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
   }, []);
 
   const handleShoot = () => {
+    const currentPlayer = playerRef.current; // Get the **latest** player position
+
     setBullets((prev) => [
       ...prev,
       {
-        x: player.x, // Ensures exact x-coordinate
-        y: player.y - PLAYER_SIZE / 2 + 35, // Moves slightly lower to match the tip
+        x: currentPlayer.x, 
+        y: currentPlayer.y - PLAYER_SIZE / 2 + 40, // 🔥 Ensures exact alignment with tip
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
   };
-  
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
@@ -153,7 +157,6 @@ newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
           animate={{ x: b.x, y: b.y }}
           transition={{ ease: "linear", duration: 0.05 }}
           className="absolute w-[4px] h-[15px] bg-cyan-400 transform origin-center"
-
         />
       ))}
 
