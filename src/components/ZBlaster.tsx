@@ -45,10 +45,11 @@ const ZBlaster: React.FC = () => {
     y: SCREEN_HEIGHT - PLAYER_SIZE,
   });
 
-  const playerRef = useRef(player); // 🔥 Store latest position
-  useEffect(() => {
-    playerRef.current = player; // Always up-to-date
-  }, [player]);
+  const playerRef = useRef(player);
+useEffect(() => {
+  playerRef.current = player; // Keep it always up-to-date
+}, [player]);
+
 
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(
