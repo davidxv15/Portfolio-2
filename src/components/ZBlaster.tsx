@@ -98,18 +98,22 @@ useEffect(() => {
   const handleShoot = () => {
     const currentPlayerX = playerRef.current.x;
     const currentPlayerY = playerRef.current.y;
-  
+
+    const bulletStartX = currentPlayerX; 
+    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 - 5; 
+
     setBullets((prev) => [
       ...prev,
       {
-        x: currentPlayerX, // ✅ Uses latest position
-        y: currentPlayerY - PLAYER_SIZE + 10,
+        x: bulletStartX,
+        y: bulletStartY,
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
-  };
+};
+
   
 
   useEffect(() => {
