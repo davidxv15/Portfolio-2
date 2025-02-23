@@ -100,7 +100,7 @@ useEffect(() => {
     const currentPlayerY = playerRef.current.y;
 
     const bulletStartX = currentPlayerX - 2;
-    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 + 30;
+    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 - 30;
 
     setBullets((prev) => [
       ...prev,
