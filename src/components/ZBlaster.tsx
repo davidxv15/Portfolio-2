@@ -103,7 +103,7 @@ useEffect(() => {
       ...prev,
       {
         x: currentPlayerX, // ✅ Uses latest position
-        y: currentPlayerY - PLAYER_SIZE / 2 + 40, // ✅ Ensures exact alignment with tip
+        y: currentPlayerY - PLAYER_SIZE + 10,
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
