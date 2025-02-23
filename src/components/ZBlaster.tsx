@@ -93,7 +93,7 @@ newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
 
   const handleShoot = () => {
     const bulletX = player.x;
-    const bulletY = player.y - PLAYER_SIZE / 2 + 15; // Adjusted laser origin to ship tip
+    const bulletY = player.y - PLAYER_SIZE / 2 + 25; 
 
     setBullets((prev) => [
       ...prev,
