@@ -92,20 +92,18 @@ newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
   }, []);
 
   const handleShoot = () => {
-    const bulletX = player.x;
-const bulletY = player.y - PLAYER_SIZE / 2 + 30; 
-
     setBullets((prev) => [
       ...prev,
       {
-        x: bulletX,
-        y: bulletY,
+        x: player.x, // Ensures exact x-coordinate
+        y: player.y - PLAYER_SIZE / 2 + 35, // Moves slightly lower to match the tip
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
   };
+  
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
