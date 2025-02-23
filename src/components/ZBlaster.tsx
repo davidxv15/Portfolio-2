@@ -159,14 +159,23 @@ useEffect(() => {
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
       />
 
-      {bullets.map((b, index) => (
-        <motion.div
-          key={index}
-          animate={{ x: b.x, y: b.y }}
-          transition={{ ease: "linear", duration: 0.05 }}
-          className="absolute w-[4px] h-[15px] bg-cyan-400 transform origin-center"
-        />
-      ))}
+{bullets.map((b, index) => (
+    <motion.div
+        key={index}
+        style={{
+            position: "absolute",
+            left: `${b.x}px`, // Direct positioning
+            top: `${b.y}px`,
+            width: "4px",
+            height: "15px",
+            backgroundColor: "cyan",
+            transformOrigin: "center",
+        }}
+        animate={{ x: b.x, y: b.y }}
+        transition={{ ease: "linear", duration: 0.05 }}
+    />
+))}
+
 
       {targets.map((target, index) =>
         target.alive ? (
