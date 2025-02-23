@@ -96,19 +96,21 @@ useEffect(() => {
   }, []);
 
   const handleShoot = () => {
-    const currentPlayer = playerRef.current; // Get the **latest** player position
-
+    const currentPlayerX = playerRef.current.x;
+    const currentPlayerY = playerRef.current.y;
+  
     setBullets((prev) => [
       ...prev,
       {
-        x: currentPlayer.x, 
-        y: currentPlayer.y - PLAYER_SIZE / 2 + 40, // 🔥 Ensures exact alignment with tip
+        x: currentPlayerX, // ✅ Uses latest position
+        y: currentPlayerY - PLAYER_SIZE / 2 + 40, // ✅ Ensures exact alignment with tip
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
   };
+  
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
