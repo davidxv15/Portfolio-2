@@ -170,19 +170,17 @@ useEffect(() => {
         key={index}
         style={{
             position: "absolute",
-            left: `${b.initialX}px`,  // Lock initial position
-            top: `${b.initialY}px`,
+            left: `${b.x}px`,  
+            top: `${b.y}px`,
             width: "4px",
             height: "15px",
             backgroundColor: "cyan",
             transformOrigin: "center",
         }}
-        initial={{ x: b.initialX, y: b.initialY }}  //  Force no initial drift
-        animate={{ y: b.y - BULLET_SPEED }}  // Move up immediately, no teleporto
-        transition={{ ease: "linear", duration: 0.02 }} 
+        animate={{ y: b.y - BULLET_SPEED }} 
+        transition={{ ease: "linear", duration: 0.016 }}  
     />
 ))}
-
 
 
       {targets.map((target, index) =>
