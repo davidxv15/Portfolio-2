@@ -129,7 +129,7 @@ useEffect(() => {
       setBullets((prev) =>
           prev.map((b) => ({
               ...b,
-              y: b.y - BULLET_SPEED,  // 🔥 Moves straight up, no drift
+              y: b.y - BULLET_SPEED,  
               lifetime: b.lifetime - 1,
           })).filter((b) => b.lifetime > 0)
       );
