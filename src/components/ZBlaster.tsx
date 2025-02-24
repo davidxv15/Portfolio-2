@@ -48,9 +48,7 @@ const ZBlaster: React.FC = () => {
   const playerRef = useRef(player);
   useEffect(() => {
     playerRef.current = player;
-}, [player]);
-
-
+  }, [player]);
 
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(
@@ -75,14 +73,20 @@ const ZBlaster: React.FC = () => {
         let newX = prev.x;
         let newY = prev.y;
 
-        if (keysPressed.current["w"]) 
+        if (keysPressed.current["w"])
           newY = Math.max(PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
-        if (keysPressed.current["s"]) 
-          newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE * 0.75, prev.y + PLAYER_SPEED);
-        if (keysPressed.current["a"]) 
+        if (keysPressed.current["s"])
+          newY = Math.min(
+            SCREEN_HEIGHT - PLAYER_SIZE * 0.75,
+            prev.y + PLAYER_SPEED
+          );
+        if (keysPressed.current["a"])
           newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
-        if (keysPressed.current["d"]) 
-          newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
+        if (keysPressed.current["d"])
+          newX = Math.min(
+            SCREEN_WIDTH - PLAYER_SIZE * 0.75,
+            prev.x + PLAYER_SPEED
+          );
 
         return { x: newX, y: newY };
       });
@@ -100,8 +104,8 @@ const ZBlaster: React.FC = () => {
     const currentPlayerX = playerRef.current.x;
     const currentPlayerY = playerRef.current.y;
 
-    const bulletStartX = currentPlayerX - 1;  
-    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 + 12;  
+    const bulletStartX = currentPlayerX - 1;
+    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 + 12;
 
     setBullets((prev) => [
       ...prev,
@@ -113,10 +117,7 @@ const ZBlaster: React.FC = () => {
         lifetime: BULLET_LIFETIME,
       },
     ]);
-};
-
-
-  
+  };
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
@@ -160,10 +161,10 @@ const ZBlaster: React.FC = () => {
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
       />
 
-{bullets.map((b, index) => (
-    <motion.div
-        key={index}
-        style={{
+      {bullets.map((b, index) => (
+        <motion.div
+          key={index}
+          style={{
             position: "absolute",
             left: `${b.x}px`, // Direct positioning
             top: `${b.y}px`,
@@ -171,12 +172,11 @@ const ZBlaster: React.FC = () => {
             height: "15px",
             backgroundColor: "cyan",
             transformOrigin: "center",
-        }}
-        animate={{ x: b.x, y: b.y }}
-        transition={{ ease: "linear", duration: 0.05 }}
-    />
-))}
-
+          }}
+          animate={{ x: b.x, y: b.y }}
+          transition={{ ease: "linear", duration: 0.05 }}
+        />
+      ))}
 
       {targets.map((target, index) =>
         target.alive ? (
