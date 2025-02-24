@@ -175,7 +175,7 @@ const ZBlaster: React.FC = () => {
             transformOrigin: "center",
           }}
           animate={{ x: b.x, y: b.y }}
-          transition={{ ease: "linear", duration: 0.05 }}
+          transition={{ ease: "linear", duration: 0.02 }}
         />
       ))}
 
