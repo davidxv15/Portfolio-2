@@ -46,9 +46,10 @@ const ZBlaster: React.FC = () => {
   });
 
   const playerRef = useRef(player);
-useEffect(() => {
-  playerRef.current = player; // Keep it always up-to-date
+  useEffect(() => {
+    playerRef.current = player;
 }, [player]);
+
 
 
   const [bullets, setBullets] = useState<Bullet[]>([]);
