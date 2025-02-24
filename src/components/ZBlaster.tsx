@@ -120,22 +120,21 @@ const ZBlaster: React.FC = () => {
 };
 
 
-  useEffect(() => {
-    const bulletLoop = setInterval(() => {
+useEffect(() => {
+  const bulletLoop = setInterval(() => {
       setBullets((prev) =>
-        prev
-          .map((b) => ({
-            ...b,
-            x: b.x + b.velocityX,
-            y: b.y + b.velocityY,
-            lifetime: b.lifetime - 1,
-          }))
-          .filter((b) => b.lifetime > 0)
+          prev.map((b) => ({
+              ...b,
+              x: b.x + b.velocityX,
+              y: b.y + b.velocityY,
+              lifetime: b.lifetime - 1,
+          })).filter((b) => b.lifetime > 0)
       );
-    }, 16);
+  }, 16);
 
-    return () => clearInterval(bulletLoop);
-  }, []);
+  return () => clearInterval(bulletLoop);
+}, []);
+
 
   useEffect(() => {
     setTargets((prevTargets) =>
