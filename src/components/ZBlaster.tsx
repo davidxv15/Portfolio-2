@@ -105,7 +105,7 @@ const ZBlaster: React.FC = () => {
     const currentPlayerY = playerRef.current.y;
 
     const bulletStartX = currentPlayerX;  
-    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2;  
+    const bulletStartY = currentPlayerY - PLAYER_SIZE / 3;  
 
     setBullets((prev) => [
       ...prev,
