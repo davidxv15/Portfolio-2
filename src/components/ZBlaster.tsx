@@ -104,8 +104,8 @@ const ZBlaster: React.FC = () => {
     const currentPlayerX = playerRef.current.x;
     const currentPlayerY = playerRef.current.y;
 
-    const bulletStartX = currentPlayerX - 1;
-    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 + 12;
+    const bulletStartX = currentPlayerX;  
+    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2;  
 
     setBullets((prev) => [
       ...prev,
@@ -117,7 +117,8 @@ const ZBlaster: React.FC = () => {
         lifetime: BULLET_LIFETIME,
       },
     ]);
-  };
+};
+
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
