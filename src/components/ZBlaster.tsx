@@ -22,7 +22,6 @@ interface Bullet {
   lifetime: number;
 }
 
-
 interface Target {
   x: number;
   y: number;
@@ -107,38 +106,38 @@ const ZBlaster: React.FC = () => {
     const currentPlayerX = playerRef.current.x;
     const currentPlayerY = playerRef.current.y;
 
-    const bulletStartX = currentPlayerX;  
-    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 + 2;  
+    const bulletStartX = currentPlayerX;
+    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 + 2;
 
     setBullets((prev) => [
       ...prev,
       {
         x: bulletStartX,
         y: bulletStartY,
-        initialX: bulletStartX,  //locks in place
+        initialX: bulletStartX, //locks in place
         initialY: bulletStartY,
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
-};
+  };
 
-useEffect(() => {
-  const bulletLoop = setInterval(() => {
+  useEffect(() => {
+    const bulletLoop = setInterval(() => {
       setBullets((prev) =>
-          prev.map((b) => ({
-              ...b,
-              y: b.y - BULLET_SPEED,  
-              lifetime: b.lifetime - 1,
-          })).filter((b) => b.lifetime > 0)
+        prev
+          .map((b) => ({
+            ...b,
+            y: b.y - BULLET_SPEED,
+            lifetime: b.lifetime - 1,
+          }))
+          .filter((b) => b.lifetime > 0)
       );
-  }, 16); // 60 FPS update
+    }, 16); // 60 FPS update
 
-  return () => clearInterval(bulletLoop);
-}, []);
-
-
+    return () => clearInterval(bulletLoop);
+  }, []);
 
   useEffect(() => {
     setTargets((prevTargets) =>
@@ -165,23 +164,22 @@ useEffect(() => {
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
       />
 
-{bullets.map((b, index) => (
-    <motion.div
-        key={index}
-        style={{
+      {bullets.map((b, index) => (
+        <motion.div
+          key={index}
+          style={{
             position: "absolute",
-            left: `${b.x}px`,  
+            left: `${b.x}px`,
             top: `${b.y}px`,
             width: "4px",
             height: "15px",
             backgroundColor: "cyan",
             transformOrigin: "center",
-        }}
-        animate={{ y: b.y - BULLET_SPEED }} 
-        transition={{ ease: "linear", duration: 0.016 }}  
-    />
-))}
-
+          }}
+          animate={{ y: b.y - BULLET_SPEED }}
+          transition={{ ease: "linear", duration: 0.016 }}
+        />
+      ))}
 
       {targets.map((target, index) =>
         target.alive ? (
