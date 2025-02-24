@@ -133,7 +133,7 @@ useEffect(() => {
               lifetime: b.lifetime - 1,
           })).filter((b) => b.lifetime > 0)
       );
-  }, 16);
+  }, 16); // 60 FPS update
 
   return () => clearInterval(bulletLoop);
 }, []);
