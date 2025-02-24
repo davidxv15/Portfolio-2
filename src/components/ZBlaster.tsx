@@ -15,10 +15,13 @@ const BULLET_RADIUS = 5;
 interface Bullet {
   x: number;
   y: number;
+  initialX: number;
+  initialY: number;
   velocityX: number;
   velocityY: number;
   lifetime: number;
 }
+
 
 interface Target {
   x: number;
@@ -168,15 +171,15 @@ useEffect(() => {
         key={index}
         style={{
             position: "absolute",
-            left: `${b.initialX}px`,  // Locks the initial position
+            left: `${b.initialX}px`,  // Lock initial position
             top: `${b.initialY}px`,
             width: "4px",
             height: "15px",
             backgroundColor: "cyan",
             transformOrigin: "center",
         }}
-        initial={{ x: b.initialX, y: b.initialY }}  // 🔥 Forces no initial drift
-        animate={{ y: b.y - BULLET_SPEED }}  // 🔥 Moves up immediately, no teleport
+        initial={{ x: b.initialX, y: b.initialY }}  //  Force no initial drift
+        animate={{ y: b.y - BULLET_SPEED }}  // Move up immediately, no teleporto
         transition={{ ease: "linear", duration: 0.02 }} 
     />
 ))}
