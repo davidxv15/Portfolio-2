@@ -171,8 +171,8 @@ const ZBlaster: React.FC = () => {
             position: "absolute",
             left: `${b.x}px`,
             top: `${b.y}px`,
-            width: "4px",
-            height: "15px",
+            width: "5px",
+            height: "16px",
             backgroundColor: "cyan",
             transformOrigin: "center",
           }}
