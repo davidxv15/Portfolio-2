@@ -105,25 +105,18 @@ useEffect(() => {
   }, []);
 
   const handleShoot = () => {
-    const currentPlayerX = playerRef.current.x;
-    const currentPlayerY = playerRef.current.y;
-
-    const bulletStartX = currentPlayerX;
-    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 - 5;
-
     setBullets((prev) => [
       ...prev,
       {
-        x: bulletStartX,
-        y: bulletStartY,
-        initialX: bulletStartX,
-        initialY: bulletStartY,
+        x: playerRef.current.x,  // 🔥 Always uses the latest player position
+        y: playerRef.current.y - PLAYER_SIZE / 2 - 5,  // 🔥 Exact tip of ship
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
-  };
+};
+
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
