@@ -48,9 +48,11 @@ const ZBlaster: React.FC = () => {
   });
 
   const playerRef = useRef(player);
-  useEffect(() => {
-    playerRef.current = player;
-  }, [player]);
+
+useEffect(() => {
+    playerRef.current = player; // 🔥 Always up-to-date with latest position
+}, [player.x, player.y]); // 🚀 Track both X and Y separately
+
 
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(
