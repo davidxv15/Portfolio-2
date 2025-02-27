@@ -174,7 +174,7 @@ useEffect(() => {
             left: `${b.x}px`,
             top: `${b.y}px`,
             width: "5px",
-            height: "16px",
+            height: "18px",
             backgroundColor: "cyan",
             transformOrigin: "center",
           }}
