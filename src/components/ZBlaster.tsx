@@ -117,7 +117,7 @@ const ZBlaster: React.FC = () => {
         initialX: bulletStartX,
         initialY: bulletStartY,
         velocityX: 0,
-        velocityY: 0,
+        velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
