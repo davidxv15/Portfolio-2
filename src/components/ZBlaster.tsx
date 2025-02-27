@@ -105,18 +105,25 @@ useEffect(() => {
   }, []);
 
   const handleShoot = () => {
+    const currentPlayerX = playerRef.current.x;
+    const currentPlayerY = playerRef.current.y;
+
+    const bulletStartX = currentPlayerX;
+    const bulletStartY = currentPlayerY - PLAYER_SIZE / 2 - 5;
+
     setBullets((prev) => [
       ...prev,
       {
-        x: playerRef.current.x,  // 🔥 Always uses the latest player position
-        y: playerRef.current.y - PLAYER_SIZE / 2 - 5,  // 🔥 Exact tip of ship
+        x: bulletStartX,
+        y: bulletStartY,
+        initialX: bulletStartX,
+        initialY: bulletStartY,
         velocityX: 0,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
     ]);
-};
-
+  };
 
   useEffect(() => {
     const bulletLoop = setInterval(() => {
@@ -159,24 +166,22 @@ useEffect(() => {
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
       />
 
-{bullets.map((b, index) => (
-    <motion.div
-        key={index}
-        initial={{ x: b.x, y: b.y }}  // 🚀 Ensure bullets start at their correct position
-        animate={{ y: b.y - BULLET_SPEED }}  // 🔥 Strictly moves up, no drift
-        transition={{ ease: "linear", duration: 0.016 }}  
-        style={{
+      {bullets.map((b, index) => (
+        <motion.div
+          key={index}
+          style={{
             position: "absolute",
-            width: "4px",
-            height: "15px",
+            left: `${b.x}px`,
+            top: `${b.y}px`,
+            width: "5px",
+            height: "16px",
             backgroundColor: "cyan",
-            left: `${b.x}px`, 
-            top: `${b.y}px`, 
             transformOrigin: "center",
-        }}
-    />
-))}
-
+          }}
+          animate={{ y: b.y - BULLET_SPEED }}
+          transition={{ ease: "linear", duration: 0.016 }}
+        />
+      ))}
 
       {targets.map((target, index) =>
         target.alive ? (
