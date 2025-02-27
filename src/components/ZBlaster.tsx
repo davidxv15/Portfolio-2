@@ -159,22 +159,24 @@ useEffect(() => {
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
       />
 
-      {bullets.map((b, index) => (
-        <motion.div
-          key={index}
-          style={{
+{bullets.map((b, index) => (
+    <motion.div
+        key={index}
+        initial={{ x: b.x, y: b.y }}  // 🚀 Ensure bullets start at their correct position
+        animate={{ y: b.y - BULLET_SPEED }}  // 🔥 Strictly moves up, no drift
+        transition={{ ease: "linear", duration: 0.016 }}  
+        style={{
             position: "absolute",
-            left: `${b.x}px`,
-            top: `${b.y}px`,
-            width: "5px",
-            height: "16px",
+            width: "4px",
+            height: "15px",
             backgroundColor: "cyan",
+            left: `${b.x}px`, 
+            top: `${b.y}px`, 
             transformOrigin: "center",
-          }}
-          animate={{ y: b.y - BULLET_SPEED }}
-          transition={{ ease: "linear", duration: 0.016 }}
-        />
-      ))}
+        }}
+    />
+))}
+
 
       {targets.map((target, index) =>
         target.alive ? (
