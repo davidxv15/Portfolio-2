@@ -114,7 +114,7 @@ const ZBlaster: React.FC = () => {
       {
         x: bulletStartX,
         y: bulletStartY,
-        initialX: bulletStartX, //locks in place
+        initialX: bulletStartX,
         initialY: bulletStartY,
         velocityX: 0,
         velocityY: 0,
