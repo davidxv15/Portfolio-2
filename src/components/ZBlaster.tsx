@@ -52,7 +52,7 @@ const ZBlaster: React.FC = () => {
 
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
-  // 🕹️ **Handle Player Movement**
+  //  **Handle Player Movement**
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       keysPressed.current[e.key.toLowerCase()] = true;
@@ -91,7 +91,7 @@ const ZBlaster: React.FC = () => {
     };
   }, []);
 
-  // 🔫 **Handle Shooting**
+  // **Handle Shooting**
   const handleShoot = () => {
     setBullets((prev) => [
       ...prev,
@@ -104,7 +104,7 @@ const ZBlaster: React.FC = () => {
     ]);
   };
 
-  // 🔄 **Move Bullets**
+  // **Move Bullets**
   useEffect(() => {
     const bulletLoop = setInterval(() => {
       setBullets((prev) =>
@@ -121,24 +121,33 @@ const ZBlaster: React.FC = () => {
     return () => clearInterval(bulletLoop);
   }, []);
 
-  // 🎯 **Check for Bullet Collision with Targets**
+  //  **Check for Bullet Collision with Targets**
   useEffect(() => {
-    setTargets((prevTargets) =>
-      prevTargets.map((target) => {
-        if (!target.alive) return target;
-        return bullets.some((b) => checkCollision(b, target))
-          ? { ...target, alive: false }
-          : target;
-      })
-    );
-  }, [bullets]);
+    const targetLoop = setInterval(() => {
+      setTargets((prevTargets) =>
+        prevTargets.map((target) => ({
+          ...target,
+          y: target.y + 3, // Adjust fall speed (higher = faster)
+          x: target.x + (Math.random() - 0.5) * 2, // Slight horizontal drift
+        }))
+        .map((target) =>
+          target.y > SCREEN_HEIGHT + TARGET_RADIUS // If off-screen, reset
+            ? getRandomTarget() // Respawn at the top
+            : target
+        )
+      );
+    }, 30); // Update every 30ms for smooth motion
+  
+    return () => clearInterval(targetLoop);
+  }, []);
+  
 
   return (
     <div
       className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 overflow-hidden"
       onClick={handleShoot}
     >
-      {/* 🚀 Ship */}
+      {/*  Ship */}
       <motion.div
         animate={{
           x: player.x - PLAYER_SIZE / 2,
@@ -148,7 +157,7 @@ const ZBlaster: React.FC = () => {
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
       />
 
-      {/* 🔫 Bullets (Now Perfectly Aligned) */}
+      {/*  Bullets (Now Perfectly Aligned) */}
       {bullets.map((b, index) => (
         <motion.div
           key={index}
@@ -166,7 +175,7 @@ const ZBlaster: React.FC = () => {
         />
       ))}
 
-      {/* 🎯 Targets */}
+      {/*  Targets */}
       {targets.map((target, index) =>
         target.alive ? (
           <motion.div
