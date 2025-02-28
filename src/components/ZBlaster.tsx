@@ -123,16 +123,20 @@ const ZBlaster: React.FC = () => {
 
   //  **Check for Bullet Collision with Targets**
   useEffect(() => {
-  setTargets((prevTargets) =>
-    prevTargets.map((target) => {
-      if (!target.alive) return target; // Ignore already dead targets
-
-      const hit = bullets.some((b) => checkCollision(b, target));
-      return hit ? { ...target, alive: false } : target;
-    })
-  );
-}, [bullets]);
-
+    const targetLoop = setInterval(() => {
+      setTargets((prevTargets) =>
+        prevTargets.map((target) => ({
+          ...target,
+          y: target.y + 3, // Adjust fall speed (higher = faster)
+          x: target.x + (Math.random() - 0.5) * 2, // Slight horizontal drift
+        }))
+        .map((target) =>
+          target.y > SCREEN_HEIGHT + TARGET_RADIUS // If off-screen, reset
+            ? getRandomTarget() // Respawn at the top
+            : target
+        )
+      );
+    }, 30); // Update every 30ms for smooth motion
   
     return () => clearInterval(targetLoop);
   }, []);
