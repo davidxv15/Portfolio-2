@@ -177,14 +177,21 @@ const ZBlaster: React.FC = () => {
 
       {/* Ship */}
       <motion.div
-        animate={{
-          x: player.x - PLAYER_SIZE / 2,
-          y: player.y - PLAYER_SIZE / 2,
-        }}
-        transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent text-4xl"
-      >🌬️
-      </motion.div>
+  animate={{
+    x: player.x - PLAYER_SIZE / 2,
+    y: player.y - PLAYER_SIZE / 2,
+  }}
+  transition={{ ease: "linear", duration: 0.1 }}
+  className="absolute flex items-center justify-center text-[40px]"
+  style={{
+    width: PLAYER_SIZE,
+    height: PLAYER_SIZE,
+    transform: "rotate(-90deg)", // Rotates to face upward
+  }}
+>
+  🌬️
+</motion.div>
+
 
       {/* Bullets */}
       {bullets.map((b, index) => (
