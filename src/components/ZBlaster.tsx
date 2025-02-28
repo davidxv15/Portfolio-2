@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 40; // Faster bullets for better gameplay
+const BULLET_SPEED = 40; 
 const BULLET_LIFETIME = 100;
-const PLAYER_SPEED = 6; // Increased speed for more responsive movement
+const PLAYER_SPEED = 6; 
 const TARGET_RADIUS = 15;
 const BULLET_RADIUS = 5;
-const MAX_TARGETS = 5; // Limits number of targets on screen at a time
-const TARGET_SPAWN_INTERVAL = 1500; // Time between target spawns
+const MAX_TARGETS = 8; 
+const TARGET_SPAWN_INTERVAL = 1500; 
 
 interface Bullet {
   x: number;
