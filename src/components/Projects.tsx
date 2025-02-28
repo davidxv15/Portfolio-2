@@ -23,10 +23,10 @@ const Projects: React.FC = () => {
       github: "https://github.com/davidxv15/Nutrition-Calendar2.0",
     },
     {
-      title: "Memory Match",
+      title: "Research: The Ascensia Effect",
       image: "/#.png",
-      liveDemo: "Temporarily Closed",
-      github: "https://github.com/davidxv15/code-galaxy",
+      liveDemo: "https://doi.org/10.5281/zenodo.14920556",
+      github: "",
     },
   ];
 
