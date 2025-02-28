@@ -178,6 +178,11 @@ const ZBlaster: React.FC = () => {
       <div className="absolute top-2 left-2 text-white text-lg font-bold">
         Score: {score}
       </div>
+      {/* Movement Instructions */}
+    <div className="absolute top-12 left-2 text-white text-sm">
+      Move: W A S D | Shoot: Click
+    </div>
+
 
       {/* Ship */}
       <motion.div
