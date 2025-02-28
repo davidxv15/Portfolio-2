@@ -182,7 +182,7 @@ const ZBlaster: React.FC = () => {
     y: player.y - PLAYER_SIZE / 2,
   }}
   transition={{ ease: "linear", duration: 0.1 }}
-  className="absolute flex items-center justify-center text-[40px] player-wind"
+  className="absolute flex items-center justify-center text-[40px] player-container"
   style={{
     width: PLAYER_SIZE,
     height: PLAYER_SIZE,
