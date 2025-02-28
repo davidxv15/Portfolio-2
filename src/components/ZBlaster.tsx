@@ -175,11 +175,11 @@ const ZBlaster: React.FC = () => {
       Keep the Balloon in the Air! 🎈
     </div>
       {/* Score Counter */}
-      <div className="absolute top-2 left-2 text-white text-lg font-bold">
+      <div className="absolute top-2 left-2 text-white text-lg font-bold no-select">
         Score: {score}
       </div>
       {/* Movement Instructions */}
-    <div className="absolute top-12 left-2 text-white text-sm">
+    <div className="absolute top-12 left-2 text-white text-sm no-select">
       Move: W A S D | Air 💨 💨 : Click
     </div>
 

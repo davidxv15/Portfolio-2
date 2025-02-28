@@ -116,5 +116,11 @@ height: 50px;
 
   .player-wind {
   transform: rotate(-90deg);
-  
+}
+
+.no-select {
+  user-select: none;  /* Prevents text from being highlighted */
+  -webkit-user-select: none;  /* Safari */
+  -moz-user-select: none;  /* Firefox */
+  -ms-user-select: none;  /* IE */
 }
