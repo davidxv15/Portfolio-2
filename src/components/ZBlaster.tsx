@@ -50,14 +50,10 @@ const ZBlaster: React.FC = () => {
   const [score, setScore] = useState(0);
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
-  // **Player Movement & Shooting**
+  // **Player Movement**
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       keysPressed.current[e.key.toLowerCase()] = true;
-
-      if (e.key.toLowerCase() === "j") {
-        handleShoot(); // Triggers shooting when "J" is pressed
-      }
     };
 
     const handleKeyUp = (e: KeyboardEvent) => {
@@ -170,38 +166,41 @@ const ZBlaster: React.FC = () => {
   }, [bullets]);
 
   return (
-    <div className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 overflow-hidden">
+    <div
+      className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 overflow-hidden"
+      // onClick={handleShoot}
+    >
       {/* Game Banner */}
-      <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold">
-        Keep the Balloon in the Air! 🎈
-      </div>
-
+    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold">
+      Keep the Balloon in the Air! 🎈
+    </div>
       {/* Score Counter */}
       <div className="absolute top-2 left-2 text-white text-lg font-bold">
         Score: {score}
       </div>
-
       {/* Movement Instructions */}
-      <div className="absolute top-12 left-2 text-white text-sm">
-        Move: W A S D | Shoot: J
-      </div>
+    <div className="absolute top-12 left-2 text-white text-sm">
+      Move: W A S D | Shoot: J
+    </div>
+
 
       {/* Ship */}
       <motion.div
-        animate={{
-          x: player.x - PLAYER_SIZE / 2,
-          y: player.y - PLAYER_SIZE / 2,
-        }}
-        transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute flex items-center justify-center text-[40px] player-container"
-        style={{
-          width: PLAYER_SIZE,
-          height: PLAYER_SIZE,
-          transform: "rotate(180deg)", // Rotates to face upward
-        }}
-      >
-        <div className="player-wind">🌬️</div>
-      </motion.div>
+  animate={{
+    x: player.x - PLAYER_SIZE / 2,
+    y: player.y - PLAYER_SIZE / 2,
+  }}
+  transition={{ ease: "linear", duration: 0.1 }}
+  className="absolute flex items-center justify-center text-[40px] player-container"
+  style={{
+    width: PLAYER_SIZE,
+    height: PLAYER_SIZE,
+    transform: "rotate(180deg)", // Rotates to face upward
+  }}
+>
+<div className="player-wind">🌬️</div>
+</motion.div>
+
 
       {/* Bullets */}
       {bullets.map((b, index) => (
@@ -228,9 +227,7 @@ const ZBlaster: React.FC = () => {
             animate={{ x: target.x, y: target.y }}
             transition={{ ease: "linear", duration: 0.1 }}
             className="absolute flex items-center justify-center text-4xl"
-          >
-            🎈
-          </motion.div>
+          >🎈</motion.div>
         ) : null
       )}
     </div>
