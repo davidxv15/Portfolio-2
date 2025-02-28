@@ -111,22 +111,21 @@ const ZBlaster: React.FC = () => {
         prev
           .map((b) => ({
             ...b,
-            y: b.y + b.velocityY, // 🔥 Moves straight up, no drift
+            y: b.y + b.velocityY, // straight up
             lifetime: b.lifetime - 1,
           }))
           .filter((b) => b.lifetime > 0)
       );
-    }, 16); // 60 FPS update
+    }, 16); // 60 FPS 
 
     return () => clearInterval(bulletLoop);
   }, []);
 
   //  **Check for Bullet Collision with Targets**
-  // 🔥 Bullet Collision Detection & Target Destruction
 useEffect(() => {
   setTargets((prevTargets) =>
     prevTargets.map((target) => {
-      if (!target.alive) return target; // Skip already destroyed targets
+      if (!target.alive) return target; // skip destroyed targets
       const hit = bullets.some((b) => checkCollision(b, target));
       return hit ? { ...target, alive: false } : target;
     })
@@ -144,7 +143,7 @@ useEffect(() => {
       className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 overflow-hidden"
       onClick={handleShoot}
     >
-      {/*  Ship */}
+      {/* Ship */}
       <motion.div
         animate={{
           x: player.x - PLAYER_SIZE / 2,
