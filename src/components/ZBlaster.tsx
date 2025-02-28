@@ -26,11 +26,10 @@ interface Target {
 }
 
 const getRandomTarget = (): Target => ({
-  x: Math.random() * (SCREEN_WIDTH - TARGET_RADIUS * 2) + TARGET_RADIUS, 
-  y: -TARGET_RADIUS * 2,
+  x: Math.random() * (SCREEN_WIDTH - TARGET_RADIUS * 2) + TARGET_RADIUS,
+  y: -TARGET_RADIUS * 2, // Start above the screen
   alive: true,
 });
-
 
 const checkCollision = (bullet: Bullet, target: Target) => {
   return (
@@ -46,13 +45,12 @@ const ZBlaster: React.FC = () => {
   });
 
   const [bullets, setBullets] = useState<Bullet[]>([]);
-  const [targets, setTargets] = useState<Target[]>(
-    Array.from({ length: NUM_TARGETS }, getRandomTarget)
-  );
+  const [targets, setTargets] = useState<Target[]>([]);
+  const [score, setScore] = useState(0);
 
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
-  //  **Handle Player Movement**
+  // **Handle Player Movement**
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       keysPressed.current[e.key.toLowerCase()] = true;
@@ -97,7 +95,7 @@ const ZBlaster: React.FC = () => {
       ...prev,
       {
         x: player.x,
-        y: player.y - PLAYER_SIZE / 2 - 5, // 🚀 Exact tip of ship
+        y: player.y - PLAYER_SIZE / 2 - 5,
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
@@ -111,38 +109,84 @@ const ZBlaster: React.FC = () => {
         prev
           .map((b) => ({
             ...b,
-            y: b.y + b.velocityY, // straight up
+            y: b.y + b.velocityY,
             lifetime: b.lifetime - 1,
           }))
           .filter((b) => b.lifetime > 0)
       );
-    }, 16); // 60 FPS 
+    }, 16);
 
     return () => clearInterval(bulletLoop);
   }, []);
 
-  //  **Check for Bullet Collision with Targets**
-useEffect(() => {
-  setTargets((prevTargets) =>
-    prevTargets.map((target) => {
-      if (!target.alive) return target; // skip destroyed targets
-      const hit = bullets.some((b) => checkCollision(b, target));
-      return hit ? { ...target, alive: false } : target;
-    })
-  );
+  // **Spawn Targets Randomly Over Time**
+  useEffect(() => {
+    let spawnTimers: NodeJS.Timeout[] = [];
 
-  // Remove bullets that hit a target
-  setBullets((prevBullets) =>
-    prevBullets.filter((b) => !targets.some((t) => t.alive && checkCollision(b, t)))
-  );
-}, [bullets]); // Runs every time bullets are updated
+    const spawnTarget = () => {
+      setTargets((prev) => [
+        ...prev,
+        getRandomTarget(),
+      ]);
+    };
 
+    for (let i = 0; i < NUM_TARGETS; i++) {
+      const delay = Math.random() * 5000; // Random spawn delay (0-5 sec)
+      spawnTimers.push(setTimeout(spawnTarget, delay));
+    }
+
+    return () => {
+      spawnTimers.forEach(clearTimeout);
+    };
+  }, [score]); // Respawn targets only when the score increases
+
+  // **Move Targets & Reset When Offscreen**
+  useEffect(() => {
+    const targetLoop = setInterval(() => {
+      setTargets((prevTargets) =>
+        prevTargets
+          .map((target) => ({
+            ...target,
+            y: target.y + 3,
+            x: target.x + (Math.random() - 0.5) * 2,
+          }))
+          .filter((target) => target.y < SCREEN_HEIGHT + TARGET_RADIUS)
+      );
+    }, 30);
+
+    return () => clearInterval(targetLoop);
+  }, []);
+
+  // **Check for Bullet Collision with Targets**
+  useEffect(() => {
+    setTargets((prevTargets) =>
+      prevTargets.map((target) => {
+        if (!target.alive) return target;
+        return bullets.some((b) => checkCollision(b, target))
+          ? { ...target, alive: false }
+          : target;
+      })
+    );
+  }, [bullets]);
+
+  // **Check if All Targets are Destroyed & Reset**
+  useEffect(() => {
+    if (targets.length > 0 && targets.every((target) => !target.alive)) {
+      setScore((prev) => prev + 1);
+      setTargets([]);
+    }
+  }, [targets]);
 
   return (
     <div
       className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 overflow-hidden"
       onClick={handleShoot}
     >
+      {/* Score Display */}
+      <div className="absolute top-2 left-2 text-white text-xl font-bold">
+        Score: {score}
+      </div>
+
       {/* Ship */}
       <motion.div
         animate={{
@@ -153,12 +197,12 @@ useEffect(() => {
         className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
       />
 
-      {/*  Bullets (Now Perfectly Aligned) */}
+      {/* Bullets */}
       {bullets.map((b, index) => (
         <motion.div
           key={index}
           initial={{ y: b.y }}
-          animate={{ y: b.y + b.velocityY }} // 🔥 Strictly up, no offset
+          animate={{ y: b.y + b.velocityY }}
           transition={{ ease: "linear", duration: 0.016 }}
           style={{
             position: "absolute",
@@ -171,7 +215,7 @@ useEffect(() => {
         />
       ))}
 
-      {/*  Targets */}
+      {/* Targets */}
       {targets.map((target, index) =>
         target.alive ? (
           <motion.div
