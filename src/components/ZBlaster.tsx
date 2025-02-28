@@ -182,8 +182,8 @@ const ZBlaster: React.FC = () => {
           y: player.y - PLAYER_SIZE / 2,
         }}
         transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent border-b-blue-500"
-      >🫴
+        className="absolute w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-l-transparent border-r-transparent text-4xl"
+      >🌬️
       </motion.div>
 
       {/* Bullets */}
@@ -210,7 +210,7 @@ const ZBlaster: React.FC = () => {
             key={index}
             animate={{ x: target.x, y: target.y }}
             transition={{ ease: "linear", duration: 0.1 }}
-            className="absolute flex items-center justify-center text-2xl"
+            className="absolute flex items-center justify-center text-4xl"
           >🎈</motion.div>
         ) : null
       )}
