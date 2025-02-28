@@ -26,10 +26,11 @@ interface Target {
 }
 
 const getRandomTarget = (): Target => ({
-  x: Math.random() * (SCREEN_WIDTH - TARGET_RADIUS * 2) + TARGET_RADIUS,
-  y: Math.random() * (SCREEN_HEIGHT - TARGET_RADIUS * 2) + TARGET_RADIUS,
+  x: Math.random() * (SCREEN_WIDTH - TARGET_RADIUS * 2) + TARGET_RADIUS, 
+  y: -TARGET_RADIUS * 2,
   alive: true,
 });
+
 
 const checkCollision = (bullet: Bullet, target: Target) => {
   return (
