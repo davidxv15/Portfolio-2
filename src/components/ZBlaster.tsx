@@ -180,7 +180,8 @@ const ZBlaster: React.FC = () => {
       </div>
       {/* Movement Instructions */}
     <div className="absolute top-12 left-2 text-white text-sm no-select">
-      Move: W A S D | Air 💨 💨 : Click
+      Move: W A S D <br />
+       Air 💨 💨 : Click
     </div>
 
 
