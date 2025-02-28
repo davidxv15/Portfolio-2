@@ -168,7 +168,7 @@ const ZBlaster: React.FC = () => {
   return (
     <div
       className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 overflow-hidden"
-      // onClick={handleShoot}
+      onClick={handleShoot}
     >
       {/* Game Banner */}
     <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold">
@@ -180,7 +180,7 @@ const ZBlaster: React.FC = () => {
       </div>
       {/* Movement Instructions */}
     <div className="absolute top-12 left-2 text-white text-sm">
-      Move: W A S D | Shoot: J
+      Move: W A S D | Air 💨 💨 : Click
     </div>
 
 
@@ -195,7 +195,6 @@ const ZBlaster: React.FC = () => {
   style={{
     width: PLAYER_SIZE,
     height: PLAYER_SIZE,
-    transform: "rotate(180deg)", // Rotates to face upward
   }}
 >
 <div className="player-wind">🌬️</div>
