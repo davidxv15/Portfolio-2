@@ -182,11 +182,11 @@ const ZBlaster: React.FC = () => {
     y: player.y - PLAYER_SIZE / 2,
   }}
   transition={{ ease: "linear", duration: 0.1 }}
-  className="absolute flex items-center justify-center text-[40px]"
+  className="absolute flex items-center justify-center text-[40px] player-wind"
   style={{
     width: PLAYER_SIZE,
     height: PLAYER_SIZE,
-    transform: "rotate(-90deg)", // Rotates to face upward
+    transform: "rotate(180deg)", // Rotates to face upward
   }}
 >
   🌬️
