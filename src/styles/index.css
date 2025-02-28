@@ -112,5 +112,6 @@ button:focus-visible {
   justify-content: center;
   width: 50px; 
   height: 50px; 
+  writing-mode: vertical-rl;
   transform: rotate(-90deg);
 }
