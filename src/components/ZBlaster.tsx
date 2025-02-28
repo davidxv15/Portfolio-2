@@ -205,14 +205,20 @@ const ZBlaster: React.FC = () => {
 
       {/* Targets */}
       {targets.map((target, index) =>
-        target.alive ? (
-          <motion.div
-            key={index}
-            animate={{ x: target.x, y: target.y }}
-            transition={{ ease: "linear", duration: 0.1 }}
-            className="absolute flex items-center justify-center text-2xl"
-          />
-        ) : null
+  target.alive ? (
+    <motion.div
+      key={index}
+      animate={{ x: target.x, y: target.y }}
+      transition={{ ease: "linear", duration: 0.1 }}
+      className="absolute flex items-center justify-center text-2xl"
+      style={{
+        left: `${target.x}px`,
+        top: `${target.y}px`,
+      }}
+    >
+      🎈
+    </motion.div>
+  ) : null
       )}
     </div>
   );
