@@ -197,7 +197,7 @@ const ZBlaster: React.FC = () => {
     height: PLAYER_SIZE,
   }}
 >
-<div className="player-wind">🌬️</div>
+<div className="player-wind no-select">🌬️</div>
 </motion.div>
 
 
