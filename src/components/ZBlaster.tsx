@@ -8,7 +8,7 @@ const PLAYER_SIZE = 40;
 const BULLET_SPEED = 15;
 const BULLET_LIFETIME = 100;
 const PLAYER_SPEED = 4;
-const NUM_TARGETS = 8;
+const NUM_TARGETS = 10;
 const TARGET_RADIUS = 15;
 const BULLET_RADIUS = 5;
 
