@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 20; // Faster bullets for better gameplay
+const BULLET_SPEED = 40; // Faster bullets for better gameplay
 const BULLET_LIFETIME = 100;
 const PLAYER_SPEED = 6; // Increased speed for more responsive movement
 const TARGET_RADIUS = 15;
