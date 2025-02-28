@@ -170,6 +170,10 @@ const ZBlaster: React.FC = () => {
       className="relative w-[800px] h-[600px] bg-black border-4 border-gray-700 overflow-hidden"
       onClick={handleShoot}
     >
+      {/* Game Banner */}
+    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-white text-xl font-bold">
+      Keep the Balloon in the Air! 🎈
+    </div>
       {/* Score Counter */}
       <div className="absolute top-2 left-2 text-white text-lg font-bold">
         Score: {score}
