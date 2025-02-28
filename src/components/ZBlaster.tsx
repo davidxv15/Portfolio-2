@@ -189,7 +189,7 @@ const ZBlaster: React.FC = () => {
     transform: "rotate(180deg)", // Rotates to face upward
   }}
 >
-  🌬️
+<div className="player-wind">🌬️</div>
 </motion.div>
 
 
