@@ -179,7 +179,7 @@ const ZBlaster: React.FC = () => {
 
   return (
     <div
-      className="relative w-[800px] h-[600px] bg-blue-600 border-4 border-gray-700 overflow-hidden"
+      className="relative w-[800px] h-[600px] bg-blue-800 border-4 border-gray-700 overflow-hidden"
       onClick={handleShoot}
     >
       {/* Game Banner */}
@@ -195,6 +195,9 @@ const ZBlaster: React.FC = () => {
       Move: W A S D <br />
        Air 💨  : Click
     </div>
+    
+    <div className="absolute inset-0 bg-clouds opacity-30"></div>
+
     {/* Start Game Button */}
 {!gameStarted && (
   <div className="absolute inset-0 flex items-center justify-center">

@@ -124,3 +124,15 @@ height: 50px;
   -moz-user-select: none;  /* Firefox */
   -ms-user-select: none;  /* IE */
 }
+
+.bg-clouds {
+  background-image: url('WhiteShirtPhoto.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: moveClouds 30s linear infinite;
+}
+
+@keyframes moveClouds {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 10%; }
+}
