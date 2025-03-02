@@ -106,6 +106,8 @@ const ZBlaster: React.FC = () => {
 
   // **Move Bullets**
   useEffect(() => {
+    if (!gameStarted) return; 
+    
     const bulletLoop = setInterval(() => {
       setBullets((prev) =>
         prev
