@@ -193,6 +193,18 @@ const ZBlaster: React.FC = () => {
       Move: W A S D <br />
        Air 💨  : Click
     </div>
+    {/* Start Game Button */}
+{!gameStarted && (
+  <div className="absolute inset-0 flex items-center justify-center">
+    <button
+      className="bg-blue-500 text-white px-6 py-3 text-xl font-bold rounded-lg hover:bg-blue-700 transition"
+      onClick={startGame}
+    >
+      Start Game
+    </button>
+  </div>
+)}
+
 
 
       {/* Ship */}
