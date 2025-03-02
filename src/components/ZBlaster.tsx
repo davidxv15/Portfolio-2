@@ -179,7 +179,8 @@ const ZBlaster: React.FC = () => {
 
   return (
     <div
-      className="relative w-[800px] h-[600px] bg-blue-800 border-4 border-gray-700 overflow-hidden"
+      className="relative w-[800px] h-[600px] bg-gradient-to-b from-blue-900 via-blue-700 to-blue-500
+      border-4 border-gray-700 overflow-hidden"
       onClick={handleShoot}
     >
       {/* Game Banner */}
