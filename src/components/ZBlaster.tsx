@@ -184,15 +184,15 @@ const ZBlaster: React.FC = () => {
       onClick={handleShoot}
     >
       {/* Game Banner */}
-    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-gray-900 text-xl font-bold no-select">
+    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-gray-200 text-xl font-bold no-select">
       Keep the Balloons in the Air! 🎈
     </div>
       {/* Score Counter */}
-      <div className="absolute top-2 left-2 text-white text-lg font-bold no-select">
+      <div className="absolute top-2 left-2 text-gray-200 text-lg font-bold no-select">
         Score: {score}
       </div>
       {/* Movement Instructions */}
-    <div className="absolute top-12 left-2 text-white text-sm no-select font-bold">
+    <div className="absolute top-12 left-2 text-gray-200 text-sm no-select font-bold">
       Move: W A S D <br />
        Air 💨  : Click
     </div>
@@ -200,7 +200,7 @@ const ZBlaster: React.FC = () => {
 {!gameStarted && (
   <div className="absolute inset-0 flex items-center justify-center">
     <button
-      className="bg-blue-500 text-white px-6 py-3 text-xl font-bold rounded-lg hover:bg-blue-700 transition"
+      className="bg-blue-500 text-gray-200 px-6 py-3 text-xl font-bold rounded-lg hover:bg-blue-700 transition"
       onClick={startGame}
     >
       Start Game
