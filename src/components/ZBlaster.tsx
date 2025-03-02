@@ -97,7 +97,7 @@ const ZBlaster: React.FC = () => {
       ...prev,
       {
         x: player.x,
-        y: player.y - PLAYER_SIZE / 2 - 5, // Starts at the ship tip
+        y: player.y - PLAYER_SIZE / 2 - 5, // Starts at the tip
         velocityY: -BULLET_SPEED,
         lifetime: BULLET_LIFETIME,
       },
@@ -194,7 +194,7 @@ const ZBlaster: React.FC = () => {
       Keep the Balloons in the Air! 🎈
     </div>
       {/* Score Counter */}
-      <div className="absolute top-2 left-2 text-gray-200 text-lg font-bold no-select">
+      <div className="absolute top-2 left-2 text-gray-200 text-xl font-bold no-select">
         Score: {score}
       </div>
       {/* Movement Instructions */}
