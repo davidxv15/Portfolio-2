@@ -181,7 +181,7 @@ const ZBlaster: React.FC = () => {
       {/* Movement Instructions */}
     <div className="absolute top-12 left-2 text-white text-sm no-select font-bold">
       Move: W A S D <br />
-       Air 💨 💨 : Click
+       Air 💨  : Click
     </div>
 
 
