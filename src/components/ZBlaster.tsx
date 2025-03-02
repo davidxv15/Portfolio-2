@@ -48,6 +48,8 @@ const ZBlaster: React.FC = () => {
   const [bullets, setBullets] = useState<Bullet[]>([]);
   const [targets, setTargets] = useState<Target[]>(Array.from({ length: MAX_TARGETS }, getRandomTarget));
   const [score, setScore] = useState(0);
+  const [gameStarted, setGameStarted] = useState(false);
+
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
   // **Player Movement**
