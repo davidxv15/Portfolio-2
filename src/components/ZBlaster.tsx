@@ -195,9 +195,6 @@ const ZBlaster: React.FC = () => {
       Move: W A S D <br />
        Air 💨  : Click
     </div>
-    
-    <div className="absolute inset-0 bg-clouds opacity-30"></div>
-
     {/* Start Game Button */}
 {!gameStarted && (
   <div className="absolute inset-0 flex items-center justify-center">
