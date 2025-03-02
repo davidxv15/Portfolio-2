@@ -107,7 +107,7 @@ const ZBlaster: React.FC = () => {
   // **Move Bullets**
   useEffect(() => {
     if (!gameStarted) return; 
-    
+
     const bulletLoop = setInterval(() => {
       setBullets((prev) =>
         prev
@@ -116,12 +116,12 @@ const ZBlaster: React.FC = () => {
             y: b.y + b.velocityY,
             lifetime: b.lifetime - 1,
           }))
-          .filter((b) => b.lifetime > 0) // Remove expired bullets
+          .filter((b) => b.lifetime > 0) 
       );
     }, 16);
 
     return () => clearInterval(bulletLoop);
-  }, []);
+  }, [gameStarted]);
 
   // **Move Targets & Respawn When Destroyed**
   useEffect(() => {
