@@ -176,6 +176,12 @@ const ZBlaster: React.FC = () => {
     setBullets([]); // Clear bullets
   };
   
+  useEffect(() => {
+    if (gameStarted && targets.length === 0) {
+      setGameStarted(false); // Re-show start button when all balloons fall
+    }
+  }, [targets, gameStarted]);
+  
 
   return (
     <div
