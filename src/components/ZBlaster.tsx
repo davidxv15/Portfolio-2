@@ -175,7 +175,7 @@ const ZBlaster: React.FC = () => {
     setTargets(Array.from({ length: MAX_TARGETS }, getRandomTarget)); // Reset targets
     setBullets([]); // Clear bullets
   };
-  
+
   useEffect(() => {
     if (gameStarted && targets.length === 0) {
       setGameStarted(false); // Re-show start button when all balloons fall
@@ -206,7 +206,7 @@ const ZBlaster: React.FC = () => {
 {!gameStarted && (
   <div className="absolute inset-0 flex items-center justify-center">
     <button
-      className="bg-blue-500 text-gray-200 px-6 py-3 text-xl font-bold rounded-lg hover:bg-blue-700 transition"
+      className="bg-blue-500 text-gray-200 px-6 py-3 text-xl font-bold rounded-lg hover:bg-blue-700 transition no-select"
       onClick={startGame}
     >
       Start Game
