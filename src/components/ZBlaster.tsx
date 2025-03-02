@@ -167,6 +167,14 @@ const ZBlaster: React.FC = () => {
     );
   }, [bullets]);
 
+  const startGame = () => {
+    setGameStarted(true);
+    setScore(0); // Reset score
+    setTargets(Array.from({ length: MAX_TARGETS }, getRandomTarget)); // Reset targets
+    setBullets([]); // Clear bullets
+  };
+  
+
   return (
     <div
       className="relative w-[800px] h-[600px] bg-blue-600 border-4 border-gray-700 overflow-hidden"
