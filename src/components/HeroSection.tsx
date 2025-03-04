@@ -48,7 +48,7 @@ const HeroSection: React.FC = () => {
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
           className={`rounded-full w-72 h-72 lg:w-96 lg:h-96 object-cover shadow-lg transition-all duration-200 ease-in-out no-select ${
-            spin ? "spin-animation" : ""
+            spin ? "animate-spinFast" : ""
           }`}
           onClick={handleImageClick}
         />
