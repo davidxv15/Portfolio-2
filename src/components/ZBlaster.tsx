@@ -174,6 +174,10 @@ const ZBlaster: React.FC = () => {
     setScore(0); // Reset score
     setTargets(Array.from({ length: MAX_TARGETS }, getRandomTarget)); // Reset targets
     setBullets([]); // Clear bullets
+    const audio = document.getElementById("takeFiveAudio") as HTMLAudioElement;
+    if (audio) {
+      audio.play().catch((error) => console.log("Audio play failed:", error));
+    }
   };
 
   useEffect(() => {
