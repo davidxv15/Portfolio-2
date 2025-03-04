@@ -3,6 +3,20 @@ import { useState } from "react";
 
 
 const HeroSection: React.FC = () => {
+  const [clickCount, setClickCount] = useState(0);
+  const [spin, setSpin] = useState(false);
+
+  const handleImageClick = () => {
+    if (clickCount + 1 >= 10) {
+      setSpin(true); // Apply spin animation
+      setTimeout(() => {
+        setSpin(false); // Remove after animation completes
+        setClickCount(0); // Reset count
+      }, 1000); // Adjust timing based on CSS animation duration
+    } else {
+      setClickCount(clickCount + 1);
+    }
+  };
   return (
     <section className=" section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center ">
       <div className="bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100 -translate-y-">
