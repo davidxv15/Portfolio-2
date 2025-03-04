@@ -7,7 +7,7 @@ const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
 const BULLET_SPEED = 40; 
 const BULLET_LIFETIME = 100;
-const PLAYER_SPEED = 6; 
+const PLAYER_SPEED = 5; 
 const TARGET_RADIUS = 15;
 const BULLET_RADIUS = 5;
 const MAX_TARGETS = 8; 
@@ -241,7 +241,7 @@ const ZBlaster: React.FC = () => {
 
 {gameStarted && (
   <button
-    className="absolute top-6 right-6 bg-gray-800 text-5xl px-2 py-2 rounded-lg hover:bg-gray-600 transition no-select"
+    className="absolute top-6 right-6 bg-gray-600 text-5xl px-2 py-2 rounded-lg hover:bg-gray-600 transition no-select"
     onClick={toggleMusic}
   >
     {isPlaying ? "⏸️" : "▶️"}
