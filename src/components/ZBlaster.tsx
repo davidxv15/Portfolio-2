@@ -232,13 +232,22 @@ const ZBlaster: React.FC = () => {
     <button
       className="bg-blue-500 text-gray-100 px-12 py-6 text-2xl font-bold rounded-lg hover:bg-blue-700 transition no-select"
       onClick={startGame}
-      
     >
       Start Game
     </button>
 
   </div>
 )}
+
+{gameStarted && (
+  <button
+    className="absolute bottom-6 right-6 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition"
+    onClick={toggleMusic}
+  >
+    {isPlaying ? "Pause 🎵" : "Play 🎶"}
+  </button>
+)}
+
 
     {/* Audio Element  */}
 <audio id="takeFiveAudio" src="/audio/take-five.mp3" preload="auto"></audio>
