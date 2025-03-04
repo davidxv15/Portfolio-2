@@ -229,7 +229,7 @@ const ZBlaster: React.FC = () => {
 <audio id="takeFiveAudio" src="/audio/take-five.mp3" preload="auto"></audio>
 
 
-      {/* Ship */}
+      {/* craft */}
       <motion.div
   animate={{
     x: player.x - PLAYER_SIZE / 2,
@@ -270,7 +270,7 @@ const ZBlaster: React.FC = () => {
             key={index}
             animate={{ x: target.x, y: target.y }}
             transition={{ ease: "linear", duration: 0.1 }}
-            className="absolute flex items-center justify-center text-4xl"
+            className="absolute flex items-center justify-center text-4xl no-select"
           >🎈</motion.div>
         ) : null
       )}
