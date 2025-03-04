@@ -218,12 +218,12 @@ const ZBlaster: React.FC = () => {
     >
       Start Game
     </button>
-    {/* Audio Element (Outside of UI) */}
-<audio id="takeFiveAudio" src="/audio/take-five.mp3" preload="auto"></audio>
 
   </div>
 )}
 
+    {/* Audio Element  */}
+<audio id="takeFiveAudio" src="/audio/take-five.mp3" preload="auto"></audio>
 
 
       {/* Ship */}
