@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 40; 
+const BULLET_SPEED = 50; 
 const BULLET_LIFETIME = 100;
 const PLAYER_SPEED = 7; 
 const TARGET_RADIUS = 15;
