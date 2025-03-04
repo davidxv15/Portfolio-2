@@ -82,6 +82,10 @@ export default {
           from: { transform: "translateX(100%)", opacity: 0 },
           to: { transform: "translateX(0)", opacity: 1 },
         },
+        spinFast: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(720deg)" },
+        },
         bounceIn: {
           "0%, 100%": { transform: "scale(0.8)", opacity: 0 },
           "50%": { transform: "scale(1.2)", opacity: 1 },
