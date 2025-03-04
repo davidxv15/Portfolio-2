@@ -50,6 +50,8 @@ const ZBlaster: React.FC = () => {
   const [score, setScore] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
 
+  const [isPlaying, setIsPlaying] = useState(false);
+
   const keysPressed = useRef<{ [key: string]: boolean }>({});
 
   // **Player Movement**
