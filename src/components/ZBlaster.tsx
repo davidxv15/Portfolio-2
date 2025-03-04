@@ -180,9 +180,9 @@ const ZBlaster: React.FC = () => {
     const audio = document.getElementById("takeFiveAudio") as HTMLAudioElement;
     
     if (audio) {
-      audio.pause();  // Ensure it's stopped before replaying
-      audio.currentTime = 0; // Restart from beginning
+      audio.currentTime = 0; // Restart from the beginning
       audio.play().catch((error) => console.log("Audio play failed:", error));
+      setIsPlaying(true); // Mark as playing
     }
   };
   
