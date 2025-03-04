@@ -66,7 +66,7 @@ export default {
         bounceIn: "bounceIn 0.6s ease-in-out",
         zoomOut: "zoomOut 0.4s ease-in",
         rotateY: "rotateY 1s linear",
-        hauntingPulse: "hauntingPulse 4s ease-in-out infinite",
+        hauntingPulse: "hauntingPulse 7s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
