@@ -59,6 +59,7 @@ export default {
       },
       animation: {
         fade: "fadeIn 1s ease-in-out",
+        spinFast: "spinFast 1s ease-in-out",
         spinSlow: "spin 3s linear infinite",
         pulseFast: "pulse 0.5s linear infinite",
         slideInLeft: "slideInLeft 0.5s ease-out",
