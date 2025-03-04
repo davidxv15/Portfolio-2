@@ -186,6 +186,19 @@ const ZBlaster: React.FC = () => {
     }
   };
   
+  const toggleMusic = () => {
+    const audio = document.getElementById("takeFiveAudio") as HTMLAudioElement;
+  
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play().catch((error) => console.log("Audio play failed:", error));
+      }
+      setIsPlaying(!isPlaying); // Toggle state
+    }
+  };
+  
 
   useEffect(() => {
     if (gameStarted && targets.length === 0) {
