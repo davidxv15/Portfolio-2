@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 50; 
+const BULLET_SPEED = 40; 
 const BULLET_LIFETIME = 100;
 const PLAYER_SPEED = 7; 
 const TARGET_RADIUS = 15;
@@ -210,7 +210,7 @@ const ZBlaster: React.FC = () => {
   return (
     <div
       className="relative w-[800px] h-[600px] bg-gradient-to-b from-blue-900 via-blue-700 to-sky-500
-      border-4 border-gray-700 overflow-hidden"
+      border-4 border-gray-400 rounded overflow-hidden"
       onClick={handleShoot}
     >
       {/* Game Banner */}
@@ -241,7 +241,7 @@ const ZBlaster: React.FC = () => {
 
 {gameStarted && (
   <button
-    className="absolute top-6 right-6 bg-gray-600 text-5xl px-2 py-2 rounded-lg hover:bg-gray-600 transition no-select"
+    className="absolute top-6 right-6 text-5xl px-2 py-2 rounded-lg hover:bg-sky-600 transition no-select focus:outline-none"
     onClick={toggleMusic}
   >
     {isPlaying ? "⏸️" : "▶️"}

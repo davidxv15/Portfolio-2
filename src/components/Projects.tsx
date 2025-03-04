@@ -46,8 +46,8 @@ const Projects: React.FC = () => {
             className="bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
             drag
             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.2} // bounce back fx
-            whileTap={{ scale: 1.05 }} // zoom onClick
+            dragElastic={0.4} // bounce back fx
+            whileTap={{ scale: 1.15 }} // zoom onClick
             dragTransition={{ bounceStiffness: 1000, bounceDamping: 20 }}
           >
             <img
