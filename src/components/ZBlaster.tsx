@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SIZE = 40;
-const BULLET_SPEED = 40; 
+const BULLET_SPEED = 40;
 const BULLET_LIFETIME = 100;
-const PLAYER_SPEED = 7; 
+const PLAYER_SPEED = 7;
 const TARGET_RADIUS = 15;
 const BULLET_RADIUS = 5;
-const MAX_TARGETS = 8; 
-const TARGET_SPAWN_INTERVAL = 1500; 
+const MAX_TARGETS = 8;
+const TARGET_SPAWN_INTERVAL = 1500;
 
 interface Bullet {
   x: number;
@@ -46,7 +46,9 @@ const ZBlaster: React.FC = () => {
   });
 
   const [bullets, setBullets] = useState<Bullet[]>([]);
-  const [targets, setTargets] = useState<Target[]>(Array.from({ length: MAX_TARGETS }, getRandomTarget));
+  const [targets, setTargets] = useState<Target[]>(
+    Array.from({ length: MAX_TARGETS }, getRandomTarget)
+  );
   const [score, setScore] = useState(0);
   const [gameStarted, setGameStarted] = useState(false);
 
@@ -75,11 +77,17 @@ const ZBlaster: React.FC = () => {
         if (keysPressed.current["w"])
           newY = Math.max(PLAYER_SIZE / 2, prev.y - PLAYER_SPEED);
         if (keysPressed.current["s"])
-          newY = Math.min(SCREEN_HEIGHT - PLAYER_SIZE * 0.75, prev.y + PLAYER_SPEED);
+          newY = Math.min(
+            SCREEN_HEIGHT - PLAYER_SIZE * 0.75,
+            prev.y + PLAYER_SPEED
+          );
         if (keysPressed.current["a"])
           newX = Math.max(PLAYER_SIZE / 2, prev.x - PLAYER_SPEED);
         if (keysPressed.current["d"])
-          newX = Math.min(SCREEN_WIDTH - PLAYER_SIZE * 0.75, prev.x + PLAYER_SPEED);
+          newX = Math.min(
+            SCREEN_WIDTH - PLAYER_SIZE * 0.75,
+            prev.x + PLAYER_SPEED
+          );
 
         return { x: newX, y: newY };
       });
@@ -108,7 +116,7 @@ const ZBlaster: React.FC = () => {
 
   // **Move Bullets**
   useEffect(() => {
-    if (!gameStarted) return; 
+    if (!gameStarted) return;
 
     const bulletLoop = setInterval(() => {
       setBullets((prev) =>
@@ -118,7 +126,7 @@ const ZBlaster: React.FC = () => {
             y: b.y + b.velocityY,
             lifetime: b.lifetime - 1,
           }))
-          .filter((b) => b.lifetime > 0) 
+          .filter((b) => b.lifetime > 0)
       );
     }, 16);
 
@@ -128,14 +136,15 @@ const ZBlaster: React.FC = () => {
   // **Move Targets & Respawn When Destroyed**
   useEffect(() => {
     const targetLoop = setInterval(() => {
-      setTargets((prevTargets) =>
-        prevTargets
-          .map((target) => ({
-            ...target,
-            y: target.y + 3, // Fall speed
-            x: target.x + (Math.random() - 0.5) * 2, // Slight drift
-          }))
-          .filter((target) => target.y < SCREEN_HEIGHT + TARGET_RADIUS) // Remove if off-screen
+      setTargets(
+        (prevTargets) =>
+          prevTargets
+            .map((target) => ({
+              ...target,
+              y: target.y + 3, // Fall speed
+              x: target.x + (Math.random() - 0.5) * 2, // Slight drift
+            }))
+            .filter((target) => target.y < SCREEN_HEIGHT + TARGET_RADIUS) // Remove if off-screen
       );
     }, 30);
 
@@ -176,19 +185,19 @@ const ZBlaster: React.FC = () => {
     setScore(0);
     setTargets(Array.from({ length: MAX_TARGETS }, getRandomTarget)); // Reset targets
     setBullets([]); // Clear bullets
-  
+
     const audio = document.getElementById("takeFiveAudio") as HTMLAudioElement;
-    
+
     if (audio) {
       audio.currentTime = 0; // Restart from the beginning
       audio.play().catch((error) => console.log("Audio play failed:", error));
       setIsPlaying(true); // Mark as playing
     }
   };
-  
+
   const toggleMusic = () => {
     const audio = document.getElementById("takeFiveAudio") as HTMLAudioElement;
-  
+
     if (audio) {
       if (isPlaying) {
         audio.pause();
@@ -198,14 +207,12 @@ const ZBlaster: React.FC = () => {
       setIsPlaying(!isPlaying); // Toggle state
     }
   };
-  
 
   useEffect(() => {
     if (gameStarted && targets.length === 0) {
       setGameStarted(false); // Re-show start button when all balloons fall
     }
   }, [targets, gameStarted]);
-  
 
   return (
     <div
@@ -214,61 +221,61 @@ const ZBlaster: React.FC = () => {
       onClick={handleShoot}
     >
       {/* Game Banner */}
-    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-gray-200 text-xl font-bold no-select">
-      Keep the Balloons in the Air!
-    </div>
+      <div className="absolute top-2 left-1/2 transform -translate-x-1/2 text-gray-200 text-xl font-bold no-select">
+        Keep the Balloons in the Air!
+      </div>
       {/* Score Counter */}
       <div className="absolute top-2 left-2 text-gray-200 text-xl font-bold no-select">
         Score: {score}
       </div>
       {/* Movement Instructions */}
-    <div className="absolute top-12 left-2 text-gray-200 text-sm no-select font-bold">
-      Move: W A S D <br />
-       Air 💨  : Click
-    </div>
-    {/* Start Game Button */}
-{!gameStarted && (
-  <div className="absolute inset-0 flex items-center justify-center">
-    <button
-      className="bg-blue-500 text-gray-100 px-12 py-6 text-2xl font-bold rounded-lg hover:bg-blue-700 transition no-select"
-      onClick={startGame}
-    >
-      Start Game
-    </button>
+      <div className="absolute top-12 left-2 text-gray-200 text-sm no-select font-bold">
+        Move: W A S D <br />
+        Air 💨 : Click
+      </div>
+      {/* Start Game Button */}
+      {!gameStarted && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <button
+            className="bg-blue-500 text-gray-100 px-12 py-6 text-2xl font-bold rounded-lg hover:bg-blue-700 transition no-select"
+            onClick={startGame}
+          >
+            Start Game
+          </button>
+        </div>
+      )}
 
-  </div>
-)}
+      {gameStarted && (
+        <button
+          className="absolute top-6 right-6 text-5xl px-2 py-2 rounded-lg hover:bg-sky-600 transition no-select focus:outline-none"
+          onClick={toggleMusic}
+        >
+          {isPlaying ? "⏸️" : "▶️"}
+        </button>
+      )}
 
-{gameStarted && (
-  <button
-    className="absolute top-6 right-6 text-5xl px-2 py-2 rounded-lg hover:bg-sky-600 transition no-select focus:outline-none"
-    onClick={toggleMusic}
-  >
-    {isPlaying ? "⏸️" : "▶️"}
-  </button>
-)}
-
-
-    {/* Audio Element  */}
-<audio id="takeFiveAudio" src="/audio/take-five.mp3" preload="auto"></audio>
-
+      {/* Audio Element  */}
+      <audio
+        id="takeFiveAudio"
+        src="/audio/take-five.mp3"
+        preload="auto"
+      ></audio>
 
       {/* craft */}
       <motion.div
-  animate={{
-    x: player.x - PLAYER_SIZE / 2,
-    y: player.y - PLAYER_SIZE / 2,
-  }}
-  transition={{ ease: "linear", duration: 0.1 }}
-  className="absolute flex items-center justify-center text-[40px] player-container"
-  style={{
-    width: PLAYER_SIZE,
-    height: PLAYER_SIZE,
-  }}
->
-<div className="player-wind no-select">🌬️</div>
-</motion.div>
-
+        animate={{
+          x: player.x - PLAYER_SIZE / 2,
+          y: player.y - PLAYER_SIZE / 2,
+        }}
+        transition={{ ease: "linear", duration: 0.1 }}
+        className="absolute flex items-center justify-center text-[40px] player-container"
+        style={{
+          width: PLAYER_SIZE,
+          height: PLAYER_SIZE,
+        }}
+      >
+        <div className="player-wind no-select">🌬️</div>
+      </motion.div>
 
       {/* Bullets */}
       {bullets.map((b, index) => (
@@ -295,7 +302,9 @@ const ZBlaster: React.FC = () => {
             animate={{ x: target.x, y: target.y }}
             transition={{ ease: "linear", duration: 0.1 }}
             className="absolute flex items-center justify-center text-4xl no-select"
-          >🎈</motion.div>
+          >
+            🎈
+          </motion.div>
         ) : null
       )}
     </div>
