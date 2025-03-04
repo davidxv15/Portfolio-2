@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Includes all necessary file types in src
+    "./src/**/*.{js,ts,jsx,tsx}", 
   ],
   theme: {
     extend: {
@@ -16,7 +16,7 @@ export default {
         slideInRight: "slideInRight 0.5s ease-out",
         spinFast: "spinFast 1s ease-in-out",
         spinSlow: "spin 3s linear infinite",
-        spinY: "spinY 1s ease-in-out", // New Y-axis spin animation
+        spinY: "spinY 1s ease-in-out", 
         zoomOut: "zoomOut 0.4s ease-in",
       },
       borderRadius: {

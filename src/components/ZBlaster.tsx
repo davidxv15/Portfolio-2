@@ -208,7 +208,9 @@ const ZBlaster: React.FC = () => {
     <button
       className="bg-blue-500 text-gray-100 px-12 py-6 text-2xl font-bold rounded-lg hover:bg-blue-700 transition no-select"
       onClick={startGame}
-    >
+      
+    ><audio id="takeFiveAudio" src="/audio/take-five.mp3" />
+
       Start Game
     </button>
   </div>
