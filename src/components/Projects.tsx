@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Nutrition Calendar",
-      image: "NutritionCalendar.png",
+      image: "NutritionCalendarClear2.png",
       liveDemo: "https://nutrition-calendar.netlify.app/",
       github: "https://github.com/davidxv15/Nutrition-Calendar2.0",
     },
