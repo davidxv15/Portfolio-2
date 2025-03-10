@@ -5,9 +5,9 @@ const Projects: React.FC = () => {
   const projectData = [
     {
       title: "Chat App",
-      image: "ChatApp-chatbox.png", 
-      image2: "ChatApp-chatbox.png", 
-      liveDemo: "https://chat-department.netlify.app/login", 
+      image: "ChatApp-chatbox.png",
+      image2: "ChatApp-chatbox.png",
+      liveDemo: "https://chat-department.netlify.app/login",
       github: "https://github.com/davidxv15/Chat-App",
     },
     {
@@ -66,8 +66,9 @@ const Projects: React.FC = () => {
                   rel="noopener noreferrer"
                   className="bg-gradient-to-b from-slate-400 to-slate-200 text-slate-800 px-4 py-2 rounded-xl hover:bg-blue-600 hover:text-stone-400 shadow shadow-inner shadow-slate-700"
                 >
-                  {project.title === "Research: The Ascensia Effect" ? "Read" : "Visit"}
-
+                  {project.title === "Research: The Ascensia Effect"
+                    ? "Read"
+                    : "Visit"}
                 </a>
                 <a
                   href={project.github}
