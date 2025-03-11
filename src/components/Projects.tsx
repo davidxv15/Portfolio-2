@@ -17,18 +17,22 @@ const Projects: React.FC = () => {
       image: "/WeatherGetterPic.png",
       liveDemo: "https://weathergetterapp.netlify.app/",
       github: "https://github.com/davidxv15/Weather-app-frontend",
+      description: "A sleek weather app providing real-time forecasts and location-based data for your favorite cities.",
     },
     {
       title: "Nutrition Calendar",
       image: "NutritionCalendarClear2.png",
       liveDemo: "https://nutrition-calendar.netlify.app/",
       github: "https://github.com/davidxv15/Nutrition-Calendar2.0",
+      description: "A calendar app for tracking daily food intake and building long-term healthy eating habits.",
     },
     {
       title: "Research: The Ascensia Effect",
       image: "/#.png",
       liveDemo: "https://doi.org/10.5281/zenodo.14920556",
       github: "https://github.com/davidxv15",
+      description: "A study on the temporary surge in performance before stabilization in AI and cognition.",
+
     },
   ];
 
