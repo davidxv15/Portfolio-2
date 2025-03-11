@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
               </h3>
 
 {/* Button Container - Evenly Spaced */}
-<div className="flex justify-center space-x-2 mt-3">
+<div className="flex justify-center space-x-8 mt-3">
   {/* Live Demo Button */}
   <a
     href={project.liveDemo}
