@@ -18,11 +18,11 @@ const HeroSection: React.FC = () => {
     }
   };
   return (
-    <section className="pt-12 section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center ">
+    <section className="sm:pt-40 md:pt-20 lg:-pt-20 section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center ">
       <div className="bg-gradient-to-b from-blue-100 via-blue-100 to-blue-100">
         <h1
-          className="surname relative top-[-6rem] md:top-[rem] lg:top-[3rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
-         w- mx-auto outline-none sm:-translate-y-4 md:-translate-y- mt-32 sm:mt-28 scroll-mt-16"
+          className="surname relative top-[-6rem] md:top-[-1rem] lg:top-[3rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
+         w- mx-auto outline-none sm:-translate-y-4 md:-translate-y-12 lg:-translate-8 xl:-translate-4 mt-32 sm:mt-28 scroll-mt-16"
         >
           <span className="text-5.5xl sm:-translate-y-40 md:text-7xl lg:text-7xl">
             D
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           ELASQUEZ
         </h1>
         {/* <br /> */}
-        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-12 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-28 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
+        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-16 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-28 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
           Software Developer
         </h2>
         <div className="flex flex-col-reverse md:flex-col items-center justify-center">
