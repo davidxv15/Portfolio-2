@@ -37,19 +37,21 @@ const HeroSection: React.FC = () => {
         <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-12 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-28 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
           Software Developer
         </h2>
+        <div className="flex flex-col-reverse md:flex-col items-center justify-center">
         <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-32 animate-fade">
           Elevating team environments by leading with enthusiasm, integrity, and
           dedication. Driving success through actions that inspire
           {/* and motivate */}.
         </p>
-      </div>
       <div className="mb-8 md:mb-16 md:w-2/3 lg:mr-20 lg:mt-1">
         <img
           src="/WhiteShirtPhoto.jpg"
           alt="My Portrait"
           className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-1 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert no-select lg:-translate-y-5"
-        />
-      </div>
+          />
+        </div>
+        </div>
+        </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-32 lg:-translate-y-36 xl:-translate-y-28">
         <a href="#projects">
           <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-20 lg:-translate-y-32 border-none transform transition duration-100 animate-fade">
