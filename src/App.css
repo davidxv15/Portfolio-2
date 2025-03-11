@@ -79,3 +79,10 @@
 .skew {
   transform: skew(20deg);
 }
+
+/* hide ThemeToggle on mobile screens */
+@media (max-width: 767px) {
+  .theme-toggle {
+    display: none;
+  }
+}
