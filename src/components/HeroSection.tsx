@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
       <div className="bg-gradient-to-b from-blue-100 via-blue-100 to--600">
         <h1
           className="surname relative top-[-6rem] md:top-[-1rem] lg:top-[3rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-transparent 
-         w- mx-auto outline-none sm:-translate-y-4 md:-translate-y-12 lg:-translate-8 xl:-translate-4 mt-32 sm:mt-28 scroll-mt-16"
+         w- mx-auto outline-none sm:-translate-y-4 md:-translate-y-12 lg:-translate-y-20 xl:-translate-y-8 mt-32 sm:mt-28 scroll-mt-16"
         >
           <span className="text-5.5xl sm:-translate-y-40 md:text-7xl lg:text-7xl">
             D
@@ -34,11 +34,11 @@ const HeroSection: React.FC = () => {
           ELASQUEZ
         </h1>
         {/* <br /> */}
-        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-16 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-28 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
+        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-16 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-20 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
           Software Developer
         </h2>
         <div className="flex flex-col-reverse md:flex-col items-center justify-center">
-        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-32 animate-fade">
+        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-28 animate-fade">
           Elevating team environments by leading with enthusiasm, integrity, and
           dedication. Driving success through actions that inspire
           {/* and motivate */}.
@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
         </div>
         </div>
         </div>
-      <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-32 lg:-translate-y-36 xl:-translate-y-28">
+      <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-32 lg:-translate-y-44 xl:-translate-y-28">
         <a href="#projects">
           <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-20 lg:-translate-y-32 border-none transform transition duration-100 animate-fade">
             View My Work
@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
           </button>
         </a>
       </div>
-      <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-52 lg:translate-x-64 xl:-translate-y-32 animate-fade z-10">
+      <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-60 lg:translate-x-64 xl:-translate-y-32 animate-fade z-10">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
