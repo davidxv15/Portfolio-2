@@ -78,21 +78,21 @@ const Projects: React.FC = () => {
     </h3>
     <button
       onClick={() => toggleDescription(index)}
-      className="p-2 focus:outline-none hover:text-gray-800 transition"
+      className="p-2 focus:outline-none text-gray-800 hover:text-gray-100 transition"
     >
-      ⏷
+      ☰
     </button>
   </div>
 
   {/* Collapsible Description (Appears Below Info Button) */}
   {openIndex === index && (
-    <p className="mt-2 p-2 text-sm text-slate-800 bg-slate-200 rounded-lg shadow-inner shadow-gray-500">
+    <p className="mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-500">
       {project.description}
     </p>
   )}
 
   {/* Buttons Row */}
-  <div className="flex justify-start space-x-4 mt-2">
+  <div className="flex justify-start space-x-28 mt-2">
     {/* Live Demo Button */}
     <a
       href={project.liveDemo}
@@ -100,7 +100,7 @@ const Projects: React.FC = () => {
       rel="noopener noreferrer"
       className="bg-gradient-to-b from-slate-400 to-slate-200 text-slate-800 px-4 py-2 rounded-xl hover:bg-blue-600 hover:text-stone-400 shadow shadow-inner shadow-slate-700"
     >
-      {project.title === "Research: Ascensia Effect" ? "Read" : "Visit"}
+      {project.title === "Research: Ascensia Effect" ? "Read" : "Visit Site"}
     </a>
 
     {/* GitHub Button */}
