@@ -32,9 +32,14 @@ const Projects: React.FC = () => {
       liveDemo: "https://doi.org/10.5281/zenodo.14920556",
       github: "https://github.com/davidxv15",
       description: "A study on the temporary surge in performance before stabilization in AI and cognition.",
-
     },
   ];
+
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleDescription = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <section
@@ -65,26 +70,45 @@ const Projects: React.FC = () => {
               <h3 className="text-2xl font-bold text-slate-900 mb-2">
                 {project.title}
               </h3>
-              <div className="flex justify-between">
-                <a
-                  href={project.liveDemo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gradient-to-b from-slate-400 to-slate-200 text-slate-800 px-4 py-2 rounded-xl hover:bg-blue-600 hover:text-stone-400 shadow shadow-inner shadow-slate-700"
-                >
-                  {project.title === "Research: The Ascensia Effect"
-                    ? "Read"
-                    : "Visit"}
-                </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 text-slate-900 px-4 py-2 rounded-xl hover:bg-gradient-to-b hover:from-slate-500 hover:to-slate-200 hover:text-slate-600 hover:shadow-inner hover:shadow-slate-700 shadow shadow-md shadow-slate-700"
-                >
-                  GitHub Repository
-                </a>
-              </div>
+
+{/* Button Container - Evenly Spaced */}
+<div className="flex justify-center space-x-2 mt-3">
+  {/* Live Demo Button */}
+  <a
+    href={project.liveDemo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gradient-to-b from-slate-400 to-slate-200 text-slate-800 px-4 py-2 rounded-xl hover:bg-blue-600 hover:text-stone-400 shadow shadow-inner shadow-slate-700"
+  >
+    {project.title === "Research: The Ascensia Effect" ? "Read" : "Visit"}
+  </a>
+
+  {/* Info Button */}
+  <button
+  onClick={() => toggleDescription(index)}
+  className="bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 text-slate-900 px-4 py-2 rounded-xl hover:bg-gradient-to-b hover:from-slate-500 hover:to-slate-200 hover:text-slate-600 hover:shadow-inner hover:shadow-slate-700 shadow shadow-md shadow-slate-700 transform hover:-translate-y-0.5"
+>
+  ⌄
+</button>
+
+  {/* GitHub Button */}
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 text-slate-900 px-4 py-2 rounded-xl hover:bg-gradient-to-b hover:from-slate-500 hover:to-slate-200 hover:text-slate-600 hover:shadow-inner hover:shadow-slate-700 shadow shadow-md shadow-slate-700"
+  >
+    GitHub Repository
+  </a>
+</div>
+
+{/* Collapsible Description (Appears Below Buttons) */}
+{openIndex === index && (
+  <p className="mt-2 p-2 text-sm text-slate-800 bg-slate-200 rounded-lg shadow-inner shadow-gray-500">
+    {project.description}
+  </p>
+)}
+
             </div>
           </motion.div>
         ))}
