@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
         "A calendar app for tracking daily food intake and building long-term healthy eating habits.",
     },
     {
-      title: "Research: The Ascensia Effect",
+      title: "Research: Ascensia Effect",
       image: "/#.png",
       liveDemo: "https://doi.org/10.5281/zenodo.14920556",
       github: "https://github.com/davidxv15",
