@@ -175,7 +175,7 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
                 }}
               >
                 <div
-                  className="imgAndH3 smallCard bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700 m-1 sm:w-44 sm:h-48 md:h-48 md:w-40 lg:w-48 lg:h-48"
+                  className="imgAndH3 smallCard bg-gradient-to-b from-slate-400 via-slate-300 to-slate-600 shadow-md shadow-gray-700 m-1 sm:w-44 sm:h-52 md:h-40 md:w-40 lg:w-48 lg:h-48"
                   style={{
                     border: "2px solid #64748b",
                     // backgroundColor: "#0f172a",
@@ -189,7 +189,7 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
                   <img
                     src={logo.src}
                     alt={logo.name}
-                    className="smallCard w-32 h-32 sm:w-24 sm:h-32 md:w-20 md:h-20 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
+                    className="smallCard w-32 h-32 sm:w-24 sm:h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
                     style={{
                       border: "1.5px solid black",
                       // border: "1.5px solid #64748b",
