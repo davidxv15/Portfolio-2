@@ -11,7 +11,6 @@ import EscapeFromEarth from "./components/EscapeFromEarth";
 import Remote from "./components/Remote";
 import TrailShootin from "./components/TrailShootin";
 import ZBlaster from "./components/ZBlaster";
-import "./App.css";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("default");
@@ -27,7 +26,7 @@ const App: React.FC = () => {
       <div className="sticky top-0 z-50 justify-between bg-opacity-0">
         <Navbar />
       </div>
-      <div className="mr-auto flex justify-end font-outfit bg-blue-100 animate-fade">
+      <div className="hidden md:flex mr-auto flex justify-end font-outfit bg-blue-100 animate-fade">
     <ThemeToggle
       themes={["default", "grayscale", "sepia", "locked"]}
       onThemeChange={(theme) => handleThemeChange(theme)}
