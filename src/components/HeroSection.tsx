@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
           Software Developer
         </h2>
         <div className="flex flex-col-reverse md:flex-col items-center justify-center">
-        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-28 animate-fade">
+        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-28 animate-fade no-select">
           Elevating team environments by leading with enthusiasm, integrity, and
           dedication. Driving success through actions that inspire
           {/* and motivate */}.
