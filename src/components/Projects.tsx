@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
   {/* Info Button */}
   <button
   onClick={() => toggleDescription(index)}
-  className="bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 text-slate-900 px-4 py-2 rounded-xl hover:bg-gradient-to-b hover:from-slate-500 hover:to-slate-200 hover:text-slate-600 hover:shadow-inner hover:shadow-slate-700 shadow shadow-md shadow-slate-700 transform hover:-translate-y-0.5"
+  className="bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 text-slate-900 px-4 py-2 rounded-xl hover:bg-gradient-to-b hover:from-slate-500 hover:to-slate-200 hover:text-slate-600 hover:shadow-inner hover:shadow-slate-700 shadow shadow-md shadow-slate-700 transform hover:-translate-y-0.5 focus:outline-none"
 >
   ⌄
 </button>
