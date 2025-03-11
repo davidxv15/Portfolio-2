@@ -11,6 +11,7 @@ import EscapeFromEarth from "./components/EscapeFromEarth";
 import Remote from "./components/Remote";
 import TrailShootin from "./components/TrailShootin";
 import ZBlaster from "./components/ZBlaster";
+import "./App.css";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("default");
