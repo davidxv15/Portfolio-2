@@ -59,7 +59,6 @@ const Projects: React.FC = () => {
           <motion.div
             key={index}
             className="bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
-            whileTap={{ scale: 1.05 }} // zoom onClick
           >
             <img
               src={project.image}
