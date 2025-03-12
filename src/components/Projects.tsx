@@ -53,11 +53,12 @@ const Projects: React.FC = () => {
         PROJECTS
       </h2>
       <hr className="w-32 mx-auto -translate-y-8 shadow-lg"></hr>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto translate-y-2">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="w-[80%] space-x-4 translate-x-12 bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
+            className="w-[90%] space-x-4 translate-x-4 bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
           >
             <img
               src={project.image}
@@ -80,7 +81,7 @@ const Projects: React.FC = () => {
 
               {/* Collapsible Description (Appears Below Info Button) */}
               <div
-  className={`mt-2 p-2 text-lg text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-600 transition-all duration-300 ${
+  className={`mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-600 transition-all duration-300 ${
     openIndex === index ? "h-auto w-[97%] opacity-100" : "h-0 opacity-0 overflow-hidden"
   }`}
 >
