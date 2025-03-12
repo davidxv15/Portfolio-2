@@ -54,7 +54,10 @@ const Projects: React.FC = () => {
       </h2>
       <hr className="w-32 mx-auto -translate-y-8 shadow-lg"></hr>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto translate-y-2">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-8 max-w-screen-lg mx-auto
+translate-y-2"
+      >
         {projectData.map((project, index) => (
           <div
             key={index}
@@ -81,12 +84,14 @@ const Projects: React.FC = () => {
 
               {/* Collapsible Description (Appears Below Info Button) */}
               <div
-  className={`mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-600 transition-all duration-300 ${
-    openIndex === index ? "h-auto w-[97%] opacity-100" : "h-0 opacity-0 overflow-hidden"
-  }`}
->
-  {project.description}
-</div>
+                className={`mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-600 transition-all duration-300 ${
+                  openIndex === index
+                    ? "h-auto w-[97%] opacity-100"
+                    : "h-0 opacity-0 overflow-hidden"
+                }`}
+              >
+                {project.description}
+              </div>
 
               {/* Buttons Row */}
               <div className="flex justify-start space-x-28 mt-2">
