@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Research: Ascensia Effect",
-      image: "AscensiaGraph.pn",
+      image: "AscensiaGraph.png",
       liveDemo: "https://doi.org/10.5281/zenodo.14920556",
       github: "https://github.com/davidxv15/Ascensia-Effect-Paper",
       description:
