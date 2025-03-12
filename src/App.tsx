@@ -14,6 +14,17 @@ import ZBlaster from "./components/ZBlaster";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState("default");
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768); // Default check for desktop
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
 
   const handleThemeChange = (newTheme: string) => {
     setTheme(newTheme);
