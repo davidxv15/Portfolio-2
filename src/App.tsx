@@ -26,12 +26,12 @@ const App: React.FC = () => {
       <div className="sticky top-0 z-50 justify-between bg-opacity-0">
         <Navbar />
       </div>
-      <div className="mr-auto flex justify-end text-red-400 font-outfit bg-blue-100 animate-fade sm:-translate-y-60">
-    <ThemeToggle
-      themes={["default", "grayscale", "sepia", "locked"]}
-      onThemeChange={(theme) => handleThemeChange(theme)}
-    />
-</div>
+      <div className="mr-auto flex justify-end text-red-400 font-outfit bg-blue-100 animate-fade">
+        <ThemeToggle
+          themes={["default", "grayscale", "sepia", "locked"]}
+          onThemeChange={(theme) => handleThemeChange(theme)}
+        />
+      </div>
 
       <HeroSection />
       <SkillsCarousel tooltipText="Skills" />
@@ -44,10 +44,10 @@ const App: React.FC = () => {
         <div className="mt-12 flex justify-center scale-75 md:scale-80 lg:scale-90">
           {/* <EscapeFromEarth /> */}
           <div className="w-full flex justify-center scale-75 md:scale-80 lg:scale-90">
-      {/* <Remote /> */}
-      {/* <TrailShootin /> */}
-      <ZBlaster />
-    </div>
+            {/* <Remote /> */}
+            {/* <TrailShootin /> */}
+            <ZBlaster />
+          </div>
         </div>
       )}
     </div>
