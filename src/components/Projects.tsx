@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
       liveDemo: "https://weathergetterapp.netlify.app/",
       github: "https://github.com/davidxv15/Weather-app-frontend",
       description:
-        "A sleek weather app providing real-time forecasts and location-based data for your favorite cities.",
+        "A weather app providing real-time forecasts and location-based data for your favorite cities.",
     },
     {
       title: "Nutrition Calendar",
