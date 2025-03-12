@@ -59,11 +59,7 @@ const Projects: React.FC = () => {
           <motion.div
             key={index}
             className="bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
-            drag
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.4} // bounce back fx
-            whileTap={{ scale: 1.15 }} // zoom onClick
-            dragTransition={{ bounceStiffness: 1000, bounceDamping: 20 }}
+            whileTap={{ scale: 1.05 }} // zoom onClick
           >
             <img
               src={project.image}
@@ -71,50 +67,51 @@ const Projects: React.FC = () => {
               className="w-full h-60 object-cover transform transition duration-500 hover:justify-items-center hover:z-50 object-[80%_3%]"
             />
             <div className="p-2 bg-transparent">
-  {/* Project Title & Info Button */}
-  <div className="flex justify-between items-center">
-    <h3 className="text-2xl font-bold text-slate-900 mb-2">
-      {project.title}
-    </h3>
-    <button
-      onClick={() => toggleDescription(index)}
-      className="p-2 focus:outline-none text-gray-800 hover:text-gray-100 transition"
-    >
-      ☰
-    </button>
-  </div>
+              {/* Project Title & Info Button */}
+              <div className="flex justify-between items-center">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                  {project.title}
+                </h3>
+                <button
+                  onClick={() => toggleDescription(index)}
+                  className="p-2 focus:outline-none text-gray-800 hover:text-gray-100 transition"
+                >
+                  ☰
+                </button>
+              </div>
 
-  {/* Collapsible Description (Appears Below Info Button) */}
-  {openIndex === index && (
-    <p className="mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-500">
-      {project.description}
-    </p>
-  )}
+              {/* Collapsible Description (Appears Below Info Button) */}
+              {openIndex === index && (
+                <p className="mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-500">
+                  {project.description}
+                </p>
+              )}
 
-  {/* Buttons Row */}
-  <div className="flex justify-start space-x-28 mt-2">
-    {/* Live Demo Button */}
-    <a
-      href={project.liveDemo}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-gradient-to-b from-slate-400 to-slate-200 text-slate-800 px-4 py-2 rounded-xl hover:bg-blue-600 hover:text-stone-400 shadow shadow-inner shadow-slate-700"
-    >
-      {project.title === "Research: Ascensia Effect" ? "Read Paper" : "Visit Site"}
-    </a>
+              {/* Buttons Row */}
+              <div className="flex justify-start space-x-28 mt-2">
+                {/* Live Demo Button */}
+                <a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-b from-slate-400 to-slate-200 text-slate-800 px-4 py-2 rounded-xl hover:bg-blue-600 hover:text-stone-400 shadow shadow-inner shadow-slate-700"
+                >
+                  {project.title === "Research: Ascensia Effect"
+                    ? "Read Paper"
+                    : "Visit Site"}
+                </a>
 
-    {/* GitHub Button */}
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 text-slate-900 px-4 py-2 rounded-xl hover:bg-gradient-to-b hover:from-slate-500 hover:to-slate-200 hover:text-slate-600 hover:shadow-inner hover:shadow-slate-700 shadow shadow-md shadow-slate-700"
-    >
-      GitHub Repository
-    </a>
-  </div>
-</div>
-
+                {/* GitHub Button */}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-b from-slate-300 via-slate-400 to-slate-500 text-slate-900 px-4 py-2 rounded-xl hover:bg-gradient-to-b hover:from-slate-500 hover:to-slate-200 hover:text-slate-600 hover:shadow-inner hover:shadow-slate-700 shadow shadow-md shadow-slate-700"
+                >
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>
