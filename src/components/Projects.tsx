@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleDescription = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
+            className="w-[80%] space-x-4 translate-x-12 bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
           >
             <img
               src={project.image}
@@ -79,11 +79,13 @@ const Projects: React.FC = () => {
               </div>
 
               {/* Collapsible Description (Appears Below Info Button) */}
-              {openIndex === index && (
-                <p className="mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-500">
-                  {project.description}
-                </p>
-              )}
+              <div
+  className={`mt-2 p-2 text-lg text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-600 transition-all duration-300 ${
+    openIndex === index ? "h-auto w-[97%] opacity-100" : "h-0 opacity-0 overflow-hidden"
+  }`}
+>
+  {project.description}
+</div>
 
               {/* Buttons Row */}
               <div className="flex justify-start space-x-28 mt-2">
