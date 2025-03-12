@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
       <hr className="w-32 mx-auto -translate-y-8 shadow-lg"></hr>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-fit mx-auto translate-y-2">
         {projectData.map((project, index) => (
-          <motion.div
+          <div
             key={index}
             className="bg-gradient-to-b from-slate-100 via-slate-100 to-slate-500 shadow-lg shadow-gray-600 rounded-xl border border-slate-500 border-2 overflow-hidden transform transition duration-500 hover:justify-items-center hover:z-40"
           >
@@ -111,7 +111,7 @@ const Projects: React.FC = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>
