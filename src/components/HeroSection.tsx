@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           ELASQUEZ
         </h1>
         {/* <br /> */}
-        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-16 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-20 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap">
+        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-16 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-20 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap no-select">
           Software Developer
         </h2>
         <div className="flex flex-col-reverse md:flex-col items-center justify-center">
@@ -54,12 +54,12 @@ const HeroSection: React.FC = () => {
         </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:translate-x-12 lg:translate-x-32 lg:-translate-y-44 xl:-translate-y-28">
         <a href="#projects">
-          <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-20 lg:-translate-y-32 border-none transform transition duration-100 animate-fade">
+          <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-20 lg:-translate-y-32 border-none transform transition duration-100 animate-fade no-select">
             View My Work
           </button>
         </a>
         <a href="mailto:davidxvaz@gmail.com?subject=Let's Chat&body=Hello David, ">
-          <button className="bg-blue-900 text-white text-xl hover:text-slate-900 px-7 py-3 rounded-full hover:bg-blue-300 border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-20 lg:-translate-y-32 transform transition duration-100 animate-fade">
+          <button className="bg-blue-900 text-white text-xl hover:text-slate-900 px-7 py-3 rounded-full hover:bg-blue-300 border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-20 lg:-translate-y-32 transform transition duration-100 animate-fade no-select">
             Contact Me
           </button>
         </a>
