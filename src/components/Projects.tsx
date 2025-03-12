@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
       title: "Research: Ascensia Effect",
       image: "/#.png",
       liveDemo: "https://doi.org/10.5281/zenodo.14920556",
-      github: "https://github.com/davidxv15",
+      github: "https://github.com/davidxv15/Ascensia-Effect-Paper",
       description:
         "A study on the temporary surge in performance before stabilization in AI and cognition.",
     },
