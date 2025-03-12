@@ -9,6 +9,7 @@
     "jsx": "react-jsx", // Enables JSX syntax for React with TypeScript.
     "incremental": true, // Enables incremental compilation for faster builds.
     "noEmit": true, // Prevents emitting JavaScript files during compilation.
+    "outDir": "./dist", // Ensure .js files go to /dist, not /src
     "esModuleInterop": true, // Enables compatibility with CommonJS modules.
     "allowSyntheticDefaultImports": true // Allows default imports without requiring esModuleInterop.
   },
