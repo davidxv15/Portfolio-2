@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Projects from "./components/Projects";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
