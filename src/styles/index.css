@@ -124,3 +124,8 @@ height: 50px;
   -moz-user-select: none;  /* Firefox */
   -ms-user-select: none;  /* IE */
 }
+
+::selection {
+  background-color: #acacac; /* Yellow */
+  color: #000; /* Black text */
+}
