@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 const Projects: React.FC = () => {
   const projectData = [
