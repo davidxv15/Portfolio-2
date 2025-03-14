@@ -10,7 +10,7 @@ const Contact: React.FC<ContactProps> = ({ theme }) => {
   return (
     <section className="bg-gradient-to-b from-slate-900 from-20% via-sky-900 via-90% to-gray-700 to-100% h-screen xs:py-80">
       <div className="max-w-4xl mx-auto text-center px-4 animate-hauntingPulse">
-        <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 mb-6 animate-fade">
+        <h2 className="text-3xl md:text-5xl font-bold text-white scroll-mt-4 mb-6 animate-fade no-select">
           Get in Touch
         </h2>
         <p className="text-white text-lg mb-8" id="contact">
