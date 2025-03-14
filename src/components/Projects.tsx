@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
       className="bg-gradient-to-t from-slate-400 from-10% via-slate-100 via-50% to-sky-600 to-98% py-20 px-2"
       id="projects"
     >
-      <h2 className="-scroll-mt-20 text-5xl tracking-tight font-poppins text-slate-100 text-center mb-10 mt-5 drop-shadow-lg text-shadow-subtle">
+      <h2 className="-scroll-mt-20 text-5xl tracking-tight font-poppins text-slate-100 text-center mb-10 mt-5 drop-shadow-lg text-shadow-subtle no-select">
         PROJECTS
       </h2>
       <hr className="w-32 mx-auto -translate-y-8 shadow-lg"></hr>
