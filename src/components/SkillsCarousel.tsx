@@ -152,7 +152,7 @@ const SkillsCarousel: React.FC<{ tooltipText: string; reverse?: boolean }> = ({
           <h3 className="text-lg font-bold underline mt-1 mb-1 text-center no-select">
             Skills
           </h3>
-          <ul className="list-none text-left">
+          <ul className="list-none text-left no-select">
             {logos.map((logo, index) => (
               <li key={index}>{logo.name}</li>
             ))}
