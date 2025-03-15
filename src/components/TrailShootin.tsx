@@ -13,7 +13,7 @@ const NUM_ANIMALS = 5;
 const SAFE_SPAWN_DISTANCE = 100;
 const PLAYER_SIZE = 50;
 const ANIMAL_SIZE = 40;
-const BULLET_SIZE = 8;
+const BULLET_SIZE = 10;
 
 interface Bullet {
   x: number;
