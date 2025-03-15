@@ -78,7 +78,7 @@ const Remote: React.FC = () => {
       <motion.div
         animate={{ x, y, rotate: rotation }}
         transition={{ ease: "linear", duration: 0.1 }}
-        className="absolute w-24 h-16 bg-blue-600 rounded-lg flex items-center justify-center"
+        className="absolute w-24 h-16 bg-red-600 rounded-lg flex items-center justify-center"
       >
         {/*  Wheels */}
         <div className="w-6 h-6 bg-black rounded-full absolute -left-3 top-2"></div>
