@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const SCREEN_WIDTH = 800;
 const SCREEN_HEIGHT = 600;
 const PLAYER_SPEED = 3;
-const BULLET_SPEED = 8; // Slow down a bit for better visibility
+const BULLET_SPEED = 9; // Slow down a bit for better visibility
 const BULLET_LIFETIME = 60;
 const ANIMAL_SPEED = 1;
 const NUM_ANIMALS = 3;
