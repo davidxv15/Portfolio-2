@@ -9,11 +9,11 @@ const PLAYER_SPEED = 3;
 const BULLET_SPEED = 8; // Slow down a bit for better visibility
 const BULLET_LIFETIME = 60;
 const ANIMAL_SPEED = 1;
-const NUM_ANIMALS = 5;
+const NUM_ANIMALS = 3;
 const SAFE_SPAWN_DISTANCE = 100;
 const PLAYER_SIZE = 50;
 const ANIMAL_SIZE = 40;
-const BULLET_SIZE = 10;
+const BULLET_SIZE = 8;
 
 interface Bullet {
   x: number;
