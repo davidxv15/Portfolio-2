@@ -257,7 +257,7 @@ const ZBlaster: React.FC = () => {
       {/* Audio Element  */}
       <audio
         id="takeFiveAudio"
-        src="/audio/take-five.mp3"
+        src="audio/take-five.mp3"
         preload="auto"
       ></audio>
 
