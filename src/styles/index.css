@@ -118,6 +118,7 @@ height: 50px;
   transform: rotate(-90deg);
 }
 
+/* Basics */
 .no-select {
   user-select: none;  /* Prevents text from being highlighted */
   -webkit-user-select: none;  /* Safari */
@@ -125,7 +126,8 @@ height: 50px;
   -ms-user-select: none;  /* IE */
 }
 
+/* Basics */
 ::selection {
-  background-color: #acacac; /* Yellow */
-  color: #000; /* Black text */
+  background-color: #acacac; 
+  color: #000; 
 }
