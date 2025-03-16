@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
             <a href="#skills" className="text-gray-100 hover:text-gray-400 no-select">
               Skills
             </a>
-            <a href="#projects" className="text-gray-100 hover:text-gray-400">
+            <a href="#projects" className="text-gray-100 hover:text-gray-400 no-select">
               Projects
             </a>
             <a href="#about" className="text-gray-100 hover:text-gray-400">
