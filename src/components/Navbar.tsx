@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
           </div>
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex space-x-5 tracking-tight text-2xl">
-            <a href="#" className="text-gray-100 hover:text-gray-400">
+            <a href="#" className="text-gray-100 hover:text-gray-400 no-select">
               Home
             </a>
             <a href="#skills" className="text-gray-100 hover:text-gray-400">
