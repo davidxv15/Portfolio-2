@@ -1,18 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2022", // Sets the ECMAScript version target (e.g., ES2022 adds modern features).
-    "lib": ["ES2022", "DOM", "DOM.Iterable"], // Specifies libraries to include for features like arrays, DOM, and iteration.
-    "module": "ESNext", // Specifies module code generation (modern ES modules for tree-shaking and imports).
-    "moduleResolution": "node", // Resolves modules like Node.js (default for modern apps).
-    "strict": true, // Enables all strict type-checking options for safer code.
-    "skipLibCheck": true, // Skips checking type declaration files for performance optimization.
-    "jsx": "react-jsx", // Enables JSX syntax for React with TypeScript.
-    "incremental": true, // Enables incremental compilation for faster builds.
-    "noEmit": true, // Prevents emitting JavaScript files during compilation.
-    "outDir": "./dist", // Ensure .js files go to /dist, not /src
-    "esModuleInterop": true, // Enables compatibility with CommonJS modules.
-    "allowSyntheticDefaultImports": true // Allows default imports without requiring esModuleInterop.
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "noEmit": false
   },
-  "include": ["src"], // Specifies which files to include in the compilation (everything in the `src` folder).
-  "exclude": ["node_modules"] // Excludes `node_modules` for better performance
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
