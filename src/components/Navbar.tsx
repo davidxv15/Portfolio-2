@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
           </a>
           <a
             href="#projects"
-            className="text-gray-200 block px-3 py-2 rounded-md text-xl font-bold hover:bg-gray-100 hover:text-gray-900"
+            className="text-gray-200 block px-3 py-2 rounded-md text-xl font-bold hover:bg-gray-400 hover:text-gray-900"
           >
             Skills
           </a>
