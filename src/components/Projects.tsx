@@ -76,13 +76,13 @@ translate-y-2"
                 </h3>
                 <button
                   onClick={() => toggleDescription(index)}
-                  className="p-2 focus:outline-none text-gray-800 hover:text-gray-100 transition"
+                  className="p-2 focus:outline-none text-black hover:text-blue-500 sm:hover:text-blue-500 transition"
                 >
                   ☰
                 </button>
               </div>
 
-              {/* Collapsible Description (Appears Below Info Button) */}
+              {/* Collapsible Description (Below Info Button) */}
               <div
                 className={`mt-2 p-2 text-md text-slate-900 bg-slate-100 rounded-lg shadow-inner shadow-gray-600 transition-all duration-300 ${
                   openIndex === index
