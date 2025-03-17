@@ -47,24 +47,24 @@ const HeroSection: React.FC = () => {
         <img
           src="WhiteShirtPhoto.jpg"
           alt="Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-1 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert no-select lg:-translate-y-12"
+          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-1 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert no-select md:-translate-y-32 md:-translate-x-8 lg:-translate-y-12"
           />
         </div>
         </div>
         </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:-translate-y-36 md:translate-x-12 lg:translate-x-32 lg:-translate-y-44 xl:-translate-y-28">
         <a href="#projects">
-          <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-20 lg:-translate-y-32 border-none transform transition duration-100 animate-fade no-select">
+          <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-40 lg:-translate-y-32 border-none transform transition duration-100 animate-fade no-select">
             View My Work
           </button>
         </a>
         <a href="mailto:davidxvaz@gmail.com?subject=Let's Chat&body=Hello David, ">
-          <button className="bg-blue-900 text-white text-xl hover:text-slate-900 px-7 py-3 rounded-full hover:bg-blue-300 border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-20 lg:-translate-y-32 transform transition duration-100 animate-fade no-select">
+          <button className="bg-blue-900 text-white text-xl hover:text-slate-900 px-7 py-3 rounded-full hover:bg-blue-300 border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-40 lg:-translate-y-32 transform transition duration-100 animate-fade no-select">
             Contact Me
           </button>
         </a>
       </div>
-      <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-16 lg:-translate-y-60 lg:translate-x-64 xl:-translate-y-32 animate-fade z-10">
+      <div className="flex space-x-4 mt-6 mb-6 space-x-24 md:space-x-32 lg:space-x-36  md:translate-x-48 md:-translate-y-56 lg:-translate-y-60 lg:translate-x-64 xl:-translate-y-32 animate-fade z-10">
         <a
           href="https://github.com/davidxv15"
           target="_blank"
