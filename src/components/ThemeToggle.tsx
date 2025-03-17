@@ -28,7 +28,7 @@ const ThemeToggle: React.FC<ThemeToggleProps> = ({
 
   return (
     <div className="flex justify-end items-center bg-transparent mb-0">
-      <span className="ml-4 mr-1 font-medium text-slate-300 p-4">
+      <span className="ml-4 mr-1 font-medium text-slate-200 p-4">
         {themes[currentThemeIndex]}
       </span>
       <div className="relative flex items-center justify-center p-2 rounded-full hover:bg-gray-300/10 transition duration-200 p-8 cursor-pointer">
