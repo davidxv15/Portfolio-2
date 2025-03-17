@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-gray-100 text-xl font-outfit flex items-center justify-between h-14">
           <div className="flex items-center">
-            <a href="#" className="text-gray-900 hover:text-gray-300 text-2xl">
+            <a href="#" className="text-black hover:text-gray-300 text-2xl">
               David Velasquez
             </a>
           </div>
