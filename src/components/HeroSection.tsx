@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
       <div className="bg-transparent">
         <h1
           className="surname relative top-[-6rem] md:top-[-2rem] lg:top-[3rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-blue-100 
-         w- mx-auto outline-none sm:-translate-y-4 md:-translate-y-16 lg:-translate-y-16 xl:-translate-y-8 mt-32 sm:mt-28 scroll-mt-16"
+         h-24 mx-auto outline-none sm:-translate-y-4 md:-translate-y-12 lg:-translate-y-16 xl:-translate-y-8 mt-32 sm:mt-28 scroll-mt-16"
         >
           <span className="text-5.5xl sm:-translate-y-40 md:text-7xl lg:text-7xl">
             D
