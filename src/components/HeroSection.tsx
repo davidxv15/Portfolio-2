@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
   };
   return (
     <section className="sm:mt-6 section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center">
-      <div className="bg-transparent">
+      <div className="bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100">
         <h1
           className="surname relative top-[-6rem] md:top-[-2rem] lg:top-[3rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-blue-100 
          h-24 w-screen outline-none sm:-translate-y-4 md:-translate-y-12 lg:-translate-y-14 xl:-translate-y-8 mt-32 sm:mt-28 scroll-mt-16"
