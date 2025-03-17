@@ -31,6 +31,7 @@ const App: React.FC = () => {
 
   return (
     <div>
+      
       <div className="sticky top-0 z-50 justify-between bg-opacity-0">
         <Navbar />
       </div>
