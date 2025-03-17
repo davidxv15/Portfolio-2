@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
             View My Work
           </button>
         </a>
-        <a href="mailto:davidxvaz@gmail.com?subject=Let's Chat&body=Hello David, ">
+        <a href="mailto:davidvelasquezdev@gmail.com?subject=Let's Chat&body=Hello David, ">
           <button className="bg-blue-900 text-white text-xl hover:text-slate-900 px-7 py-3 rounded-full hover:bg-blue-300 border-none ml-4 shadow shadow-md shadow-gray-600 sm:translate-x-2 md:-translate-y-40 lg:-translate-y-32 transform transition duration-100 animate-fade no-select">
             Contact Me
           </button>
