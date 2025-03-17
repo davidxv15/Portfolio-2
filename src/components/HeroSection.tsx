@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
           className="surname relative top-[-6rem] md:top-[-2rem] lg:top-[3rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-blue-100 
          w- mx-auto outline-none sm:-translate-y-4 md:-translate-y-16 lg:-translate-y-16 xl:-translate-y-8 mt-32 sm:mt-28 scroll-mt-16"
         >
-          <span className="text-5.5xl sm:-translate-y-40 md:text-6xl lg:text-7xl">
+          <span className="text-5.5xl sm:-translate-y-40 md:text-7xl lg:text-7xl">
             D
           </span>
           AVID{" "}
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
           ELASQUEZ
         </h1>
         {/* <br /> */}
-        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 -mt-16 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-20 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap no-select">
+        <h2 className="text-5xl top-[1rem] md:top-[-2rem] lg:top-[-1rem] font-poppins text-slate-900 bg-blue-100 -mt-16 md:text-left lg:text-center md:mr-32 md:ml-[50%] text-center lg:mr-12 sm:-translate-y-4 lg:translate-y-20 lg:w-90 md:whitespace-nowrap md:text-4xl lg:whitespace-nowrap no-select">
           Software Developer
         </h2>
         <div className="flex flex-col-reverse md:flex-col items-center justify-center">
