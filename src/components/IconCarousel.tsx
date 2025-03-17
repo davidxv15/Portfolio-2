@@ -106,12 +106,12 @@ const IconCarousel: React.FC<IconCarouselProps> = ({ reverse = false }) => {
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="smallCard w-32 h-32 sm:w-24 sm:h-24 md:w-20 md:h-20 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
+                className="smallCard w-32 h-32 sm:w-20 sm:h-20 md:w-20 md:h-20 lg:w-20 lg:h-20 lg:mt-1 mx-auto border-black"
                 style={{
                   border: "1.5px solid #64748b",
                 }}
               />
-              <h3 className="text-center mt-6 text-2xl lg:mx-0 lg:font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
+              <h3 className="text-center mt-6 text-2xl lg:mx-0 font-outfit bg-transparent text-slate-900 font-medium tracking-wide">
                 {logo.name}
               </h3>
             </div>
