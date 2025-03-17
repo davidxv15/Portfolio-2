@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
     }
   };
   return (
-    <section className="sm:mt-6 section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 text-center">
+    <section className="sm:mt-6 section flex flex-col items-center justify-evenly h-screen w-screen bg-gradient-to-t from-sky-600 via-blue-100 to-blue-400 text-center">
       <div className="bg-gradient-to-t from-sky-600 via-blue-100 to-blue-100 sm:bg-transparent">
         <h1
           className="surname relative top-[-6rem] md:top-[-2rem] lg:top-[3rem] text-5xl md:text-6xl lg:text-7xl font-league font-bold text-slate-900 bg-blue-100 
@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
           Software Developer
         </h2>
         <div className="flex flex-col-reverse md:flex-col items-center justify-center md:-translate-y-8">
-        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-28 animate-fade no-select">
+        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-32 animate-fade no-select">
           Elevating team environments by leading with enthusiasm, integrity, and
           dedication. Driving success through actions that inspire
           {/* and motivate */}.
@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
         </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:-translate-y-36 md:translate-x-12 lg:translate-x-32 lg:-translate-y-44 xl:-translate-y-28">
         <a href="#projects">
-          <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600 sm:-translate-x-0 md:-translate-y-40 lg:-translate-y-32 border-none transform transition duration-100 animate-fade no-select">
+          <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600  sm:translate-y-8 md:-translate-y-40 lg:-translate-y-32 border-none transform transition duration-100 animate-fade no-select">
             View My Work
           </button>
         </a>
