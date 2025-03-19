@@ -11,6 +11,7 @@ const Projects: React.FC = () => {
       github: "https://github.com/davidxv15/Chat-App",
       description:
         "A real-time chat app featuring authentication, custom chat rooms, and live user presence.",
+        add: "",
     },
     {
       title: "Weather Getter",
