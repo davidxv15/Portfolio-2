@@ -8,7 +8,7 @@ const Footer = () => {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-400 transition"
+              className="hover:text-zinc-400 transition"
             >
               GitHub
             </a>
@@ -16,13 +16,13 @@ const Footer = () => {
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gray-400 transition"
+              className="hover:text-zinc-400 transition"
             >
               LinkedIn
             </a>
             <a
               href="mailto:your.email@example.com"
-              className="hover:text-gray-400 transition"
+              className="hover:text-zinc-400 transition"
             >
               Email
             </a>
