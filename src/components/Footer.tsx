@@ -13,7 +13,7 @@ const Footer = () => {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/david-velasquez-az"
+              href="https://linkedin.com/in/###"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-zinc-400 transition"
@@ -21,7 +21,7 @@ const Footer = () => {
               LinkedIn
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:###"
               className="hover:text-zinc-400 transition"
             >
               Email
