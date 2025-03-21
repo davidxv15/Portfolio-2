@@ -5,7 +5,7 @@ const Footer = () => {
           <p className="mb-2 md:mb-0">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
           <div className="flex space-x-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/davidxv15"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-zinc-400 transition"
