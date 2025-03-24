@@ -41,7 +41,7 @@ Welcome to my personal software engineering portfolio! This site showcases my pr
 ##  Contact Me
 
 - **Email**: davidvelasquezdev@gmail.com
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/david-velasquez-az)
+- **LinkedIn**: [LinkedIn](https://linkedin.com/in/david-velasquez-az)
 - **GitHub**: [@davidxv15](https://github.com/davidxv15)
 
 ---
