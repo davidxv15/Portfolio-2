@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+#  Personal Portfolio - David XV
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal software engineering portfolio! This site showcases my projects, skills, and personality as a developer. Built with a modern stack and a touch of creative flair.
 
-Currently, two official plugins are available:
+##  Live Site
+[View Portfolio](https://davidxv15.github.io/Portfolio-2)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Frontend**: React, TypeScript, Tailwind CSS, Vite
+- **Deployment**: GitHub Pages
+- **Other Tools**: Netlify (for individual projects), Heroku (where applicable), Git
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+##  Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Responsive and mobile-optimized design
+- Custom components and animations
+- Dark mode theme toggle
+- Interactive project cards
+- Custom artwork / media integration
+- Easter egg for those who find it 😉
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+##  Projects Included
+
+| Project | Stack | Hosting |
+|--------|--------|--------|
+| Weather App | React, API, Tailwind | Netlify |
+| Chat App | MERN Stack, WebSockets | Heroku + Netlify |
+| Nutrition Calendar | React | Netlify |
+
+
+---
+
+
+##  Contact Me
+
+- **Email**: davidvelasquezdev@gmail.com
+- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/david-velasquez-az)
+- **GitHub**: [@davidxv15](https://github.com/davidxv15)
+
+---
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/davidxv15/Portfolio-2.git
+cd Portfolio-2
+npm install
+npm run dev
