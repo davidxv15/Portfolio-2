@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
 
-
 const HeroSection: React.FC = () => {
   const [clickCount, setClickCount] = useState(0);
   const [spin, setSpin] = useState(false);
@@ -38,20 +37,20 @@ const HeroSection: React.FC = () => {
           Software Developer
         </h2>
         <div className="flex flex-col-reverse md:flex-col items-center justify-center md:-translate-y-8">
-        <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-32 animate-fade no-select">
-          Elevating team environments by leading with enthusiasm, integrity, and
-          dedication. Driving success through actions that inspire
-          {/* and motivate */}.
-        </p>
-      <div className="mb-8 md:mb-16 md:w-2/3 lg:mr-20 lg:mt-1">
-        <img
-          src="WhiteShirtPhoto.jpg"
-          alt="Portrait"
-          className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-1 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert no-select md:-translate-y-32 md:-translate-x-8 lg:-translate-y-12"
-          />
+          <p className="text-xl md:text-justify lg:text-justify font-outfit text-slate-900 mt-2 md:text-left lg:text-left md:mr-24 md:ml-[50%] lg:ml-[54%] lg:translate-y-32 animate-fade no-select">
+            Elevating team environments by leading with enthusiasm, integrity,
+            and dedication. Driving success through actions that inspire
+            {/* and motivate */}.
+          </p>
+          <div className="mb-8 md:mb-16 md:w-2/3 lg:mr-20 lg:mt-1">
+            <img
+              src="WhiteShirtPhoto.jpg"
+              alt="Portrait"
+              className="rounded-full w-72 h-72 lg:w-96 lg:h-96 xl:w-106 xl:h-120 object-cover object-[80%_6%] shadow-lg shadow-gray-600 md:top-40 md:left-20 lg:top-10 lg:left-1 xl:left-60 xl:top-60 transition-all duration-200 ease-in-out animate-fade z-30 no-invert no-select md:-translate-y-32 md:-translate-x-8 lg:-translate-y-12"
+            />
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
       <div className="mt-4 md:ml-64 md:mb-20 lg:space-x-12 md:-translate-y-36 md:translate-x-12 lg:translate-x-32 lg:-translate-y-44 xl:-translate-y-28">
         <a href="#projects">
           <button className="scroll-mt-20 bg-blue-900 text-white text-xl px-7 py-3 rounded-full hover:text-slate-900 hover:bg-blue-300 transition font-outfit shadow shadow-md shadow-gray-600  sm:translate-y-8 md:-translate-y-40 lg:-translate-y-32 border-none transform transition duration-100 animate-fade no-select">
