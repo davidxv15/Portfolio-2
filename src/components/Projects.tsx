@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
   const projectData = [
     {
       title: "Chat App",
-      images: ["ChatApp-chatbox.png", "ChatApp-chatbox.png"],
+      image: "ChatApp-chatbox.png",
       liveDemo: "https://chat-department.netlify.app/login",
       github: "https://github.com/davidxv15/Chat-App",
       description:
@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Weather Getter",
-      images: ["WeatherGetterPic.png", ],
+      image: "WeatherGetterPic.png",
       liveDemo: "https://weathergetterapp.netlify.app/",
       github: "https://github.com/davidxv15/Weather-app-frontend",
       description:
@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Nutrition Calendar",
-      images: ["NutritionCalendarClear2.png", ],
+      image: "NutritionCalendarClear2.png",
       liveDemo: "https://nutrition-calendar.netlify.app/",
       github: "https://github.com/davidxv15/Nutrition-Calendar2.0",
       description:
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Research: Ascensia Effect",
-      images: ["AscensiaGraph.png", ],
+      image: "AscensiaGraph.png",
       liveDemo: "https://doi.org/10.5281/zenodo.14920556",
       github: "https://github.com/davidxv15/Ascensia-Effect-Paper",
       description:
