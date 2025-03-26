@@ -1,10 +1,5 @@
-#  Personal Portfolio - David XV
 
-Welcome to my personal software engineering portfolio! This site showcases my projects, skills, and personality as a developer. Built with a modern stack and a touch of creative flair.
-
-##  Live Site
-[View Portfolio](https://davidxv15.github.io/Portfolio-2)
-
+**[Software Engineer Portfolio](https://davidxv15.github.io/Portfolio-2)**
 ---
 
 ##  Tech Stack
@@ -13,8 +8,6 @@ Welcome to my personal software engineering portfolio! This site showcases my pr
 - **Deployment**: GitHub Pages
 - **Other Tools**: Netlify (for individual projects), Heroku (where applicable), Git
 
----
-
 ##  Features
 
 - Responsive and mobile-optimized design
@@ -22,7 +15,6 @@ Welcome to my personal software engineering portfolio! This site showcases my pr
 - Dark mode theme toggle
 - Interactive project cards
 - Custom artwork / media integration
-- Easter egg for those who find it 😉
 
 ---
 
