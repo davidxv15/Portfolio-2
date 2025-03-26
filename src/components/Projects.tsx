@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Weather Getter",
-      image: "WeatherGetterPic.png",
+      image: "OysterBay.png",
       liveDemo: "https://weathergetterapp.netlify.app/",
       github: "https://github.com/davidxv15/Weather-app-frontend",
       description:
@@ -66,7 +66,7 @@ translate-y-2"
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-60 object-cover transform transition duration-500 hover:justify-items-center hover:z-50 object-[80%_3%]"
+              className="w-full h-60 object-cover transform transition duration-500 hover:justify-items-center hover:z-50 object-[80%_1%]"
             />
             <div className="p-2 bg-transparent">
               {/* Project Title & Info Button */}
