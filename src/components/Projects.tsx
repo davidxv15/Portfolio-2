@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Weather Getter",
-      image: "WeatherGetterPic.png",
+      images: "WeatherGetterPic.png",
       liveDemo: "https://weathergetterapp.netlify.app/",
       github: "https://github.com/davidxv15/Weather-app-frontend",
       description:
@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Nutrition Calendar",
-      image: "NutritionCalendarClear2.png",
+      images: "NutritionCalendarClear2.png",
       liveDemo: "https://nutrition-calendar.netlify.app/",
       github: "https://github.com/davidxv15/Nutrition-Calendar2.0",
       description:
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Research: Ascensia Effect",
-      image: "AscensiaGraph.png",
+      images: "AscensiaGraph.png",
       liveDemo: "https://doi.org/10.5281/zenodo.14920556",
       github: "https://github.com/davidxv15/Ascensia-Effect-Paper",
       description:
