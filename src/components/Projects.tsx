@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
     },
     {
       title: "Weather Getter",
-      images: "WeatherGetterPic.png",
+      images: ["WeatherGetterPic.png"],
       liveDemo: "https://weathergetterapp.netlify.app/",
       github: "https://github.com/davidxv15/Weather-app-frontend",
       description:
