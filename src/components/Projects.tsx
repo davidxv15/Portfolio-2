@@ -5,7 +5,7 @@ const Projects: React.FC = () => {
   const projectData = [
     {
       title: "Chat App",
-      image: "ChatApp-chatbox.png",
+      images: "ChatApp-chatbox.png",
       liveDemo: "https://chat-department.netlify.app/login",
       github: "https://github.com/davidxv15/Chat-App",
       description:
