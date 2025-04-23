@@ -38,10 +38,3 @@
 
 ---
 
-## ⚙️ Run Locally
-
-```bash
-git clone https://github.com/davidxv15/Portfolio-2.git
-cd Portfolio-2
-npm install
-npm run dev
