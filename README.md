@@ -6,7 +6,7 @@
 
 - **Frontend**: React, TypeScript, Tailwind CSS, Vite
 - **Deployment**: GitHub Pages
-- **Other Tools**: Netlify (for individual projects), Heroku (where applicable), Git
+- **Other Tools**: Netlify, Heroku, Git
 
 ##  Features
 
